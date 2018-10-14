@@ -4,7 +4,6 @@ url: 'http://csparkresearch.in'
 baseurl: '' #change it according to your repository name
 
 
-
 # Profile information
 yourname: CSpark Research  ## put your name
 location: New Delhi, India
@@ -19,12 +18,17 @@ foursquare: http://www.foursquare.com  ## your foursquare account url
 
 # List of links in the navigation bar
 navbar-links:
-  About Us: "about"
+  Products:
+    - ExpEYES: "expeyes"
+    - AlphaSpec-1K: "alphaspec"
+    - Gamma Spectrometer: "gmspec"
+    - Multi Channel Analyzer: "mca"
+    - Geiger Counter: "gmcounter"
   Resources:
-    - Products: "products"
     - Outreach Gallery: "gallery"
-    - GitHub : "https://github.com/csparkresearch"
+    - GitHub : "https://github.com/jithinbp"
   Contact Us: "contact"
+  About Us: "about"
 
 # Image to show in the navigation bar - image must be a square (width = height)
 # Remove this parameter if you don't want an image in the navbar
@@ -40,7 +44,7 @@ title-img: "/assets/images/logo_transparent.png"
 
 navbar-col: "#F5F5F5"
 navbar-text-col: "#404040"
-navbar-children-col: "#F5F5F5"
+navbar-children-col: #fff
 page-col: "#FFFFFF"
 link-col: "#008AFF"
 hover-col: "#0085A1"
@@ -55,6 +59,3 @@ footer-link-col: "#404040"
 # footer-img: "/img/bgimage.png"
 # page-img: "/img/bgimage.png"
 
-
-
-# Update all the sections by editing the files inside _includes folder.
