@@ -25,7 +25,10 @@ show-avatar: true
 	    <div class="container">
 	        <div class="row">               
 	            <div class="main-page">
+				{% if page.show-navigation %}
 	            {% include /navigation.html %} 
+				{% endif %}
+				
 				{{content}}
 				
 				{% include footer.html %}

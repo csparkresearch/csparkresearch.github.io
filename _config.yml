@@ -26,6 +26,7 @@ navbar-links:
     - Geiger Counter: "gmcounter"
   Resources:
     - Outreach Gallery: "gallery"
+    - Seelab-jr development history: "expeyes-dev"
     - GitHub : "https://github.com/jithinbp"
   Contact Us: "contact"
   About Us: "about"

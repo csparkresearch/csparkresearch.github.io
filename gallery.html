@@ -1,5 +1,6 @@
 ---
 layout: gallery
+show-navigation: true
 ---
 
 <div class="content-main gallery_main">
@@ -13,18 +14,8 @@ layout: gallery
             </div><br style="clear:both;"/>
         </div>
 
-        <div id="content" class="gallery-images-container">
-            <div class="box-gutter"></div>
-            <div class="box-sizer"></div>
+           {% include loadgallery.html imagelist=site.data.gallery-images  %}
 
-           {% include loadgallery.html  %}
-
-
-        </div>                
-
-        <div class="row text-center view_more_main">
-           <a href="#" class="btn view_more">view more</a>
-        </div>
 
     </div>
 

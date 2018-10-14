@@ -1,10 +1,24 @@
+<div id="content" class="gallery-images-container">
+	<div class="box-gutter"></div>
+	<div class="box-sizer"></div>
 
-{% for image in site.data.gallery-images %}
-	<div class="box hovereffect">
-		<a href="assets/images/{{ image.filename }}"><img alt="gallery image" src="assets/images/{{ image.filename }}"></a>
-        <div class="overlay">
-           <h2>{{ image.description }}</h2>
-           <!--<a class="info" href="#">More</a> -->
-        </div>
-	</div>
-{% endfor %}
+	{% for image in include.imagelist %}
+		<div class="box hovereffect">
+			{% if image.filename %}
+			<a href="assets/images/{{ image.filename }}"><img alt="gallery image" src="assets/images/{{ image.filename }}"></a>
+			<div class="overlay">
+			   <h2>{{ image.description }}</h2>
+			   <!--<a class="info" href="#">More</a> -->
+			</div>
+			{% else %}
+			<a href="{{ image.url }}"><img alt="gallery image" src="{{ image.url }}"></a>
+			<div class="overlay">
+			   <h2>{{ image.description }}</h2>
+			   <p class="info">{{ image.date }}</p>
+			</div>
+			{% endif %}
+
+		</div>
+	{% endfor %}
+
+</div>                

@@ -1,0 +1,54 @@
+- date: July-2014
+  url: http://res.cloudinary.com/cspark/image/upload/c_lpad,h_280,w_500/v1481557993/seelab_proto/1_28-jul-2014.jpg
+  description: Sent the first design for fabrication. Used a PIC24EP64GP204 micro-controller. Initial goal was to implement a 4-channel scope with at least 1 msps per channel, inputs with programmable voltage range etc. For waveform generation, added an ATTiny processor from Atmel. A 2 channel SPI DAC was used.
+- date: September-2014
+  url: http://res.cloudinary.com/cspark/image/upload/c_lpad,h_280,w_500/v1481558001/seelab_proto/2_20-sep-2014.jpg
+  description: Corrected many errors of the first prototype. Added two arbitrary waveform generators, using 2x PIC1572 processors. Communication to these was established via 9-bit UART Cross talk between channels indicated the need for better ground plane design​.  
+- date: October-2014
+  url: http://res.cloudinary.com/cspark/image/upload/c_lpad,h_280,w_500/v1481557964/seelab_proto/3_24-oct-2014.jpg
+  description: Replaced quad op-amps with dual, separate op-amps for each channel. Minor bug fixes. PGA reference needs a low output impedance drive.
+- date: November-2014
+  url: "http://res.cloudinary.com/cspark/image/upload/c_lpad,h_280,w_500/v1481557997/seelab_proto/4_17-nov-2014.jpg"
+  description: Lot of corrections and improvements. Everything seems to be working, demonstrated during Scipy.in 2014 conference at IIT Bombay.
+- date: April 2015
+  url: http://res.cloudinary.com/cspark/image/upload/c_lpad,h_280,w_500/v1481558005/seelab_proto/5_02-apr-2015.jpg
+  description: Hardware and software working as expected but packaging issues remained. Decided to go for 2mm round sockets and Berg strips for Input/Output connectors. Added an inductance meter also. Prototype made with acrylic cabinet. Added Ad9833 waveform generators. 
+- date: April 2015
+  url: http://res.cloudinary.com/cspark/image/upload/c_lpad,h_280,w_500/v1481558009/seelab_proto/6_19-apr-2015.jpg
+  description: One more round of prototyping to correct some errors. 
+- date: May 2015
+  url: http://res.cloudinary.com/cspark/image/upload/c_lpad,h_280,w_500/v1481557983/seelab_proto/7_06-may-2015.jpg
+  description: Added ESP8266, for WIFI support, made some changes to I/O connector locations. tested with transparent UART firmware as well as eshttpd web server
+- date: May 2015 - 2 
+  url: http://res.cloudinary.com/cspark/image/upload/c_lpad,h_280,w_500/v1481558004/seelab_proto/8_27-may-2015.jpg
+  description: Made a compact version with two bipolar channels and remaining unipolar channels. Called it Vlabtool.
+- date:  6-June 2015
+  url: http://res.cloudinary.com/cspark/image/upload/c_lpad,h_280,w_500/v1481558048/seelab_proto/9_06-jun-2015.jpg
+  description: Vlabtool went through many changes, PCB was revised 3 times before the final unit was made. It worked fine and had a local LCD display. Key Features- 12-bit offset control along with up to 32x gain control gave very fine oscilloscope resolution along the full voltage range 2.5ppm digital reference, 5ppm Analog reference 128*64 pixel OLED display that shows readings until a USB connection is detected
+- date:  21-June 2015
+  url:  http://res.cloudinary.com/cspark/image/upload/c_lpad,h_280,w_500/v1481558046/seelab_proto/a_21-jun-2015.jpg
+  description: Decided to make a very low cost version [no high precision references, PGA etc], attempted gain control using op-amps and uC pins. , but it failed because of reverse voltage protection on uC pins via internal schottky diodes. 28-bit DDS sine wave generator with 0.004Hz resolution up to 2MHz was included. External amplitude control . 
+- date:  25 July 2015
+  url: http://res.cloudinary.com/cspark/image/upload/c_lpad,h_280,w_500/v1481558045/seelab_proto/b_25-jul-2015.jpg
+  description: 
+- date: 31 July 2015   
+  url: http://res.cloudinary.com/cspark/image/upload/c_lpad,h_280,w_500/v1481558016/seelab_proto/c_31-jul-2015.jpg
+  description:  
+- date: September 2015
+  url: http://res.cloudinary.com/cspark/image/upload/c_lpad,h_280,w_500/v1481558054/seelab_proto/d_09-sep-2015.jpg
+  description: Added PGA back, for gain control. WS2812B RGB LED for status display The need was felt for more suitable I/O connectors than the existing banana sockets which require special connecting cables, and are largely cumbersome for quick prototyping in labs. Found some spring loaded speaker terminal connectors, that looked like a good option since any sort of wire could be plugged in 
+- date: November 2015
+  url: http://res.cloudinary.com/cspark/image/upload/c_lpad,h_280,w_500/v1481558056/seelab_proto/e_20-nov-2015.jpg
+  description: Made an adapter board to fix the speaker terminal to the main board so that the heights of the Berg strips align with them on the same plane. 
+- date: December 2015
+  url: http://res.cloudinary.com/cspark/image/upload/c_lpad,h_280,w_500/v1481558029/seelab_proto/f_10-dec-2015.jpg
+  description: Decided to make one batch of boards, and integrate with Orange Pi / Raspberry Pi. An injection mould was made to was made to fit an OPi/RPi along with the acquisition board 
+- date: March 2016
+  url: http://res.cloudinary.com/cspark/image/upload/c_lpad,h_280,w_500/v1481558046/seelab_proto/seelab-orangepi.jpg
+  description: Several issues with making the ABS plastic cabinet were sorted out, and final assembly process was streamlined. four desktop versions were bought by Farook College, Calicut, followed by several other institutions.
+- date: July 2016
+  url: http://res.cloudinary.com/cspark/image/upload/c_lpad,h_280,w_500/v1478699117/old_website/full_set.png
+  description: Demonstrated at Startup Mission, Kerala. 
+- date: August 2016
+  url: https://res.cloudinary.com/cspark/image/upload/c_scale,w_800/h_499,w_700/v1487682911/expeyes-17/mould.jpg
+  description: Redesigned the unit with a different form factor, with 2 connector blocks. Added a 5ppm/C clock generator and 50ppm/C analog reference (5ppm optional) for better accuracy. After a couple of rounds of prototyping , one batch was produced, with a new plastic mould. This will be termed SEELablet-V2. Calibration is carried out against a 24-bit ADC, which at this point seems like overkill, so a step down to a 16-bit ADC is expected in the near future. 
