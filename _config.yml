@@ -1,4 +1,60 @@
-name: Jithin BP, Horrible Cop
-markdown: kramdown
-permalink: /blog/:year/:month/:day/:title
-destination: jkbuild
+
+title: CSpark Research # your title
+url: 'http://csparkresearch.in'
+baseurl: '' #change it according to your repository name
+
+
+
+# Profile information
+yourname: CSpark Research  ## put your name
+location: New Delhi, India
+
+
+## Social Profiles
+facebook: http://www.facebook.com  ## your facebook account url
+twitter: http://www.twitter.com  ## your twitter account url
+linkedin: http://www.linkedin.com  ## your linkedin account url
+dribbble: http://www.dribble.com  ## you dribbble account url
+foursquare: http://www.foursquare.com  ## your foursquare account url
+
+# List of links in the navigation bar
+navbar-links:
+  About Us: "about"
+  Resources:
+    - Products: "products"
+    - Outreach Gallery: "gallery"
+    - GitHub : "https://github.com/csparkresearch"
+  Contact Us: "contact"
+
+# Image to show in the navigation bar - image must be a square (width = height)
+# Remove this parameter if you don't want an image in the navbar
+avatar: "assets/images/avatar-icon.png"
+
+# If you want to have an image logo in the top-left corner instead of the title text,
+# then specify the following parameter
+title-img: "/assets/images/logo_transparent.png"
+
+# --- Background colour/image options --- #
+
+# Personalize the colors in your website. Colour values can be any valid CSS colour
+
+navbar-col: "#F5F5F5"
+navbar-text-col: "#404040"
+navbar-children-col: "#F5F5F5"
+page-col: "#FFFFFF"
+link-col: "#008AFF"
+hover-col: "#0085A1"
+footer-col: "#F5F5F5"
+footer-text-col: "#777777"
+footer-link-col: "#404040"
+
+# Alternatively, the navbar, footer, and page background can be set to use background images
+# instead of colour
+
+# navbar-img: "/img/bgimage.png"
+# footer-img: "/img/bgimage.png"
+# page-img: "/img/bgimage.png"
+
+
+
+# Update all the sections by editing the files inside _includes folder.

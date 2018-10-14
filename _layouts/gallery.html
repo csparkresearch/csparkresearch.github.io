@@ -1,0 +1,42 @@
+---
+show-avatar: true
+common-css:
+  - "/assets/css/bootstrap.min.css"
+  - "/assets/font-awesome/css/font-awesome.min.css"
+  - "/assets/css/style.css"
+common-googlefonts:
+  - "Lora:400,700,400italic,700italic"
+  - "Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800"
+common-js:
+  - "/assets/js/jquery.min.js"
+  - "/assets/js/bootstrap.min.js"
+  - "/assets/js/main.js"
+---
+
+<!DOCTYPE html>
+<html lang="en">
+{% include head.html %}
+
+{% include header.html %}
+<body class="gallery-page">
+
+    <div class="main-body">
+        <div class="container">
+            <div class="row">
+               
+                <div class="main-page">
+                    
+                {% include /navigation.html %}
+                {{content}}
+                    
+                </div> <!-- .main-page -->
+            </div> <!-- .row -->
+            {% include footer.html %}
+        </div> <!-- .container -->
+    </div>  <!-- .main-body -->
+
+
+{% include scripts.html %}
+</body>
+</html> 
+
