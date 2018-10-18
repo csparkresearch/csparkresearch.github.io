@@ -1,0 +1,31 @@
+<div id="fancy-container" class="row margin-b-30 fancy-menu-container">
+	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 margin-auto">
+
+			{% for image in include.imagelist %}
+			<ul id="sdt_menu" class="sdt_menu">
+				<li>
+					<a href="#">
+						<img src="assets/images/{{ image.image }}" alt=""/>
+						<span class="sdt_active"></span>
+						<span class="sdt_wrap">
+							<span class="sdt_link">{{ image.title }}</span>
+							<span class="sdt_descr">{{ image.description }}</span>
+
+							{% if image.submenu %}
+							<div class="sublinks">
+								{% for link in image.submenu %}
+									<div class="btn xs pink">{{ link.first[0] }}</div>
+								{% endfor %}
+							</div>
+							{% endif %}
+
+						</span>
+					</a>
+
+				</li>
+			</ul>
+
+			{% endfor %}
+
+	</div>
+</div> <!-- row -->

@@ -48,7 +48,13 @@ $text-offset: $a-height - 90;
         overflow:hidden;
         width:100%;
 
-        a {
+		a {
+		  color:#fff;
+          text-decoration:none;
+          font-family:Open Sans, sans-serif;
+
+		}
+        span {
           
           display:block;
           height:$a-height;
@@ -125,7 +131,7 @@ $text-offset: $a-height - 90;
 
       width:60%;
 
-      a {
+      span {
         
         background:rgba(0,0,0,.4);
         
@@ -144,13 +150,13 @@ $text-offset: $a-height - 90;
     &:hover li {
       width: 8% !important;
       
-      a * { opacity: 0 !important; }
+      span * { opacity: 0 !important; }
     }
     
     &:hover li:hover {
       width:60% !important;
 
-      a {
+      span {
         
         background:rgba(0,0,0,.4);
         

@@ -4,6 +4,13 @@ show-navigation: true
 ---
 
 <div class="content-main">
+
+	<div class="row margin-b-60"></div>
+    {% include fancy-menu.html  
+    imagelist = site.data.fancy-menu-nuclear
+    %}
+
+
 	<div class="row margin-b-30">
 		<div class="col-xs-12 col-sm-12 col-md-12 biliend">
 			<div class="banner-2-container nuclear-banner" >
@@ -19,7 +26,9 @@ show-navigation: true
     description = "Acquire alpha particle spectra with a compact, and easy to maintain device that integrates all necessary electronics such as the detector, pre-amplifier, shaping amplifier, multi channel analyzer, and USB communications interface into a small vacuum chamber."
     image = "assets/images/Alpha_60.png"
     secondary_image = "assets/images/schema.png"
+	fancy-menu = site.data.fancy-menu-nuclear
     %}
+
     
     {% include row_two.html 
     size = "col-xs-12 col-sm-12 col-md-6 col-lg-6" 

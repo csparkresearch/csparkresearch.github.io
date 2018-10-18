@@ -6,6 +6,8 @@ a:hover {
 	transition: all 0.3s ease;
 }
 .margin-b-30 { margin-bottom: 30px; }
+.margin-b-60 { margin-bottom: 60px; }
+.margin-auto { margin: 0 auto; }
 
 /*
  * 
@@ -27,7 +29,7 @@ body {
 .main-body {
 	float: left;
 	width: 100%;
-	background: url(../images/page-bg.jpg) no-repeat top center;
+	background: url(../images/bg.jpg) no-repeat top center;
 	background-size: 100% auto;
 	background-attachment: fixed;
 }
@@ -199,7 +201,7 @@ body {
 }
 .banner-main-home,
 .banner-main-about {
-	padding: 70px 30px 60px 50px;
+	padding: 30px 10px 20px 20px; /*padding: 70px 30px 60px 50px;*/
 }
 .banner-main-home img {
 	float: right;

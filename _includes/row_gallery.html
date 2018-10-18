@@ -15,10 +15,10 @@
 						{% for image in include.imagelist %}
 						<li style="background-size: cover; height:100%;background-image:url('/assets/images/{{ image.image }}');">
 						  <div >
-							<a href="#">
-							  <h2>{{ image.title }}</h2>
+							<span>
+						      <a href="{{ image.link }}"><h2>{{ image.title }}</h2></a>
 							  <p>{{ image.description }}</p>
-							</a>
+							</span>
 						  </div>
 						</li>
 						{% endfor %}
