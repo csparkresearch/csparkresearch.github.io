@@ -295,11 +295,7 @@ body {
 	width: 100%;
 	padding-left: 15px;
 }
-.desc p {
-	line-height: 1.8;
-	margin-top: 25px;
-	margin-bottom: 30px;
-}
+
 .desc button, .desc2 button {
 	background-color: #033535;
 	color: #fff;
@@ -781,14 +777,14 @@ textarea.form-control {	height:135px; }
 @media screen and (max-width: 1199px) and (min-width: 992px) {
 	
 	.banner-main-home {	padding-bottom: 80px; }
-	.banner-main-home img {	margin-top: 150px; }
+	.banner-main-home img {	margin-top: 10px; }
 	.banner-main-home-text,
 	.banner-main-about-text {
 		width: 43%;
 	}
 
 	.banner-main-about { padding: 70px 30px 60px 30px; }
-	.banner-main-about img { padding-top: 100px; }
+	.banner-main-about img { padding-top: 10px; }
 
 }
 
@@ -837,8 +833,8 @@ textarea.form-control {	height:135px; }
 	.banner-main-home img {
 		display: block;		
 		float: none;
-		margin: 50px auto;
-		padding-top: 50px;
+		margin: 20px auto;
+		padding-top: 20px;
 	}
 	.banner-main-home-text { overflow-y: auto; }
 
