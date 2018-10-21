@@ -1,0 +1,26 @@
+<div id="flow-container" class="row">
+	<div class="col-xs-6 col-sm-6 col-md-6 col-lg-12">
+			<ul id="flow_menu" class="flow_menu">
+			{% for image in include.imagelist %}
+				{% if image.title %}
+					<li>
+						<a href="#">
+							<img src="assets/images/{{ image.image }}" alt=""/>
+							<span class="flow_active"></span>
+							<span class="flow_wrap">
+								<span class="flow_link">{{ image.title }}</span>
+							</span>
+						</a>
+
+					</li>
+				{% elsif image.arrow %}
+						<li class="gaparrow">
+						<div class="arrow-{{image.arrow}}"></div>
+						</li>
+				{% endif %}
+
+			{% endfor %}
+			</ul>
+
+	</div>
+</div> <!-- row -->

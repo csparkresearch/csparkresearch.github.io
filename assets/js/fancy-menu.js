@@ -34,11 +34,7 @@ var main = {
 						 .andSelf()
 						 .find('.sdt_active')
 					     .stop(true)
-						 .animate({'height':'170px'},300,function(){
-
-
-
-					});
+						 .animate({'height':'170px'},300);
 				}).bind('mouseleave',function(){
 					var $elem = $(this);
 					var $sub_menu = $elem.find('.sdt_box');
@@ -63,6 +59,50 @@ var main = {
 						 .stop(true)
 						 .animate({'top':'25px'},500);
 				});
+
+
+
+                $('#flow_menu > li').bind('mouseenter',function(){
+					var $elem = $(this);
+
+					$elem.find('img')
+						 .stop(true)
+						 .animate({
+							'width':'170px',
+							'height':'170px',
+							'left':'0px'
+						 },400,'easeOutBack')
+						 .andSelf()
+						 .find('.flow_wrap')
+					     .stop(true)
+						 .animate({'top':'40px'},500,'easeOutBack')
+						 .andSelf()
+						 .find('.flow_active')
+					     .stop(true)
+						 .animate({'height':'60px'},300);
+				}).bind('mouseleave',function(){
+					var $elem = $(this);
+					var $sub_menu = $elem.find('.flow_box');
+					if($sub_menu.length)
+						$sub_menu.hide().css('left','0px');
+
+					$elem.find('.flow_active')
+						 .stop(true)
+						 .animate({'height':'0px'},300)
+						 .andSelf().find('img')
+						 .stop(true)
+						 .animate({
+							'width':'0px',
+							'height':'0px',
+							'left':'85px'},400)
+						 .andSelf()
+						 .find('.flow_wrap')
+						 .stop(true)
+						 .animate({'top':'5px'},500);
+				});
+
+
+
 
   }
 

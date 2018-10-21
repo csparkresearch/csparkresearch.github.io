@@ -1,9 +1,10 @@
 - title: "AlphaSpec-1K"
   description: "Alpha Spectrometer"
   submenu:
-    - user-manual: site.config.AlphaSpec1K.manual
-    - Software-Win: "alphaspec"
-    - Software-Lin: "gmspec"
+    - user-manual: "assets/pdfs/alphamanual.pdf"
+    - Software-Win: "alphaspec-win"
+    - Software-Lin: "alphaspec-lin"
+    - Publications: "alpha-publications"
   image: Alpha_44.jpg
 - title: "MCA-1K"
   description: "Multi-channel Analyzer"
@@ -15,9 +16,9 @@
 - title: "ExpEYES"
   description: "Your Lab @ Home ..."
   submenu:
-    - user-manual: "expeyes"
-    - Software-Win: "alphaspec"
-    - Software-Lin: "gmspec"
+    - user-manual: "http://expeyes.in/Documents/eyes17-a4.pdf"
+    - Software-Win: "https://drive.google.com/open?id=1p9Bfc9JpXCFWzz3cJ5WbJDrZatekglsj"
+    - Software-Lin: "http://expeyes.in/Documents/eyes17-3.9.0.deb"
   image: expeyes.png
 - title: "GM-Counter"
   description: "Out-of-stock"

@@ -1,0 +1,17 @@
+- title: "Source"
+  image: source.png
+- arrow: 0
+- title: "Detect"
+  image: detector.jpg
+- arrow: 4
+- title: "Preamp"
+  image: preamp.png
+- arrow: 4
+- title: "Shaper"
+  image: shaper-flow.png
+- arrow: 4
+- title: "MCA"
+  image: mca-flow.png
+- arrow: 6
+- title: "PC"
+  image: pc.png

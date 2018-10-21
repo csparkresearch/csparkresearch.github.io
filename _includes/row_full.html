@@ -8,7 +8,11 @@
             </div>
             <div class="desc">
                 <p style="margin-bottom:0px;">{{include.description}}</p>
-				<img src={{include.secondary_image}} alt="Image" class="img-responsive" style="float:left;margin-top:0px;margin-bottom:5px;"><br>
+				{% include flow.html  
+				imagelist = site.data.flow-alphaspec
+				%}
+
+				<!--<img src={{include.secondary_image}} alt="Image" class="img-responsive" style="float:left;margin-top:0px;margin-bottom:5px;"><br>-->
                 <a href="{{ include.link }}"><button role="button" >VISIT PAGE</button></a>
 
             </div>
