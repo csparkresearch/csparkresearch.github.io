@@ -254,6 +254,18 @@ ul.flow_menu li div.flow_box a:hover{
 }
 
 
+@media screen and (max-width: 600px) {
+	ul.flow_menu{
+		margin-bottom:30px;
+		font-size:12px;
+		width:350px;
+	}
+
+	ul.flow_menu li{
+		margin-bottom:20px;
+	}
+
+}
 
 
 /*----------------ARROWS -------------*/
@@ -411,3 +423,6 @@ ul.flow_menu li div.flow_box a:hover{
 	/* top - distance plus border */
 	top: -7px; left: 5px;
 }
+
+
+

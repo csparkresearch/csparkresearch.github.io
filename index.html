@@ -5,10 +5,14 @@ show-navigation: true
 
 <div class="content-main">
 
-	<div class="row margin-b-60"></div>
+    {% include animated-banner.html  
+    title = site.title
+    %}
+
     {% include fancy-menu.html  
     imagelist = site.data.fancy-menu-nuclear
     %}
+
 
 
 	<div class="row margin-b-30">

@@ -9,7 +9,8 @@ var main = {
 				* sdt_wrap span. If the element has a sub menu (sdt_box),
 				* then we slide it - if the element is the last one in the menu
 				* we slide it to the left, otherwise to the right
-				*/
+				*/				
+				
                 $('#sdt_menu > li').bind('mouseenter',function(){
 					var $elem = $(this);
 

@@ -58,3 +58,54 @@ $turquoise: #1abc9c;
     box-shadow: 0 0 10px 0 $blue inset, 0 0 10px 4px $blue;
   }
 }
+
+
+/* -------------- related to animated header ------------*/
+
+
+#mybanner {
+	text-transform: uppercase;
+	letter-spacing: .5em;
+	display: inline-block;
+	border: 4px double rgba(255,255,255,.25);
+	border-width: 4px 0;
+	padding: .1em 0em;
+	width: 100%;
+	margin: 0 0 0 0;
+  	color:#fff;
+  	text-align:center;
+  
+  span {
+
+  	font: 700 3em/1 "Oswald", sans-serif;
+  	letter-spacing: 0;
+  	padding: .25em 0 .2em;
+	  display: block;
+	  margin: 0 auto;
+  	text-shadow: 0 0 80px rgba(255,255,255,.8);
+
+/* Clip Background Image */
+
+	  background: url("../images/text-bg.jpeg") repeat-y;
+	  -webkit-background-clip: text;
+	  background-clip: text;
+
+/* Animate Background Image */
+
+	  -webkit-text-fill-color: transparent;
+	  -webkit-animation: aitf 80s linear infinite;
+
+/* Activate hardware acceleration for smoother animations */
+
+	  -webkit-transform: translate3d(0,0,0);
+	  -webkit-backface-visibility: hidden;
+
+  }
+}
+
+/* Animate Background Image */
+
+@-webkit-keyframes aitf {
+	0% { background-position: 0% 50%; }
+	100% { background-position: 100% 50%; }
+}
