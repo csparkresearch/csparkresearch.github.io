@@ -88,8 +88,8 @@ body {
 .main-menu-link {
 	color: #fff;
 	display: block;
-	font-weight: 300;
-	font-size: 15px;	
+	font-weight: 500;
+	font-size: 18px;	
 }
 
 .main-menu-link-text {
@@ -148,7 +148,7 @@ body {
 
 .home {
 	background-color: rgba(16, 165, 205, 0.8);
-	background-image: url(../images/menu-bg-home.png);
+	background-image: url(../images/home-bg-coffee.jpg);
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
 }
