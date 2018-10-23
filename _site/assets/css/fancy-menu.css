@@ -4,7 +4,7 @@ ul.sdt_menu{
 	list-style: none;
 	font-family:"Myriad Pro", "Trebuchet MS", sans-serif;
 	font-size:14px;
-	width:1020px;
+	width:auto;
 }
 ul.sdt_menu a{
 	text-decoration:none;
@@ -134,13 +134,15 @@ ul.sdt_menu li div.sdt_box a:hover{
 
 
 /*------------- flow   --------------------*/
+
+
 ul.flow_menu{
 	margin:0;
 	padding:0;
 	list-style: none;
 	font-family:"Myriad Pro", "Trebuchet MS", sans-serif;
 	font-size:12px;
-	width:600px;
+	width:auto;
 }
 ul.flow_menu a{
 	text-decoration:none;
@@ -152,6 +154,7 @@ ul.flow_menu li{
 	height:30px;
 	position:relative;
 	cursor:pointer;
+		margin-bottom:20px;
 }
 ul.flow_menu li > a{
 	position:absolute;
@@ -253,19 +256,6 @@ ul.flow_menu li div.flow_box a:hover{
 	float: none;
 }
 
-
-@media screen and (max-width: 600px) {
-	ul.flow_menu{
-		margin-bottom:30px;
-		font-size:12px;
-		width:350px;
-	}
-
-	ul.flow_menu li{
-		margin-bottom:20px;
-	}
-
-}
 
 
 /*----------------ARROWS -------------*/

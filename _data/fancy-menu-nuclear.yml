@@ -5,10 +5,10 @@
     - Software-Win: "alphaspec-win"
     - Software-Lin: "alphaspec-lin"
     - Publications: "alpha-publications"
-  image: Alpha_44.jpg
+  image: Alpha_thumb.jpg
 - title: "MCA-1K"
   description: "Multi-channel Analyzer"
-  image: mca_thumb.jpg
+  image: mca_gallery_thumb.jpg
   submenu:
     - user-manual: "expeyes"
     - Software-Win: "alphaspec"
@@ -19,7 +19,7 @@
     - user-manual: "http://expeyes.in/Documents/eyes17-a4.pdf"
     - Software-Win: "https://drive.google.com/open?id=1p9Bfc9JpXCFWzz3cJ5WbJDrZatekglsj"
     - Software-Lin: "http://expeyes.in/Documents/eyes17-3.9.0.deb"
-  image: expeyes.png
+  image: expeyes_thumb.jpg
 - title: "GM-Counter"
   description: "Out-of-stock"
   image: shaded_spin.gif
