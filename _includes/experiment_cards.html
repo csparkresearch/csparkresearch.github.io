@@ -1,10 +1,10 @@
-			{% assign schemaPng = "images/schematics/"| append: imagebase| append: ".png" %}
+			{% assign schemaPng = "images/schematics/"| append: include.imagebase| append: ".png" %}
 			{% capture schemaPngExists %}{% file_exists {{ "_eyes17/"| append: schemaPng }} %}{% endcapture %}
-			{% assign schemaSvg = "images/schematics/"| append: imagebase| append: ".svg" %}
+			{% assign schemaSvg = "images/schematics/"| append: include.imagebase| append: ".svg" %}
 			{% capture schemaSvgExists %}{% file_exists {{ "_eyes17/"| append: schemaSvg }} %}{% endcapture %}
-			{% assign screenshot = "images/screenshots/"| append: imagebase| append: ".png" %}
+			{% assign screenshot = "images/screenshots/"| append: include.imagebase| append: ".png" %}
 			{% capture screenshotExists %}{% file_exists {{ "_eyes17/"| append: screenshot }} %}{% endcapture %}
-			{% assign photo = "images/photographs/"| append: imagebase| append: ".jpg" %}
+			{% assign photo = "images/photographs/"| append: include.imagebase| append: ".jpg" %}
 			{% capture photoExists %}{% file_exists {{ "_eyes17/"| append: photo }} %}{% endcapture %}
 
 			<div class="row">
