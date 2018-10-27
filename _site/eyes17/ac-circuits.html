@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  
+
+  
+    
+      <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
+    
+      <link rel="stylesheet" href="../assets/font-awesome/css/font-awesome.min.css" />
+    
+      <link rel="stylesheet" href="../assets/css/style.css" />
+    
+      <link rel="stylesheet" href="../assets/css/highlight.css" />
+    
+      <link rel="stylesheet" href="../assets/css/style-row.css" />
+    
+      <link rel="stylesheet" href="../assets/css/style-button.css" />
+    
+      <link rel="stylesheet" href="../assets/css/fancy-menu2.css" />
+    
+  
+
+  
+    
+      <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
+    
+      <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" />
+    
+  
+
+  
+
+  
+
+  
+
+    <!-- Facebook OpenGraph tags -->
+  
+
+  
+  <meta property="og:title" content="RLC steady state" />
+  
+
+   
+  <meta property="og:description" content="
+
+		
+		Introduction to the experiment, and phasor plot: Mouseover to play
+		
+	 
+
+
+
+
+
+
+    
+						
+			
+				Theoretical phase shift calculator
+				
+				
+					
+					  Frequency
+					  
+					  Hz
+					
+
+				
+				
+				
+					
+					  Resistance
+					  
+					  Ohms
+					
+
+				
+								
+				
+					
+					  Capacitance
+					  
+					  F
+					
+				
+				
+				
+					
+					  Inductance
+					  
+					  H
+					
+							
+
+				
+				
+			
+		
+			
+				Results:
+			  
+
+			
+		
+	
+
+
+
+
+
+">
+  
+
+
+  <meta property="og:type" content="website" />
+
+  
+  <meta property="og:url" content="http://localhost:4000/eyes17/ac-circuits.html" />
+  <link rel="canonical" href="http://localhost:4000/eyes17/ac-circuits.html" />
+  
+
+  
+  <meta property="og:image" content="http://localhost:4000assets/images/avatar-icon.png" />
+  
+
+
+  <!-- Twitter summary cards -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@" />
+  <meta name="twitter:creator" content="@" />
+
+  
+  <meta name="twitter:title" content="RLC steady state" />
+  
+
+  
+  <meta name="twitter:description" content="
+
+		
+		Introduction to the experiment, and phasor plot: Mouseover to play
+		
+	 
+
+
+
+
+
+
+    
+						
+			
+				Theoretical phase shift calculator
+				
+				
+					
+					  Frequency
+					  
+					  Hz
+					
+
+				
+				
+				
+					
+					  Resistance
+					  
+					  Ohms
+					
+
+				
+								
+				
+					
+					  Capacitance
+					  
+					  F
+					
+				
+				
+				
+					
+					  Inductance
+					  
+					  H
+					
+							
+
+				
+				
+			
+		
+			
+				Results:
+			  
+
+			
+		
+	
+
+
+
+
+
+">
+  
+
+  
+  <meta name="twitter:image" content="http://localhost:4000assets/images/avatar-icon.png" />
+  
+
+  
+
+
+    <!--<link rel='stylesheet' type='text/css' href='http://fonts.useso.com/css?family=Open+Sans:300,400,600,700,400italic'> -->
+
+    <title>CSpark Research</title>
+
+</head>
+
+
+<body>
+
+    
+
+	<div class="sticky-button">
+		<a href="/"><button class="mybtn first">Home</button></a>
+	</div>
+
+	 <div class="main-body">
+	    <div class="container">
+			<div class="row" >
+				<div class="row">               
+					<div class="content-main-full">
+					
+
+						<div class="row margin-b-30">
+		<div class="col-xs-12 col-sm-12 col-md-12 biliend">
+
+		<p id="mybanner">
+		  <span>
+			RLC steady state
+		  </span>
+		  Steady state response of RLC circuits
+		</p>
+
+		</div>
+	</div>
+
+
+					
+						
+									
+			
+			
+			
+			
+			
+			
+			
+
+			<div class="row">
+					
+					  <div class="col-md-4">
+						<div class="thumbnail">
+							<img src="images/schematics/ac-circuits.svg" alt="schematic" class="img-thumbnail" style="width:100%">
+							<div class="caption">
+							  <p>Schematic</p>
+							</div>
+						</div>
+					  </div>
+							
+					
+					  <div class="col-md-4">
+						<div class="thumbnail">
+							<img src="images/screenshots/ac-circuits.png" alt="screenshot" class="img-thumbnail" style="width:100%">
+							<div class="caption">
+							  <p>Screenshot</p>
+							</div>
+						</div>
+					  </div>
+							
+					
+					  <div class="col-md-4">
+						<div class="thumbnail">
+							<img src="images/photographs/ac-circuits.jpg" alt="photo" class="img-thumbnail" style="width:100%">
+							<div class="caption">
+							  <p>Photograph</p>
+							</div>
+						</div>
+					  </div>
+							
+			</div> <!-- row -->
+
+
+						
+					
+					
+<div class=" col-xs-12 col-sm-12 col-md-12">
+		
+		<h2 style="text-align:left;">Introduction to the experiment, and phasor plot: Mouseover to play</h2><hr />
+		
+	<img id="images/screenshots/ac-circuits.png" class="img-responsive" style="bottom:0px;" src="images/screenshots/ac-circuits.png" /> 
+
+</div>
+
+<script type="text/javascript" src="../js/math.min.js"></script>
+
+<div class="container" style="margin-bottom:40px;">
+    <section class="container">
+		<div class="container-page">				
+			<div class="col-md-6">
+				<h2 class="dark-grey">Theoretical phase shift calculator</h2><hr />
+				<form name="form2">
+				<div class="form-group col-lg-6">
+					<div class="input-group">
+					  <span class="input-group-addon">Frequency</span>
+					  <input type="text" name="frq" class="form-control" value="157" />
+					  <span class="input-group-addon">Hz</span>
+					</div>
+
+				</div>
+				
+				<div class="form-group col-lg-6">
+					<div class="input-group">
+					  <span class="input-group-addon">Resistance</span>
+					  <input type="" name="R" class="form-control" value="1e3" />
+					  <span class="input-group-addon">Ohms</span>
+					</div>
+
+				</div>
+								
+				<div class="form-group col-lg-6">
+					<div class="input-group">
+					  <span class="input-group-addon">Capacitance</span>
+					  <input type="" name="C" class="form-control" value="1e-6" />
+					  <span class="input-group-addon">F</span>
+					</div>
+				</div>
+				
+				<div class="form-group col-lg-6">
+					<div class="input-group">
+					  <span class="input-group-addon">Inductance</span>
+					  <input type="" name="L" class="form-control" value="10e-3" />
+					  <span class="input-group-addon">H</span>
+					</div>
+				</div>			
+
+				<input type="button" class="btn btn-primary" onclick="cal2()" value="Calculate" />
+				</form>
+			</div>
+		
+			<div class="col-md-6">
+				<h2 class="dark-grey">Results:</h2>
+			  <textarea class="form-control animated" style="min-height:120px;" id="calcResults"></textarea>
+
+			</div>
+		</div>
+	</section>
+</div>
+<p><br /></p>
+
+<script>
+function cal2(){
+	var frq,R,C,L,XC,XL,dphi;
+	frq = parseFloat(document.form2.frq.value);
+	R = parseFloat(document.form2.R.value);
+	C = parseFloat(document.form2.C.value);
+	L = parseFloat(document.form2.L.value);
+
+	XL = 2*3.1415*frq*L
+    if(C != 0){XC = 1./(2*3.1415*frq*C); }
+	else {XC = 0.0;}
+	
+	dphi = math.atan( (XC-XL)/R)*180./3.1415;
+	
+	document.getElementById('calcResults').value = "Capacitive Reactance: "+XC.toExponential(2)+"\nInductive Reactance: "+XL.toExponential(2)+"\nPhase Shift : "+dphi.toFixed(2)+" degree";
+
+}
+</script>
+
+
+					</div>
+					
+					<footer class="row">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 footer">
+        <p class="copyright">Copyright © 2018 <a href="/" target="_blank" title="cspark">CSpark Research</a></p>
+    </div>    
+</footer>  
+
+					</div> 
+	    		</div> 
+		</div> 
+	</div> 
+
+ 
+
+
+
+
+
+
+
+
+
+
+  
+	<script src="../assets/js/jquery.min.js"></script>
+  
+	<script src="../assets/js/bootstrap.min.js"></script>
+  
+	<script src="../assets/js/main.js"></script>
+  
+	<script src="../assets/js/easing.js"></script>
+  
+	<script src="../assets/js/fancy-menu2.js"></script>
+  
+
+
+
+
+<script>
+    function init_masonry(){
+      var $container = $('#content');
+
+      $container.imagesLoaded( function(){
+          $container.masonry({
+            itemSelector: '.box',
+            isAnimated: true
+        });
+      });
+    }
+
+    $(document).ready(function(){
+        
+        //Init jQuery Masonry layout
+        init_masonry();
+
+        // Magnific Popup
+        $('.gallery-images-container').magnificPopup({
+            delegate: 'a', // child items selector, by clicking on it popup will open
+            type: 'image',
+            gallery: {
+                enabled: true,
+                navigateByImgClick: true,
+                preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+            },
+        });
+
+        //Select menu onchange
+        $("#collapsed-navbar").change(function () {
+            window.location = $(this).val();
+        });
+    
+    });    
+
+</script>
+
+
+</body>
+</html> 
+
+
+   
+    
+
