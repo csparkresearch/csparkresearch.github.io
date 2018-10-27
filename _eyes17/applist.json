@@ -1,0 +1,4 @@
+---
+layout: nil
+---
+{% include base_url.html %}{"":"" {% for p in site.apps %}, "{{ p.title }}":"{{base}}{{ p.url }}"{% endfor %} }

@@ -1,0 +1,58 @@
+
+<script>
+function cal2(){
+	var r1,r2,deno,num,res;
+	r1 = document.form2.r1.value;
+	r2 = document.form2.r2.value;
+	num = r1*r2;
+	deno = parseFloat(r1)+parseFloat(r2);
+	res = num/deno;
+	document.form2.res.value = res.toExponential(2);
+}
+</script>
+
+
+<script type="text/javascript" src="../js/math.min.js"></script>
+<div class="container" style="margin-bottom:40px;">
+    <section class="container">
+		<div class="container-page">				
+			<div class="col-md-6">
+				<h2 class="dark-grey"> Calculate net capacitance of capacitors connected in series.</h2><hr>
+				<form name="form2">
+								
+				<div class="form-group col-lg-6">
+					<div class="input-group">
+					  <span class="input-group-addon">Capacitor 1</span>
+					  <input type="" name="r1" class="form-control" id="" value="1e-6">
+					  <span class="input-group-addon">F</span>
+					</div>
+				</div>
+
+				<div class="form-group col-lg-6">
+					<div class="input-group">
+					  <span class="input-group-addon">Capacitor 2</span>
+					  <input type="" name="r2" class="form-control" id="" value="1e-6">
+					  <span class="input-group-addon">F</span>
+					</div>
+				</div>
+
+				<div class="form-group col-lg-6">
+				     <input type="button" class="btn btn-primary" onclick="cal2()" value="Calculate">
+				</div>
+
+				<div class="form-group col-lg-6">
+					<div class="input-group">
+					  <span class="input-group-addon">Result:</span>
+					  <input type="" name="res" class="form-control" id="" value="" readonly>
+					  <span class="input-group-addon">F</span>
+					</div>
+				</div>
+
+				</form>
+			</div>
+		
+		</div>
+	</section>
+</div><br>
+
+

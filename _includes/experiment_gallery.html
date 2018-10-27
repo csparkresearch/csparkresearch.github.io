@@ -1,0 +1,65 @@
+{% include base_url.html %}
+
+<div id="fancy-container" class="row margin-b-30 fancy-menu-container">
+	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+			<ul id="sdt_menu" class="sdt_menu">
+			{% for p in site.eyes17 %}
+				<li class="margin-b-30">
+					<a href = "{{base}}{{ p.url }}">
+						  {% if p.imagebase or p.thumb %}
+						    {% if p.thumb %}
+							  {% assign imagebase = p.thumb %}
+ 						    {% else %}
+							  {% assign imagebase = p.imagebase %}
+ 						    {% endif %}
+						  
+						  
+							{% assign schemaPng = "images/schematics/"| append: imagebase| append: ".png" %}
+							{% capture schemaPngExists %}{% file_exists {{ "_eyes17/"| append: schemaPng }} %}{% endcapture %}
+
+							{% assign schemaSvg = "images/schematics/"| append: imagebase| append: ".svg" %}
+							{% capture schemaSvgExists %}{% file_exists {{ "_eyes17/"| append: schemaSvg }} %}{% endcapture %}
+
+							{% assign screenshot = "images/screenshots/"| append: imagebase| append: ".png" %}
+							{% capture screenshotExists %}{% file_exists {{ "_eyes17/"| append: screenshot }} %}{% endcapture %}
+
+							{% if schemaPngExists == "true" %}
+							  {% assign myImg= schemaPng  %}
+							{% elsif schemaSvgExists == "true" %}
+							  {% assign myImg= schemaSvg  %}
+							{% elsif screenshotExists == "true" %}
+							  {% assign myImg= screenshot  %}
+							{% else %}
+							  {% assign myImg= 'none'  %}
+							{% endif %}		
+ 						  <img src="{{ myImg }}" alt=""/>
+						  {% endif %}
+
+						<span class="sdt_active"></span>
+						<span class="sdt_wrap">
+							<span class="sdt_link">{{ p.title }}</span>
+							<span class="sdt_descr">{{ p.description }}</span>
+
+							{% if image.submenu %}
+							<div class="sublinks">
+								{% for link in image.submenu %}
+									<a href="{{ link.first[1] }}"><button class="btn third">{{ link.first[0] }}</button></a>
+								{% endfor %}
+							</div>
+							{% endif %}
+
+						</span>
+					</a>
+
+				</li>
+
+			{% endfor %}
+			</ul>
+
+	</div>
+</div> <!-- row -->
+   
+
+
+

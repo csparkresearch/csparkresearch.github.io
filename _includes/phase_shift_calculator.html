@@ -1,0 +1,52 @@
+<hr><h2>Enter the measured values in the following boxes and click to calculate the theoretical phase shift</h2><hr>
+
+<div class="container pull-left">
+  <form class="form-horizontal" name="form2" >
+    <div class="form-group">
+      <label class="control-label col-sm-3" for="email">Frequency  :</label>
+      <div class="col-sm-3">
+        <input type="email" class="form-control" name="frq">
+      </div>
+      <label class="control-label col-sm-3" for="email">Resistance  :</label>
+      <div class="col-sm-3">
+        <input type="email" class="form-control" name="res">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-3" for="email">Capacitance  :</label>
+      <div class="col-sm-3">
+        <input type="email" class="form-control" name="C">
+      </div>
+      <label class="control-label col-sm-3" for="email">Inductance  :</label>
+      <div class="col-sm-3">
+        <input type="email" class="form-control" name="L">
+      </div>
+    </div>
+    <div class="form-group">        
+      <div class="col-sm-offset-2 col-sm-4">
+        <input type="button" class="btn btn-default" onclick="cal2()" value="Calculate">
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label class="left-label control-label col-sm-12" id="answers"></label>
+    </div>
+
+  </form>
+</div>
+<hr>
+<br><br><br>
+
+ 
+<script>
+function cal2(){
+	var frq,R,C,L;
+	frq = document.form2.frq.value;
+	R = document.form2.R.value;
+	C = document.form2.C.value;
+	L = document.form2.L.value;
+
+	document.getElementById('answers').innerHTML="Voltage Drop(PV3-CH3): "+(v1-v2)*1e3+" milliVolts";
+
+}
+</script>

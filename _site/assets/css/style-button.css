@@ -1,4 +1,4 @@
-.btn {
+.mybtn {
   box-sizing: border-box;
   appearance: none;
   background-color: transparent;
@@ -19,7 +19,7 @@
   text-transform: uppercase;
   font-family: 'Montserrat', sans-serif;
   font-weight: 700; }
-  .btn:hover, .btn:focus {
+  .mybtn:hover, .mybtn:focus {
     color: #fff;
     outline: 0; }
 

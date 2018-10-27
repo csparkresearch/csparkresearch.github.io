@@ -1,53 +1,31 @@
 
-<script src="assets/js/jquery-1.11.3.min.js"></script>
-<script src="assets/js/bootstrap.min.js"></script>
-<!--
-<script>
-    /* Google map
-    ------------------------------------------------*/
-    var map = '';
-    var center;
 
-    function initialize() {
-        var mapOptions = {
-                            zoom: 16,
-                            center: new google.maps.LatLng(13.758468,100.567481),
-                            scrollwheel: false
-                        };  
-    
-        map = new google.maps.Map(document.getElementById('google-map'),  mapOptions);
 
-        google.maps.event.addDomListener(map, 'idle', function() {
-            calculateCenter();
-        });
-    
-        google.maps.event.addDomListener(window, 'resize', function() {
-            map.setCenter(center);
-        });
-    } // initialize
+{% if layout.common-ext-js %}
+  {% for js in layout.common-ext-js %}
+    {% include ext-js.html js=js %}
+  {% endfor %}
+{% endif %}
 
-    function calculateCenter() {
-        center = map.getCenter();
-    }
+{% if page.ext-js %}
+  {% for js in page.ext-js %}
+    {% include ext-js.html js=js %}
+  {% endfor %}
+{% endif %}
 
-    function loadGoogleMap(){
-        var script = document.createElement('script');
-        script.type = 'text/javascript';
-        script.src = 'https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&' + 'callback=initialize';
-        document.body.appendChild(script);
-    }
-  
-    // DOM is ready.
-    $(document).ready(function(){
-        loadGoogleMap();
-    });
-</script>
--->
+{% if page.js %}
+  {% for js in page.js %}
+	<script src="{{ js | prepend: site.baseurl | replace: '//', '/' }}"></script>
+  {% endfor %}
+{% endif %}
 
-<!-- for gallery -->
-<script src="assets/js/imagesloaded.3.1.8.min.js"></script>
-<script src="assets/js/jquery.masonry.3.2.1.min.js"></script> <!-- http://masonry.desandro.com/ -->
-<script src="assets/js/jquery.magnific-popup.min.js"></script> <!-- http://dimsemenov.com/plugins/magnific-popup/ -->
+{% if layout.common-js %}
+  {% for js in layout.common-js %}
+	<script src="{{ js | prepend: site.baseurl | replace: '//', '/' }}"></script>
+  {% endfor %}
+{% endif %}
+
+
 
 <script>
     function init_masonry(){
@@ -85,36 +63,3 @@
     });    
 
 </script>
-
-{% if layout.common-ext-js %}
-  {% for js in layout.common-ext-js %}
-    {% include ext-js.html js=js %}
-  {% endfor %}
-{% endif %}
-
-{% if page.ext-js %}
-  {% for js in page.ext-js %}
-    {% include ext-js.html js=js %}
-  {% endfor %}
-{% endif %}
-
-{% if page.js %}
-  {% for js in page.js %}
-	<script src="{{ js | prepend: site.baseurl | replace: '//', '/' }}"></script>
-  {% endfor %}
-{% endif %}
-
-{% if layout.common-js %}
-  {% for js in layout.common-js %}
-    <!-- doing something a bit funky here because I want to be careful not to include JQuery twice! -->
-    {% if js contains 'jquery' %}
-      <script>
-      	if (typeof jQuery == 'undefined') {
-      	  document.write('<script src="{{ js | prepend: site.baseurl | replace: "//", "/" }}"></scr' + 'ipt>');
-      	}
-      </script>
-    {% else %}
-	<script src="{{ js | prepend: site.baseurl | replace: '//', '/' }}"></script>
-    {% endif %}
-  {% endfor %}
-{% endif %}

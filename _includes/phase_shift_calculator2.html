@@ -1,0 +1,76 @@
+<script type="text/javascript" src="../js/math.min.js"></script>
+<div class="container" style="margin-bottom:40px;">
+    <section class="container">
+		<div class="container-page">				
+			<div class="col-md-6">
+				<h2 class="dark-grey">Theoretical phase shift calculator</h2><hr>
+				<form name="form2">
+				<div class="form-group col-lg-6">
+					<div class="input-group">
+					  <span class="input-group-addon">Frequency</span>
+					  <input type="text" name="frq" class="form-control" id="" value="157">
+					  <span class="input-group-addon">Hz</span>
+					</div>
+
+				</div>
+				
+				<div class="form-group col-lg-6">
+					<div class="input-group">
+					  <span class="input-group-addon">Resistance</span>
+					  <input type="" name="R" class="form-control" id="" value="1e3">
+					  <span class="input-group-addon">Ohms</span>
+					</div>
+
+				</div>
+								
+				<div class="form-group col-lg-6">
+					<div class="input-group">
+					  <span class="input-group-addon">Capacitance</span>
+					  <input type="" name="C" class="form-control" id="" value="1e-6">
+					  <span class="input-group-addon">F</span>
+					</div>
+				</div>
+				
+				<div class="form-group col-lg-6">
+					<div class="input-group">
+					  <span class="input-group-addon">Inductance</span>
+					  <input type="" name="L" class="form-control" id="" value="10e-3">
+					  <span class="input-group-addon">H</span>
+					</div>
+				</div>			
+
+				<input type="button" class="btn btn-primary" onclick="cal2()" value="Calculate">
+				</form>
+			</div>
+		
+			<div class="col-md-6">
+				<h2 class="dark-grey">Results:</h2>
+			  <textarea class="form-control animated" style="min-height:120px;" id="calcResults"></textarea>
+
+			</div>
+		</div>
+	</section>
+</div><br>
+
+
+
+<script>
+function cal2(){
+	var frq,R,C,L,XC,XL,dphi;
+	frq = parseFloat(document.form2.frq.value);
+	R = parseFloat(document.form2.R.value);
+	C = parseFloat(document.form2.C.value);
+	L = parseFloat(document.form2.L.value);
+
+	XL = 2*3.1415*frq*L
+    if(C != 0){XC = 1./(2*3.1415*frq*C); }
+	else {XC = 0.0;}
+	
+	dphi = math.atan( (XC-XL)/R)*180./3.1415;
+	
+	document.getElementById('calcResults').value = "Capacitive Reactance: "+XC.toExponential(2)+"\nInductive Reactance: "+XL.toExponential(2)+"\nPhase Shift : "+dphi.toFixed(2)+" degree";
+
+}
+</script>
+
+

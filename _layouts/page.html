@@ -1,0 +1,60 @@
+---
+common-css:
+  - "assets/css/bootstrap.min.css"
+  - "assets/font-awesome/css/font-awesome.min.css"
+  - "assets/css/style.css"
+  - "assets/css/style-row.css"
+  - "assets/css/style-button.css"
+  - "assets/css/fancy-menu.css"
+common-googlefonts:
+  - "Lora:400,700,400italic,700italic"
+  - "Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800"
+common-js:
+  - "assets/js/jquery.min.js"
+  - "assets/js/easing.js"
+  - "assets/js/bootstrap.min.js"
+  - "assets/js/main.js"
+  - "assets/js/fancy-menu.js"
+show-avatar: true
+---
+
+<!DOCTYPE html>
+<html lang="en">
+{% include head.html %}
+
+<body>
+
+    {%comment%}{% include header.html %}{% endcomment %}
+
+	<div class="sticky-button">
+		<a href="/"><button class="mybtn first">Home</button></a>
+	</div>
+
+	 <div class="main-body">
+	    <div class="container">
+	        <div class="row">               
+				<div class="content-main-full">
+
+				{% include animated-banner.html  
+				title = page.title
+				description = page.tagline
+				%}
+				
+				{{content}}
+				
+				{% include footer.html %}
+	    		</div> 
+	    		</div> 
+		</div> 
+	</div> 
+
+ 
+{% include scripts.html %}
+
+</body>
+</html> 
+
+
+   
+    
+

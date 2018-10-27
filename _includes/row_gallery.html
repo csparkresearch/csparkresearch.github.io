@@ -1,11 +1,13 @@
 <div class="row">
-	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+	<div class="hidden-xs col-sm-12 col-md-12 col-lg-12">
 		<div class="box bottom-main">
 			<div class="info float-container">
+				{% if include.title %}
 				<div class="col-sm-12 bottom-title">
 					<h3 class="text-uppercase">{{ include.title }}</h3>
 					<h4 class="text-uppercase">{{ include.subtitle }}</h4>
 				</div>
+				{% endif %}
 				<div class="row">
 
 

@@ -1,0 +1,150 @@
+---
+common-css:
+  - "../assets/css/bootstrap.min.css"
+  - "../assets/font-awesome/css/font-awesome.min.css"
+  - "../assets/css/style.css"
+  - "../assets/css/highlight.css"
+  - "../assets/css/style-row.css"
+  - "../assets/css/style-button.css"
+  - "../assets/css/fancy-menu2.css"
+common-googlefonts:
+  - "Lora:400,700,400italic,700italic"
+  - "Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800"
+common-js:
+  - "../assets/js/jquery.min.js"
+  - "../assets/js/bootstrap.min.js"
+  - "../assets/js/main.js"
+  - "../assets/js/easing.js"
+  - "../assets/js/fancy-menu2.js"
+  - "../assets/js/gifffer.min.js"
+show-avatar: false
+---
+
+
+<!DOCTYPE html>
+<html lang="en">
+{% include base_url.html %}
+{% include head.html %}
+
+<body>
+
+    {%comment%}{% include header.html %}{% endcomment %}
+
+	<div class="sticky-button">
+		<a href="/"><button class="mybtn first">Home</button></a>
+	</div>
+
+	 <div class="main-body">
+	    <div class="container">
+	        <div class="row">               
+				<div class="content-main-full">
+			    {% if page.description %}
+				  {% assign tagline = page.description %}
+				{% elsif page.tagline %}
+				  {% assign tagline = page.tagline %}
+				{% else %}
+				  {% assign tagline = " Documentation " %}
+				{% endif %}
+
+				{% include animated-banner.html  
+				title = page.title
+				description = tagline
+				%}
+			{% if page.imagebase %}
+		    {% assign imagebase = page.imagebase %}
+			{% assign schemaPng = "images/schematics/"| append: imagebase| append: ".png" %}
+			{% capture schemaPngExists %}{% file_exists {{ "_eyes17/"| append: schemaPng }} %}{% endcapture %}
+			{% assign schemaSvg = "images/schematics/"| append: imagebase| append: ".svg" %}
+			{% capture schemaSvgExists %}{% file_exists {{ "_eyes17/"| append: schemaSvg }} %}{% endcapture %}
+			{% assign screenshot = "images/screenshots/"| append: imagebase| append: ".png" %}
+			{% capture screenshotExists %}{% file_exists {{ "_eyes17/"| append: screenshot }} %}{% endcapture %}
+			{% assign photo = "images/photographs/"| append: imagebase| append: ".jpg" %}
+			{% capture photoExists %}{% file_exists {{ "_eyes17/"| append: photo }} %}{% endcapture %}
+
+			<div class="row">
+					{% if schemaPngExists == "true" %}
+					  <div class="col-md-4">
+						<div class="thumbnail">
+							<img src="{{ schemaPng }}" alt="schematic" class="img-thumbnail" style="width:100%">
+							<div class="caption">
+							  <p>Schematic</p>
+							</div>
+						</div>
+					  </div>
+					{% elsif schemaSvgExists == "true" %}
+					  <div class="col-md-4">
+						<div class="thumbnail">
+							<img src="{{ schemaSvg }}" alt="schematic" class="img-thumbnail" style="width:100%">
+							<div class="caption">
+							  <p>Schematic</p>
+							</div>
+						</div>
+					  </div>
+					{% endif %}		
+					{% if screenshotExists == "true" %}
+					  <div class="col-md-4">
+						<div class="thumbnail">
+							<img src="{{ screenshot }}" alt="screenshot" class="img-thumbnail" style="width:100%">
+							<div class="caption">
+							  <p>Screenshot</p>
+							</div>
+						</div>
+					  </div>
+					{% endif %}		
+					{% if photoExists == "true" %}
+					  <div class="col-md-4">
+						<div class="thumbnail">
+							<img src="{{ photo }}" alt="photo" class="img-thumbnail" style="width:100%">
+							<div class="caption">
+							  <p>Photograph</p>
+							</div>
+						</div>
+					  </div>
+					{% endif %}		
+			</div> <!-- row -->
+			<div class="row" >
+				{% if page.screencast %}
+					{% if page.screencast=="giffer" %}
+						{% capture gifpath %}images/screencasts/{{page.imagebase}}.gif{% endcapture %}
+						{% include giffer.html url=gifpath title = page.screencast-title%}
+					{% endif %}
+
+					{% if page.screencast=="yes" %}
+						{% capture gifpath %}images/screencasts/{{page.imagebase}}.gif{% endcapture %}
+						{% capture posterpath %}images/screenshots/{{page.imagebase}}.png{% endcapture %}
+						{% include animated_gif.html url=gifpath poster=posterpath  title = page.screencast-title%}
+					{% elsif page.screencast == "ogv" %}
+						{% capture vidpath %}images/screencasts/{{page.imagebase}}.ogv{% endcapture %}
+						{% capture posterpath %}images/screenshots/{{page.imagebase}}.png{% endcapture %}
+						{% include html5_video.html poster=posterpath url=vidpath title = page.screencast-title%}
+					{% endif %}
+				{% endif %}
+			</div>
+
+
+			{% endif %}
+
+
+
+
+
+
+				
+				{{content}}
+				
+				{% include footer.html %}
+	    		</div> 
+	    		</div> 
+		</div> 
+	</div> 
+
+ 
+{% include scripts.html %}
+
+</body>
+</html> 
+
+
+   
+    
+
