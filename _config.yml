@@ -17,12 +17,6 @@ linkedin: http://www.linkedin.com  ## your linkedin account url
 dribbble: http://www.dribble.com  ## you dribbble account url
 foursquare: http://www.foursquare.com  ## your foursquare account url
 
-include: ['eyes17']
-
-collections:
- eyes17:
-  permalink: /eyes17/:path.html
-  output: true
 
 
 # List of links in the navigation bar
