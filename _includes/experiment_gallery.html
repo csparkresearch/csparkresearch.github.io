@@ -16,24 +16,8 @@
 						  
 						  
 							{% assign schemaPng = "images/schematics/"| append: imagebase| append: ".png" %}
-							{% capture schemaPngExists %}{% file_exists {{ "_eyes17/"| append: schemaPng }} %}{% endcapture %}
-
-							{% assign schemaSvg = "images/schematics/"| append: imagebase| append: ".svg" %}
-							{% capture schemaSvgExists %}{% file_exists {{ "_eyes17/"| append: schemaSvg }} %}{% endcapture %}
-
-							{% assign screenshot = "images/screenshots/"| append: imagebase| append: ".png" %}
-							{% capture screenshotExists %}{% file_exists {{ "_eyes17/"| append: screenshot }} %}{% endcapture %}
-
-							{% if schemaPngExists == "true" %}
-							  {% assign myImg= schemaPng  %}
-							{% elsif schemaSvgExists == "true" %}
-							  {% assign myImg= schemaSvg  %}
-							{% elsif screenshotExists == "true" %}
-							  {% assign myImg= screenshot  %}
-							{% else %}
-							  {% assign myImg= 'none'  %}
-							{% endif %}		
- 						  <img src="{{ myImg }}" alt=""/>
+						    {% assign myImg= schemaPng  %}
+  						    <img src="{{ myImg }}" alt=""/>
 						  {% endif %}
 
 						<span class="sdt_active"></span>

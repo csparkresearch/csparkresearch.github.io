@@ -6,16 +6,14 @@ common-css:
   - "../assets/css/highlight.css"
   - "../assets/css/style-row.css"
   - "../assets/css/style-button.css"
-  - "../assets/css/fancy-menu2.css"
 common-googlefonts:
   - "Lora:400,700,400italic,700italic"
   - "Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800"
 common-js:
   - "../assets/js/jquery.min.js"
   - "../assets/js/bootstrap.min.js"
-  - "../assets/js/main.js"
   - "../assets/js/easing.js"
-  - "../assets/js/fancy-menu2.js"
+  - "../assets/js/fancy-tabs.js"
 show-avatar: false
 ---
 
@@ -29,8 +27,9 @@ show-avatar: false
 
     {%comment%}{% include header.html %}{% endcomment %}
 
-	<div class="sticky-button">
+	<div id="sticky-button">
 		<a href="/"><button class="mybtn first">Home</button></a>
+		<a href="/eyes17/"><button class="mybtn third">ExpEYES</button></a>
 	</div>
 
 	 <div class="main-body">

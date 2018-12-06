@@ -1,4 +1,5 @@
 - title: "AlphaSpec-1K"
+  link: "alphaspec"
   description: "Alpha Spectrometer"
   submenu:
     - user-manual: "assets/pdfs/alphamanual.pdf"
@@ -7,6 +8,7 @@
     - Publications: "alpha-publications"
   image: Alpha_thumb.jpg
 - title: "MCA-1K"
+  link: "mca1k"
   description: "Multi-channel Analyzer"
   image: mca_gallery_thumb.jpg
   submenu:
@@ -14,6 +16,7 @@
     - Software-Windows: "alphaspec"
     - Software-Ubuntu: "gmspec"
 - title: "ExpEYES"
+  link: "eyes17"
   description: "Your Lab @ Home ..."
   submenu:
     - user-manual: "http://expeyes.in/Documents/eyes17-a4.pdf"

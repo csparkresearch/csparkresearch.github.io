@@ -121,11 +121,16 @@ body {
 }
 .menu-container:last-child { margin-bottom: 0; }
 
-.sticky-button {
+#sticky-button {
+  padding: 0px 10px 2px 0px;
+  background: linear-gradient(135deg, #fcc274 0%,#eb48a1a8 100%);
+  border-radius: 0px 0px 25px 25px;
   position: fixed;
   left: 1rem;
   top: 1rem;
   z-index:10000;
+  display: block;
+  transition: top 0.3s;
 }
 
 /* http://stackoverflow.com/questions/12121090/responsively-change-div-size-keeping-aspect-ratio */
@@ -177,7 +182,7 @@ body {
 
 .about-main { padding-left: 0; }
 .about { background-color: rgba(193,61,18,0.8);	}
-
+/*
 .cards {
 	display: -webkit-box;
 	display: -webkit-flex;
@@ -197,6 +202,7 @@ body {
 	width: calc(33% - 1em);
 	margin-bottom: 30px;
 }
+*/
 
 .contact { background-color: rgba(107,181,34,0.8);	}
 

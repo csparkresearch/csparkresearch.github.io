@@ -1,3 +1,10 @@
+{% if include.minimal %}
+<script type="text/javascript" src="/assets/js/fancy-menu2.js"></script>
+<link rel="stylesheet" href="/assets/css/fancy-menu2.css" />
+{% else %}
+<script type="text/javascript" src="/assets/js/fancy-menu.js"></script>
+<link rel="stylesheet" href="/assets/css/fancy-menu.css" />
+{% endif %}
 <div id="fancy-container" class="row margin-b-30 fancy-menu-container">
 	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 
@@ -11,8 +18,11 @@
 							<span class="sdt_link">{{ image.title }}</span>
 							<span class="sdt_descr">{{ image.description }}</span>
 
-							{% if image.submenu %}
+							{% if image.submenu or image.link%}
 							<div class="sublinks">
+								{% if image.link %}
+   								   <a href="{{ image.link }}"><button class="mybtn first">Visit Page</button></a>
+								{%endif%}
 								{% for link in image.submenu %}
 									<a href="{{ link.first[1] }}"><button class="mybtn third">{{ link.first[0] }}</button></a>
 								{% endfor %}

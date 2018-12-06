@@ -1,0 +1,36 @@
+- title: "Programmable Voltage Sources"
+  file: signal-generators.md
+  description: "PV1(12-bit +/-5V), PV2(+/-3V)"
+  image: Alpha_thumb.jpg
+- title: "Sine Wave Generators"
+  description: "WG(Sine/Tria, +/-3.3V), _WG_(180 degree out of phase)"
+  image: Alpha_thumb.jpg
+- title: "Square Waveform Generators"
+  description: "SQ1,SQ2 (1Hz-8MHz, 0-5V)"
+  image: Alpha_thumb.jpg
+- title: "Constant Current Source"
+  description: "CCS 1mA"
+  image: Alpha_thumb.jpg
+- title: "Digital Output"
+  description: "OD1"
+  image: Alpha_thumb.jpg
+- title: "Digital Input"
+  description: "IN2 for time interval and frequency measurement( Up to 8MHz. )"
+  image: Alpha_thumb.jpg
+- title: "Data Logger"
+  description: "Log any of the inputs such as voltages, resistances, frequencies etc"
+  image: Alpha_thumb.jpg
+- title: "Analog Input"
+  description: "A1, A2( +/-16V. Up to 32x Gain ). A3( Arbitrary Gain)"
+  image: Alpha_thumb.jpg
+- title: "Capacitance meter"
+  description: "IN1 : 10pF to 100uF"
+  image: Alpha_thumb.jpg
+- title: "Ohmmeter"
+  description: "up to 100KOhm"
+  image: Alpha_thumb.jpg
+- title: "Data Buses"
+  description: "I2C bus with Python support for more than 10 assorted sensors"
+  image: Alpha_thumb.jpg
+
+

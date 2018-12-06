@@ -1,0 +1,45 @@
+<script type="text/javascript" src="/assets/js/light-tabs.js"></script>
+<link rel="stylesheet" href="/assets/css/light-tabs.css" />
+
+<div class="wrap">
+  
+  <ul class="tabs group">
+    <li><a class="active" href="#/one">Light &</a></li>
+    <li><a href="#/two">Sexy</a></li>
+    <li><a href="#/three">Tabs</a></li>
+  </ul>
+  
+  <div id="content">
+    <p id="one">Some text about Light sit amet, consectetur adipisicing elit. Pariatur modi quod quo iure recusandae eligendi q.t, consectetur adipisicing elit. Pariatur </p>
+    <p id="two">Sexy sexy  consectetur adipisicing elit. Pariatur modi quod quo iure recusandae eligendi q.t, consectetur adipisicing elit. Pariatur modi quod quo iureq</p>
+    <p id="three">Tabs , consectetur adipisicing elit. Pariatur modi quod quo iure recusandae eligendi q.t, consectetur adipisicing elit. Pariatur modi quod quo iureq</p>
+  </div>
+  
+</div>
+
+
+<div class="tab-wrapper row">
+	<header class="tab-header">
+	  <h1>{{ include.title }}</h1>
+	</header>
+	<nav class="tab-nav">
+		<ul>
+		  {% for image in include.contents %}
+		    <li class="fancytab">{{ image.title }}</li>
+		  {% endfor %}
+		</ul>
+	</nav>
+	<div class="tab-contents" id="tab-contents">
+		<div class="tab-container">
+		  {% for image in include.contents %}
+			<article class="hide">
+			  <section>
+				<h1>{{ image.title }}</h1>
+				<p>{{ image.description }}</p>
+				<p>Extra:{{ image.file.url }}</p>
+			  </section>
+			</article>
+		  {% endfor %}
+		</div>
+	</div>
+</div>

@@ -1,0 +1,9 @@
+- title: Measure Capacitance 
+  description: How to measure capacitance with ExpEYES
+  image: cap-measure.png
+- title: Capacitors in Series 
+  description: Net capacitance in series configuration
+  image: cap-series.png
+- title: Capacitors in Parallel 
+  description: Net capacitance in parallel configuration
+  image: cap-parallel.png

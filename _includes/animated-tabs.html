@@ -1,0 +1,16 @@
+<link rel="stylesheet" href="/assets/css/animated-tabs.css" />
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/2.0.1/normalize.css">
+<link href='https://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
+
+  <div class="tabbed">
+	{% for image in include.contents %}
+    <input type="radio" name="tabs" id="tab-nav-{{forloop.index}}" checked>
+    <label for="tab-nav-{{forloop.index}}">{{image.title}}</label>
+    {% endfor %}
+    <div class="tabs">
+	{% for image in include.contents %}
+      <div class="animtab"><h2>{{image.title}}</h2><p>{{image.description}}</p></div>
+    {% endfor %}
+    </div>
+  </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.6/prefixfree.min.js"></script>

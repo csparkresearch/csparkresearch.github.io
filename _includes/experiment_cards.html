@@ -1,14 +1,8 @@
 			{% assign schemaPng = "images/schematics/"| append: include.imagebase| append: ".png" %}
-			{% capture schemaPngExists %}{% file_exists {{ "_eyes17/"| append: schemaPng }} %}{% endcapture %}
-			{% assign schemaSvg = "images/schematics/"| append: include.imagebase| append: ".svg" %}
-			{% capture schemaSvgExists %}{% file_exists {{ "_eyes17/"| append: schemaSvg }} %}{% endcapture %}
 			{% assign screenshot = "images/screenshots/"| append: include.imagebase| append: ".png" %}
-			{% capture screenshotExists %}{% file_exists {{ "_eyes17/"| append: screenshot }} %}{% endcapture %}
 			{% assign photo = "images/photographs/"| append: include.imagebase| append: ".jpg" %}
-			{% capture photoExists %}{% file_exists {{ "_eyes17/"| append: photo }} %}{% endcapture %}
 
 			<div class="row">
-					{% if schemaPngExists == "true" %}
 					  <div class="col-md-4">
 						<div class="thumbnail">
 							<img src="{{ schemaPng }}" alt="schematic" class="img-thumbnail" style="width:100%">
@@ -17,17 +11,6 @@
 							</div>
 						</div>
 					  </div>
-					{% elsif schemaSvgExists == "true" %}
-					  <div class="col-md-4">
-						<div class="thumbnail">
-							<img src="{{ schemaSvg }}" alt="schematic" class="img-thumbnail" style="width:100%">
-							<div class="caption">
-							  <p>Schematic</p>
-							</div>
-						</div>
-					  </div>
-					{% endif %}		
-					{% if screenshotExists == "true" %}
 					  <div class="col-md-4">
 						<div class="thumbnail">
 							<img src="{{ screenshot }}" alt="screenshot" class="img-thumbnail" style="width:100%">
@@ -36,8 +19,6 @@
 							</div>
 						</div>
 					  </div>
-					{% endif %}		
-					{% if photoExists == "true" %}
 					  <div class="col-md-4">
 						<div class="thumbnail">
 							<img src="{{ photo }}" alt="photo" class="img-thumbnail" style="width:100%">
@@ -46,5 +27,4 @@
 							</div>
 						</div>
 					  </div>
-					{% endif %}		
 			</div> <!-- row -->

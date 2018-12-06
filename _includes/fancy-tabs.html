@@ -1,0 +1,31 @@
+<link rel="stylesheet" href="/assets/css/fancy-tabs.css" />
+
+<div class="tab-wrapper row">
+	<header class="tab-header">
+	  <h1>{{ include.title }}</h1>
+	</header>
+	<nav class="tab-nav">
+		<ul>
+		  {% for image in include.contents %}
+		    <li class="fancytab">{{ image.title }}</li>
+		  {% endfor %}
+		</ul>
+	</nav>
+	<div class="tab-contents" id="tab-contents">
+		<div class="tab-container">
+		  {% for image in include.contents %}
+			<article class="myhide">
+			  <section>
+				{% if image.file %}
+				{% capture my_include %}{% include_relative {{ image.file }} %}{% endcapture %}
+				{{ my_include | markdownify }}
+				{% else %}
+				<h1>{{ image.title }}</h1>
+				<p>{{ image.description }}</p>				
+			    {% endif %}
+			  </section>
+			</article>
+		  {% endfor %}
+		</div>
+	</div>
+</div>

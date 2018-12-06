@@ -4,13 +4,19 @@ var main = {
 
   init : function() {
 				/**
-				* for each menu element, on mouseenter, 
-				* we enlarge the image, and show both sdt_active span and 
-				* sdt_wrap span. If the element has a sub menu (sdt_box),
-				* then we slide it - if the element is the last one in the menu
-				* we slide it to the left, otherwise to the right
+				* for auto-hiding menu, and for the fancy thumbnail popups 
 				*/				
-				
+				var prevScrollpos = window.pageYOffset;
+				window.onscroll = function() {
+				var currentScrollPos = window.pageYOffset;
+				  if (prevScrollpos > currentScrollPos) {
+					document.getElementById("sticky-button").style.top = "0";
+				  } else {
+					document.getElementById("sticky-button").style.top = "-100px";
+				  }
+				  prevScrollpos = currentScrollPos;
+				}
+
                 $('#sdt_menu > li').bind('mouseenter',function(){
 					var $elem = $(this);
 
