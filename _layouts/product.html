@@ -1,0 +1,63 @@
+---
+show-avatar: true
+common-css:
+  - "/assets/css/bootstrap.min.css"
+  - "/assets/font-awesome/css/font-awesome.min.css"
+  - "/assets/css/style.css"
+  - "assets/css/style-row.css"
+  - "assets/css/style-button.css"
+common-googlefonts:
+  - "Lora:400,700,400italic,700italic"
+  - "Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800"
+common-js:
+  - "assets/js/jquery.min.js"
+  - "assets/js/easing.js"
+  - "assets/js/bootstrap.min.js"
+  - "assets/js/main.js"
+---
+
+<!DOCTYPE html>
+<html lang="en">
+{% include head.html %}
+<body>
+{% include header.html %}
+
+	 <div class="main-body">
+
+	    <div class="container">
+				{% if page.show-navigation %}
+	            {% include /navigation.html %} 
+				{% endif %}
+
+			<div class="row" >
+				<div class="main-page">               
+					<div class="content-main-full">
+					{% if page.description %}
+					  {% assign tagline = page.description %}
+					{% elsif page.tagline %}
+					  {% assign tagline = page.tagline %}
+					{% else %}
+					  {% assign tagline = " Documentation " %}
+					{% endif %}
+
+					{% include animated-banner.html  
+					title = page.title
+					description = tagline
+					%}
+					{{content}}
+					</div>
+					
+					{% include footer.html %}
+					</div> 
+	    		</div> 
+		</div> 
+	</div> 
+
+ 
+{% include scripts.html %}
+
+</body>
+</html> 
+
+
+                    

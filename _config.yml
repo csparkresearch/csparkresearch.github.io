@@ -28,7 +28,7 @@ collections:
 # List of links in the navigation bar
 navbar-links:
   Products:
-    - ExpEYES: "expeyes"
+    - ExpEYES: "eyes17"
     - AlphaSpec-1K: "alphaspec"
     - Gamma Spectrometer: "gmspec"
     - Multi Channel Analyzer: "mca"
@@ -36,7 +36,7 @@ navbar-links:
   Resources:
     - Outreach Gallery: "gallery"
     - Seelab-jr development history: "expeyes-dev"
-    - GitHub : "https://github.com/jithinbp"
+    - GitHub : "https://github.com/csparkresearch"
   Contact Us: "contact"
   About Us: "about"
 
