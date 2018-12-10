@@ -30,7 +30,7 @@ navbar-links:
   Products:
     - ExpEYES: "eyes17"
     - AlphaSpec-1K: "alphaspec"
-    - Gamma Spectrometer: "gmspec"
+    - Gamma Spectrometer: "gammaspec"
     - Multi Channel Analyzer: "mca"
     - Geiger Counter: "gmcounter"
   Resources:
