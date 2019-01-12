@@ -3,7 +3,7 @@ ul.sdt_menu{
 	padding:0;
 	list-style: none;
 	font-family:"Myriad Pro", "Trebuchet MS", sans-serif;
-	font-size:14px;
+	font-size:11px;
 	width:auto;
 	text-align:center;
 }
@@ -14,7 +14,7 @@ ul.sdt_menu a{
 ul.sdt_menu li{
 	float:none;
 	display: inline-block;
-	width:170px;
+	width:150px;
 	height:85px;
 	position:relative;
 	cursor:pointer;
@@ -23,7 +23,7 @@ ul.sdt_menu li > a{
 	position:absolute;
 	top:0px;
 	left:0px;
-	width:170px;
+	width:150px;
 	height:85px;
 	z-index:12;
 	background:transparent url(../images/overlay.png) no-repeat bottom right;
@@ -48,7 +48,7 @@ ul.sdt_menu li span.sdt_wrap{
 	position:absolute;
 	top:25px;
 	left:0px;
-	width:170px;
+	width:150px;
 	height:60px;
 	z-index:15;
 }
@@ -56,7 +56,7 @@ ul.sdt_menu li span.sdt_active{
 	position:absolute;
 	background:#111;
 	top:85px;
-	width:170px;
+	width:150px;
 	height:0px;
 	left:0px;
 	z-index:14;
@@ -73,7 +73,7 @@ ul.sdt_menu li div.sdt_box a{
 }
 ul.sdt_menu li span span.sdt_link{
 	color:#fff;
-	font-size:18px;
+	font-size:14px;
 	float:none;
 	clear:both;
 }
@@ -81,14 +81,14 @@ ul.sdt_menu li span span.sdt_descr{
 	color:#4cc0ff;
 	float:left;
 	clear:both;
-	width:170px; /*For dumbass IE7*/
+	width:150px; /*For dumbass IE7*/
 	font-size:10px;
 	letter-spacing:1px;
 }
 
 ul.sdt_menu div.sublinks{
 	position:absolute;
-	width:170px;
+	width:150px;
 	z-index:1000;
 	overflow:hidden;
 	height:auto;
@@ -105,9 +105,9 @@ ul.sdt_menu div.sublinks{
 ul.sdt_menu li div.sdt_box{
 	display:block;
 	position:absolute;
-	width:170px;
+	width:150px;
 	overflow:hidden;
-	height:170px;
+	height:150px;
 	top:85px;
 	left:0px;
 	display:none;
@@ -143,7 +143,7 @@ ul.flow_menu{
 	padding:0;
 	list-style: none;
 	font-family:"Myriad Pro", "Trebuchet MS", sans-serif;
-	font-size:12px;
+	font-size:10px;
 	width:auto;
 }
 ul.flow_menu a{

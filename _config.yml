@@ -33,6 +33,7 @@ navbar-links:
     - Gamma Spectrometer: "gammaspec"
     - Multi Channel Analyzer: "mca"
     - Geiger Counter: "gmcounter"
+    - KuttyPy: "kuttypy"
   Resources:
     - Outreach Gallery: "gallery"
     - Seelab-jr development history: "expeyes-dev"

@@ -15,14 +15,6 @@
     - user-manual: "https://drive.google.com/file/d/0B2o9AyrvXHPYMzQyRVRteU1EMEE/view"
     - Software-Windows: "https://drive.google.com/file/d/16UwtCtI4UBHgwcNW9BM54TrBbceYdh1B/view"
     - Software-Ubuntu: "cnspec"
-- title: "ExpEYES"
-  link: "eyes17"
-  description: "Your Lab @ Home ..."
-  submenu:
-    - user-manual: "http://expeyes.in/Documents/eyes17-a4.pdf"
-    - Software-Windows: "https://drive.google.com/open?id=1p9Bfc9JpXCFWzz3cJ5WbJDrZatekglsj"
-    - Software-Ubuntu: "http://expeyes.in/Documents/eyes17-3.9.0.deb"
-  image: expeyes_thumb.jpg
 - title: "GammaSpec-1K"
   description: "Gamma Spectrometer"
   link: "gammaspec"
@@ -31,3 +23,15 @@
     - user-manual: "unavailable"
     - Software-Windows: "https://drive.google.com/file/d/16UwtCtI4UBHgwcNW9BM54TrBbceYdh1B/view"
     - Software-Ubuntu: "cnspec"
+- title: "ExpEYES"
+  link: "eyes17"
+  description: "Your Lab @ Home ..."
+  submenu:
+    - user-manual: "http://expeyes.in/Documents/eyes17-a4.pdf"
+    - Software-Windows: "https://drive.google.com/open?id=1p9Bfc9JpXCFWzz3cJ5WbJDrZatekglsj"
+    - Software-Ubuntu: "http://expeyes.in/Documents/eyes17-3.9.0.deb"
+  image: expeyes_thumb.jpg
+- title: "KuttyPy"
+  link: "kuttypy"
+  description: "AVR Trainer"
+  image: kpy_thumb.gif
