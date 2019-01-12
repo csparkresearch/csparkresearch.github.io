@@ -13,7 +13,7 @@ imagelist = site.data.fancy-menu-nuclear
 imagelist = site.data.flow-gammaspec
 %}
 
-### Presented at the DAE Symposium for Nuclear Physics 2018 : [Conference Proceedings](http://sympnp.org/proceedings/60/G37.pdf)
+### Presented at the DAE Symposium for Nuclear Physics 2018 : [Conference Proceedings](http://sympnp.org/proceedings/63/G19.pdf)
 ---
 
 <img style="width:100%" src="assets/posters/gammaweb1.svg" />
