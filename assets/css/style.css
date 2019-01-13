@@ -173,10 +173,11 @@ body {
 .main-menu-link:hover {	color: #66FFFF; }
 .main-menu-link:focus {	color: #fff; }
 
+	/*background-image: url(../images/home-bg-coffee.jpg);*/
 .home {
 	background-color: rgba(16, 165, 205, 0.8);
-	background-image: url(../images/home-bg-coffee.jpg);
 	background-repeat: no-repeat;
+	overflow: hidden;
 	background-size: 100% 100%;
 }
 
@@ -1246,4 +1247,18 @@ transform:translatey(0);
 .hovereffect:hover {
 -webkit-transition-delay:.2s;
 transition-delay:.2s;
+}
+
+/*---overlay effects ---*/
+
+.hoveropacity figure {
+	background: #1abc9c;
+}
+.hoveropacity figure img {
+	opacity: 1;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.hoveropacity figure:hover img {
+	opacity: .5;
 }
