@@ -13,7 +13,40 @@ imagelist = site.data.fancy-menu-nuclear
 imagelist = site.data.flow-gammaspec
 %}
 
-### Presented at the DAE Symposium for Nuclear Physics 2018 : [Conference Proceedings](http://sympnp.org/proceedings/63/G19.pdf)
+<div class="sillythumb" style="background: url(&quot;/assets/images/gamma/co60.png&quot;);">
+	  <a href="#">
+		    <span>CSpark Research : Gamma Spectrometer</span>
+	  </a>
+</div>
+
+<div class="row margin-b-30">
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+    <div class="box aenean bottom-main">                                
+        <div class="info float-container">
+            <div class="heading">
+                <p class="text-uppercase">Gamma Spectrometer : with 1K MCA</p>
+            </div>
+
+<div class="desc" style="color:black !important;" markdown="1">
+   + Highly compact portable spectrometer.
+   + USB Powered unit 
+   + Presented at the DAE Symposium for Nuclear Physics 2018 : [Conference Proceedings](http://sympnp.org/proceedings/63/G19.pdf)
+</div>
+			<a class = "desc" href="/assets/posters/gammaweb.svg"><button role="button" >BROCHURE</button></a>
+
+        </div>
+    </div>                        
+</div>    
+</div>
+
+
+{% include transparent_row_gallery.html 
+title="Gallery"
+imagelist = site.data.gamma-row-gallery
+%}
+
+
+### Poster 
 ---
 
 <img style="width:100%" src="assets/posters/gammaweb1.svg" />

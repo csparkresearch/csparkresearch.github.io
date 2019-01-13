@@ -1,0 +1,23 @@
+<div class="row">
+	<div class="hidden-xs col-sm-12 col-md-12 col-lg-12">
+		<div class="london">
+				<div class="row">
+					<div class="accordion">
+					  <ul>
+
+						{% for image in include.imagelist %}
+						<li style="background-size: cover; height:100%;background-image:url('/assets/images/{{ image.image }}');">
+						  <div >
+							<span>
+						      <a href="{{ image.link }}"><h2>{{ image.title }}</h2></a>
+							  <p>{{ image.description }}</p>
+							</span>
+						  </div>
+						</li>
+						{% endfor %}
+					  </ul>
+					</div>
+				</div>
+		</div>
+	</div>
+</div> <!-- row -->

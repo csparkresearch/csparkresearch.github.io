@@ -1,0 +1,12 @@
+- title: GammaSpec-1K 
+  description: Compact, USB Powered Gamma Spectrometer
+  image: /gamma/gammaspec.png
+- title: Spectra from standard Undergraduate lab sources
+  description: Cobalt-60, Caesium-137 spectra
+  image: /gamma/co_cs.png
+- title: Monazite sand 
+  description: Low activity sand from south indian beaches ( approx 300 becq th232 + U_nat)
+  image: gamma/monazite_spectrum.png
+- title: Open Source Software 
+  description: Cross-platform .
+  image: gamma/gamma_spectrum.png
