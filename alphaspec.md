@@ -19,6 +19,7 @@ imagelist = site.data.alpha-row-gallery
 imagelist = site.data.flow-alphaspec
 %}
 
+<div markdown="1"> ### **Alpha** Spectrometer </div>
 
 <a href="https://drive.google.com/file/d/0B2o9AyrvXHPYMzQyRVRteU1EMEE/view"><button role="button" >USER MANUAL</button></a>
 <a href="assets/pdf/alpha1.pdf"><button role="button" >Publication: Physics Education-IAPT</button></a>
