@@ -9,6 +9,18 @@ show-navigation: false
 imagelist = site.data.fancy-menu-kuttypy
 %}
 
+### Installation from source
+
++ Install dependencies (Ubuntu 18.04)
+```
+sudo apt-get install python3 python3-serial python3-pyqtgraph python3-pyqt5 python3-pyqt5.qtsvg python3-pyqt5.qtwebengine
+```
++ Clone the repository, and run the file
+```
+git clone https://github.com/csparkresearch/kuttypy-gui
+cd kuttypy-gui
+python3 KuttyPyGUI.py
+```
 
 <div style="text-align:center"><img src ="assets/images/kuttypy/main.gif" /></div>
 
@@ -83,8 +95,7 @@ A persistence of vision display made with C code! Write text in thin air using 8
 
 ### Installing on windows.
 + This code can be run from source, provided python3 and pyqt5 are installed.
-+ [Download Bundled Installer](https://drive.google.com/uc?export=download&id=1giJuDNIql8X5oaIcOLFACXD05-hmkBAy)
-
++ [Download Bundled Installer](https://drive.google.com/uc?export=download&id=1EnsdFKyxddg-sQ64d0OXfwHEziOZRXL8)
 
 
 License: MIT
