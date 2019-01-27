@@ -19,8 +19,9 @@ imagelist = site.data.alpha-row-gallery
 imagelist = site.data.flow-alphaspec
 %}
 
-<a href="https://drive.google.com/file/d/0B2o9AyrvXHPYMzQyRVRteU1EMEE/view"><button role="button" >USER MANUAL</button></a>
-<a href="assets/pdf/alpha1.pdf"><button role="button" >Publication: Physics Education-IAPT</button></a>
+<a href="assets/pdfs/alphaspec manual.pdf"><button role="button" >USER MANUAL</button></a><br>
+<a href="assets/pdfs/alpha2.pdf"><button role="button" >Publication 1: Instrument model</button></a><br>
+<a href="assets/pdfs/alpha1.pdf"><button role="button" >Publication 2: Experiments with 212-Bi</button></a><br>
 
 <img style="width:100%" src="assets/posters/alpha_front.svg" />
 
