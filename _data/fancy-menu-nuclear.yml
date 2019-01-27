@@ -2,27 +2,30 @@
   link: "alphaspec"
   description: "Alpha Spectrometer"
   submenu:
-    - user-manual: "https://drive.google.com/file/d/0B2o9AyrvXHPYMzQyRVRteU1EMEE/view"
-    - Software-Windows: "https://drive.google.com/file/d/16UwtCtI4UBHgwcNW9BM54TrBbceYdh1B/view"
+    - user-manual: "/assets/pdfs/alphaspec manual.pdf"
+    - Software-Windows: "https://drive.google.com/open?id=1uokmxXdJCwO407mIib4HG4VZj-PoTL8W"
     - Software-Ubuntu: "cnspec"
-    - Publications: "alpha-publications"
+    - Publication-1: "/assets/pdfs/alpha1.pdf"
+    - Publication-2: "/assets/pdfs/alpha2.pdf"
   image: Alpha_thumb.jpg
 - title: "MCA-1K"
   link: "mca1k"
   description: "Multi-channel Analyzer"
   image: mca_gallery_thumb.jpg
   submenu:
-    - user-manual: "https://drive.google.com/file/d/0B2o9AyrvXHPYMzQyRVRteU1EMEE/view"
-    - Software-Windows: "https://drive.google.com/file/d/16UwtCtI4UBHgwcNW9BM54TrBbceYdh1B/view"
+    - user-manual: "/assets/pdfs/alphaspec manual.pdf"
+    - Software-Windows: "https://drive.google.com/open?id=1uokmxXdJCwO407mIib4HG4VZj-PoTL8W"
     - Software-Ubuntu: "cnspec"
 - title: "GammaSpec-1K"
   description: "Gamma Spectrometer"
   link: "gammaspec"
   image: gamma_pic.png
   submenu:
-    - user-manual: "unavailable"
-    - Software-Windows: "https://drive.google.com/file/d/16UwtCtI4UBHgwcNW9BM54TrBbceYdh1B/view"
+    - user-manual: "/assets/pdfs/gammaspec manual.pdf"
+    - Software-Windows: "https://drive.google.com/open?id=1uokmxXdJCwO407mIib4HG4VZj-PoTL8W"
     - Software-Ubuntu: "cnspec"
+    - DAE-SYMPNP: "http://sympnp.org/proceedings/63/G19.pdf"
+    - RINP2: "https://indico.cern.ch/event/763807/contributions/3274494/contribution.pdf"
 - title: "ExpEYES"
   link: "eyes17"
   description: "Your Lab @ Home ..."
@@ -35,3 +38,5 @@
   link: "kuttypy"
   description: "AVR Trainer"
   image: kpy_thumb.gif
+  submenu:
+    - Software-Windows: "https://drive.google.com/open?id=1EnsdFKyxddg-sQ64d0OXfwHEziOZRXL8"
