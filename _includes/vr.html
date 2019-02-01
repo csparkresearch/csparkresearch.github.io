@@ -1,0 +1,37 @@
+<style type="text/css">
+  body { -ms-touch-action: none; }
+</style>
+<script type="text/javascript" src="assets/js/vr.js"></script>
+<script type="text/javascript">
+      var keyshotVR;
+
+      function initVR() {
+        var downScaleToBrowser = true;
+        var addDownScaleGUIButton = false;
+        var addPlayGUIButton = false;
+        var imageExtension = "jpg";
+        var showLoading = true;
+        var loadingIcon = "ks_logo.png"; // Set to empty string for default icon.
+        var allowFullscreen = true; // Double-click in desktop browsers for fullscreen.
+
+        keyshotVR = new VR("VR","{{include.path}}",801,500,"#FFFFFF",36,1,true,false,-0.1,0.005556,18,0,1.,1.,0.96,downScaleToBrowser,addDownScaleGUIButton,addPlayGUIButton,imageExtension,showLoading,loadingIcon,allowFullscreen);
+      }
+
+      window.onload = initVR;
+</script>
+
+<div class="row">
+	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+		<div class="box bottom-main">
+			<div class="info float-container">
+				<div class="col-sm-12 bottom-title">
+					<h3 class="text-uppercase">{{include.title}}</h3>
+					<p class="text-uppercase">Touch and drag to rotate the model</p>
+				<div id="VR">
+				</div><br>
+
+				</div>
+			</div>
+		</div>
+	</div>
+</div> <!-- row -->
