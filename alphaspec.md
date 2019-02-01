@@ -9,6 +9,8 @@ show-navigation: false
 imagelist = site.data.fancy-menu-nuclear
 %}
 
+{% include installers.html  %}
+
 
 {% include row_gallery.html 
 imagelist = site.data.alpha-row-gallery
@@ -25,6 +27,7 @@ imagelist = site.data.flow-alphaspec
 
 <img style="width:100%" src="assets/posters/alpha_front.svg" />
 
+{% include vr.html path="/assets/coincidence" title="MultiPixel alpha Detector"  %}
 
 
 * e-mail csparkresearch@gmail.com for enquiries

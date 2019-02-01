@@ -4,7 +4,7 @@
   submenu:
     - user-manual: "/assets/pdfs/alphaspec manual.pdf"
     - Software-Windows: "https://drive.google.com/uc?export=download&id=1uokmxXdJCwO407mIib4HG4VZj-PoTL8W"
-    - Software-Ubuntu: "cnspec"
+    - Software-Ubuntu: "/assets/installers/csmca-3.0.0.deb"
     - Publication-1: "/assets/pdfs/alpha1.pdf"
     - Publication-2: "/assets/pdfs/alpha2.pdf"
   image: Alpha_thumb.jpg
@@ -15,7 +15,7 @@
   submenu:
     - user-manual: "/assets/pdfs/alphaspec manual.pdf"
     - Software-Windows: "https://drive.google.com/uc?export=download&id=1uokmxXdJCwO407mIib4HG4VZj-PoTL8W"
-    - Software-Ubuntu: "cnspec"
+    - Software-Ubuntu: "/assets/installers/csmca-3.0.0.deb"
 - title: "GammaSpec-1K"
   description: "Gamma Spectrometer"
   link: "gammaspec"
@@ -23,7 +23,7 @@
   submenu:
     - user-manual: "/assets/pdfs/gammaspec manual.pdf"
     - Software-Windows: "https://drive.google.com/uc?export=download&id=1uokmxXdJCwO407mIib4HG4VZj-PoTL8W"
-    - Software-Ubuntu: "cnspec"
+    - Software-Ubuntu: "/assets/installers/csmca-3.0.0.deb"
     - DAE-SYMPNP: "http://sympnp.org/proceedings/63/G19.pdf"
     - RINP2: "https://indico.cern.ch/event/763807/contributions/3274494/contribution.pdf"
 - title: "ExpEYES"
@@ -39,4 +39,5 @@
   description: "AVR Trainer"
   image: kpy_thumb.gif
   submenu:
+    - Software-Ubuntu: "/assets/installers/kuttypy-1.0.0.deb"
     - Software-Windows: "https://drive.google.com/uc?export=download&id=1EnsdFKyxddg-sQ64d0OXfwHEziOZRXL8"

@@ -28,9 +28,10 @@ imagelist = site.data.flow-gammaspec
             </div>
 
 <div class="desc" style="color:black !important;" markdown="1">
-   + Highly compact portable spectrometer.
-   + USB Powered unit 
+   + Highly compact portable spectrometer which is fully USB Powered.
    + Presented at the DAE Symposium for Nuclear Physics 2018 : [Conference Proceedings](http://sympnp.org/proceedings/63/G19.pdf)
+   + Accepted for Recent Issues in Nuclear and Particle Physics (RINP2, Viswa Bharati) : [Contribution](https://indico.cern.ch/event/763807/contributions/3274494/)
+
 </div>
 			<a class = "desc" href="/assets/posters/gammaweb.svg"><button role="button" >BROCHURE</button></a>
 
@@ -38,6 +39,8 @@ imagelist = site.data.flow-gammaspec
     </div>                        
 </div>    
 </div>
+
+{% include installers.html  %}
 
 
 {% include transparent_row_gallery.html 

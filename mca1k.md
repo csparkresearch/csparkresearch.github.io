@@ -9,6 +9,8 @@ show-navigation: false
 imagelist = site.data.fancy-menu-nuclear
 %}
 
+{% include installers.html  %}
+
 Summary
 ---
 
