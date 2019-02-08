@@ -62,7 +62,8 @@ imagelist = site.data.gamma-row-gallery
 <img style="width:100%" src="assets/posters/gammaweb1.svg" />
 <img style="width:100%" src="assets/posters/gammaweb2.svg" />
 <img style="width:100%" src="assets/posters/gammaweb3.svg" />
-______
+
+---
 
 ### Coincidence Measurements with minimal added cost
 
