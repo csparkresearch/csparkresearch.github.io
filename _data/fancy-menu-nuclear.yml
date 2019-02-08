@@ -41,3 +41,4 @@
   submenu:
     - Software-Ubuntu: "/assets/installers/kuttypy-1.0.0.deb"
     - Software-Windows: "https://drive.google.com/uc?export=download&id=1EnsdFKyxddg-sQ64d0OXfwHEziOZRXL8"
+    - User-Manual: "/assets/pdfs/kuttypy manual.pdf"
