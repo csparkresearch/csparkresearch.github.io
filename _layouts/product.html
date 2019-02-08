@@ -14,6 +14,7 @@ common-js:
   - "assets/js/easing.js"
   - "assets/js/bootstrap.min.js"
   - "assets/js/main.js"
+  - "assets/js/toc.js"
 ---
 
 <!DOCTYPE html>
@@ -25,13 +26,14 @@ common-js:
 	 <div class="main-body">
 
 	    <div class="container">
-				{% if page.show-navigation %}
-	            {% include /navigation.html %} 
-				{% endif %}
 
 			<div class="row" >
 				<div class="main-page">               
-					<div class="content-main-full">
+					{% if page.show-navigation %}
+						{% include /navigation.html %} 
+					{% endif %}
+					<div class="content-main-full {% if page.show-navigation %}left-pad{%endif%} {% if page.show-toc %}right-pad{%endif%}">
+
 					{% if page.description %}
 					  {% assign tagline = page.description %}
 					{% elsif page.tagline %}
@@ -45,16 +47,21 @@ common-js:
 					description = tagline
 					%}
 					{{content}}
+					{% if page.show-toc %}
+						{% include /toc.html %} 
+					{% endif %}
+
 					</div>
 					
 					{% include footer.html %}
 					</div> 
 	    		</div> 
+
+			</div> 
 		</div> 
-	</div> 
 
  
-{% include scripts.html %}
+	{% include scripts.html %}
 
 </body>
 </html> 

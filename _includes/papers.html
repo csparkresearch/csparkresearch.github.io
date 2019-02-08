@@ -1,0 +1,21 @@
+{% assign product = site.data.products[include.product] %}
+<div class="row">
+	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+		<div class="box bottom-main">
+			<div class="info float-container">
+				<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 bottom-title">
+					<h3 class="text-uppercase">PUBLICATIONS</h3>
+					<p class="text-uppercase">The Following Papers have been accepted</p>
+				</div>
+				<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 desc  bottom-title">
+					{% for item in product.papers %}
+					<a href="{{item[1]}}"><button role="button" >{{item[0]}}</button></a>
+					{% endfor %}
+				</div>
+
+			</div>
+		</div>
+	</div>
+</div> <!-- row -->
+
+

@@ -1,18 +1,25 @@
+{% assign product = site.data.products[include.product] %}
 <div class="row">
-	<div class="hidden-xs col-sm-12 col-md-12 col-lg-12">
+	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 		<div class="box bottom-main">
 			<div class="info float-container">
-				<div class="col-sm-12 bottom-title">
+				<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 bottom-title">
 					<h3 class="text-uppercase">SOFTWARE INSTALLATION</h3>
-					<p class="text-uppercase">Download the relevant installer from below</p>
-				</div>
-				<div class="desc">
-					<a href="/assets/installers/csmca-3.0.0.deb"><button role="button" >Ubuntu</button></a>
-					<a href="https://drive.google.com/uc?export=download&id=1uokmxXdJCwO407mIib4HG4VZj-PoTL8W"><button role="button" >Windows</button></a>
-					<p style="margin-bottom:0px;">Tested on Windows 7/10 , and Ubuntu 18.04 </p>
+					<p class="text-uppercase">Download the relevant installer</p>
+			{% if product.user-manual %}
+					<a href="{{product.user-manual}}"><button role="button" class="btn btn-primary btn-sm">User Manual</button></a>
+			{% endif %}
 
 				</div>
+				<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 desc  bottom-title">
+					<a href="{{product.ubuntu}}"><button role="button" >Ubuntu</button></a>
+					<a href="{{product.windows}}"><button role="button" >Windows</button></a>
+					<p style="margin-bottom:0px;">Tested on Windows 7/10 , and Ubuntu 18.04 </p>
+				</div>
+
 			</div>
+
+
 		</div>
 	</div>
 </div> <!-- row -->

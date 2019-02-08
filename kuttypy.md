@@ -3,30 +3,20 @@ layout: product
 title: "KuttyPy"
 tagline: "&mdash; Interactive Playground [ Microcontroller Training Utility ] &mdash;"
 show-navigation: false
+show-toc: true
 ---
 
 {% include fancy-menu.html  
 imagelist = site.data.fancy-menu-kuttypy
 %}
 
-### Installation from source
-
-+ Install dependencies (Ubuntu 18.04)
-```
-sudo apt-get install python3 python3-serial python3-pyqtgraph python3-pyqt5 python3-pyqt5.qtsvg python3-pyqt5.qtwebengine
-```
-+ Clone the repository, and run the file
-```
-git clone https://github.com/csparkresearch/kuttypy-gui
-cd kuttypy-gui
-python3 KuttyPyGUI.py
-```
 
 <div style="text-align:center"><img src ="assets/images/kuttypy/main.gif" /></div>
 
 
-### A friendly microcontroller training board for beginners.
+## Introduction
 ---
+### Microcontroller training board for beginners
 
 <table style="color:white;">
   <tr>
@@ -52,9 +42,29 @@ python3 KuttyPyGUI.py
 ---
 The kuttyPy (/kʊtipʌɪ/) Microcontroller training utility allows real-time manipulation of the registers in microcontrollers via a connected computer containing its python library.  setReg and getReg function calls act as a real-time debugging and monitoring utility, and combined with Python's visualization and analytical utilities, this approach has immense pedagogical potential for beginners. 
 
-The kuttyPy (/kʊtipʌɪ/) hardware is an ATMEGA32 microcontroller development board developed by the [ExpEYES](http://expeyes.in) project, and is currently supported by this software. It contains the kuttyPy firmware, but can also be used to run other programs via its bootloader.
+The kuttyPy hardware is an ATMEGA32 microcontroller development board developed by the [ExpEYES](http://expeyes.in) project, and is currently supported by this software. It contains the kuttyPy firmware, but can also be used to run other programs via its bootloader.
 
-## Simple blink.py example
+## Software
+
+{% include installers.html product="KuttyPy"  %}
+
+### Installation from source (License: MIT)
+---
++ Install dependencies (Ubuntu 18.04)
+```
+sudo apt-get install python3 python3-serial python3-pyqt5 python3-pyqt5.qtsvg
+```
++ Clone the repository, and run the file
+```
+git clone https://github.com/csparkresearch/kuttypy-gui
+cd kuttypy-gui
+python3 KuttyPyGUI.py
+```
+
+## Examples and Features
+
+### Simple blink.py example
+---
 ![Screenshot](assets/images/kuttypy/blink.gif?raw=true "Write Python code to blink all of PORT D") ![Screencast](assets/images/kuttypy/monitor.gif?raw=true "Monitor your code!")
 
 Monitor your code's activity while it executes
@@ -71,7 +81,7 @@ In this demo, the ADC is read by first setting the bits in the ADCSRA(control an
 
 Plug and play various accessories such as this Hall Sensor, & servo motor.
 
-### Seamless switching between the KuttyPy monitor, and user uploaded hex file.
+## Seamless switching between the KuttyPy monitor, and user uploaded hex file.
 ---
 The KuttyPy monitor code is part of the bootloader. This allows users to upload their own Hex files without losing the training utility features.
 
@@ -85,20 +95,12 @@ In the animation, after fiddling a little with the PWM controls on the monitor, 
 
 The user can switch back to the monitoring utility in a snap!
 
+### Persistence of vision
 ![Screencast](assets/images/kuttypy/pov_display.webp?raw=true "POV display!")
 
 A persistence of vision display made with C code! Write text in thin air using 8 LEDs on PORTB.
 
-### Installing on Ubuntu
-+ sudo apt-get install python3 python3-pyqt5 python3-serial
-+ python3 KuttyPyGUI.py
 
-### Installing on windows.
-+ This code can be run from source, provided python3 and pyqt5 are installed.
-+ [Download Bundled Installer](https://drive.google.com/uc?export=download&id=1EnsdFKyxddg-sQ64d0OXfwHEziOZRXL8)
-
-
-License: MIT
 
 
 

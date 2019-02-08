@@ -14,7 +14,7 @@
         var loadingIcon = "ks_logo.png"; // Set to empty string for default icon.
         var allowFullscreen = true; // Double-click in desktop browsers for fullscreen.
 
-        keyshotVR = new VR("VR","{{include.path}}",801,500,"#FFFFFF",36,1,true,false,-0.1,0.005556,18,0,1.,1.,0.96,downScaleToBrowser,addDownScaleGUIButton,addPlayGUIButton,imageExtension,showLoading,loadingIcon,allowFullscreen);
+        keyshotVR = new VR("VR","{{include.path}}",{{include.width}},{{include.height}},"#FFFFFF",{{include.frames}},1,true,false,-0.1,0.005556,{{include.start}},0,1.,1.,0.96,downScaleToBrowser,addDownScaleGUIButton,addPlayGUIButton,imageExtension,showLoading,loadingIcon,allowFullscreen);
       }
 
       window.onload = initVR;
@@ -26,7 +26,7 @@
 			<div class="info float-container">
 				<div class="col-sm-12 bottom-title">
 					<h3 class="text-uppercase">{{include.title}}</h3>
-					<p class="text-uppercase">Touch and drag to rotate the model</p>
+					<p class="text-uppercase">Touch and drag to rotate the model (Double Click for fullscreen)</p>
 				<div id="VR">
 				</div><br>
 

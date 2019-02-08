@@ -1,0 +1,49 @@
+AlphaSpec-1K:
+  name: Alpha Spectrometer
+  link: "alphaspec"
+  description: "A compact Alpha Spectrometer with integrated 1K MCA"
+  user-manual: "/assets/pdfs/alphaspec manual.pdf"
+  windows: "https://drive.google.com/uc?export=download&id=1uokmxXdJCwO407mIib4HG4VZj-PoTL8W"
+  ubuntu: "/assets/installers/csmca-3.0.0.deb"
+  papers:
+    Expts with 212-Bi: "/assets/pdfs/alpha1.pdf"
+    Instrument model: "/assets/pdfs/alpha2.pdf"
+  image: Alpha_thumb.jpg
+
+MCA-1K:
+  name: Multi Channel Analyzer
+  link: "mca1k"
+  description: "Multi-channel Analyzer"
+  image: mca_gallery_thumb.jpg
+  user-manual: "/assets/pdfs/alphaspec manual.pdf"
+  windows: "https://drive.google.com/uc?export=download&id=1uokmxXdJCwO407mIib4HG4VZj-PoTL8W"
+  ubuntu: "/assets/installers/csmca-3.0.0.deb"
+
+GammaSpec-1K:
+  name: Gamma Spectrometer
+  description: "Gamma Spectrometer"
+  link: "gammaspec"
+  image: gamma_pic.png
+  user-manual: "/assets/pdfs/gammaspec manual.pdf"
+  windows: "https://drive.google.com/uc?export=download&id=1uokmxXdJCwO407mIib4HG4VZj-PoTL8W"
+  ubuntu: "/assets/installers/csmca-3.0.0.deb"
+  papers:
+    DAE-SYMPNP: "http://sympnp.org/proceedings/63/G19.pdf"
+    RINP2: "https://indico.cern.ch/event/763807/contributions/3274494/contribution.pdf"
+
+ExpEYES17:
+  name: ExpEYES-17
+  link: "eyes17"
+  description: "Your Lab @ Home ..."
+  user-manual: "http://expeyes.in/Documents/eyes17-a4.pdf"
+  windows: "https://drive.google.com/uc?export=download&id=1p9Bfc9JpXCFWzz3cJ5WbJDrZatekglsj"
+  ubuntu: "http://expeyes.in/Documents/eyes17-3.9.0.deb"
+  image: expeyes_thumb.jpg
+
+KuttyPy:
+  name: KuttyPy
+  link: "kuttypy"
+  description: "Interactive Playground [Microcontroller Training Utility]"
+  image: kpy_thumb.gif
+  ubuntu: "/assets/installers/kuttypy-1.0.0.deb"
+  windows: "https://drive.google.com/uc?export=download&id=1EnsdFKyxddg-sQ64d0OXfwHEziOZRXL8"

@@ -66,6 +66,13 @@ body {
 	float: none;
 }
 
+.left-pad {
+	padding-left: 340px;
+}
+.right-pad {
+	padding-right: 240px;
+}
+
 .content-main-full{
 	width: 100%;
 	box-sizing: border-box;
@@ -132,6 +139,26 @@ body {
   display: block;
   transition: top 0.3s;
 }
+
+
+#sticky-menu {
+  max-width:250px;
+  padding: 5px 5px 5px 5px;
+  background: rgba(5, 8, 4, 0.68);
+  color: #daa1a1;
+  border-radius: 2px 2px 2px 2px;
+  position: fixed;
+  right: 1rem;
+  top: 10rem;
+  z-index:10000;
+  display: block;
+  transition: top 0.3s;
+}
+
+#sticky-menu li > a{
+  color:#c7e5ff;
+}
+
 
 /* http://stackoverflow.com/questions/12121090/responsively-change-div-size-keeping-aspect-ratio */
 
@@ -320,7 +347,6 @@ body {
 .heading2 p { color: #a92446; }
 .desc, .desc2 {
 	float: left;
-	width: 100%;
 	padding-left: 15px;
 }
 
@@ -372,7 +398,7 @@ body {
 
 .info {
 	width: 100%;
-	padding: 15px 30px 20px;
+	padding: 0px 30px 0px;
 }
 .info-ul { padding: 15px 20px; }
 .info-description-container {
@@ -1266,9 +1292,9 @@ transition-delay:.2s;
 
 /* ---folding thumbnail -- */
 .sillythumb {
-    width: 529px;
-    height: 288px;
-    margin: 10px auto 50px auto;
+    width: 365px;
+    height: 150px;
+    margin: -60px auto 80px auto;
     perspective: 1000px;
 }
 
