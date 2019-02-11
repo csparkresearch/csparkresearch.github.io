@@ -354,12 +354,12 @@ body {
 .heading h1, .heading2 h1 {
 	margin: 0 10px;
 	font-weight: 600;
-	font-size: 72px;
+	font-size: 48px;
 	font-family: Verdana;
 }
 .heading p, .heading2 p {
 	margin: 0 10px;
-	font-size: 24px;
+	font-size: 16px;
 	font-weight: 600;
 }
 .heading p { color: #10a5cd; }
@@ -661,14 +661,14 @@ body {
 	border-left:5px solid #df9801;
 }
 .aenean h3 {
-	font-size: 58px;
+	font-size: 40px;
 	font-weight: bold;
 	margin-top: 0px;
 	margin-bottom: 0px;
 	text-transform: uppercase;
 }
 .aenean h4 {
-	font-size: 24px;
+	font-size: 18px;
 	font-weight: 400;
 	margin: 0px 0px;
 	padding-left: 3px;
@@ -1037,8 +1037,8 @@ textarea.form-control {	height:135px; }
 
 	.col-xxs-12 { width: 100%; }
 
-	.aenean h3 { font-size: 40px; }
-	.aenean h4 { font-size: 22px; }
+	.aenean h3 { font-size: 36px; }
+	.aenean h4 { font-size: 16px; }
 	
 	.info-description-container { padding: 20px 0; }
 }
