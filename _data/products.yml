@@ -46,5 +46,5 @@ KuttyPy:
   description: "Interactive Playground [Microcontroller Training Utility]"
   image: kpy_thumb.gif
   user-manual: "/assets/pdfs/kuttypy manual.pdf"
-  ubuntu: "/assets/installers/kuttypy-1.0.0.deb"
+  ubuntu: "/assets/installers/kuttypy-1.0.1.deb"
   windows: "https://drive.google.com/uc?export=download&id=1EnsdFKyxddg-sQ64d0OXfwHEziOZRXL8"

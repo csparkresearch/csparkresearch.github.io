@@ -63,6 +63,9 @@ python3 KuttyPyGUI.py
 
 ## Examples and Features
 
+### 8 Channel voltmeter, 0-5000 mV [ Without Analog Frontend ]
+![Screenshot](assets/images/kuttypy/voltmeter.gif?raw=true "Voltmeter")
+  
 ### Simple blink.py example
 ---
 ![Screenshot](assets/images/kuttypy/blink.gif?raw=true "Write Python code to blink all of PORT D") ![Screencast](assets/images/kuttypy/monitor.gif?raw=true "Monitor your code!")
