@@ -13,6 +13,8 @@ imagelist = site.data.fancy-menu-nuclear
 ### Geiger Counter
 ---
 
+{% include installers.html  product="GMCounter"%}
+
 <img src="https://res.cloudinary.com/cspark/image/upload/v1491729737/gmcounter/GM_Pulses.gif"/>
 
 + Compact unit

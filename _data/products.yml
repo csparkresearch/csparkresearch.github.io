@@ -48,3 +48,14 @@ KuttyPy:
   user-manual: "/assets/pdfs/kuttypy manual.pdf"
   ubuntu: "/assets/installers/kuttypy-1.0.1.deb"
   windows: "https://drive.google.com/uc?export=download&id=1EnsdFKyxddg-sQ64d0OXfwHEziOZRXL8"
+  
+GMCounter:
+  name: GMCounter
+  link: "gmcounter"
+  description: "Geiger Counter with USB interface"
+  image: kpy_thumb.gif
+  user-manual: "/assets/pdfs/gm manual.pdf"
+  ubuntu: "#"
+  windows: "#"
+
+
