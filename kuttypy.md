@@ -84,6 +84,11 @@ In this demo, the ADC is read by first setting the bits in the ADCSRA(control an
 
 Plug and play various accessories such as this Hall Sensor, & servo motor.
 
+### Plug and Play I2C devices ..
+![Screenshot](assets/images/kuttypy/mcp4725dac.gif?raw=true "12 bit DAC") 
+
+The MCP4725 12-bit single channel DAC is connected to the I2C port, and its output is connected to A0 for monitoring. 
+
 ## Seamless switching between the KuttyPy monitor, and user uploaded hex file.
 ---
 The KuttyPy monitor code is part of the bootloader. This allows users to upload their own Hex files without losing the training utility features.
