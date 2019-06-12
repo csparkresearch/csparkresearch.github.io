@@ -9,6 +9,7 @@
 					<tr>
 						<th scope="col">Title</th>
 						<th scope="col">Journal</th>
+						<th scope="col">Author(s)</th>
 						<th scope="col">Device</th>
 					</tr>
 				</thead>
@@ -24,6 +25,7 @@
 					<tr>
 						<td><a href="{{ pub.link }}">{{ pub.title }}</a></td>
 						<td>{{ pub.journal }}</td>
+						<td>{{ pub.author }}</td>
 						<td>{{ pub.device }}</td>
 					</tr>
 					{% endfor %}
