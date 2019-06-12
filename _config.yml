@@ -35,6 +35,7 @@ navbar-links:
     - Geiger Counter: "gmcounter"
     - KuttyPy: "kuttypy"
   Resources:
+    - Publications: "publications"
     - Outreach Gallery: "gallery"
     - Seelab-jr development history: "expeyes-dev"
     - GitHub : "https://github.com/csparkresearch"
