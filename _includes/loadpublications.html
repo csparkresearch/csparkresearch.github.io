@@ -1,0 +1,39 @@
+
+<div class="row">
+	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+		<div class="box bottom-main">
+			<div class="info float-container">
+
+			<table id="newspaper-grid" summary="Publications">
+				<thead>
+					<tr>
+						<th scope="col">Title</th>
+						<th scope="col">Journal</th>
+						<th scope="col">Device</th>
+					</tr>
+				</thead>
+				<tfoot>
+					<tr>
+						<td colspan="5">
+							<em>As of June 2019</em>
+						</td>
+					</tr>
+				</tfoot>
+				<tbody>
+					{% for pub in include.publist %}
+					<tr>
+						<td><a href="{{ pub.link }}">{{ pub.title }}</a></td>
+						<td>{{ pub.journal }}</td>
+						<td>{{ pub.device }}</td>
+					</tr>
+					{% endfor %}
+				</tbody>
+			</table>
+
+			</div>
+			
+		</div>                
+	
+	</div>                
+
+</div>  
