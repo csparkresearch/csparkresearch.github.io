@@ -60,7 +60,7 @@ body {
 
 /*http://stackoverflow.com/questions/16034397/css-calc-alternative*/
 .content-main {
-	padding-left: 340px;
+	padding-left: 200px;
 	width: 100%;
 	box-sizing: border-box;
 	float: none;
@@ -110,7 +110,7 @@ body {
 
 .main-navigation {
 	padding: 0px 0px;
-	width: 310px;
+	width: 180px;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -131,7 +131,7 @@ body {
 	color: #fff;
 	display: block;
 	font-weight: 500;
-	font-size: 18px;	
+	font-size: 14px;	
 }
 
 .main-menu-link-text {
@@ -143,7 +143,7 @@ body {
 
 .menu-container {	
 	padding-left: 0;
-	overflow: auto;
+	overflow: hidden;
 	margin-bottom: 10px;
 }
 .menu-container:last-child { margin-bottom: 0; }
@@ -194,7 +194,7 @@ body {
 }
 
 .block-width-full {	width: 100%; }
-.block-width-half { width: 150px; }
+.block-width-half { width: 85px; }
 
 .block-keep-ratio-1-1:after {	padding-top: 100%; }
 .block-keep-ratio-2-1:after {	padding-top: 50%; }
@@ -583,7 +583,7 @@ body {
 	height: 215px;
 }
 .nuclear-banner {
-	background: url(../images/nuclear-banner.jpg) no-repeat center center;
+	background: url(../images/nuclear_banner.jpg) no-repeat center center;
 	height: 115px;
 }
 .expeyes-banner {
