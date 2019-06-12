@@ -5,9 +5,11 @@
 	{% for image in include.imagelist %}
 		<div class="box hovereffect">
 			{% if image.filename %}
-			<a href="assets/images/{{ image.filename }}"><img alt="gallery image" src="assets/images/{{ image.filename }}"></a>
-			<div class="overlay">
-			   <h2>{{ image.description }}</h2>
+			<img alt="gallery image" src="assets/images/{{ image.filename }}">
+			<div class="overlay" >
+			   <a href="assets/images/{{ image.filename }}">
+				   <h2>{{ image.description }}</h2>
+			   </a>
 			   <!--<a class="info" href="#">More</a> -->
 			</div>
 			{% else %}
