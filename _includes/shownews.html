@@ -1,0 +1,18 @@
+<div id="content" class="news-images">
+	<div class="box-gutter"></div>
+	<div class="box-sizer"></div>
+
+	{% for pub in include.publist %}
+		<div class="box hovereffect">
+			<img alt="news thumbnail" src="{{ pub.thumb }}">
+			<div class="overlay" >
+			   <a target="_blank" href="{{ pub.link }}">
+				   <h2>{{ pub.journal }} : {{ pub.title }}</h2>
+			   </a>
+			   <!--<a class="info" href="#">More</a> -->
+			</div>
+		</div>
+	{% endfor %}
+
+</div>                
+
