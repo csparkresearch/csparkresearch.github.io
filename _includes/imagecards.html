@@ -1,0 +1,37 @@
+{% for section in include.data %}
+<h2 class="ui horizontal divider">
+  <i class="bar chart icon"></i>
+	{{ section.title }}
+</h2>
+<div class="ui attached {{ section.color }} segment">
+  <div class="ui two column stackable center aligned grid">
+	<div class="ui vertical divider">+</div>
+	<div class="middle aligned row">
+		{% if section.type=="imtxt" %}
+		<div class="ui info left aligned column ">
+		  {% for item in section.features %}
+		  <p>{{item}}</p>
+		  <div class="ui divider"></div>
+		  {%endfor%}
+		</div>
+
+		<div class="column photocard">
+			  <img src="{{section.image}}" class="ui huge bordered image">
+		</div>
+		{% elsif section.type=="imim" %}
+		<div class="column photocard">
+			  <img src="{{section.image}}" class="ui huge bordered image">
+		</div>
+
+		<div class="column photocard">
+			  <img src="{{section.image2}}" class="ui huge bordered image">
+		</div>
+		{% endif %}
+
+	</div>
+  </div>
+</div>
+{% if section.subscript %}
+<div class="ui bottom attached header">{{section.subscript}}</div>
+{% endif %}
+{% endfor %}

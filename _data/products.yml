@@ -48,7 +48,7 @@ KuttyPy:
   user-manual: "/assets/pdfs/kuttypy manual.pdf"
   ubuntu: "/assets/installers/kuttypy_pg-1.0.4.deb"
   windows: "https://drive.google.com/uc?export=download&id=1EnsdFKyxddg-sQ64d0OXfwHEziOZRXL8"
-  
+
 GMCounter:
   name: GMCounter
   link: "gmcounter"

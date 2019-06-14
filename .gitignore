@@ -1,1 +1,6 @@
 _site
+node_modules
+semantic.json
+semantic/src
+semantic/tasks
+semantic/gulpfile.js

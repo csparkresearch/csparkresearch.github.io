@@ -1,0 +1,18 @@
+<div class="ui sidebar large vertical menu">
+    <a class="header item" href="/">Home</a>
+    <div class="header item">Knowledge Centre</div>
+	{% for link in site.navbar-links %}
+        {% if link[1].first %}<div class="ui item">
+			{{ link[0] }}
+			<i class="dropdown icon"></i>
+			<div class="menu">
+              {% for childlink in link[1] %}{% for linkparts in childlink %}
+              {% include navbarlinksemantic.html link=linkparts %}
+              {% endfor %}{% endfor %}
+			</div>
+		  </div>        
+        {% else %}
+        {% include navbarlinksemantic.html link=link %}
+        {% endif %}
+    {% endfor %}
+</div>

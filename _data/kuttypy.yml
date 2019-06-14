@@ -1,0 +1,69 @@
+- type: imtxt
+  color: red
+  title: ATMEGA32 training board for beginners
+  image: assets/images/kuttypy/pov_display.webp
+  features:
+   - Live User Interface with click-and-explore features
+   - Active monitoring and control of each microcontroller pin. No compile+upload required
+   - Direct Register level access, and tweaking tools
+   - Monitoring utilities built into the bootloader
+   - Upload your own compiled C code and use as a serial monitor!
+
+- type: imtxt
+  color: green
+  title: Test and Measurement tool
+  image: assets/images/kuttypy/voltmeter.gif
+  features:
+   - Use it as a monitoring utility for your projects
+   - 8 Channel voltmeter, 0-5000 mV with 10-bit resolution
+   - Analog Gauge Display and data logger!
+   - Differential inputs with up to 200x gain
+
+- type: imim
+  color: purple
+  title: Control via Python Library on Windows/Linux (Blink.py example)
+  image: assets/images/kuttypy/blink.gif
+  image2: assets/images/kuttypy/monitor.gif
+  subscript: Monitor your Python code’s activity while it executes
+
+- registers:
+  type: imtxt
+  color: red
+  title: Manipulate Special function registers on-the-fly
+  image: assets/images/kuttypy/custom_registers.gif
+  features:
+   - Select any register for reading/writing
+   - Twiddle bits and observe the hardware's reaction
+   - Set up Read/Write sequences and test response without compile/upload
+   - Check out the ADC read sequence on the write.
+  subscript: In this demo, the ADC is read by first setting the bits in the ADCSRA(control and status register), then reading back ADCL(8LSB)+ADCH(2MSB), and also checking the new status of ADCSRA after the operation.
+
+- type: imtxt
+  color: violet
+  title: Harness the power of Python
+  image: assets/images/kuttypy/code.gif
+  features:
+   - Use the KuttyPy as a data acquisition board
+   - Combine with powerful Python modules for data analysis and visualization
+   - Plot 10-bit ADC values from up to 8 channels with just a few lines of code
+   - In this demo, the ADC is read continuously and values are plotted using matplotlib 
+
+- type: imim
+  color: orange
+  title: Plug and Play a range of I/O accessories
+  image: assets/images/kuttypy/hall_sensor.webp
+  image2: assets/images/kuttypy/servo_motor.webp
+  subscript: A hall sensor is being tested using the ADC. On the right, is a servo motor being controlled via the PWM output.
+
+- type: imtxt
+  color: red
+  title: Plug and Play a range of I2C sensors
+  image: assets/images/kuttypy/mcp4725dac.gif
+  features:
+   - Acquire data from sensors for luminosity, humidity, acceleration, angular velocity etc. via  I2C
+   - Plug and play. No coding required
+   - Automatically scan for connected sensors
+   - View data on analog gauges or the data logger
+   - Control I2C devices such as DACs ( shown in the video )
+  subscript: The MCP4725 12-bit single channel DAC is connected to the I2C port, and its output is connected to the analog input(A0) for reading the actual set value. 
+ 

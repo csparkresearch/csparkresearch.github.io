@@ -1,0 +1,26 @@
+  <div class="ui three column doubling stackable masonry grid">
+
+
+	{% for pub in include.publist %}
+    <div class="column">
+      <div class="ui fluid card">
+        <div class="photocard image">
+          <img src="{{ pub.thumb }}" alt="{{ pub.journal }}">
+        </div>
+        <div class="content">
+          <a class="header" href="{{ pub.link }}" target="_blank">{{ pub.journal }}</a>
+          <!--<div class="meta">
+            <span class="date">pub date</span>
+          </div>-->
+          <div class="description">
+            {{ pub.title }}
+          </div>
+        </div>
+      </div>
+    </div>
+	{% endfor %}
+
+  </div>
+
+        
+
