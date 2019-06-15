@@ -1,0 +1,44 @@
+{% if include.title %}
+<h3 class="ui horizontal divider">
+  <i class="copy outline icon"></i>
+	{{ include.title }}
+</h3>
+{% endif %}
+
+<table class="ui celled striped table {{{include.color}}">
+  <thead>
+	<tr>
+		<th scope="col" class="left aligned">Title</th>
+		<th scope="col" >Journal</th>
+		<th scope="col" class="right aligned collapsing">Author(s)</th>
+		<th scope="col" class="left aligned collapsing">Device</th>
+	</tr>
+  </thead>
+  <tbody>
+	{% for pub in include.publist %}
+	{% if include.filter %}
+		{% if include.filter == pub.device %}
+		<tr>
+		  <td class="left aligned selectable">
+			<a href="{{ pub.link }}"><p><i class="file outline icon"></i> {{ pub.title }}</p></a>
+		  </td>
+		  <td>{{ pub.journal }}</td>
+		  <td class="right aligned collapsing"><p>{{ pub.author }}</p></td>
+		  <td class="left aligned collapsing">{{ pub.device }}</td>
+		</tr>
+		{% endif %}
+	{% else %}
+		<tr>
+		  <td class="left aligned selectable">
+			<a href="{{ pub.link }}"><p><i class="file outline icon"></i> {{ pub.title }}</p></a>
+		  </td>
+		  <td>{{ pub.journal }}</td>
+		  <td class="right aligned collapsing"><p>{{ pub.author }}</p></td>
+		  <td class="left aligned collapsing">{{ pub.device }}</td>
+		</tr>
+
+	{% endif %}
+
+	{% endfor %}
+  </tbody>
+</table>

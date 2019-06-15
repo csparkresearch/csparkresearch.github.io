@@ -6,7 +6,7 @@
    - Compatible with our Multi Channel analyzers, Alpha Spectrometers, and Gamma Spectrometers
    - Analysis -> multi-point calibration, Gaussian Fitting, Low-Energy tail fitting, summation
    - Offline Data analysis of csv files
-   - LGPL licensed source code supplied along with the instrument
+   - LGPL licensed source code supplied free with the instrument
    - Standalone Python library for acquisition and analysis.
   subscript: Spectrum shown was acquired with our Gamma Spectrometer(gammaspec1k) and a Cobalt-60 source. Regions have been inserted to calibrate the instrument using the known gamma energies, and centroids which were estimated using gaussian curve fitting.
 

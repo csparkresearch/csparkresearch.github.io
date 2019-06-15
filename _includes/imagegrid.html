@@ -1,0 +1,20 @@
+  <div class="ui three column doubling stackable masonry grid">
+	{% for pub in include.imglist %}
+    <div class="column">
+      <div class="ui fluid card">
+        <div class="photocard image">
+          <img src="assets/images/{{ pub.filename }}" alt="{{ pub.description }}">
+        </div>
+        <div class="content">
+          <div class="description">
+            {{ pub.description }}
+          </div>
+        </div>
+      </div>
+    </div>
+	{% endfor %}
+
+  </div>
+
+        
+

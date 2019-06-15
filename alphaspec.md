@@ -1,29 +1,21 @@
 ---
-layout: product
+layout: semantic
 title: "Alpha Spectrometer"
-tagline: "&mdash; A compact alpha spectrometer with integrated 1K MCA &mdash;"
+tagline: Compact alpha spectrometer with integrated 1K MCA
 show-navigation: false
+show-toc: true
+headerimage: assets/images/alpha/alpha_setup_source.jpg
 ---
 
-{% include fancy-menu.html  
-imagelist = site.data.fancy-menu-nuclear
-%}
+{% include install.html product="AlphaSpec-1K"  %}
 
-{% include installers.html  product="AlphaSpec-1K"%}
+{% include imagecard.html data=site.data.alpha.features %}
 
+{% include maketable.html publist=site.data.publications filter="AlphaSpec1K" title="Publications"   color="green" %}
 
-{% include row_gallery.html 
-imagelist = site.data.alpha-row-gallery
-%}
+{% include maketabs.html data=site.data.alpha.topics title="More Information"%}
 
-
-{% include flow.html  
-imagelist = site.data.flow-alphaspec
-%}
-
-{% include papers.html  product="AlphaSpec-1K"%}
-
-<img style="width:100%" src="assets/posters/alpha_front.svg" />
+<img class="ui centered fluid image" src="assets/posters/alpha_front.svg" />
 
 {% include vr.html path="/assets/multipixel" width=801 height=500 frames=36 start=18 title="MultiPixel alpha Detector"  %}
 

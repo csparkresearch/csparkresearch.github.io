@@ -1,11 +1,10 @@
 ---
-layout: product
+layout: semantic
 title: "PUBLICATIONS"
 tagline: "&mdash; List of papers &mdash;"
 show-navigation: false
 ---
 
-{% include loadpublications.html publist=site.data.publications  %}
+{% include maketable.html publist=site.data.publications  color="green" %}
 
-### External resources
-{% include loadpublications.html publist=site.data.publications_related  %}
+{% include maketable.html publist=site.data.publications_related  title="External resources" color="blue" %}

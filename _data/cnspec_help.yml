@@ -9,3 +9,14 @@ offline:
   - Gaussian+Low energy tail(Lorentzian) was carried out on the second peak (Orange).
  subscript: The Python library is used to encourage students to understand the acquired data, and interpret and analyze it manually instead of relying on the graphical interface. However, the GUI is far more efficient, and feature rich.
 
+topics:
+ - title: Calibration
+   description: This tutorial explains how to use the region selectors for calculating centroids through gaussian fitting, and using the values to calibrate the instrument.
+   link: cnspec-calibration
+   image: /assets/images/cnspec/offlinedata.png
+
+ - title: Calibration
+   description: This tutorial explains how to use the region selectors for calculating centroids through gaussian fitting, and using the values to calibrate the instrument.
+   link: cnspec-calibration
+   image: /assets/images/cnspec/offlinedata.png
+

@@ -16,35 +16,17 @@ show-toc: true
 
 {% include imagecards.html data=site.data.kuttypy %}
 
-
-## Seamless switching between the KuttyPy monitor, and user uploaded hex file.
----
-The KuttyPy monitor code is part of the bootloader. This allows users to upload their own Hex files without losing the training utility features.
-
-![App Switching](assets/images/kuttypy/switch.gif?raw=true "App Switching")
-
-This example shows how to skip back and forth to an LED scanning code (which also prints letters to the serial port) written in C and uploaded.
-
-In the animation, after fiddling a little with the PWM controls on the monitor, the 'user app' button is clicked. This triggers the following:
-+ Within a few ten milliseconds the user uploaded hex file starts executing
-+ The console turns into a serial monitor, and shows any text sent by the user uploaded hex.
-
-The user can switch back to the monitoring utility in a snap!
-
-### Persistence of vision
-![Screencast](assets/images/kuttypy/pov_display.webp?raw=true "POV display!")
-
-A persistence of vision display made with C code! Write text in thin air using 8 LEDs on PORTB.
-
-
 ### Installation from source (License: MIT)
 ---
+
 + Install dependencies (Ubuntu 18.04)
-```
+
+```shell
 sudo apt-get install python3 python3-serial python3-pyqt5 python3-pyqt5.qtsvg
 ```
 + Clone the repository, and run the file
-```
+
+```shell
 git clone https://github.com/csparkresearch/kuttypy-gui
 cd kuttypy-gui
 python3 KuttyPyGUI.py

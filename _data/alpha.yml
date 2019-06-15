@@ -1,0 +1,19 @@
+features:
+ type: imtxt
+ color: green
+ title: Main Features of the spectrometer
+ image: assets/images/alpha/alpha_wide.jpg
+ features:
+  - 10 MeV full scale range
+  - 1024 bin MCA integrated. Fully USB powered unit
+  - 16 million counts per channel.
+  - Monitoring outputs for preamplifier and shaping amplifier.
+  - Fully featured Python software supplied open-source.
+  - 1/2 litre vacuum chamber with 6mm inlet port.
+ subscript: The chamber featured in the image includes the detector, preamplifier, shaping amplifier, and Multi-channel analyzer. The whole unit is USB powered.
+ 
+topics:
+ - title: Software
+   description: Open-source software, CNSpec, is supplied with the instrument.
+   link: cnspec
+   image: /assets/images/cnspec/cnspec_thumb.jpg

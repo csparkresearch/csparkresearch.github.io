@@ -1,0 +1,27 @@
+<h2 class="ui horizontal divider">
+  <i class="bar chart icon"></i>
+	{{ include.title }}
+</h2>
+
+<div class="ui styled fluid accordion red">
+	{% for section in include.data %}
+	  <div class="title">
+		<i class="dropdown icon"></i>
+		{{ section.title }}
+		<a class="ui right floated tiny green button" href="{{section.link}}">
+			Open Page
+			<i class="right chevron icon"></i>
+		</a>
+
+	  </div>
+	  <div class="content">
+		 {% if section.image %}
+		<div class="column photocard">
+			<img src="{{ section.image }}" alt="{{ section.title }}" class="ui medium left image photocard">
+		</div>
+		{% endif %}
+		<p >{{ section.description }}</p>
+
+	  </div>
+	{% endfor %}
+</div>

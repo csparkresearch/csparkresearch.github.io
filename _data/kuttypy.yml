@@ -21,7 +21,7 @@
 
 - type: imim
   color: purple
-  title: Control via Python Library on Windows/Linux (Blink.py example)
+  title: Control via the Python Library
   image: assets/images/kuttypy/blink.gif
   image2: assets/images/kuttypy/monitor.gif
   subscript: Monitor your Python code’s activity while it executes
@@ -29,7 +29,7 @@
 - registers:
   type: imtxt
   color: red
-  title: Manipulate Special function registers on-the-fly
+  title: Alter registers on-the-fly
   image: assets/images/kuttypy/custom_registers.gif
   features:
    - Select any register for reading/writing
@@ -57,7 +57,7 @@
 
 - type: imtxt
   color: red
-  title: Plug and Play a range of I2C sensors
+  title: Plug and Play  I2C sensors
   image: assets/images/kuttypy/mcp4725dac.gif
   features:
    - Acquire data from sensors for luminosity, humidity, acceleration, angular velocity etc. via  I2C
@@ -67,3 +67,23 @@
    - Control I2C devices such as DACs ( shown in the video )
   subscript: The MCP4725 12-bit single channel DAC is connected to the I2C port, and its output is connected to the analog input(A0) for reading the actual set value. 
  
+- type: imtxt
+  color: blue
+  title: Choose standalone mode / Live monitor
+  image: assets/images/kuttypy/switch.gif
+  features:
+   - The KuttyPy monitor code is part of the bootloader. 
+   - This allows users to upload their own Hex files without losing the training utility features.
+   - The user can switch back to the monitoring utility in a snap!
+   - This example shows how to skip back and forth to an LED scanning code written in C and uploaded
+  subscript: In the animation, after fiddling a little with the PWM controls on the monitor, the 'user app' button is clicked. This triggers the following -> Within a few ten milliseconds the user uploaded hex file starts executing. The console turns into a serial monitor, and shows any text sent by the user uploaded hex.
+
+- type: imtxt
+  color: green
+  title: More examples for standalone operation
+  image: assets/images/kuttypy/pov_display.webp
+  features:
+   - Lots of example C code is shipped with the software
+   - From simple codes for blinking LEDs, Reading ADCs, and operating PWM outputs
+   - To stepper motor control, and persistence of vision displays.
+  subscript: A persistence of vision display made with C code! Write text in thin air using 8 LEDs on PORTB.

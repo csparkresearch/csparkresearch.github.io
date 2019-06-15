@@ -11,6 +11,7 @@ headerimage: assets/images/cnspec.jpg
 
 {% include imagecards.html data=site.data.cnspec %}
 
+{% include maketabs.html data=site.data.cnspec_help.topics title="Related Help Topics"%}
 
 
 ---
