@@ -13,11 +13,11 @@ headerimage: assets/images/alpha/alpha_setup_source.jpg
 
 {% include maketable.html publist=site.data.publications filter="AlphaSpec1K" title="Publications"   color="green" %}
 
+{% include imagecards.html data=site.data.alpha_features title="Experiments" %}
+
 {% include maketabs.html data=site.data.alpha.topics title="More Information"%}
 
-<img class="ui centered fluid image" src="assets/posters/alpha_front.svg" />
 
 {% include vr.html path="/assets/multipixel" width=801 height=500 frames=36 start=18 title="MultiPixel alpha Detector"  %}
 
-
-* e-mail csparkresearch@gmail.com for enquiries
+* e-mail csparkresearch@gmail.com for enquiries. [Contact Us](contact)

@@ -1,0 +1,52 @@
+- type: feature
+  color: red
+  title: "Calibration using known sources"
+  subtitle: Single point calibration with Americium 241
+  leftimage: assets/images/alpha/1.png
+  imagestyle: medium
+  links:
+   - text: Brochure Back
+     url: assets/posters/alpha_back.svg
+   - text: Brochure front
+     url: assets/posters/alpha_front.svg
+  text: Once a spectrum from a known source has been acquired, the region selectors of the software can be used to mark the peaks, and measure their centroids via gaussian fitting. The fitting routine can be optionally instructed to consider a low energy tail for asymmetric peaks. The calibration window is used to supply known energy values for the analyzed peaks from which a polynomial is generated,  and this completes the calibration process.
+
+- type: feature
+  color: green
+  title: "Spectra from non-enriched sources"
+  subtitle: Spectrum of 212Bi, and half-life calculations
+  subscript: "Bismuth - 212 | Data from non-enriched, low-dose sources"
+  leftimage: assets/images/alpha/8.png
+  rightimage: assets/images/alpha/4.png
+  imagestyle: medium
+  text:  Thorium Nitrate can be used to deposit a thin film of Bismuth-212 on lead foils via electrolysis. The short half life of Bi-212 (60.5 minutes) enables students to view the typical exponential decay curve within one lab session by studying the activity of the film deposited on the  Anode. 212-Bismuth's decay chain involves two distinct alpha particle energies, with the highest known branching ratio of 66:34, and this can also be verified to better than 1% accuracy with our spectrometer.
+
+      
+- type: feature
+  color: red
+  title: "Attenuation Experiments: Centroid Channel vs Distance"
+  subtitle: study the variation of alpha energies with distance travelled
+  subscript: "source: PE-18-07-511 , published in Physedu Vol 25 No. 1 Jan-Mar 2019"
+  rightimage: assets/images/alpha/7.png
+  imagestyle: medium
+  text: At atmospheric pressure, Alpha particles are rapidly attenuated. Students place the source at varying distances from the detector, and record the centroid channel to study this. Similarly, the effect of air pressure is studied by setting different levels of vacuum for a constant source-detector distance.
+      
+- type: feature
+  color: blue
+  title: "Attenuation Experiments: Centroid Channel vs Pressure"
+  subtitle: study the variation of alpha energies with air pressure
+  subscript: "source: PE-18-07-511 , published in Physedu Vol 25 No. 1 Jan-Mar 2019"
+  leftimage: assets/images/alpha/6.png
+  imagestyle: medium
+  text: For a fixed source-detector distance of around 2 cms, the centroid channel is recorded for different air pressures. In order to achieve different pressures, the pump is first used to evacuate the chamber for a while, and is then cut off by closing the series valve. Following this, the vent valve is slowly opened till the pressure rises to the desired level, and closed before acquiring a dataset.
+ 
+- type: feature
+  color: red
+  title: "Spectra from various sources"
+  subtitle: study the spectrum from 229Th
+  subscript: "Data from Th229 - A multi-peak source"
+  rightimage: assets/images/alpha/9.png
+  imagestyle: medium
+  text: Th229 , A multi-peak source , was analyzed using the AlphaSpec1k. It can also be used to verify the linearity of the instrument since a wide range of energies are available.
+
+

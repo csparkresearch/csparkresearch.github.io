@@ -1,9 +1,20 @@
+{% if include.title %}
+<h3 class="ui horizontal divider">
+  <i class="settings icon"></i>
+	{{ include.title }}
+</h3>
+{% endif %}
+
 {% for section in include.data %}
-<h2 class="ui horizontal divider">
-  <i class="bar chart icon"></i>
-	{{ section.title }}
-</h2>
+{% if section.type=="imtxt" or section.type=="imim" %}
 <div class="ui attached {{ section.color }} segment">
+  {% if section.title %}
+	<h2 class="ui horizontal divider">
+	  <i class="bar chart icon"></i>
+		{{ section.title }}
+	</h2>
+  {% endif %}
+
   <div class="ui two column stackable center aligned grid">
 	<div class="ui vertical divider">+</div>
 	<div class="middle aligned row">
@@ -28,10 +39,87 @@
 		</div>
 		{% endif %}
 
+	  </div>
 	</div>
   </div>
-</div>
-{% if section.subscript %}
-<div class="ui bottom attached header">{{section.subscript}}</div>
+  {% if section.subscript %}
+    <div class="ui bottom attached header">{{section.subscript}}</div>
+  {% endif %}
+
+{% elsif section.type=="feature" %}
+<div class="ui card" style="max-width: 100%; min-width: 100%;">
+		<div class="content" style="padding: 4px;">
+			<div class="ui items">
+				<div class="item">
+					{% if section.leftimage %}
+					<div class="ui segment raised pink">
+						<div class="ui centered image {{section.imagestyle}} photocard">
+							<img src="{{ section.leftimage }}" alt="{{ section.imagedescription }}" class="ui image">
+						</div>
+					</div>
+					{% endif %}
+
+					<div class="content" style="padding: 1rem;">
+						<a class="header">{{section.title}}</a>
+						{% if section.subtitle %}
+						<div class="meta">
+							<span >{{ section.subtitle }}</span>
+						</div>
+						{% endif %}
+						<div class="description">
+							<p>{{ section.text }}</p>
+						</div>
+					</div>
+
+					{% if section.rightimage %}
+					<div class="ui segment raised orange" style="margin-top: 0px;">
+						<div class="ui centered image  {{section.imagestyle}} photocard">
+							<img src="{{ section.rightimage }}" alt="{{ section.imagedescription }}" class="ui image">
+						</div>
+					</div>
+					{% endif %}
+
+				</div>
+			</div>
+		</div>
+		{% if section.subscript or section.links %}
+		<div class="extra content">
+			{% if section.subscript%}<div class="ui basic button">{{section.subscript}}</div>{% endif %}
+			{% for link in section.links %}
+			<a class="ui button right floated positive outline" href="{{link.url}}"><i class="globe icon"></i>{{link.text}}</a>
+			{% endfor %}
+		</div>
+		{% endif %}
+	</div>
+
+{% elsif section.type=="para" %}
+<div class="ui card" style="max-width: 100%; min-width: 100%;">
+		<div class="content" style="padding: 0;">
+			<div class="ui items">
+				<div class="item">
+					{% for image in section.images %}
+					<div class="ui image {{image.style}}">
+						<img src="{{ image.src }}" alt="{{ image.description }}" class="ui image">
+					</div>
+					{% endfor %}
+
+					<div class="content" style="padding: 1rem;">
+						<div class="description" >
+							<div markdown="1">{{ section.text }}</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		{% if section.subscript or section.links %}
+		<div class="extra content">
+			<span class="aligned middle">{{section.subscript}}</span>
+			{% for link in section.links %}
+			<a class="ui button right floated positive outline" href="{{link.url}}"><i class="globe icon"></i>{{link.text}}</a>
+			{% endfor %}
+		</div>
+		{% endif %}
+	</div>
+
 {% endif %}
 {% endfor %}
