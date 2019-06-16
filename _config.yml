@@ -28,13 +28,13 @@ collections:
 # List of links in the navigation bar
 navbar-links:
   Products:
-    - ExpEYES: "eyes17"
-    - AlphaSpec-1K: "alphaspec"
+    - Alpha Spectrometer: "alphaspec"
     - Gamma Spectrometer: "gammaspec"
     - Multi Channel Analyzer: "mca1k"
     - CNSPEC software: "cnspec"
-    - Geiger Counter: "gmcounter"
+    - ExpEYES: "eyes17"
     - KuttyPy: "kuttypy"
+    - Geiger Counter: "gmcounter"
   Resources:
     - In the News: "news"
     - Publications: "publications"

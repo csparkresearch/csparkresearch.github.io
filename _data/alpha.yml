@@ -16,5 +16,7 @@ topics:
  - title: Software
    description: Open-source software, CNSpec, is supplied with the instrument.
    link: cnspec
-   image: /assets/images/cnspec/cnspec_thumb.jpg
+   tabstyle: active
+   image: /assets/images/cnspec/cnspec_1200.jpg
+   imagestyle: fluid rounded raised
 

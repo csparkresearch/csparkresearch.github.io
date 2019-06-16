@@ -47,7 +47,7 @@
   {% endif %}
 
 {% elsif section.type=="feature" %}
-<div class="ui card" style="max-width: 100%; min-width: 100%;">
+<div class="ui card " style="max-width: 100%; min-width: 100%;">
 		<div class="content" style="padding: 4px;">
 			<div class="ui items">
 				<div class="item">
@@ -61,6 +61,7 @@
 
 					<div class="content" style="padding: 1rem;">
 						<a class="header">{{section.title}}</a>
+						<div class="ui clearing divider"></div>
 						{% if section.subtitle %}
 						<div class="meta">
 							<span >{{ section.subtitle }}</span>

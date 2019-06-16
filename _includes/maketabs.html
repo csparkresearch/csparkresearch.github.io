@@ -5,7 +5,7 @@
 
 <div class="ui styled fluid accordion red">
 	{% for section in include.data %}
-	  <div class="title">
+	  <div class="title {{section.tabstyle}}">
 		<i class="dropdown icon"></i>
 		{{ section.title }}
 		<a class="ui right floated tiny green button" href="{{section.link}}">
@@ -14,10 +14,10 @@
 		</a>
 
 	  </div>
-	  <div class="content">
+	  <div class="content {{section.tabstyle}}">
 		 {% if section.image %}
 		<div class="column photocard">
-			<img src="{{ section.image }}" alt="{{ section.title }}" class="ui medium left image photocard">
+			<img src="{{ section.image }}" alt="{{ section.title }}" class="ui left image photocard {{section.imagestyle}}">
 		</div>
 		{% endif %}
 		<p >{{ section.description }}</p>
