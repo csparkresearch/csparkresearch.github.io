@@ -1,7 +1,7 @@
 
 title: CSpark Research # your title
 tagline: Driving Innovation
-url: 'http://csparkresearch.in'
+url: 'https://csparkresearch.in'
 baseurl: '' #change it according to your repository name
 
 
@@ -81,3 +81,6 @@ highlighter: rouge
 kramdown:
  syntax_highlighter: rouge
  input: GFM
+
+plugins:
+  - jekyll-sitemap
