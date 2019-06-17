@@ -7,12 +7,15 @@ show-toc: true
 banner: assets/images/kuttypy/cover.jpg
 ---
 
+{% comment %}
 <div class="ui center aligned container" style="max-width: 700px !important;">
 <video width="100%" autoplay loop muted playsinline>
   <source src="assets/images/kuttypy/main.mp4" type="video/mp4" />
   <img src="assets/images/kuttypy/main.gif" title="Your browser does not support the <video> tag">
 </video>
 </div>
+{% endcomment %}
+<img src="assets/images/kuttypy/main.gif" class="ui centered image">
 
 {% include install.html product="KuttyPy"  %}
 

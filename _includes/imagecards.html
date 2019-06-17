@@ -113,7 +113,7 @@
 
 	<div class="ui center aligned container" style="max-width: 600px !important;">
 
-	<video preload='metadata' poster='{{ section.thumb }}' width="100%" controls playsinline>
+	<video preload='none' poster='{{ section.thumb }}' width="100%" controls loop playsinline>
 		{% if section.mp4 %}<source src='{{ section.mp4 }}' type="video/mp4">{% endif %}
 		{% if section.webm %}<source src='{{ section.webm }}' type="video/webm">{% endif %}
 		<p>Your Browser does not support HTML5 videos. Please try viewing on a different one</p>
