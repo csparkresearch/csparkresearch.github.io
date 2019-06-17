@@ -9,6 +9,14 @@
    - Monitoring utilities built into the bootloader
    - Upload your own compiled C code and use as a serial monitor!
 
+- type: video
+  webm: assets/images/kuttypy/robot.webm
+  mp4: assets/images/kuttypy/robot.mp4
+  thumb: assets/images/kuttypy/robot.jpeg
+  color: green
+  title: Control Robots!
+  description: The interactive UI is used to set the PWM output on various channels of a PCA9685 PWM generator board to control a robotic arm available online for 20 dollars or so.
+
 - type: imtxt
   color: green
   title: Test and Measurement tool
@@ -19,13 +27,6 @@
    - Analog Gauge Display and data logger!
    - Differential inputs with up to 200x gain
 
-- type: video
-  webm: assets/images/kuttypy/robot.webm
-  mp4: assets/images/kuttypy/robot.mp4
-  thumb: assets/images/kuttypy/robot.jpeg
-  color: green
-  title: Control Robots!
-  description: The interactive UI is used to set the PWM output on various channels of a PCA9685 PWM generator board to control a robotic arm available online for 20 dollars or so.
 
 - type: imim
   color: purple
