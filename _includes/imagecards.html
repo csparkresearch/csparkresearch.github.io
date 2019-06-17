@@ -43,6 +43,7 @@
 {% if section.subscript %}
 <div class="ui bottom attached header">{{section.subscript}}</div>
 {% endif %}
+<div class="ui clearing hidden divider"></div>
 
 {% elsif section.type=="feature" %}
 <div class="ui container " style="max-width: 100%; min-width: 100%;">
@@ -97,12 +98,34 @@
 <div class="ui segment raised {{section.color}} attached  ">
   <h4 class="ui left floated header">  <i class="image icon"></i>{{ section.title }}</h4>
   <div class="ui clearing divider"></div>
-  <img src = "{{section.url}}" class="ui fluid image"/>
+  <img src = "{{section.url}}" class="ui fluid rounded image"/>
 </div>
 {% if section.description %}
 <div class="ui bottom attached header">{{section.description}}</div>
 {% endif %}
 <div class="ui clearing hidden divider"></div>
+
+
+{% elsif section.type=="video" %}
+<div class="ui segment raised {{section.color}} attached  ">
+  <h4 class="ui left floated header">  <i class="video icon"></i>{{ section.title }}</h4>
+  <div class="ui clearing divider"></div>
+
+	<div class="ui center aligned container" style="max-width: 600px !important;">
+
+	<video preload='metadata' poster='{{ section.thumb }}' width="100%" controls playsinline>
+		{% if section.mp4 %}<source src='{{ section.mp4 }}' type="video/mp4">{% endif %}
+		{% if section.webm %}<source src='{{ section.webm }}' type="video/webm">{% endif %}
+		<p>Your Browser does not support HTML5 videos. Please try viewing on a different one</p>
+	</video>
+	</div>
+
+</div>
+{% if section.description %}
+<div class="ui bottom attached header">{{section.description}}</div>
+{% endif %}
+<div class="ui clearing hidden divider"></div>
+
 
 {% elsif section.type=="para" %}
 <div class="ui card" style="max-width: 100%; min-width: 100%;">
