@@ -1,5 +1,5 @@
 - type: imtxt
-  color: red
+  color: olive
   title: ATMEGA32 training board for beginners
   image: assets/images/kuttypy/pov_display.webp
   features:
@@ -37,7 +37,7 @@
 
 - registers:
   type: imtxt
-  color: red
+  color: teal
   title: Alter registers on-the-fly
   image: assets/images/kuttypy/custom_registers.gif
   features:
@@ -65,7 +65,7 @@
   subscript: A hall sensor is being tested using the ADC. On the right, is a servo motor being controlled via the PWM output.
 
 - type: imtxt
-  color: red
+  color: pink
   title: Plug and Play  I2C sensors
   image: assets/images/kuttypy/mcp4725dac.gif
   features:
