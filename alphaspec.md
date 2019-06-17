@@ -5,6 +5,7 @@ tagline: Compact alpha spectrometer with integrated 1K MCA
 show-navigation: false
 show-toc: true
 headerimage: assets/images/alpha/alpha_setup_source.jpg
+banner: assets/images/alpha/cover.jpg
 ---
 
 {% include install.html product="AlphaSpec-1K"  %}
