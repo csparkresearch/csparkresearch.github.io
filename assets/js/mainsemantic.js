@@ -35,23 +35,21 @@ function init_menu(){
       ;
 
 
-      // fix menu when passed
-      $('.masthead')
-        .visibility({
-          once: false,
-          onBottomPassed: function() {
-            $('.fixed.menu').transition('fade in');
-          },
-          onBottomPassedReverse: function() {
-            $('.fixed.menu').transition('fade out');
-          }
-        })
-      ;
 
       // create sidebar and attach to menu open
       $('.ui.sidebar')
         .sidebar('attach events', '.toc.item')
       ;
+
+      // Animate sidebar icon
+		$(".sidebar.reveal").mouseenter(function(){
+			 $(this).stop().animate({width: '120px'}, 300, 
+             function(){$(this).find('.text').show();});
+		}).mouseleave(function (event){
+			$(this).find('.text').hide();
+			$(this).stop().animate({width: '70px'}, 300);
+		});
+
 
 }
 

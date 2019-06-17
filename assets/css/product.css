@@ -71,6 +71,10 @@
       display: none;
     }
 
+    .ui.secondary.inverted.pointing.menu {
+      border: 0px;
+    }
+
 
 	@media only screen and (min-width: 768px) {
 	  .masonry.grid {

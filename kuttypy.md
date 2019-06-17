@@ -4,6 +4,7 @@ title: "KuttyPy"
 tagline: "&mdash; [ Microcontroller Training Utility ] &mdash;"
 show-navigation: false
 show-toc: true
+banner: assets/images/kuttypy/cover.jpg
 ---
 
 <div class="ui center aligned container" style="max-width: 700px !important;">
