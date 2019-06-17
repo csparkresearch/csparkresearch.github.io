@@ -11,9 +11,9 @@ function modalify(){
         var image = $(this).children('img').attr('src');
         var header = $(this).children('img').attr('alt');
         if(header){
-			$('body').append('<div class="ui modal fullscreen"  height="100%"><div class="header">'+header+'</div><div class="scrolling content fullscreen"><img src="'+image+'" class="ui fluid image centered" /></div></div>');        
+			$('body').append('<div class="ui modal"  style="height:90%;"><div class="header">'+header+'</div><div class="scrolling content" style="100%;max-height:95%;"><img src="'+image+'" class="ui fluid image centered" /></div></div>');        
 		}else{
-			$('body').append('<div class="ui modal"><div class="scrolling content"><img src="'+image+'" width="100%" /></div></div>');        
+			$('body').append('<div class="ui modal" style="height:90%;"><div class="content" style="max-height:1800px;"><img src="'+image+'" class="ui fluid image centered" /></div></div>');        
 		}
         $('.ui.modal')
             .modal('show');

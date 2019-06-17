@@ -1,0 +1,59 @@
+flowimage: assets/images/gamma/flow.png
+
+features:
+ type: imtxt
+ color: green
+ title: Main Features of the GammaSpec spectrometer
+ image: assets/images/gamma/gammaspec.png
+ features:
+  - 2 MeV full scale range
+  - <80keV FWHM @ 1332KeV centroid from 60Co
+  - 1024 bin MCA integrated. Fully USB powered unit
+  - 16 million counts per channel.
+  - Monitoring output for shaping amplifier.
+  - Fully featured Python software supplied open-source.
+  - Capable of coincidence measurements using our dual parameter MCA
+ subscript: The gammaspec is a highly compact portable spectrometer which is fully USB Powered. Carry it in the palm of your hand!
+ 
+
+subtopics:
+ - type: feature
+   color: red
+   title: "Calibration using known sources"
+   subtitle: Dual point calibration with Cobalt 60
+   leftimage: assets/images/gamma/co60.png
+   imagestyle: medium
+   links:
+    - text: Brochure
+      url: /assets/posters/gammaweb.svg
+   text: Cobalt-60 forms 2 photopeaks due to the gamma rays emitted with energies around 1173 and 1332 keV. This makes it ideal for a 2 point calibration. The calibrated instrument can then be used with other sources such as 137-Caesium, 22-Na, 57-Co etc which are part of the standard enriched source kit available from BRITS
+   
+ - type: feature
+   color: green
+   title: "Isotope identification"
+   subtitle: Cs-137 spectrum acquired with a calibrated instrument
+   rightimage: assets/images/gamma/co_cs.png
+   imagestyle: large
+   text: The calibrated instrument can be used to acquire spectra from unknown sources, and the gaussian fitting utility be used for locating centroids of identified photopeaks. In this image, Cs-137 has been identified since its known photopeak energy is 662 keV.
+   
+ - type: photo
+   url: assets/images/gamma/flow.png
+   color: green
+   title: Flow diagram for the instrument
+   description: All signal processing stages as well as a 1K MCA is included with the detection system
+
+ - type: photo
+   url: assets/images/gamma/monazite_spectrum.png
+   color: red
+   title: Monazite Sand
+   description: Spectrum from naturally occuring monazite sand found in the beaches of southern India.
+
+
+topics:
+ - title: Software
+   description: Open-source software, CNSpec, is supplied with the instrument.
+   link: cnspec
+   tabstyle: active
+   image: /assets/images/cnspec/cnspec_1200.jpg
+   imagestyle: fluid rounded raised
+

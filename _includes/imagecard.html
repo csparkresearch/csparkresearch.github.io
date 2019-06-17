@@ -15,15 +15,15 @@
 		</div>
 
 		<div class="column photocard">
-			  <img src="{{include.data.image}}" class="ui huge bordered image">
+			  <img src="{{include.data.image}}" class="ui huge rounded image">
 		</div>
 		{% elsif include.data.type=="imim" %}
 		<div class="column photocard">
-			  <img src="{{include.data.image}}" class="ui huge bordered image">
+			  <img src="{{include.data.image}}" class="ui huge rounded image">
 		</div>
 
 		<div class="column photocard">
-			  <img src="{{include.data.image2}}" class="ui huge bordered image">
+			  <img src="{{include.data.image2}}" class="ui huge rounded image">
 		</div>
 		{% endif %}
 
@@ -33,4 +33,5 @@
 {% if include.data.subscript %}
 <div class="ui bottom attached header">{{include.data.subscript}}</div>
 {% endif %}
+<div class="ui clearing hidden divider"></div>
 
