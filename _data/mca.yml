@@ -1,0 +1,43 @@
+flowimage: assets/images/gamma/flow.png
+ 
+
+subtopics:
+ - type: imtxt
+   color: green
+   title: Main Features of the 1024 channel MCA
+   image: assets/images/mca_pic.png
+   features:
+    - 3.3V Shaped Input. 3uS rise time.
+    - 12-bit adjustable threshold
+    - 12-bit ADC
+    - 1024 channels. Fully USB powered unit
+    - 16 million counts per channel
+    - 8uS processing time per pulse
+    - Fully featured Python software supplied open-source.
+   subscript: Dual parameter list mode MCA also available for coincidence measurements
+
+ - type: imtxt
+   color: blue
+   title: Main Features of the 4096 channel MCA
+   image: assets/images/mca_pic.png
+   features:
+    - 4V Shaped Input. 3uS rise time.
+    - 12-bit adjustable threshold
+    - 16-bit ADC
+    - 4096 channels. Fully USB powered unit
+    - 2 Bytes per channel.
+    - 10uS processing time per pulse including 3uS rise time
+    - Fully featured Python software supplied open-source.
+
+ - type: photo
+   url: assets/posters/mca1k.svg
+   title: MCA poster
+
+topics:
+ - title: Software
+   description: Open-source software, CNSpec, is supplied with the instrument.
+   link: cnspec
+   tabstyle: active
+   image: /assets/images/cnspec/cnspec_1200.jpg
+   imagestyle: fluid rounded raised
+
