@@ -4,6 +4,7 @@ title: "KuttyPy"
 tagline: "&mdash; [ Microcontroller Training Utility ] &mdash;"
 show-navigation: false
 show-toc: true
+share-img: assets/images/kuttypy/robot.jpeg
 banner: assets/images/kuttypy/cover.jpg
 ---
 

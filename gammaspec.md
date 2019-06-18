@@ -5,6 +5,7 @@ tagline: "Portable USB powered Gamma spectrometer"
 show-navigation: false
 headerimage: assets/images/gamma/banner.jpg
 banner: assets/images/kuttypy/cover.jpg
+share-img: assets/images/gamma/gamma_spectrum.png
 ---
 
 

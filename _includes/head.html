@@ -57,7 +57,7 @@
   {% elsif page.tagline %}
   <meta property="og:description" content="{{ page.tagline }}">
   {% else %}
-  <meta property="og:description" content="{{ page.content | strip_html | xml_escape | truncatewords: 50 }}">
+  <meta property="og:description" content="Engineering and Instrumentation">
   {% endif %}
 
 
@@ -65,7 +65,7 @@
 
   {% if page.id %}
   <meta property="og:url" content="{{ site.url }}/{{ page.url }}" />
-  <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
+  <link rel="canonical" href="{{ site.url }}/{{ page.url }}" />
   {% else %}
   <meta property="og:url" content="{{ site.url }}{{ page.url | remove: '/index.html' | remove: '.html' }}" />
   <link rel="canonical" href="{{ site.url }}{{ page.url | remove: '/index.html' | remove: '.html' }}" />
@@ -100,7 +100,7 @@
   {% elsif page.tagline %}
   <meta name="twitter:description" content="{{ page.tagline }}">
   {% else %}
-  <meta name="twitter:description" content="{{ page.content | strip_html | xml_escape | truncatewords: 50 }}">
+  <meta name="twitter:description" content="Instrumentation and Engineering">
   {% endif %}
 
   {% if page.share-img %}
