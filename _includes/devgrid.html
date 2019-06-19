@@ -1,0 +1,24 @@
+  <div class="ui three column doubling stackable masonry grid">
+	{% for pub in include.prototypes %}
+    <div class="column">
+      <div class="ui fluid card">
+        <div class="photocard image">
+          <img src="{{ pub.url }}" alt="{{ pub.date }}">
+        </div>
+        <div class="content">
+          <div class="header" href="{{ pub.link }}" target="_blank">{{ pub.date }}</div>
+          <!--<div class="meta">
+            <span class="date">pub date</span>
+          </div>-->
+          <div class="description">
+            {{ pub.description }}
+          </div>
+        </div>
+      </div>
+    </div>
+	{% endfor %}
+
+  </div>
+
+        
+

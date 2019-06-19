@@ -19,6 +19,22 @@
 		<div class="column photocard">
 			<img src="{{ section.image }}" alt="{{ section.title }}" class="ui left image photocard {{section.imagestyle}}">
 		</div>
+		{% elsif section.mp4 or section.webm %}
+		<div class="ui segment raised {{section.color}} attached  ">
+		  <h4 class="ui left floated header">  <i class="video icon"></i>{{ section.title }}</h4>
+		  <div class="ui clearing divider"></div>
+
+			<div class="ui center aligned container" style="max-width: 600px !important;">
+
+			<video preload='none' {% if section.thumb %}poster='{{ section.thumb }}'{% endif %} width="100%" {{section.videooptions}}>
+				{% if section.mp4 %}<source src='{{ section.mp4 }}' type="video/mp4">{% endif %}
+				{% if section.webm %}<source src='{{ section.webm }}' type="video/webm">{% endif %}
+				<p>Your Browser does not support HTML5 videos. Please try viewing on a different one</p>
+			</video>
+			</div>
+
+		</div>
+
 		{% endif %}
 		<p >{{ section.description }}</p>
 

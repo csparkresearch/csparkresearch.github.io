@@ -1,3 +1,9 @@
+.highlight pre { 
+    overflow-x: auto;
+	box-shadow: 6px 4px 15px #000;
+    padding: 1em;
+    }
+
 .highlight table td { padding: 5px; }
 .highlight table pre { margin: 0; }
 .highlight {

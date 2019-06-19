@@ -67,21 +67,23 @@
 						</div>
 						{% endif %}
 						<div class="description">
-							<p>{{ section.text }}</p>
-		{% if section.subscript or section.links %}
-		<div class="extra content">
-			{% if section.subscript%}<div class="ui basic button">{{section.subscript}}</div>{% endif %}
-			{% for link in section.links %}
-			<a class="ui button right floated positive outline" href="{{link.url}}"><i class="globe icon"></i>{{link.text}}</a>
-			{% endfor %}
-		</div>
-		{% endif %}
+<div markdown="1">
+{{ section.text }}
+</div>
+							{% if section.subscript or section.links %}
+							<div class="extra content">
+								{% if section.subscript%}<div class="ui basic button">{{section.subscript}}</div>{% endif %}
+								{% for link in section.links %}
+								<a class="ui button right floated positive outline" href="{{link.url}}"><i class="globe icon"></i>{{link.text}}</a>
+								{% endfor %}
+							</div>
+							{% endif %}
 
 						</div>
 					</div>
 
 					{% if section.rightimage %}
-					<div class="ui segment raised orange" style="margin-top: 0px;">
+					<div class="ui segment raised orange" >
 						<div class="ui centered image  {{section.imagestyle}} photocard">
 							<img src="{{ section.rightimage }}" alt="{{ section.imagedescription }}" class="ui image">
 						</div>
@@ -95,7 +97,7 @@
 <div class="ui clearing hidden divider"></div>
 
 {% elsif section.type=="photo" %}
-<div class="ui segment raised {{section.color}} attached  ">
+<div class="ui continer {{section.color}} attached  ">
   <h4 class="ui left floated header">  <i class="image icon"></i>{{ section.title }}</h4>
   <div class="ui clearing divider"></div>
   <img src = "{{section.url}}" class="ui fluid rounded image"/>

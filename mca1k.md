@@ -20,4 +20,7 @@ share-img: assets/images/mca_pic.png
 
 {% include maketabs.html data=site.data.mca.topics title="More Information"%}
 
+{% include code.html code=site.data.mca.offline_example title="Python Library for flexible operation: Code example" description="Dependencies: Matplotlib(for plotting) , Scipy(For fitting)" %}
+
+
 * e-mail csparkresearch@gmail.com for enquiries

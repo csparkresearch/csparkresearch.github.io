@@ -1,18 +1,16 @@
 ---
-layout: default
+layout: semantic
+title: "ExpEYES Development"
+tagline: "Various prototypes that finally resulted in ExpEYES 17"
 show-navigation: false
+show-toc: true
+headerimage: assets/images/E17_40_scaled.jpg
 ---
-{% include loadgallery.html imagelist=site.data.expeyes-dev  %}
 
-<div class="row margin-b-30">
-	<div class="col-xs-12 col-sm-12 col-md-12 biliend">
-		<div class="banner-2-container nuclear-banner" >
-			<div class="aenean">
-				<h4>All-in One Data Acquisition setups </h4>
-				<h3>SEELablet series</h3>
-			</div>    
-		</div>                                
-	</div>
-</div>
+{% include devgrid.html prototypes=site.data.expeyes-dev  %}
 
-{% include loadgallery.html imagelist=site.data.seelabv2-dev  %}
+
+<h3 class="ui horizontal divider"><i class="bar chart icon"></i>SEELablet V2</h3>
+
+
+{% include devgrid.html prototypes=site.data.seelabv2-dev  %}
