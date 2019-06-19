@@ -55,7 +55,7 @@ GMCounter:
   description: "Geiger Counter with USB interface"
   image: kpy_thumb.gif
   user-manual: "/assets/pdfs/gm manual.pdf"
-  ubuntu: "#"
+  ubuntu: "/assets/installers/gmc-1.0.0.deb"
   windows: "#"
 
 

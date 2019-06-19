@@ -16,15 +16,20 @@ topics:
  - type: feature
    color: blue
    title: "Access via a serial terminal"
-   subtitle: Commands for serial port based control
+   subtitle: Commands for serial port based control. BAUD 115200 . 8N1
    text: |
-    + TIME 10 ; Set 10 seconds window for counting
-    + START ; start the counter
-    + TIME? ; elapsed time
-    + STOP ; stop the GM Counter . Automatically stops on timeout.
-    + VOLTS 500; set 500 volts
-    + VOLTS? ; read voltage
-    + COUNT? ; read total counts and elapsed time in mS
-    + V? ; Short version 
-    + VER? ; read version string "cspark research GM Counter x.x"
+    #### All commands must be terminated with a carriage return. e.g. COUNT?\r
+    ---
+    
+    | COMMANDS | Description |
+    |---|:---|
+    | TIME 10 | Set 10 seconds window for counting|
+    | START | start the counter|
+    | TIME? | elapsed time|
+    | STOP | stop the GM Counter . Automatically stops on timeout. |
+    | VOLTS 500 | set 500 volts|
+    | VOLTS? | read voltage|
+    | COUNT? | read total counts and elapsed time in mS|
+    | V? | Short version |
+    | VER? | read version string "cspark research GM Counter x.x" |
    subscript: Software includes a built-in Python interpreter for programmable acquisition sequences. Example code provided for acquiring and plotting counts in a 60 second window for voltages ranging from 200V to 1000V.
