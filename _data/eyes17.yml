@@ -121,7 +121,27 @@ topics:
    image: /assets/images/eyes17/eyes_poster.jpg
    imagestyle: fluid rounded raised
 
+ - title: "I2C sensors: Acceleration, angular velocity, temperature, humidity..."
+   image: /assets/images/eyes17/sensor-logger.gif
+   link: expeyes_animations
 
+animations:
+ - title: "Main Page: 4 Channel oscilloscope + Controls for wavegen, voltage outputs, voltmeters etc"
+   image: /assets/images/eyes17/software.gif
+   tabstyle: active
+
+ - title: "I2C sensors: Acceleration, angular velocity, temperature, humidity..."
+   image: /assets/images/eyes17/sensor-logger.gif
+
+ - title: "Waveform of a damped pendulum recorded in real-time"
+   image: /assets/images/eyes17/pendulum-wave.gif
+
+ - title: "AC Circuits: Study  a series RLC circuit using the wavegen and oscilloscope"
+   image: /assets/images/eyes17/ac-circuits.gif
+
+
+ - title: "Common emitter characteristics of an NPN transistor"
+   image: /assets/images/eyes17/transistor-ce.gif
 
 scope_example: |
  #Example code to capture a trace and plot it

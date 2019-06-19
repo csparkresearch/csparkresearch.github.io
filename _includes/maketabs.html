@@ -8,10 +8,12 @@
 	  <div class="title {{section.tabstyle}}">
 		<i class="dropdown icon"></i>
 		{{ section.title }}
+		{% if section.link %}
 		<a class="ui right floated tiny green button" href="{{section.link}}">
 			Open Page
 			<i class="right chevron icon"></i>
 		</a>
+		{% endif %}
 
 	  </div>
 	  <div class="content {{section.tabstyle}}">
