@@ -101,12 +101,15 @@ subtopics:
     from expeyes import eyes17
     p = eyes17.open() 
     p.set_sine(200) # 200 Hz sine wave output on WG
- 
     t,v,t2,v2 = p.capture2(500,20) #500 voltages each from A1, A2 at 20uS intervals
-    from pylab import *
-    plot(t,v) #input (A1)
-    plot(t2,v2) #output of amplifier (A2)
-    show()
+    
+    #Now let's use matplotlib to plot this data
+    from matplotlib import pyplot as plt
+    plt.xlabel('time (mS)') # Set the label for the x-axis . optional.
+    plt.ylabel('Voltage (V)') # Set the label for the x-axis . optional.
+    plt.plot(t,v) #input (A1)
+    plt.plot(t2,v2) #output of amplifier (A2)
+    plt.show()
     ```
    rightimage: /assets/images/eyes17/python.jpg
    imagestyle: medium
