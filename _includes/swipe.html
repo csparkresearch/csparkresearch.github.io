@@ -29,7 +29,7 @@
   <div class="swiper-container">
     <div class="swiper-wrapper">
 		{% for im in include.swipe %}
-      <div class="swiper-slide" style="background-image:url(/assets/images/{{im}})"></div>
+      <div class="swiper-slide" style="background-image:url({{im}})"></div>
        {% endfor %}
     </div>
     <!-- Add Pagination -->
@@ -55,8 +55,12 @@
         modifier: 1,
         slideShadows : true,
       },
+	  keyboard: {
+        enabled: true,
+      },
       pagination: {
         el: '.swiper-pagination',
+        clickable: true,
       },
     });
   </script>

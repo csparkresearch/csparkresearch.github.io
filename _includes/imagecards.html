@@ -1,8 +1,8 @@
 {% if include.title %}
-<h3 class="ui horizontal divider">
+<h4 class="ui horizontal divider">
   <i class="settings icon"></i>
 	{{ include.title }}
-</h3>
+</h4>
 {% endif %}
 
 {% for section in include.data %}
@@ -40,8 +40,14 @@
 		</div>
 	</div>
 </div>
-{% if section.subscript %}
-<div class="ui bottom attached info {{section.color}} message">{{section.subscript}}</div>
+{% if section.subscript or section.links%}
+<div class="ui bottom attached info {{section.color}} message">
+{{section.subscript}}
+{% for link in section.links %}
+<a class="ui button right floated {{section.color}}" target="_blank" style="margin-top:-8px;" href="{{link.url}}"><i class="globe icon"></i>{{link.text}}</a>
+{% endfor %}
+</div>
+
 {% endif %}
 <div class="ui clearing hidden divider"></div>
 
@@ -68,7 +74,7 @@
 						{% endif %}
 						<div class="description">
 <div markdown="1">
-{{ section.text }}
+ {{ section.text }}
 </div>
 							{% if section.subscript or section.links %}
 							<div class="extra content">

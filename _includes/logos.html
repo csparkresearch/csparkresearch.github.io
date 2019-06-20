@@ -1,0 +1,84 @@
+ <link rel="stylesheet" href="/assets/css/swiper.min.css">
+  <!-- Demo styles -->
+
+  <!-- Demo styles -->
+  <style>
+
+    body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color:#000;
+      margin: 0;
+      padding: 0;
+    }
+    .swiper-container {
+      width: 100%;
+      height: auto;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .swiper-slide {
+      height: 100px;
+      width:80px;
+      padding: 0px;
+	  background-repeat-x: no-repeat;
+	  background-repeat-y: no-repeat;
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+	  -webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
+	  filter: grayscale(100%);
+    }
+
+  </style>
+
+  <!-- Swiper -->
+  {% if include.title %}
+  <h2 class="ui horizontal divider">
+  <i class="bar chart icon"></i>
+	{{ include.title }}</h2>
+	{% endif %}
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+		{% for im in include.swipe %}
+      <div class="swiper-slide" style="background-image:url({{im}})"></div>
+       {% endfor %}
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="/assets/js/swiper.min.js"></script>
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: 4,
+      slidesPerColumn: 3,
+      spaceBetween: 50,
+	  keyboard: {
+        enabled: true,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    });
+  </script>

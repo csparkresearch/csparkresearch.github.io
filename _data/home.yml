@@ -1,0 +1,142 @@
+
+nuclear:
+ - type: feature
+   color: green
+   title: "AlphaSpec1K : Alpha Particle Spectrometer"
+   rightimage: /assets/images/physedu_alpha.jpg
+   imagestyle: medium
+   links:
+    - text: Product Page
+      url: alphaspec
+    - text: Publications
+      url: publications
+   text: |
+    Acquire alpha particle spectra with a compact, and easy to maintain device that integrates all necessary electronics such as the detector, pre-amplifier, shaping amplifier, multi channel analyzer, and USB communications interface into a small vacuum chamber.
+    
+    - 10 MeV full scale range
+    - 1024 bin MCA integrated. Fully USB powered unit
+    - 16 million counts per channel.
+    - Monitoring outputs for preamplifier and shaping amplifier.
+    - Fully featured Python software supplied open-source.
+    - 1/2 litre vacuum chamber with 6mm inlet port.
+
+ - type: photo
+   url: /assets/images/alpha/alpha_setup_source.jpg
+   title: Alpha Spectrometer setup
+
+ - type: imtxt
+   color: blue
+   title: "GammaSpec : A portable Gamma Spectrometer"
+   subtitle: Summary
+   image: assets/images/gamma/gamma_spectrum.png
+   imagestyle: large
+   links:
+    - text: Product Page
+      url: gammaspec
+    - text: Publications
+      url: publications
+   features:   
+    - 2 MeV full scale range
+    - <80keV FWHM @ 1332KeV centroid from 60Co
+    - 1024 bin MCA integrated. Fully USB powered unit
+    - 16 million counts per channel.
+    - Monitoring output for shaping amplifier.
+    - Fully featured Python software supplied open-source.
+    - Capable of coincidence measurements using our dual parameter MCA
+   subscript: The gammaspec is a highly compact portable spectrometer which is fully USB Powered. Carry it in the palm of your hand!
+
+
+ - type: imtxt
+   color: green
+   title: "Features : 1024 / 4096 channel MCA"
+   image: assets/images/mca_pic.png
+   links:
+    - text: Product Page
+      url: mca1k
+   features:
+    - 3.3V/4V Shaped Input. 3uS rise time.
+    - 12-bit adjustable threshold
+    - 12-bit ADC
+    - 1024/4096 channels. Fully USB powered unit
+    - 16 million counts per channel
+    - 8uS processing time per pulse
+    - Fully featured Python software supplied open-source.
+   subscript: Dual parameter list mode MCA also available for coincidence measurements
+
+ - type: imtxt
+   color: green
+   title: Geiger-Muller Counter
+   image: https://res.cloudinary.com/cspark/image/upload/v1491729737/gmcounter/GM_Pulses.gif
+   features:
+    - Compact unit
+    - Software designed for Linux/Windows
+    - 12 Volt adapter
+    - High Voltages up to 1200V
+    - Avalanche begins at around 1000V
+    - Signals accessible for monitoring on an oscilloscope
+   subscript: A portable GM Counter!
+   links:
+    - text: Product Page
+      url: gmcounter
+
+
+
+topics:
+ - title: Software
+   description:  Open-source software, CNSpec, is supplied with our spectrometers and MCAs.
+   link: cnspec
+   tabstyle: active
+   image: /assets/images/cnspec/cnspec_1200.jpg
+   imagestyle: fluid rounded raised
+
+daq:
+ - type: feature
+   color: green
+   title: "ExpEYES-17"
+   subtitle: "An all-in-one laboratory tool"
+   rightimage: /assets/images/eyes17/eyes_cover.jpg
+   imagestyle: large
+   links:
+    - text: Visit Page
+      url: eyes17
+   text: |
+    * A tool for learning science by exploring and experimenting.
+    * 50 documented experiments and easy to add more.
+    * Wide range - High school and above.
+    * 4 channel Oscilloscope, 1Msps, +/-16V input range. Programmable voltage ranges
+    * Sine/Triangular Wave Generator, 5Hz to 5kHz
+    * Programmable voltage sources, +/5V and +/-3.3V
+    * Frequency Counter and time measurements.
+    * Supports I2C standard sensors
+    * 12-bit analog resolution.
+    * Open Hardware and Free Software.
+    * Software in Python programming language.
+    * Requires USB port and Python 
+   subscript: Your Lab @ Home!
+
+
+ - type: feature
+   color: olive
+   title: KuttyPy
+   subtitle: ATMEGA32 training board for beginners
+   leftimage: assets/images/kuttypy/robot.jpeg
+   rightimage: assets/images/kuttypy/mcp4725dac.gif
+   links:
+    - text: Visit Page
+      url: kuttypy
+   text: |
+    - Live User Interface with click-and-explore features
+    - Active monitoring and control of each microcontroller pin. No compile+upload required
+    - Direct Register level access, and tweaking tools
+    - Monitoring utilities built into the bootloader
+    - Upload your own compiled C code and use as a serial monitor!
+
+
+topics:
+ - title: Software
+   description: Our Open-source software, CNSpec, is supplied with our range of Spectrometers.
+   link: cnspec
+   tabstyle: active
+   image: /assets/images/cnspec/cnspec_1200.jpg
+   imagestyle: fluid rounded raised
+

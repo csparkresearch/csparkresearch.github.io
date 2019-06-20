@@ -3,7 +3,6 @@ layout: semantic
 title: "ExpEYES-17"
 tagline: "Your Lab @ Home ..."
 headerimage: /assets/images/eyes17/expeyesheader.jpg
-swipe: expeyes
 ---
 
 
@@ -11,6 +10,8 @@ swipe: expeyes
 {% include install.html product="ExpEYES17"  %}
 
 {% include maketabs.html data=site.data.eyes17.topics title="More Information"%}
+
+{% include logos.html swipe=site.data.galleries.logos title="Clients" %}
 
 
 {% comment %}
