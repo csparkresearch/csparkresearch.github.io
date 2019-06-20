@@ -3,6 +3,7 @@ layout: semantic
 title: "ExpEYES-17"
 tagline: "Your Lab @ Home ..."
 headerimage: /assets/images/eyes17/expeyesheader.jpg
+swipe: expeyes
 ---
 
 
