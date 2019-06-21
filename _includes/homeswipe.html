@@ -1,0 +1,142 @@
+ <link rel="stylesheet" href="/assets/css/swiper.min.css">
+  <!-- Demo styles -->
+
+  <!-- Demo styles -->
+  <style>
+	.outer-container{
+		      height:600px;
+	}
+    .swiper-container {
+      width: 100%;
+      height: 100%;
+      background: #000;
+
+    }
+    .swiper-slide {
+      font-size: 18px;
+      color:#fff;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      padding: 20px 10px;
+      background-position: center;
+      background-size: contain;
+      background-repeat-x: no-repeat;
+      background-repeat-y: no-repeat;
+      height:100%;
+      width:100%;
+    }
+    @media only screen and (max-width: 700px) {
+		.outer-container {
+		  height:400px;
+		}
+	}
+
+    .parallax-bg {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 130%;
+      height: 100%;
+      -webkit-background-size: cover;
+      background-size: cover;
+      background-position: center;
+    }
+    .swiper-slide .title {
+      font-size: 41px;
+      font-weight: 300;
+    }
+    .swiper-slide .subtitle {
+      font-size: 21px;
+    }
+    .swiper-slide .text {
+      font-size: 14px;
+      max-width: 400px;
+      line-height: 1.3;
+    }	  
+    .gallery-top {
+      height: 80%;
+      width: 100%;
+    }
+    .gallery-thumbs {
+      height: 20%;
+      box-sizing: border-box;
+      padding: 0;
+    }
+    .gallery-thumbs .swiper-slide {
+      width: 30%;
+      height: 100%;
+      opacity: 0.5;
+    }
+    .gallery-thumbs .swiper-slide-thumb-active {
+      opacity: 1;
+    }
+
+  </style>
+</head>
+<body>
+  <!-- Swiper -->
+  <div class="outer-container">
+	  <div class="swiper-container gallery-top">
+		<div class="parallax-bg" style="background-image:url({{site.data.home.bg}})" data-swiper-parallax="-23%"></div>
+		<div class="swiper-wrapper">
+			{% for im in site.data.home.slides %}
+		  <div class="swiper-slide" style="background-image:url({{im}})"></div>
+		   {% endfor %}
+		</div>
+		<!-- Add Pagination -->
+		<div class="swiper-pagination"></div>
+		<!-- Add Navigation -->
+		<div class="swiper-button-prev" style="background-image:none;"><i class="icon arrow circle left big teal"></i></div>
+		<div class="swiper-button-next" style="background-image:none;"><i class="icon arrow circle right big teal"></i></div>
+	  </div>
+
+	  <div class="swiper-container gallery-thumbs">
+		<div class="swiper-wrapper">
+			{% for im in site.data.home.slidethumbs %}
+		  <div class="swiper-slide" style="width:120px;background-image:url({{im}})"></div>
+		   {% endfor %}
+		</div>
+	  </div>
+  </div>
+  <!-- Swiper JS -->
+  <script src="/assets/js/swiper.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var galleryThumbs = new Swiper('.gallery-thumbs', {
+      spaceBetween: 10,
+      slidesPerView: 'auto',
+      freeMode: true,
+      watchSlidesVisibility: true,
+      watchSlidesProgress: true,
+    });
+
+    var swiper = new Swiper('.gallery-top', {
+      effect: 'coverflow',
+      zoom: true,
+      parallax: true,
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: 'auto',
+      coverflowEffect: {
+        rotate: 40,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+      },
+	  keyboard: {
+        enabled: true,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      thumbs: {
+        swiper: galleryThumbs
+      }
+    });
+  </script>

@@ -1,7 +1,6 @@
 
 nuclear:
  - type: feature
-   color: green
    title: "AlphaSpec1K : Alpha Particle Spectrometer"
    rightimage: /assets/images/physedu_alpha.jpg
    imagestyle: medium
@@ -13,13 +12,14 @@ nuclear:
    text: |
     Acquire alpha particle spectra with a compact, and easy to maintain device that integrates all necessary electronics such as the detector, pre-amplifier, shaping amplifier, multi channel analyzer, and USB communications interface into a small vacuum chamber.
     
-    - 10 MeV full scale range
-    - 1024 bin MCA integrated. Fully USB powered unit
-    - 16 million counts per channel.
-    - Monitoring outputs for preamplifier and shaping amplifier.
-    - Fully featured Python software supplied open-source.
-    - 1/2 litre vacuum chamber with 6mm inlet port.
-
+    * 10 MeV full scale range
+    * 1024 bin MCA integrated. Fully USB powered unit
+    * 16 million counts per channel.
+    * Monitoring outputs for preamplifier and shaping amplifier.
+    * Fully featured Python software supplied open-source.
+    * 1/2 litre vacuum chamber with 6mm inlet port.
+   color: green
+   
  - type: photo
    url: /assets/images/alpha/alpha_setup_source.jpg
    title: Alpha Spectrometer setup
@@ -140,3 +140,22 @@ topics:
    image: /assets/images/cnspec/cnspec_1200.jpg
    imagestyle: fluid rounded raised
 
+bg: /assets/images/slides/bg.jpg
+
+slides:
+   - /assets/images/slides/alpha.png
+   - /assets/images/slides/gamma.png
+   - /assets/images/slides/alphahw.png
+   - /assets/images/slides/software.png
+   - /assets/images/slides/expeyes.png
+   - /assets/images/slides/kuttypy.png
+   - /assets/images/slides/coincidence.png
+
+slidethumbs:
+   - /assets/images/slides/alpha_thumb.jpg
+   - /assets/images/slides/gamma_thumb.jpg
+   - /assets/images/slides/alpha_thumb.jpg
+   - /assets/images/slides/software_thumb.jpg
+   - /assets/images/slides/expeyes_thumb.jpg
+   - /assets/images/slides/kuttypy_thumb.gif
+   - /assets/images/slides/gamma_thumb.jpg

@@ -4,21 +4,20 @@
   <!-- Demo styles -->
   <style>
 
-    body {
-      background: #eee;
+    .my-swiper-container {
+      background: #fff;
       font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
       font-size: 14px;
       color:#000;
       margin: 0;
       padding: 0;
-    }
-    .swiper-container {
+
       width: 100%;
       height: auto;
       margin-left: auto;
       margin-right: auto;
     }
-    .swiper-slide {
+    .my-swiper-slide {
       height: 100px;
       width:80px;
       padding: 0px;
@@ -53,10 +52,10 @@
   <i class="bar chart icon"></i>
 	{{ include.title }}</h2>
 	{% endif %}
-  <div class="swiper-container">
+  <div class="swiper-container my-swiper-container">
     <div class="swiper-wrapper">
 		{% for im in include.swipe %}
-      <div class="swiper-slide" style="background-image:url({{im}})"></div>
+      <div class="swiper-slide my-swiper-slide" style="background-image:url({{im}})"></div>
        {% endfor %}
     </div>
     <!-- Add Pagination -->
@@ -67,12 +66,12 @@
   <script src="/assets/js/swiper.min.js"></script>
   <!-- Initialize Swiper -->
   <script>
-    var swiper = new Swiper('.swiper-container', {
+    var swiper = new Swiper('.my-swiper-container', {
       grabCursor: true,
       centeredSlides: true,
-      slidesPerView: 4,
+      slidesPerView: 5,
       slidesPerColumn: 3,
-      spaceBetween: 50,
+      spaceBetween: 30,
 	  keyboard: {
         enabled: true,
       },

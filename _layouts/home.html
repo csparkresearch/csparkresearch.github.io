@@ -1,0 +1,153 @@
+---
+show-avatar: true
+common-css:
+  - "/semantic/dist/semantic.min.css"
+  - "/assets/css/product.css"
+  - "/assets/css/swiper.min.css"
+  - "/assets/css/highlight.css"
+common-js:
+  - "/assets/js/jquery.min.js"
+  - "/semantic/dist/semantic.min.js"
+  - "/assets/js/swiper.min.js"
+  - "/assets/js/mainsemantic.js"
+---
+
+<!DOCTYPE html>
+<html lang="en">
+{% include head.html %}
+  <style>
+    body {
+      background: #fff;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color:#000;
+      margin: 0;
+      padding: 0;
+    }
+    .slides-container {
+      width: 100%;
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+    .slides-slide {
+      background-position: center;
+      background-size: cover;
+      width: 80%;
+      height: 400px;
+    }
+  </style>
+
+<body>
+
+{%if page.follow %}
+<!-- Scroll overly Menu -->
+<div class="ui large top fixed hidden menu">
+  <div class="ui container">
+	{% for link in site.navbar-links %}
+        {% if link[1].first %}<div class="ui dropdown item">
+			{{ link[0] }}
+			<i class="dropdown icon"></i>
+			<div class="menu">
+              {% for childlink in link[1] %}{% for linkparts in childlink %}
+              {% include navbarlinksemantic.html link=linkparts %}
+              {% endfor %}{% endfor %}
+			</div>
+		  </div>        
+        {% else %}
+        {% include navbarlinksemantic.html link=link %}
+        {% endif %}
+    {% endfor %}
+  </div>
+</div>
+{% endif %}
+
+<!-- Sidebar Menu -->
+{% include sidebarmenu.html %}
+
+
+<!-- Page Contents -->
+<div class="pusher">
+	
+  <div class="ui inverted vertical masthead center aligned segment" {% if page.banner %}style="background:url({{page.banner}}) #f2bd91 fixed top center no-repeat;" {% endif %}>
+
+
+
+    <div class="ui container">
+		{% include headersemantic.html %}
+    </div>
+
+    <div class="ui text container">
+      <h1 class="ui inverted header">
+        {{ page.title }}
+      </h1>
+      <h2>{{ page.tagline }}</h2>
+      <!--<div class="ui huge primary button">Get Started <i class="right arrow icon"></i></div> -->
+    </div>
+  </div>
+
+	{% if page.headerimage %}<img src ="{{ page.headerimage }}" class="ui fluid image"/>{% endif %}
+
+
+  {% include homeswipe.html %}
+  <div class="ui vertical container stripe segment">
+  {% include imagecards.html data=site.data.home.nuclear title="Products: Nuclear and Particle Physics" %}
+  </div>
+  {% include logos.html swipe=site.data.galleries.logos title="Clients" %}
+
+  <div class="ui vertical container stripe segment">
+		{{ content }}
+  </div>
+
+{% if page.swipe %}
+{% assign swipe = site.data.galleries[page.swipe] %}
+{% include swipe.html swipe=swipe %}
+{% endif %}
+
+  <div class="ui inverted vertical footer segment">
+    <div class="ui container">
+      <div class="ui stackable inverted divided equal height stackable grid">
+        <div class="three wide column">
+          <h4 class="ui inverted header">Details</h4>
+          <div class="ui inverted link list">
+            <a href="about" class="item">About</a>
+            <a href="contact" class="item">Contact Us</a>
+          </div>
+        </div>
+        <div class="three wide column">
+          <h4 class="ui inverted header">Services</h4>
+          <div class="ui inverted link list">
+            <a href="#" class="item">How To Access</a>
+          </div>
+        </div>
+        <div class="seven wide column">
+          <h4 class="ui inverted header">Company</h4>
+          <p>  CIN: U74900DL2015OPC287967</p>
+          <p>  Copyright © 2018  CSpark Research</p>
+        </div>
+        <div class="three wide column">
+          <h4 class="ui inverted header">Social</h4>
+          <div class="ui vertical buttons">
+			<a href="https://twitter.com/csparkresearch" target="_blank" class="ui twitter tiny button">
+			  <i class="twitter icon"></i>
+			  Twitter
+			</a>
+			<a href="https://www.instagram.com/phyglimmer/" target="_blank" class="ui instagram tiny button">
+			  <i class="instagram icon"></i>
+			  Instagram
+			</a>
+			<a href="#" class="ui facebook tiny  button">
+			  <i class="facebook icon"></i>
+			  Facebook
+			</a>
+		  </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+{% include scripts.html %}
+</body>
+</html> 
+
