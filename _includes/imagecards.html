@@ -1,15 +1,15 @@
 {% if include.title %}
-<h4 class="ui horizontal divider">
+<h2 class="ui horizontal clearing divider" name="{{ include.title }}" id="{{ include.title }}">
   <i class="settings icon"></i>
 	{{ include.title }}
-</h4>
+</h2>
 {% endif %}
 
 {% for section in include.data %}
 {% if section.type=="imtxt" or section.type=="imim" %}
 <div class="ui attached {{ section.color }} segment">
 	{% if section.title %}
-	<h2 class="ui horizontal divider">
+	<h2 class="ui horizontal divider"  name="{{ section.title }}" id="{{ section.title }}">
 	  <i class="bar chart icon"></i>
 		{{ section.title }}
 	</h2>
@@ -65,7 +65,7 @@
 					{% endif %}
 
 					<div class="content" style="padding: 1rem;">
-						<a class="header">{{section.title}}</a>
+						<h4 class="header" id="{{section.title}}" name="{{section.title}}">{{section.title}}</h4>
 						<div class="ui clearing divider"></div>
 						{% if section.subtitle %}
 						<div class="meta">
@@ -104,7 +104,7 @@
 
 {% elsif section.type=="photo" %}
 <div class="ui continer {{section.color}} attached  ">
-  <h4 class="ui left floated header">  <i class="image icon"></i>{{ section.title }}</h4>
+  <h4 class="ui left floated header" name="{{ section.title }}" id="{{ section.title }}">  <i class="image icon"></i>{{ section.title }}</h4>
   <div class="ui clearing divider"></div>
   <img src = "{{section.url}}" class="ui fluid rounded image"/>
 </div>
@@ -116,7 +116,7 @@
 
 {% elsif section.type=="video" %}
 <div class="ui segment raised {{section.color}} attached  ">
-  <h4 class="ui left floated header">  <i class="video icon"></i>{{ section.title }}</h4>
+  <h4 class="ui left floated header" name="{{ section.title }}" id="{{ section.title }}">  <i class="video icon"></i>{{ section.title }}</h4>
   <div class="ui clearing divider"></div>
 
 	<div class="ui center aligned container" style="max-width: 600px !important;">

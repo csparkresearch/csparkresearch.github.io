@@ -1,4 +1,4 @@
-<h2 class="ui horizontal divider">
+<h2 class="ui horizontal divider" name="{{ include.title }}" id="{{ include.title }}">
   <i class="bar chart icon"></i>
 	{{ include.title }}
 </h2>
@@ -6,14 +6,14 @@
 <div class="ui styled fluid accordion red">
 	{% for section in include.data %}
 	  <div class="title {{section.tabstyle}}">
-		<i class="dropdown icon"></i>
-		{{ section.title }}
+		<h4 name="{{ section.title }}" id="{{ section.title }}"><i class="dropdown icon"></i>{{ section.title }}
 		{% if section.link %}
-		<a class="ui right floated tiny green button" href="{{section.link}}">
-			Open Page
-			<i class="right chevron icon"></i>
+		<a class="ui right floated mini blue inverted button" href="{{section.link}}">
+			<i class="right chevron icon"></i> Page
 		</a>
 		{% endif %}
+		
+		</h4>
 
 	  </div>
 	  <div class="content {{section.tabstyle}}">
@@ -23,7 +23,7 @@
 		</div>
 		{% elsif section.mp4 or section.webm %}
 		<div class="ui segment raised {{section.color}} attached  ">
-		  <h4 class="ui left floated header">  <i class="video icon"></i>{{ section.title }}</h4>
+		  <h4 class="ui left floated header" name="{{ section.title }}" id="{{ section.title }}">  <i class="video icon"></i>{{ section.title }}</h4>
 		  <div class="ui clearing divider"></div>
 
 			<div class="ui center aligned container" style="max-width: 600px !important;">

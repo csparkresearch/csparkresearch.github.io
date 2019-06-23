@@ -5,6 +5,7 @@ tagline: "1K and 4K Multi-Channel Analyzers"
 show-navigation: false
 banner: assets/images/kuttypy/cover.jpg
 share-img: assets/images/mca_pic.png
+show-toc: true
 ---
 
 <div class="ui blue segment raised" >
@@ -21,6 +22,13 @@ share-img: assets/images/mca_pic.png
 {% include maketabs.html data=site.data.mca.topics title="More Information"%}
 
 {% include code.html code=site.data.mca.offline_example title="Python Library for flexible operation: Code example" description="Dependencies: Matplotlib(for plotting) , Scipy(For fitting)" %}
+{% include imagecard.html data=site.data.mca.offline_result %}
 
+<h4 class="ui horizontal divider left aligned">Terminal output [Centroid, FWHM]</h4>
+
+```bash
+Gaussian+low energy tail Fit :  804.5779218431603 5.52159634760166
+Gaussian Fit :  550.0967122469116 7.927848067452287
+```
 
 * e-mail csparkresearch@gmail.com for enquiries

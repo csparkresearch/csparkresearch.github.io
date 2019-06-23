@@ -8,6 +8,7 @@ common-js:
   - "/assets/js/jquery.min.js"
   - "/semantic/dist/semantic.min.js"
   - "/assets/js/mainsemantic.js"
+  - "assets/js/toc.js"
 ---
 
 <!DOCTYPE html>
@@ -63,11 +64,26 @@ common-js:
   </div>
 
 	{% if page.headerimage %}<img src ="{{ page.headerimage }}" class="ui fluid image"/>{% endif %}
-
-  <div class="ui vertical container stripe segment">
-		{{ content }}
-
-  </div>
+	{% if page.show-toc %}
+	<div class="ui stackable grid">
+		<div class="row">
+			<div class="ui column one wide" >
+			</div>
+			<div class="ui column twelve wide" id="toc-leftbar">
+			{{ content }}
+			</div>
+			<div class="ui column three wide mobile hidden" id="toc-sidebar">
+				<div class="ui sticky container" id="toc">
+					<button class="ui inverted green button" href="/">Home</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	{% else %}
+	<div class="ui container" >
+	{{ content }}
+	</div>
+	{% endif %}
 
 {% if page.swipe %}
 {% assign swipe = site.data.galleries[page.swipe] %}

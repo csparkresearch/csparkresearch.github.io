@@ -99,10 +99,18 @@
 	  }
 	}
 
-    @media only screen and (max-width: 700px) {
+	.topics-list{
+	padding-left:6px;
+	}
+
+    @media only screen and (max-width: 768px) {
       .ui.fixed.menu {
         display: none !important;
       }
+	  #toc-sidebar{
+		display: none !important;
+		}
+
       .secondary.pointing.menu .item,
       .secondary.pointing.menu .menu {
         display: none;

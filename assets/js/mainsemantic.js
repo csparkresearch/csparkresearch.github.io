@@ -61,7 +61,6 @@ function init_menu(){
 			$(this).stop().animate({width: '70px'}, 300);
 		});
 
-
 }
 
 $(document).ready(function(){
@@ -74,7 +73,7 @@ $('.ui.accordion')
 
 $('.ui.sticky')
   .sticky({
-    context: '#example1'
+    context: '#toc-leftbar'
   })
 ;
 

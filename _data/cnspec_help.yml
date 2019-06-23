@@ -15,8 +15,3 @@ topics:
    link: cnspec-calibration
    image: /assets/images/cnspec/offlinedata.png
 
- - title: Calibration
-   description: This tutorial explains how to use the region selectors for calculating centroids through gaussian fitting, and using the values to calibrate the instrument.
-   link: cnspec-calibration
-   image: /assets/images/cnspec/offlinedata.png
-

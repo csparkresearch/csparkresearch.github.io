@@ -1,8 +1,8 @@
 {% if include.title %}
-<h3 class="ui horizontal divider">
+<h2 class="ui horizontal divider" name="{{ include.title }}" id="{{ include.title }}">
   <i class="copy outline icon"></i>
 	{{ include.title }}
-</h3>
+</h2>
 {% endif %}
 
 <table class="ui celled striped table {{{include.color}}">

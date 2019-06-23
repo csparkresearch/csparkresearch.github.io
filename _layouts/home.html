@@ -70,8 +70,6 @@ common-js:
 	
   <div class="ui inverted vertical masthead center aligned segment" {% if page.banner %}style="background:url({{page.banner}}) #f2bd91 fixed top center no-repeat;" {% endif %}>
 
-
-
     <div class="ui container">
 		{% include headersemantic.html %}
     </div>
@@ -89,7 +87,10 @@ common-js:
 
 
   {% include homeswipe.html %}
+  <!-- Main content that comes after the slideshw -->
   <div class="ui vertical container stripe segment">
+
+
   {% include imagecards.html data=site.data.home.nuclear title="Products: Nuclear and Particle Physics" %}
   </div>
   {% include logos.html swipe=site.data.galleries.logos title="Clients" %}

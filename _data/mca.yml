@@ -55,9 +55,9 @@ offline_example: |
  # Get the data. Supply an optional name argument in case of multiple files/connected hardware.
  x = dev.getHistogram() #name = fname / name='/dev/ttyUSB0'
 
- #print the whole array. No decimal Points. Suppress scientific notation
- np.set_printoptions(threshold = np.inf,precision = 0,suppress=True) #
- print (x)
+ #Optional-Uncomment next two lines to print the whole array. No decimal Points. Suppress scientific notation 
+ #np.set_printoptions(threshold = np.inf,precision = 0,suppress=True) #
+ #print (x)
 
  #plot the loaded spectrum
  import matplotlib.pyplot as plt
@@ -75,7 +75,16 @@ offline_example: |
 
  plt.show()
 
-end: blank
+offline_result:
+ type: imtxt
+ color: green
+ title: Results from offline data analysis
+ image: assets/images/cnspec/offlinedata.png
+ features:
+  - The results of the above code on offline analysis of 212-Bismuth spectrum are shown
+  - Gaussian fitting was carried out on the first peak(Green) and overlaid.
+  - Gaussian+Low energy tail(Lorentzian) was carried out on the second peak (Orange).
+ subscript: The Python library is used to encourage students to understand the acquired data, and interpret and analyze it manually instead of relying on the graphical interface. However, the GUI is far more efficient, and feature rich.
 
 
 
