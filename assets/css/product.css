@@ -61,10 +61,9 @@
     .gallery-thumbs .swiper-slide {
       width: 30%;
       height: 100%;
-      opacity: 0.5;
     }
     .gallery-thumbs .swiper-slide-thumb-active {
-      opacity: 1;
+      border: 2px solid #f66 ;
     }
 
     /*---------------*/
