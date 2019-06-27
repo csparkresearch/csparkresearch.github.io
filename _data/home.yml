@@ -43,7 +43,7 @@ nuclear:
     - Monitoring output for shaping amplifier.
     - Fully featured Python software supplied open-source.
     - Capable of coincidence measurements using our dual parameter MCA
-   subscript: The gammaspec is a highly compact portable spectrometer which is fully USB Powered. Carry it in the palm of your hand!
+   subscript: A highly compact USB gamma ray spectrometer. Carry it in the palm of your hand!
 
 
  - type: imtxt
@@ -154,7 +154,7 @@ slides:
 slidethumbs:
    - /assets/images/slides/alpha_thumb.jpg
    - /assets/images/slides/gamma_thumb.jpg
-   - /assets/images/slides/alpha_thumb.jpg
+   - /assets/images/slides/shaded_spin.gif
    - /assets/images/slides/software_thumb.jpg
    - /assets/images/slides/expeyes_thumb.jpg
    - /assets/images/slides/kuttypy_thumb.gif

@@ -8,7 +8,6 @@ common-css:
 common-js:
   - "/assets/js/jquery.min.js"
   - "/semantic/dist/semantic.min.js"
-  - "/assets/js/swiper.min.js"
   - "/assets/js/mainsemantic.js"
 ---
 
@@ -88,11 +87,68 @@ common-js:
 
   {% include homeswipe.html %}
   <!-- Main content that comes after the slideshw -->
-  <div class="ui vertical container stripe segment">
+
+	<div class="ui stackable grid">
+		<div class="row">
+			<div class="ui column one wide" >
+			</div>
+			<div class="ui column twelve wide" id="toc-leftbar">
+			{% include imagecards.html data=site.data.home.nuclear title="Products: Nuclear and Particle Physics" %}
+			</div>
+			<div class="ui column three wide mobile hidden inverted segment" id="toc-sidebar">
+				<div class="ui sticky container"  style="padding:10px;" id="toc">
+					<div class="ui teal card">
+					  <div class="ui slide reveal masked image">
+						<img src="/assets/images/pnp.gif" class="visible content">
+						<div class="ui segment green hidden text content">
+						Photographs from across the board
+						<ul>
+							<li>Conferences</li>
+							<li>Workshops</li>
+							<li>Sponsored</li>
+							<li>Assembly Lines</li>
+						</ul>
+						</div>
+					  </div>
+						<a href="/imagegallery" class="ui bottom attached button">
+						  <i class="images outline icon"></i>
+						  Open Image Gallery
+						</a>
+					</div>
+					
+					<div class="ui inverted divider"></div>
+
+					<div class="ui container">
+						<a class="ui fluid green inverted button" href="/alphaspec"><i class="chart bar icon"></i>Alpha Spectrometer</a>
+						<a class="ui fluid red inverted button" href="/gammaspec"><i class="chart bar outline icon"></i>Gamma Spec</a>
+						<a class="ui fluid blue inverted button" href="/mca1k"><i class="chart bar icon"></i>MCA 1K / 4K</a>
+						<a class="ui fluid orange inverted button" href="/eyes17"><i class="graduation cap icon"></i>ExpEYES-17</a>
+						<a class="ui fluid teal inverted button" href="/gmcounter"><i class="exclamation triangle icon"></i>GM Counter</a>
+					</div>
+
+					<div class="ui inverted divider"></div>
+					<a class="ui fluid black inverted button" target="_blank" href="/contact"><i class="phone icon"></i>Contact Us</a>
+					<div class="ui inverted divider"></div>
+
+					<button class="ui circular facebook icon button">
+					  <i class="facebook icon"></i>
+					</button>
+					<button class="ui circular twitter icon button">
+					  <i class="twitter icon"></i>
+					</button>
+					<button class="ui circular google plus icon button">
+					  <i class="instagram icon"></i>
+					</button>
+					<button class="ui circular linkedin icon button">
+					  <i class="linkedin icon"></i>
+					</button>
+
+				</div>
+			</div>
+		</div>
+	</div>
 
 
-  {% include imagecards.html data=site.data.home.nuclear title="Products: Nuclear and Particle Physics" %}
-  </div>
   {% include logos.html swipe=site.data.galleries.logos title="Clients" %}
 
   <div class="ui vertical container stripe segment">

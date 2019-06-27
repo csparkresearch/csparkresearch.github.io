@@ -3,10 +3,8 @@ layout: home
 title: "CSPARK RESEARCH"
 tagline: "- Driving Innovation -"
 banner: assets/images/kuttypy/cover.jpg
-follow: true
+follow: false
 ---
-
-
 
 
 {% include maketabs.html data=site.data.home.topics title="More Information"%}
