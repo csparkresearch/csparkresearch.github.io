@@ -37,7 +37,7 @@ nuclear:
       url: publications
    features:   
     - 2 MeV full scale range
-    - <80keV FWHM @ 1332KeV centroid from 60Co
+    - <80keV FWHM @ 1332KeV centroid from <sup>60</sup>Co
     - 1024 bin MCA integrated. Fully USB powered unit
     - 16 million counts per channel.
     - Monitoring output for shaping amplifier.
@@ -149,7 +149,6 @@ slides:
    - /assets/images/slides/software.png
    - /assets/images/slides/expeyes.png
    - /assets/images/slides/kuttypy.png
-   - /assets/images/slides/coincidence.png
 
 slidethumbs:
    - /assets/images/slides/alpha_thumb.jpg
@@ -158,4 +157,3 @@ slidethumbs:
    - /assets/images/slides/software_thumb.jpg
    - /assets/images/slides/expeyes_thumb.jpg
    - /assets/images/slides/kuttypy_thumb.gif
-   - /assets/images/slides/gamma_thumb.jpg
