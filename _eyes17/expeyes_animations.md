@@ -1,6 +1,6 @@
 ---
 layout: semantic
-title: "ExpEYES17 Animations"
+title: "ExpEYES Animations"
 tagline: "Some experiments with ExpEYES"
 headerimage: /assets/images/eyes17/expeyesheader.jpg
 ---
