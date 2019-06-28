@@ -1,0 +1,33 @@
+<div class="ui hidden divider"></div>
+<h3 class="ui horizontal clearing divider"><button class="ui basic red button">Vendors for ExpEYES17</button></h3>
+
+<div class="ui four doubling cards">
+  {% for v in include.data %}
+  <div class="card">
+	<div class="content">
+	  {%if v.logo %} <img class="right floated mini ui image" src="{{ v.logo }}">
+	  {% endif %}
+	  <div class="header">
+		{{ v.name }}
+	  </div>
+	  {%if v.email %}
+	  <a class="meta" href="{{v.email}}">
+	     <i class="red mail icon"></i>{{ v.email }}
+	  </a>
+	  {% endif %}
+	  <div class="description">
+		{{ v.address }}
+	  </div>
+	</div>
+	<div class="extra content">
+	  <div class="ui two buttons">
+		<a class="ui basic small green button" href="{{v.link}}" target="_blank"><i class="cart icon"></i>Buy</a>
+		{%if v.contact %}<a class="ui basic small blue button" href="tel:{{v.contact}}"><i class="phone icon"></i>Contact</a>{%endif%}
+	  </div>
+	</div>
+  </div>
+  {% endfor %}
+</div>
+
+        
+
