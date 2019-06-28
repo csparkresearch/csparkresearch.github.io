@@ -49,7 +49,7 @@ nuclear:
  - type: imtxt
    color: green
    title: "Features : 1024 / 4096 channel MCA"
-   image: assets/images/mca_pic.png
+   image: assets/images/mca_pic.jpg
    links:
     - text: Product Page
       url: mca1k
@@ -66,11 +66,10 @@ nuclear:
  - type: imtxt
    color: green
    title: Geiger-Muller Counter
-   image: https://res.cloudinary.com/cspark/image/upload/v1491729737/gmcounter/GM_Pulses.gif
+   image: /assets/images/gmc.gif
    features:
     - Compact unit
     - Software designed for Linux/Windows
-    - 12 Volt adapter
     - High Voltages up to 1200V
     - Avalanche begins at around 1000V
     - Signals accessible for monitoring on an oscilloscope
@@ -143,17 +142,17 @@ topics:
 bg: /assets/images/slides/bg.jpg
 
 slides:
-   - /assets/images/slides/alpha.png
-   - /assets/images/slides/gamma.png
-   - /assets/images/slides/alphahw.png
-   - /assets/images/slides/software.png
-   - /assets/images/slides/expeyes.png
-   - /assets/images/slides/kuttypy.png
+   - /assets/images/slides/alpha.jpg
+   - /assets/images/slides/gamma.jpg
+   - /assets/images/slides/alphahw.jpg
+   - /assets/images/slides/cnspec.jpg
+   - /assets/images/slides/expeyes.jpg
+   - /assets/images/slides/kpy.jpg
 
 slidethumbs:
    - /assets/images/slides/alpha_thumb.jpg
    - /assets/images/slides/gamma_thumb.jpg
-   - /assets/images/slides/shaded_spin.gif
+   - /assets/images/slides/alpha2.png
    - /assets/images/slides/software_thumb.jpg
    - /assets/images/slides/expeyes_thumb.jpg
-   - /assets/images/slides/kuttypy_thumb.gif
+   - /assets/images/slides/kuttypy.jpg

@@ -27,6 +27,10 @@
 		}
 	}
 
+	.ui.secondary.pointing.menu .item {
+	align-self: auto;
+	}
+	
     .parallax-bg {
       position: absolute;
       left: 0;

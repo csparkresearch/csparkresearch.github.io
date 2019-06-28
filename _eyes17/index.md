@@ -13,6 +13,8 @@ headerimage: /assets/images/eyes17/expeyesheader.jpg
 
 {% include logos.html swipe=site.data.galleries.logos title="Clients" %}
 
+{% include vendors.html data=site.data.eyes17.vendors title="Vendors" %}
+
 
 {% comment %}
 {% include code.html code=site.data.eyes17.scope_example title="Python Library for simple usage: Code example" description="Code to acquire and plot data from the oscilloscope by using matplotlib" %}

@@ -154,6 +154,45 @@ scope_example: |
  plot(x,y)
  show()
 
-end: blank
+vendors:
+ - name: Pi Supply (UK)
+   address: Worldwide distribution
+   email : sales@pi-supply.com
+   link: https://uk.pi-supply.com/products/expeyes-17-your-lab-home
+   address: Unit 4 Bells Yew Green Business Court, Bells Yew Green, East Sussex, TN3 9BJ, United Kingdom
+   logo: /assets/images/logos/pisupplylogo.jpg
 
+ - name: Fab.to.Lab (Online)
+   link: https://www.fabtolab.com/expeyes
+   address: Koramangala, Bangalore – 560095
+   contact: +91 8050032228/9
+   email: sales@fabtolab.com
+   logo: /assets/images/logos/f2l.png
+   
+ - name: S2S2 Services
+   link: http://s2s2.in/
+   address: TV 33/268, Third Floor Elite Complex, Netaji Road, Kannur 670 001 Kerala
+   contact: 09447449107
+   email : s2s2service at gmail.com 
 
+ - name: S.V. Techno Crafts
+   link: http://www.svtechnocrafts.in/
+   address: 86, J.D. Nagar, Patamata, VIJAYAWADA - 520010
+   contact:  09440978459
+   email : pur.svtc@gmail.com
+   logo: /assets/images/logos/svtc.jpg
+ 
+ - name: Shankar Systems
+   link: http://shankarsystems.github.io/
+   address: Block C, Najafgarh, NEW DELHI
+   contact: 09810841403
+   email : shankarsystemsdelhi1997 at gmail.com
+ 
+ - name: Scientific Tech Services
+   address: PB NO.64, North Kalarickal Lane Tripunithura Cochin 
+   contact: 9847113501
+   email: scientifictech at gmail.com
+   name: EMBRONICS
+   address: GS2, SUITE#406 HEAVENLY PLAZA KAKKANAD, KOCHIN-21
+   email:  mail at embronics.com
+   contact: 9995416164
