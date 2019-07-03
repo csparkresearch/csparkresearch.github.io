@@ -1,7 +1,7 @@
 features:
  type: imtxt
  color: green
- title: Main Features of the spectrometer
+ title: Primary Features
  image: assets/images/alpha/alpha_wide.jpg
  features:
   - 10 MeV full scale range

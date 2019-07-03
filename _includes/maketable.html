@@ -1,5 +1,6 @@
+<div class = "ui hidden divider"></div>
 {% if include.title %}
-<h2 class="ui horizontal divider" name="{{ include.title }}" id="{{ include.title }}">
+<h2 class="ui horizontal dividing teal header " name="{{ include.title }}" id="{{ include.title }}">
   <i class="copy outline icon"></i>
 	{{ include.title }}
 </h2>
@@ -11,7 +12,7 @@
 		<th scope="col" class="left aligned">Title</th>
 		<th scope="col" >Journal</th>
 		<th scope="col" class="right aligned collapsing">Author(s)</th>
-		<th scope="col" class="left aligned collapsing">Device</th>
+		{% if include.filter %}{% else %}<th scope="col" class="left aligned collapsing">Device</th>{% endif %}
 	</tr>
   </thead>
   <tbody>
@@ -24,7 +25,6 @@
 		  </td>
 		  <td>{{ pub.journal }}</td>
 		  <td class="right aligned collapsing"><p>{{ pub.author }}</p></td>
-		  <td class="left aligned collapsing">{{ pub.device }}</td>
 		</tr>
 		{% endif %}
 	{% else %}

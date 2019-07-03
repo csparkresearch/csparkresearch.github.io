@@ -15,16 +15,15 @@
 
 			<div class="extra">
 				{% if product.user-manual %}
-				<a class="ui right floated primary button" href="{{product.user-manual}}">
-					User Manual
-					<i class="right chevron icon"></i>
+				<a class="ui right floated animated fade primary button" href="{{product.user-manual}}">
+					<div class="visible content" >User Manual <i class="right chevron icon"></i></div><div class="hidden content">Download</div>
 				</a>
 				{% endif %}
 
 				<div class="ui buttons">
-				  <a class="ui positive button" href="{{product.ubuntu}}">Ubuntu (deb)</a>
+				  <a class="ui positive animated fade button" href="{{product.ubuntu}}"><div class="visible content" >Ubuntu (deb)</div><div class="hidden content">Download</div></a>
 				  <div class="or"></div>
-				  <a class="ui warning button" href="{{product.windows}}">Windows (exe)</a>
+				  <a class="ui warning animated vertical button" href="{{product.windows}}"><div class="visible content" >Windows (exe)</div><div class="hidden content">Download</div></a>
 				</div>
 
 			</div>

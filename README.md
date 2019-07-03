@@ -11,9 +11,9 @@ Based on Jekyll
 
 
 
-## Adapted from Online-cv 
+## Made with Semantic-UI
 
-This theme is collected from [cssmoban](http://www.cssmoban.com/) and modified by [Locky](https://github.com/junlulocky)
++ Responsive toolkit for site design
 
-I have made this into a Jekyll Theme. Demo: [https://jekyller.github.io/online-cv](https://jekyller.github.io/online-cv)
+Was previously based on: [https://jekyller.github.io/online-cv](https://jekyller.github.io/online-cv)
 

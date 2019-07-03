@@ -3,6 +3,7 @@ layout: semantic
 title: "ExpEYES-17"
 tagline: "Your Lab @ Home ..."
 headerimage: /assets/images/eyes17/expeyesheader.jpg
+show-toc: false
 ---
 
 
@@ -14,6 +15,7 @@ headerimage: /assets/images/eyes17/expeyesheader.jpg
 {% include logos.html swipe=site.data.galleries.logos title="Clients" %}
 
 {% include vendors.html data=site.data.eyes17.vendors title="Vendors" %}
+
 
 
 {% comment %}

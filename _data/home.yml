@@ -1,23 +1,45 @@
 
 nuclear:
  - type: feature
-   title: "AlphaSpec1K : Alpha Particle Spectrometer"
+   title: "Alpha Spectrometer: AlphaSpec1K"
    rightimage: /assets/images/physedu_alpha.jpg
    imagestyle: medium
-   links:
-    - text: Product Page
-      url: alphaspec
-    - text: Publications
-      url: publications
+   rightlabel: |
+    <a class="ui pink right ribbon label">Featured on the cover</a>
+   pagelink: alphaspec
    text: |
-    Acquire alpha particle spectra with a compact, and easy to maintain device that integrates all necessary electronics such as the detector, pre-amplifier, shaping amplifier, multi channel analyzer, and USB communications interface into a small vacuum chamber.
-    
-    * 10 MeV full scale range
-    * 1024 bin MCA integrated. Fully USB powered unit
-    * 16 million counts per channel.
-    * Monitoring outputs for preamplifier and shaping amplifier.
-    * Fully featured Python software supplied open-source.
-    * 1/2 litre vacuum chamber with 6mm inlet port.
+    Acquire alpha particle spectra with a compact, and easy to maintain design with integrated detector, pre-amplifier, shaping amplifier, multi channel analyzer, and USB communications interface<br>
+    Simplicity combined with maximum pedagogical value. <br>
+    <div class="ui divider"></div>
+    <a class="ui orange label">Detector</a>
+    <a class="ui green tag label">Preamp</a>
+    <a class="ui teal tag label">Shaper</a>
+    <a class="ui purple tag label">MCA</a>
+    <a class="ui blue label">USB<div class="detail">Software</div></a>
+    <div class="ui middle aligned divided list">
+      <div class="item">
+        <div class="right floated content"><div class = "ui horizontal label">INPUT</div></div>
+        <div class="content">10 MeV full scale. Preamplifier and shaping amplifier units integrated.</div>
+      </div>
+      <div class="item">
+        <div class="right floated content"><div class = "ui horizontal label">1K MCA</div></div>
+        <div class="content">USB powered 1024 Bin MCA included. 16 million counts per channel.</div>
+      </div>
+      <div class="item">
+        <div class="right floated content"><div class = "ui horizontal label">TEACHING</div></div>
+        <div class="content">Monitoring outputs for preamplifier and shaping amplifier.</div>
+      </div>
+      <div class="item">
+         <div class="right floated content"><div class = "ui horizontal label">SOFTWARE</div></div>
+       <div class="content">Fully featured Python software and library supplied open-source.</div>
+      </div>
+      <div class="item">
+         <div class="right floated content"><div class = "ui horizontal label">HARDWARE</div></div>
+       <div class="content">Everything integrated into a compact, 1/2 litre, vacuum chamber</div>
+      </div>
+    </div>
+
+
    color: green
    
  - type: photo
@@ -26,7 +48,7 @@ nuclear:
 
  - type: imtxt
    color: blue
-   title: "GammaSpec : A portable Gamma Spectrometer"
+   title: "Portable Gamma Spectrometer"
    subtitle: Summary
    image: assets/images/gamma/gamma_spectrum.png
    imagestyle: large
@@ -48,7 +70,7 @@ nuclear:
 
  - type: imtxt
    color: green
-   title: "Features : 1024 / 4096 channel MCA"
+   title: "1K/4K Multi-Channnel Analyzer"
    image: assets/images/mca_pic.jpg
    links:
     - text: Product Page

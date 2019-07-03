@@ -9,30 +9,29 @@ headerimage: assets/images/alpha/alpha_setup_source.jpg
 banner: assets/images/alpha/cover.jpg
 ---
 
-{% include install.html product="AlphaSpec-1K"  %}
 
 {% include imagecard.html data=site.data.alpha.features %}
 
+{% include install.html product="AlphaSpec-1K"  %}
 
-<div class="ui container " style="max-width: 100%; min-width: 100%;">
-		<div class="content" style="padding: 4px;">
-			<div class="ui items">
-				<div class="item">
-					<div class="content" style="padding: 1rem;">
-						<div class="description">
-						{% include maketable.html publist=site.data.publications filter="AlphaSpec1K" title="Publications" color="green" %}
-						</div>
-					</div>
-					<div class="ui segment raised orange middle aligned" >
-						<div class="ui centered image medium photocard">
-							<img src="/assets/images/physedu_alpha.jpg" alt="On the cover page of Physics Education" class="ui image">
-						</div>
-					</div>
 
-				</div>
+<div class="ui items">
+	<div class="item">
+		<div class="content">
+			<div class="description">
+			{% include maketable.html publist=site.data.publications filter="AlphaSpec1K" title="Publications" color="green" %}
 			</div>
 		</div>
+		<div class="ui segment raised middle aligned" >
+			<a class="ui ribbon pink label">Cover feature</a>
+			<div class="ui centered image medium photocard">
+				<img src="/assets/images/physedu_alpha.jpg" alt="On the cover page of Physics Education" class="ui image">
+			</div>
+		</div>
+
+	</div>
 </div>
+
 <div class="ui clearing hidden divider"></div>
 
 
