@@ -3,7 +3,9 @@ layout: semantic
 title: "ExpEYES-17"
 tagline: "Your Lab @ Home ..."
 headerimage: /assets/images/eyes17/expeyesheader.jpg
-show-toc: false
+show-toc: true
+toctext: |
+ <a class="ui small inverted fluid purple right labeled icon button" href="blog"><i class="right arrow icon"></i>Blog</a>
 ---
 
 

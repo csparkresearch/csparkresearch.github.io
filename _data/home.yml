@@ -11,7 +11,7 @@ nuclear:
     Acquire alpha particle spectra with a compact, and easy to maintain design with integrated detector, pre-amplifier, shaping amplifier, multi channel analyzer, and USB communications interface<br>
     Simplicity combined with maximum pedagogical value. <br>
     <div class="ui divider"></div>
-    <a class="ui orange label">Detector</a>
+    <a class="ui orange label">Detector</a> 
     <a class="ui green tag label">Preamp</a>
     <a class="ui teal tag label">Shaper</a>
     <a class="ui purple tag label">MCA</a>
@@ -44,7 +44,6 @@ nuclear:
    
  - type: photo
    url: /assets/images/alpha/alpha_setup_source.jpg
-   title: Alpha Spectrometer setup
 
  - type: imtxt
    color: blue
@@ -117,9 +116,7 @@ daq:
    subtitle: "An all-in-one laboratory tool"
    rightimage: /assets/images/eyes17/eyes_cover.jpg
    imagestyle: large
-   links:
-    - text: Visit Page
-      url: eyes17
+   pagelink: eyes17
    text: |
     * A tool for learning science by exploring and experimenting.
     * 50 documented experiments and easy to add more.
@@ -133,24 +130,50 @@ daq:
     * Open Hardware and Free Software.
     * Software in Python programming language.
     * Requires USB port and Python 
-   subscript: Your Lab @ Home!
+   rightlabel: |
+    <a class="ui green right ribbon label">Your Lab @ Home!</a>
 
 
  - type: feature
-   color: olive
    title: KuttyPy
-   subtitle: ATMEGA32 training board for beginners
-   leftimage: assets/images/kuttypy/robot.jpeg
-   rightimage: assets/images/kuttypy/mcp4725dac.gif
-   links:
-    - text: Visit Page
-      url: kuttypy
+   subtitle: Python <-> ATMEGA32 <-> Real World [LEDs, Motors, Sensors...]
+   rightimage: assets/images/kuttypy/robot.jpeg
+   imagestyle: large
+   pagelink: kuttypy
    text: |
-    - Live User Interface with click-and-explore features
-    - Active monitoring and control of each microcontroller pin. No compile+upload required
-    - Direct Register level access, and tweaking tools
-    - Monitoring utilities built into the bootloader
-    - Upload your own compiled C code and use as a serial monitor!
+    <div class="ui middle aligned divided list">
+      <div class="item">
+        <div class="right floated content"><div class = "ui horizontal label">PYTHON</div></div>
+        <div class="content">Live User Interface with click-and-explore features</div>
+      </div>
+      <div class="item">
+        <div class="right floated content"><div class = "ui horizontal label">REAL-TIME</div></div>
+        <div class="content">Active monitoring and control of each pin. No compile+upload required</div>
+      </div>
+      <div class="item">
+        <div class="right floated content"><div class = "ui horizontal label">BOOTLOADER</div></div>
+        <div class="content">Monitoring utilities built into the bootloader</div>
+      </div>
+      <div class="item">
+         <div class="right floated content"><div class = "ui horizontal label">VOLTMETER</div></div>
+       <div class="content">8 channel ADC with beautiful display gauges</div>
+      </div>
+      <div class="item">
+         <div class="right floated content"><div class = "ui horizontal label">SENSORS</div></div>
+       <div class="content">3 PWM outputs, 32 I/O pins, I2C plug and play sensors...</div>
+      </div>
+      <div class="item">
+         <div class="right floated content"><div class = "ui horizontal blue  label">Also STANDALONE</div></div>
+       <div class="content">Upload your own compiled C code and use as a serial monitor!</div>
+      </div>
+    </div>
+
+
+
+    <div class="photocard"><img class="ui medium rounded top aligned image" src="assets/images/kuttypy/mcp4725dac.gif"/></div>
+
+
+
 
 
 topics:

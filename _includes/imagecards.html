@@ -112,8 +112,10 @@
 
 {% elsif section.type=="photo" %}
 <div class="ui continer {{section.color}} attached  ">
+  {% if section.title %}
   <h4 class="ui left floated header" name="{{ section.title }}" id="{{ section.title }}">  <i class="image icon"></i>{{ section.title }}</h4>
   <div class="ui clearing divider"></div>
+  {% endif %}
   <img src = "{{section.url}}" class="ui fluid rounded image"/>
 </div>
 {% if section.description %}

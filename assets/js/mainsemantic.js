@@ -71,11 +71,16 @@ $('.ui.accordion')
   .accordion()
 ;
 
-$('.ui.sticky')
+$('.ui.sticky.toc')
   .sticky({
     context: '#toc-leftbar'
-  })
-;
+  });
+
+$('.ui.sticky.leftbar')
+  .sticky({
+    context: '#leftbar'
+  });
+
 
 });    
 

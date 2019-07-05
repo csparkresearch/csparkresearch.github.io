@@ -3,6 +3,7 @@ title: CSpark Research # your title
 tagline: Driving Innovation
 url: 'https://csparkresearch.in'
 baseurl: '' #change it according to your repository name
+excerpt_separator: <!--more-->
 
 
 # Profile information

@@ -5,9 +5,7 @@ subtopics:
    subtitle: "An all-in-one laboratory tool"
    rightimage: /assets/images/eyes17/eyes_cover.jpg
    imagestyle: large
-   links:
-    - text: ExpEYES.in
-      url: http://expeyes.in
+   pagelink: "http://expeyes.in"
    text: |
     * A tool for learning science by exploring and experimenting.
     * 50 documented experiments and easy to add more.
@@ -21,7 +19,8 @@ subtopics:
     * Open Hardware and Free Software.
     * Software in Python programming language.
     * Requires USB port and Python 
-   subscript: Your Lab @ Home!
+   rightlabel: |
+    <a class="ui green right ribbon label">Your Lab @ Home!</a>
 
  - type: photo
    title: "Software: Oscilloscope"
@@ -56,7 +55,7 @@ subtopics:
  - type: feature
    color: green
    title: "External Connections : Inputs"
-   subtitle: The functions of the input connector block (left side) are briefly explained .
+   subtitle: The functions of the input connector block (right side) are briefly explained .
    text: |
     - **Capacitance meter IN1** : Capacitance connected between IN1 and ground can be measured. It works better for low capacitance values, upto 10 nanoFarads but it is possible to measure in micro farad range also.
 

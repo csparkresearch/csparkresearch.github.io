@@ -4,7 +4,7 @@
     var defaults = {
       noBackToTopLinks: false,
       title: '<h3 class="ui hidden clearing horizontal divider"><i class="copy icon"></i>Topics</h3>',
-      minimumHeaders: 3,
+      minimumHeaders: 1,
       headers: 'h1, h2, h3, h4, h5, h6',
       listType: 'ul', // values: [ol|ul]
       showEffect: 'show', // values: [show|slideDown|fadeIn|none]
@@ -22,7 +22,6 @@
     }
 
     function createLink (header) {
-		    console.log(header);
 
       var innerText = (header.textContent === undefined) ? header.innerText : header.textContent;
       return "<a href='#" + fixedEncodeURIComponent(header.id) + "'>" + innerText + "</a>";
@@ -46,9 +45,9 @@
     }
 
     var render = {
-      show: function() { output.hide().html(html).show(settings.showSpeed); },
-      slideDown: function() { output.hide().html(html).slideDown(settings.showSpeed); },
-      fadeIn: function() { output.hide().html(html).fadeIn(settings.showSpeed); },
+      show: function() {var h=output.html(); console.log(h); output.hide().html(h+html).show(settings.showSpeed); },
+      slideDown: function() {var h=output.html(); console.log(h); output.hide().html(h+html).slideDown(settings.showSpeed); },
+      fadeIn: function() { var h=output.html(); output.hide().html(h+html).fadeIn(settings.showSpeed); },
       none: function() { output.html(html); }
     };
 
@@ -88,6 +87,7 @@
       level = this_level; // update for the next one
     });
     html += "</"+settings.listType+">";
+    console.log(html);
     if (!settings.noBackToTopLinks) {
       $(document).on('click', '.back-to-top', function() {
         $(window).scrollTop(0);

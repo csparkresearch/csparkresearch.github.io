@@ -208,6 +208,12 @@
       }
     }
 
+/*------Author  in blog----*/
+  .authoroverlay {
+    float: left;
+    margin: 0em 3em 1em 0em;
+  }
+
 /*------------ Fix for text behind reveal------------*/
 .ui.slide.reveal > .text.content {
     white-space: normal;
