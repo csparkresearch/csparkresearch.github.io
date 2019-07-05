@@ -18,6 +18,23 @@ function modalify(){
         $('.ui.modal')
             .modal('show');
     })
+
+    $('.lightbox').click(function() {
+        // Delete any modals hanging around
+        deleteModal();
+        var image = $(this).attr('src');
+        var header = $(this).attr('alt');
+        if(header){
+			$('body').append('<div class="ui modal"  style="height:90%;"><div class="header">'+header+'</div><div class="scrolling content" style="100%;max-height:95%;"><img src="'+image+'" class="ui fluid image centered" /></div></div>');        
+		}else{
+			$('body').append('<div class="ui modal" style="height:90%;"><div class="content" style="max-height:1800px;"><img src="'+image+'" class="ui fluid image centered" /></div></div>');        
+		}
+        $('.ui.modal')
+            .modal('show');
+    })
+
+
+
 }
 function init_menu(){
 	

@@ -18,10 +18,11 @@ Half wave rectifiers cut off one half of a waveform, and further filtering with 
 
 The waveform generator WG is set to give a sine wave of 1kHz. It is monitored by oscilloscope channel A1. The signal after the diode is monitored by A2. The observed waveform will be a bit noisy without the load resistor, connecting a 1k resistor gives a clean rectified waveform. The voltage drop across the diode is clearly visible. Connect different values of capacitors to view the filtering effect.
 
-![](/assets/blog/hw_schema.svg){:class="ui image large centered"}
+![](/assets/blog/schematics/hw_schema.svg){:class="ui image medium floated right lightbox"}
 
-![](/assets/blog/hw_photo.jpg){:class="ui image large centered"}
+![](/assets/blog/hw_photo.jpg){:class="ui image medium lightbox"}
 
+<div class="ui clearing divider"></div>
 ## Screenshot of the UI
 Screen shot of the oscilloscope program showing input and output of half wave rectifier.  1N4148 diode at 1000Hz and 1kOhm load resistor.
 
@@ -72,5 +73,6 @@ plot(tt, vv, linewidth = 2, color = 'red')
 show()
 ```
 
+### Output of the code
 ![](/assets/blog/hw_code.png){:class="ui image fluid centered"}
 
