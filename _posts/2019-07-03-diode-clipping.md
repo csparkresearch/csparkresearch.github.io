@@ -6,7 +6,8 @@ cover: /assets/blog/screenshots/clipping.png
 author: jithin
 summary: Diodes can be used to clip AC waveforms beyond a preset voltage. You will need the waveform generators and oscilloscope of ExpEYES, as well as a voltage output(PV1). and a diode.
 show-toc: true
-tags: 4148 3V3 Diode clipping Electronics
+tags: [4148,3V3,Diode,clipping,Electronics]
+pins: [WG,PV1,A1,A2]
 category: expeyes17
 ---
 
@@ -32,7 +33,8 @@ Screen shot of the oscilloscope program showing inputs and output of Positive Di
 ## Exercises
 
 + Play with PV1 values, and note down the clipping level and PV1 values. What is the gap between these two. Is it consistent for a particular type of diode?
-+ Try different diodes
++ Try different diodes.
++ Reverse the polarity of the diode. What effect does it have?
 
 ## Write Python Code
 
