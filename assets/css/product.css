@@ -125,6 +125,10 @@
 		color: #a4286b;
 		font-size: 26px;
 	}
+    .description.large{
+		color: #501736 !important;
+		font-size: 20px !important;
+	}
     .ui.vertical.stripe .button + h3,
     .ui.vertical.stripe p + h3 {
       margin-top: 3em;
@@ -192,6 +196,9 @@
         display: none !important;
       }
 	  #toc-sidebar{
+		display: none !important;
+		}
+	  #leftbar{
 		display: none !important;
 		}
 

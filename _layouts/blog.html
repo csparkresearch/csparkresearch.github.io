@@ -76,7 +76,7 @@ common-js:
 			<div class="meta">
 			  <a>{{page.category}}</a>
 			</div>
-			<div class="description">
+			<div class="description large">
 			  {{page.summary}}
 			</div>
 			<div class="extra">
@@ -95,19 +95,25 @@ common-js:
 	{% endif %}
 
 	{% if page.show-toc %}
-	<div class="ui stackable grid">
+	<div class="ui internally celled stackable grid">
 		<div class="row">
-			<div class="ui column two wide mobile hidden" id="leftbar" style="margin-left:20px;">
+			<div class="ui column three wide mobile hidden" id="leftbar" >
 				<div class="ui sticky container leftbar">
+					<div class="ui hidden divider"></div>	
 					<a class="ui small inverted fluid purple left labeled icon button" href="/eyes17/blog"><i class="left arrow icon"></i>Posts</a>
-				  <div class="ui hidden divider"></div>	
+					<div class="ui divider"></div>	
+					<div class="ui divided selection list">
+					{% for post in site.posts %}
+					<a class="item" href="{{ post.url }}">{{ post.title }}</a>
+					{% endfor %}
+					</div>			
 
 				  {% assign author = site.data.authors[page.author] %}
 				  <div class="ui red fluid raised card">
 					  <div class="content">
 						<div class="ui small teal header">{{ page.title }}</div>
 						<div class="center aligned description">
-						  <p>{{ page.date | date: '%B %d, %Y' }}</p>
+						  <p>Authored On: {{ page.date | date: '%B %d, %Y' }}</p>
 						</div>
 					  </div>
 					  <div class="extra content">
@@ -119,19 +125,14 @@ common-js:
 
 				</div>
 			</div>
-			<div class="ui column nine wide blog" style="margin-left:10px;" id="toc-leftbar">
+			<div class="ui column ten wide blog" style="padding:30px;" id="toc-leftbar">
 			{{ content }}
 			</div>
-			<div class="ui column three wide mobile hidden" style="margin-left:30px" id="toc-sidebar">
+			<div class="ui column three wide mobile hidden" id="toc-sidebar">
 				<div class="ui sticky container toc" id="toc">
 					<div class="ui hidden divider"></div>
-					<a class="ui small inverted fluid purple left labeled icon button" href="/eyes17/"><i class="home icon"></i>Home</a>
+					<a class="ui mini inverted fluid brown left labeled icon button" href="/eyes17/"><i class="home icon"></i>ExpEYES Home</a>
 					{{ page.toctext }}
-					<div class="ui divided selection list">
-					{% for post in site.posts %}
-					<a class="item" href="{{ post.url }}">{{ post.title }}</a>
-					{% endfor %}
-					</div>			
 				</div>
 			</div>
 		</div>

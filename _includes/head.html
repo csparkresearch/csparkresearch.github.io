@@ -73,6 +73,18 @@
   <meta property="og:description" content="Engineering and Instrumentation">
   {% endif %}
 
+   {% if page.meta-description %}
+  <meta name="description" content="{{ page.meta-description }}">
+  {% elsif page.description %}
+  <meta name="description" content="{{ page.description }}">
+  {% elsif page.summary %}
+  <meta name="description" content="{{ page.summary }}">
+  {% elsif page.tagline %}
+  <meta name="description" content="{{ page.tagline }}">
+  {% else %}
+  <meta name="description" content="Engineering and Instrumentation">
+  {% endif %}
+
 
   {% if page.date %}
   <meta property="article:published_time" content="{{ page.date | date_to_xmlschema }}">

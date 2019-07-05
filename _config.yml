@@ -38,7 +38,7 @@ navbar-links:
     - KuttyPy: "kuttypy"
     - Geiger Counter: "gmcounter"
   Resources:
-    - Blog: "eyes17/blog/"
+    - Blog: eyes17/blog
     - In the News: "news"
     - Publications: "publications"
     - CNSPEC software: "cnspec"
