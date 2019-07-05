@@ -52,8 +52,21 @@
   <meta property="og:title" content="{{ site.title }}" />
   {% endif %}
 
+
+   {% if page.meta-description %}
+  <meta property="description" content="{{ page.meta-description }}">
+  {% elsif page.summary %}
+  <meta property="description" content="{{ page.summary }}">
+  {% elsif page.tagline %}
+  <meta property="description" content="{{ page.tagline }}">
+  {% else %}
+  <meta property="description" content="Engineering and Instrumentation">
+  {% endif %}
+
    {% if page.meta-description %}
   <meta property="og:description" content="{{ page.meta-description }}">
+  {% elsif page.summary %}
+  <meta property="og:description" content="{{ page.summary }}">
   {% elsif page.tagline %}
   <meta property="og:description" content="{{ page.tagline }}">
   {% else %}
@@ -144,7 +157,6 @@
   gtag('config', 'UA-67472997-3');
 </script>
 
-
-    <title>{{ site.title }}</title>
+    <title>{{ page.title }}</title>
 
 </head>
