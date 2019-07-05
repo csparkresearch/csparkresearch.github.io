@@ -63,42 +63,43 @@ common-js:
 
 	{% if page.header %}<img src ="{{ page.header }}" class="ui fluid image"/>{% endif %}
 
-{% if page.cover %}
-<div class="ui container">
-  <div class="ui clearing hidden divider"></div>	
-  <div class="ui relaxed divided items">
-    <div class="item">
-      <div class="ui large image raised segment">
-        <img src="{{ page.cover }}">
-      </div>
-      <div class="content">
-        <a class="ui dividing header red"><i class="paperclip icon"></i>Brief Summary</a>
-        <div class="meta">
-          <a>{{page.category}}</a>
-        </div>
-        <div class="description">
-          {{page.summary}}
-        </div>
-        <div class="extra">
-          <div>{{ page.date | date: '%B %d, %Y' }}</div>
-			{% assign author = site.data.authors[page.author] %}
-			<a class="ui basic image large label right floated">
-			  <img src="{{author.photo}}">
-			  {{author.name}}
-			</a>
+	{% if page.cover %}
+	<div class="ui container">
+	  <div class="ui clearing hidden divider"></div>	
+	  <div class="ui relaxed divided items">
+		<div class="item">
+		  <div class="ui large image raised segment">
+			<img src="{{ page.cover }}">
+		  </div>
+		  <div class="content">
+			<a class="ui dividing header red"><i class="paperclip icon"></i>Brief Summary</a>
+			<div class="meta">
+			  <a>{{page.category}}</a>
+			</div>
+			<div class="description">
+			  {{page.summary}}
+			</div>
+			<div class="extra">
+			  <div>{{ page.date | date: '%B %d, %Y' }}</div>
+				{% assign author = site.data.authors[page.author] %}
+				<a class="ui basic image large label right floated">
+				  <img src="{{author.photo}}">
+				  {{author.name}}
+				</a>
+			</div>
+		  </div>
 		</div>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="ui clearing divider"></div>	
-{% endif %}
+	  </div>
+	</div>
+	<div class="ui clearing divider"></div>	
+	{% endif %}
 
 	{% if page.show-toc %}
 	<div class="ui stackable grid">
 		<div class="row">
 			<div class="ui column two wide mobile hidden" id="leftbar" style="margin-left:20px;">
 				<div class="ui sticky container leftbar">
+					<a class="ui small inverted fluid purple left labeled icon button" href="/eyes17/blog"><i class="left arrow icon"></i>Posts</a>
 				  <div class="ui hidden divider"></div>	
 
 				  {% assign author = site.data.authors[page.author] %}
@@ -123,28 +124,25 @@ common-js:
 			</div>
 			<div class="ui column three wide mobile hidden" style="margin-left:30px" id="toc-sidebar">
 				<div class="ui sticky container toc" id="toc">
-				<div class="ui hidden divider"></div>
-					<a class="ui small inverted fluid purple right labeled icon button" href="/eyes17/blog"><i class="right arrow icon"></i>Blog</a>
+					<div class="ui hidden divider"></div>
+					<a class="ui small inverted fluid purple left labeled icon button" href="/eyes17/"><i class="home icon"></i>Home</a>
 					{{ page.toctext }}
 					<div class="ui divided selection list">
 					{% for post in site.posts %}
 					<a class="item" href="{{ post.url }}">{{ post.title }}</a>
 					{% endfor %}
+					</div>			
 				</div>
-				
 			</div>
 		</div>
 	</div>
+	<div class="ui clearing divider"></div>	
 	{% else %}
 	<div class="ui container" >
 	{{ content }}
 	</div>
 	{% endif %}
 
-{% if page.swipe %}
-{% assign swipe = site.data.galleries[page.swipe] %}
-{% include swipe.html swipe=swipe %}
-{% endif %}
 
   <div class="ui inverted vertical footer segment">
     <div class="ui container">
@@ -152,8 +150,8 @@ common-js:
         <div class="three wide column">
           <h4 class="ui inverted header">Details</h4>
           <div class="ui inverted link list">
-            <a href="/about" class="item">About</a>
-            <a href="/contact" class="item">Contact Us</a>
+            <a href="about" class="item">About</a>
+            <a href="contact" class="item">Contact Us</a>
           </div>
         </div>
         <div class="three wide column">
@@ -188,7 +186,9 @@ common-js:
       </div>
     </div>
   </div>
-</div>
+
+
+  </div>
 
 {% include scripts.html %}
 </body>

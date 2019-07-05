@@ -20,6 +20,7 @@ foursquare: http://www.foursquare.com  ## your foursquare account url
 
 include: ['eyes17']
 
+permalink: none
 collections:
  eyes17:
   permalink: /eyes17/:path.html

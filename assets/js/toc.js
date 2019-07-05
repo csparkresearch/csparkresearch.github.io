@@ -8,7 +8,7 @@
       headers: 'h1, h2, h3, h4, h5, h6',
       listType: 'ul', // values: [ol|ul]
       showEffect: 'show', // values: [show|slideDown|fadeIn|none]
-      showSpeed: 'slow', // set to 0 to deactivate effect
+      showSpeed: 0, // set to 0 to deactivate effect
       classes: { list: 'ui celled unordered list',
                  item: 'item'
                }
@@ -48,7 +48,7 @@
       show: function() {var h=output.html(); console.log(h); output.hide().html(h+html).show(settings.showSpeed); },
       slideDown: function() {var h=output.html(); console.log(h); output.hide().html(h+html).slideDown(settings.showSpeed); },
       fadeIn: function() { var h=output.html(); output.hide().html(h+html).fadeIn(settings.showSpeed); },
-      none: function() { output.html(html); }
+      none: function() { var h=output.html(); output.html(h+html); }
     };
 
     var get_level = function(ele) { return parseInt(ele.nodeName.replace("H", ""), 10); };
@@ -87,7 +87,6 @@
       level = this_level; // update for the next one
     });
     html += "</"+settings.listType+">";
-    console.log(html);
     if (!settings.noBackToTopLinks) {
       $(document).on('click', '.back-to-top', function() {
         $(window).scrollTop(0);
