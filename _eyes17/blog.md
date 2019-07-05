@@ -26,10 +26,12 @@ follow: true
 		<div class="extra">
 		  <div>{{ post.date | date: '%B %d, %Y' }}</div>
 			{% assign author = site.data.authors[post.author] %}
+			<!--
 			<a class="ui basic image large label right floated">
 			  <img src="{{author.photo}}">
 			  {{author.name}}
 			</a>
+			-->
 		</div>
 	  </div>
 	</div>

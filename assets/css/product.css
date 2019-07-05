@@ -118,6 +118,13 @@
     .ui.vertical.stripe h3 {
       font-size: 2em;
     }
+    .ui.blog.column p, .ui.blog.column li{
+		font-size: 17px;
+    }
+    .ui.blog.column h2{
+		color: #a4286b;
+		font-size: 26px;
+	}
     .ui.vertical.stripe .button + h3,
     .ui.vertical.stripe p + h3 {
       margin-top: 3em;
