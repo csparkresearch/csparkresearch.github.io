@@ -2,7 +2,7 @@
 layout: blog
 title: KuttyPy Design and GUI
 description: Design Considerations behind the KuttyPy, and its Python based UI 
-cover: assets/blog/screenshots/kpy_layout.png
+cover: /assets/blog/screenshots/kpy_layout.png
 author: jithin
 summary: A pictorial walkthrough of the KuttyPy Layout, CAD Render, Graphical Application design, and Coding Interface
 show-toc: true

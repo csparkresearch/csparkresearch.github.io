@@ -39,6 +39,24 @@
     {% endfor %}
   {% endif %}
 
+
+
+  {% if page.share-img %}
+  {% assign share-img = page.share-img %}
+  {% elsif page.headerimage %}
+  {% assign share-img = page.header %}
+  {% elsif page.cover %}
+  {% assign share-img = page.cover %}
+  {% elsif site.avatar %}
+  {% assign share-img = page.avatar %}
+  {% endif %}
+
+  {% if {{ share-img | slice: 0 }} == '/' %}
+  {% assign imagepath = "{{site.url}}{{share-img}}" %}
+  {% else %}
+  {% assign imagepath = "{{site.url}}/{{share-img}}" %}
+  {% endif %}
+
     <!-- Facebook OpenGraph tags -->
   {% if site.fb_app_id %}
   <meta property="fb:app_id" content="{{ site.fb_app_id }}" />
@@ -112,15 +130,8 @@
   <link rel="canonical" href="{{ site.url }}{{ page.url | remove: '/index.html' | remove: '.html' }}" />
   {% endif %}
 
-  {% if page.share-img %}
-  <meta property="og:image" content="{{ site.url }}/{{ page.share-img }}" />
-  {% elsif page.headerimage %}
-  <meta property="og:image" content="{{ site.url }}/{{ page.headerimage }}" />
-  {% elsif page.cover %}
-  <meta property="og:image" content="{{ site.url }}/{{ page.cover }}" />
-  {% elsif site.avatar %}
-  <meta property="og:image" content="{{ site.url }}/{{ site.avatar }}" />
-  {% endif %}
+
+  <meta property="og:image" content="{{ imagepath }}" />
 
 
   <!-- Twitter summary cards -->
@@ -148,15 +159,7 @@
   <meta name="twitter:description" content="Instrumentation and Engineering">
   {% endif %}
 
-  {% if page.share-img %}
-  <meta name="twitter:image" content="{{ site.url }}/{{ page.share-img }}" />
-  {% elsif page.cover %}
-  <meta name="twitter:image" content="{{ site.url }}/{{ page.cover }}" />
-  {% elsif page.header %}
-  <meta name="twitter:image" content="{{ site.url }}/{{ page.header }}" />
-  {% elsif site.avatar %}
-  <meta name="twitter:image" content="{{ site.url }}/{{ site.avatar }}" />
-  {% endif %}
+  <meta name="twitter:image" content="{{ imagepath }}" />
 
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
