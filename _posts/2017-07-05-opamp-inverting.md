@@ -8,7 +8,7 @@ summary: A low amplitude (80mV) sinusoidal wave is amplified using a simple Op-A
 show-toc: true
 tags: [resistor,opamp,amplifier,Electronics]
 pins: [WG,A1,A2]
-category: expeyes17
+category: [expeyes17, electronics]
 ---
 
 

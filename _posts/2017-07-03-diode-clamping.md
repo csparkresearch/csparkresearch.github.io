@@ -8,7 +8,7 @@ summary: Diodes can be used to clamp AC waveforms... a technique which essential
 show-toc: true
 tags: [4148,3V3,Diode,clamping,Electronics]
 pins: [WG,PV1,A1,A2]
-category: expeyes17
+category: [expeyes17, electronics]
 ---
 
 

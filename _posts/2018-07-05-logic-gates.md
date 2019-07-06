@@ -44,12 +44,12 @@ The AND gate can be implemented using two diodes, as shown in the figure below. 
 <div class="ui clearing divider"></div>
 
 ## OR Gate with 74LS32
-The waveforms for the 74LS32 OR gate  is also shown below. The ICs are pin compatible, you only need to replace the IC. The 
+The waveforms for the 74LS32 OR gate  is also shown below. The ICs are pin compatible, and you only need to replace the IC.
 
 ![](/assets/blog/screenshots/orgate.png){:class="ui image fluid centered lightbox" alt="ExpEYES17: OR Gate"}
 
 ### OR Gate with Diodes
-The OR gate can be implemented as shown below. If any of the inputs goes HIGH the output becomes HIGH.
+The OR gate can be implemented as shown below. If either of the inputs is HIGH, the output is also HIGH.
 
 ![](/assets/blog/schematics/diode-or-gate.svg){:class="ui image medium lightbox floated" }
 

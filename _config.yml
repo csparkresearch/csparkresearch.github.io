@@ -18,12 +18,12 @@ linkedin: http://www.linkedin.com  ## your linkedin account url
 dribbble: http://www.dribble.com  ## you dribbble account url
 foursquare: http://www.foursquare.com  ## your foursquare account url
 
-include: ['eyes17']
+include: ['expeyes17']
 
 permalink: none
 collections:
- eyes17:
-  permalink: /eyes17/:path.html
+ expeyes17:
+  permalink: /expeyes17/:path.html
   output: true
 
 
@@ -34,11 +34,11 @@ navbar-links:
     - Gamma Spectrometer: "gammaspec"
     - Multi Channel Analyzer: "mca1k"
     - CNSPEC software: "cnspec"
-    - ExpEYES: "eyes17"
+    - ExpEYES: "expeyes17"
     - KuttyPy: "kuttypy"
     - Geiger Counter: "gmcounter"
   Resources:
-    - Blog: eyes17/blog
+    - Blog: expeyes17/blog
     - In the News: "news"
     - Publications: "publications"
     - CNSPEC software: "cnspec"

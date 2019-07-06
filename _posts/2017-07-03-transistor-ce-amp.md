@@ -8,7 +8,7 @@ summary: Using an NPN transistor in common-emitter configuration to make a high 
 show-toc: true
 tags: [4148,transistor,common emitter,characteristics]
 pins: [WG,PV1,A1,A2]
-category: expeyes17
+category: [expeyes17, electronics]
 ---
 
 

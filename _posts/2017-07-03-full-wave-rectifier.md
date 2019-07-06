@@ -7,7 +7,7 @@ author: jithin
 summary: Study full-wave rectifiers With ExpEYES. You will need the waveform generators and oscilloscope of ExpEYES, and a few passive components such 2 4148 diodes, a capacitor for filtering, and a resistor.
 show-toc: true
 tags: 4148 3V3 Diodes fullwave Electronics ExpEYES17 rectifier
-category: expeyes17
+category: [expeyes17, electronics]
 ---
 
 ## Introduction

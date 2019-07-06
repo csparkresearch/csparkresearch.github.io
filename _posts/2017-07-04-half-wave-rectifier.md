@@ -7,7 +7,7 @@ author: jithin
 summary: Study half-wave rectifiers With ExpEYES. All you need is the waveform generator and oscilloscope of ExpEYES, and a few passive components such a diode, capacitor, and resistor.
 show-toc: true
 tags: 4148 3V3 Diodes halfwave Electronics ExpEYES17 rectifier
-category: expeyes17
+category: [expeyes17, electronics]
 ---
 
 ## Introduction

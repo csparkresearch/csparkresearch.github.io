@@ -74,7 +74,7 @@ common-js:
 		  <div class="content">
 			<a class="ui dividing header red"><i class="paperclip icon"></i>Brief Summary</a>
 			<div class="meta">
-			  <a>{{page.category}}</a>
+			    {% for cat in page.category %}<a>{{cat}}/</a>{% endfor %}
 			</div>
 			<div class="description large">
 			  {{page.summary}}
@@ -100,7 +100,7 @@ common-js:
 			<div class="ui column three wide mobile hidden" id="leftbar" >
 				<div class="ui sticky container leftbar">
 					<div class="ui hidden divider"></div>	
-					<a class="ui small inverted fluid purple left labeled icon button" href="/eyes17/blog"><i class="left arrow icon"></i>Posts</a>
+					<a class="ui small inverted fluid purple left labeled icon button" href="/expeyes17/blog"><i class="left arrow icon"></i>Posts</a>
 					<div class="ui divider"></div>	
 					<div class="ui divided selection list">
 					{% for post in site.posts %}
@@ -126,7 +126,9 @@ common-js:
 				</div>
 			</div>
 			<div class="ui column ten wide blog" style="padding:30px;" id="toc-leftbar">
-			{{ content }}
+				{{ content }}
+				<div class="ui clearing divider"></div>
+				<a class="ui small inverted red left labeled icon button" href="/expeyes17/blog"><i class="left arrow icon"></i>All Posts</a>
 			</div>
 			<div class="ui column three wide mobile hidden" id="toc-sidebar">
 				<div class="ui sticky container toc" id="toc">

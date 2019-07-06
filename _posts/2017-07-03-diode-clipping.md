@@ -8,7 +8,7 @@ summary: Diodes can be used to clip AC waveforms beyond a preset voltage. You wi
 show-toc: true
 tags: [4148,3V3,Diode,clipping,Electronics]
 pins: [WG,PV1,A1,A2]
-category: expeyes17
+category: [expeyes17, electronics]
 ---
 
 
