@@ -42,19 +42,13 @@
 
 
   {% if page.share-img %}
-  {% assign share-img = page.share-img %}
-  {% elsif page.headerimage %}
-  {% assign share-img = page.header %}
+  {% assign imagepath = {{site.url | append: "/" | append: page.share-img}} %}
   {% elsif page.cover %}
-  {% assign share-img = page.cover %}
+  {% assign imagepath = {{site.url | append: "/" | append: page.cover}} %}
+  {% elsif page.header %}
+  {% assign imagepath = {{site.url | append: "/" | append: page.header}} %}
   {% elsif site.avatar %}
-  {% assign share-img = page.avatar %}
-  {% endif %}
-
-  {% if {{ share-img | slice: 0 }} == '/' %}
-  {% assign imagepath = "{{site.url}}{{share-img}}" %}
-  {% else %}
-  {% assign imagepath = "{{site.url}}/{{share-img}}" %}
+  {% assign imagepath = {{site.url | append: "/" | append: site.avatar}} %}
   {% endif %}
 
     <!-- Facebook OpenGraph tags -->
@@ -131,7 +125,7 @@
   {% endif %}
 
 
-  <meta property="og:image" content="{{ imagepath }}" />
+  <meta property="og:image" content="{{ imagepath | replace : '//' , '/' }}" />
 
 
   <!-- Twitter summary cards -->
@@ -159,7 +153,7 @@
   <meta name="twitter:description" content="Instrumentation and Engineering">
   {% endif %}
 
-  <meta name="twitter:image" content="{{ imagepath }}" />
+  <meta name="twitter:image" content="{{ imagepath | replace : '//' , '/' }}" />
 
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
