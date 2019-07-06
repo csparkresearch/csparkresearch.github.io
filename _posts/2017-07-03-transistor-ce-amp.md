@@ -28,7 +28,7 @@ To improve it further, one can reduce the input signal, use a higher collector s
 
 ![](/assets/blog/schematics/npn_ce_amp.svg){:class="ui image medium lightbox floated" }
 
-![](/assets/blog/photographs/npn-ce-amp.jpg){:class="ui image centered medium lightbox" alt="Photograph: Diode Clamping with ExpEYES17"}
+![](/assets/blog/photographs/npn-ce-amp.jpg){:class="ui image centered medium lightbox" alt="Photograph: Transistor Amplifier"}
 
 <div class="ui clearing divider"></div>
 
