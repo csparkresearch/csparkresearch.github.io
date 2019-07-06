@@ -2,7 +2,7 @@
 layout: blog
 title: Logic Gates
 description: Study of digital circuits with ExpEYES17
-cover: /assets/blog/screenshots/opamp-noninv.png
+cover: /assets/blog/screenshots/andgate.png
 author: jithin
 summary: Logic Gate ICs for AND and OR operations are studied using digital signals. The same circuits are then constructed using diodes to understand their operation.
 show-toc: true
