@@ -37,7 +37,7 @@ subtopics:
    text: The calibrated instrument can be used to acquire spectra from unknown sources, and the gaussian fitting utility be used for locating centroids of identified photopeaks. In this image, Cs-137 has been identified since its known photopeak energy is 662 keV.
    
  - type: photo
-   url: assets/images/gamma/flow.png
+   url: assets/images/gamma/flow.jpg
    color: green
    title: Flow diagram for the instrument
    description: All signal processing stages as well as a 1K MCA is included with the detection system

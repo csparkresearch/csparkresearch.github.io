@@ -28,7 +28,8 @@ The MCA is designed to emit a programmable width digital pulse per event, and al
 which will then act as secondary discriminators for recording events. Demonstrable coincidence results can be obtained
 using just a cable connected from one spectrometer to the other. 
 
-{% include vr.html path="/assets/coincidence" width=600 height=338 frames=15 start=1 title="Gamma-Gamma Coincidence"  %}
+<img class="ui image fluid rounded lightbox" src="/assets/images/gamma/coincidence.jpg"/>
+
 
 
 * e-mail csparkresearch@gmail.com for enquiries. [Contact Us.](contact)
