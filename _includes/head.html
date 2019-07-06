@@ -33,23 +33,18 @@
     {% endfor %}
   {% endif %}
 
-  {% if page.googlefonts %}
-    {% for font in page.googlefonts %}
+  {% if page.googlefonts %}{% for font in page.googlefonts %}
       <link rel="stylesheet" href="//fonts.googleapis.com/css?family={{ font }}" />
-    {% endfor %}
-  {% endif %}
+    {% endfor %}{% endif %}
 
-
-
-  {% if page.share-img %}
-  {% assign imagepath = {{site.url | append: "/" | append: page.share-img}} %}
-  {% elsif page.cover %}
-  {% assign imagepath = {{site.url | append: "/" | append: page.cover}} %}
-  {% elsif page.header %}
-  {% assign imagepath = {{site.url | append: "/" | append: page.header}} %}
-  {% elsif site.avatar %}
-  {% assign imagepath = {{site.url | append: "/" | append: site.avatar}} %}
-  {% endif %}
+  {% if page.share-img %}{% assign pth = {{page.share-img}} %}
+  {% elsif page.cover %}{% assign pth = {{page.cover}} %}
+  {% elsif page.header %}{% assign pth = {{page.header}} %}
+  {% elsif site.avatar %}{% assign pth = {{site.avatar}} %}{% endif %}
+  
+  {% assign firstletter = pth | slice: 0 %}
+  {% if firstletter == "/" %}{% assign imagepath = {{site.url | append: pth}} %}
+  {% else %}{% assign imagepath = {{site.url | append: "/" | append: pth}} %}{% endif %}
 
     <!-- Facebook OpenGraph tags -->
   {% if site.fb_app_id %}
@@ -125,7 +120,7 @@
   {% endif %}
 
 
-  <meta property="og:image" content="{{ imagepath | replace : '//' , '/' }}" />
+  <meta property="og:image" content="{{ imagepath }}" />
 
 
   <!-- Twitter summary cards -->
@@ -153,7 +148,7 @@
   <meta name="twitter:description" content="Instrumentation and Engineering">
   {% endif %}
 
-  <meta name="twitter:image" content="{{ imagepath | replace : '//' , '/' }}" />
+  <meta name="twitter:image" content="{{ imagepath }}" />
 
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
