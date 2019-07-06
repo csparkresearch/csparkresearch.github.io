@@ -4,7 +4,8 @@ title: "CNSPEC"
 tagline: "&mdash; Software for nuclear data acquisition and analysis &mdash;"
 show-navigation: false
 show-toc: true
-headerimage: assets/images/cnspec.jpg
+header: assets/images/cnspec.jpg
+share-img: assets/images/cnspec.jpg
 ---
 
 {% include install.html product="GammaSpec-1K"  %}

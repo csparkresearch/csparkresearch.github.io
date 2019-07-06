@@ -1,7 +1,7 @@
 - type: imtxt
   color: olive
   title: ATMEGA32 training board for beginners
-  image: assets/images/kuttypy/pov_display.webp
+  image: /assets/images/kuttypy/pov_display.webp
   features:
    - Live User Interface with click-and-explore features
    - Active monitoring and control of each microcontroller pin. No compile+upload required
@@ -10,9 +10,9 @@
    - Upload your own compiled C code and use as a serial monitor!
 
 - type: video
-  webm: assets/images/kuttypy/robot.webm
-  mp4: assets/images/kuttypy/robot.mp4
-  thumb: assets/images/kuttypy/robot.jpeg
+  webm: /assets/images/kuttypy/robot.webm
+  mp4: /assets/images/kuttypy/robot.mp4
+  thumb: /assets/images/kuttypy/robot.jpeg
   color: green
   title: Control Robots!
   description: The interactive UI is used to set the PWM output on various channels of a PCA9685 PWM generator board to control a robotic arm available online for 20 dollars or so.
@@ -20,7 +20,7 @@
 - type: imtxt
   color: green
   title: Test and Measurement tool
-  image: assets/images/kuttypy/voltmeter.gif
+  image: /assets/images/kuttypy/voltmeter.gif
   features:
    - Use it as a monitoring utility for your projects
    - 8 Channel voltmeter, 0-5000 mV with 10-bit resolution
@@ -31,15 +31,15 @@
 - type: imim
   color: purple
   title: Control via the Python Library
-  image: assets/images/kuttypy/blink.gif
-  image2: assets/images/kuttypy/monitor.gif
+  image: /assets/images/kuttypy/blink.gif
+  image2: /assets/images/kuttypy/monitor.gif
   subscript: Monitor your Python code’s activity while it executes
 
 - registers:
   type: imtxt
   color: teal
   title: Alter registers on-the-fly
-  image: assets/images/kuttypy/custom_registers.gif
+  image: /assets/images/kuttypy/custom_registers.gif
   features:
    - Select any register for reading/writing
    - Twiddle bits and observe the hardware's reaction
@@ -50,7 +50,7 @@
 - type: imtxt
   color: violet
   title: Harness the power of Python
-  image: assets/images/kuttypy/code.gif
+  image: /assets/images/kuttypy/code.gif
   features:
    - Use the KuttyPy as a data acquisition board
    - Combine with powerful Python modules for data analysis and visualization
@@ -60,14 +60,14 @@
 - type: imim
   color: orange
   title: Plug and Play a range of I/O accessories
-  image: assets/images/kuttypy/hall_sensor.webp
-  image2: assets/images/kuttypy/servo_motor.webp
+  image: /assets/images/kuttypy/hall_sensor.webp
+  image2: /assets/images/kuttypy/servo_motor.webp
   subscript: A hall sensor is being tested using the ADC. On the right, is a servo motor being controlled via the PWM output.
 
 - type: imtxt
   color: pink
   title: Plug and Play  I2C sensors
-  image: assets/images/kuttypy/mcp4725dac.gif
+  image: /assets/images/kuttypy/mcp4725dac.gif
   features:
    - Acquire data from sensors for luminosity, humidity, acceleration, angular velocity etc. via  I2C
    - Plug and play. No coding required
@@ -79,7 +79,7 @@
 - type: imtxt
   color: blue
   title: Choose standalone mode / Live monitor
-  image: assets/images/kuttypy/switch.gif
+  image: /assets/images/kuttypy/switch.gif
   features:
    - The KuttyPy monitor code is part of the bootloader. 
    - This allows users to upload their own Hex files without losing the training utility features.
@@ -90,7 +90,7 @@
 - type: imtxt
   color: green
   title: More examples for standalone operation
-  image: assets/images/kuttypy/pov_display.webp
+  image: /assets/images/kuttypy/pov_display.webp
   features:
    - Lots of example C code is shipped with the software
    - From simple codes for blinking LEDs, Reading ADCs, and operating PWM outputs

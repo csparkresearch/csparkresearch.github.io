@@ -1,22 +1,22 @@
 ---
 layout: semantic
 title: "KuttyPy"
-tagline: "&mdash; [ Microcontroller Training Utility ] &mdash;"
+tagline: "ATMEGA32 Microcontroller Training Utility"
 show-navigation: false
 show-toc: true
 share-img: assets/images/kuttypy/robot.jpeg
-banner: assets/images/kuttypy/cover.jpg
+banner: /assets/images/kuttypy/cover.jpg
 ---
 
 {% comment %}
 <div class="ui center aligned container" style="max-width: 700px !important;">
 <video width="100%" autoplay loop muted playsinline>
-  <source src="assets/images/kuttypy/main.mp4" type="video/mp4" />
-  <img src="assets/images/kuttypy/main.gif" title="Your browser does not support the <video> tag">
+  <source src="/assets/images/kuttypy/main.mp4" type="video/mp4" />
+  <img src="/assets/images/kuttypy/main.gif" title="Your browser does not support the <video> tag">
 </video>
 </div>
 {% endcomment %}
-<img src="assets/images/kuttypy/main.gif" class="ui centered image">
+<img src="/assets/images/kuttypy/main.gif" class="ui centered image">
 
 {% include install.html product="KuttyPy"  %}
 

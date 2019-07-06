@@ -113,7 +113,7 @@
   {% endif %}
 
   {% if page.share-img %}
-  <meta property="og:image" content="{{ page.share-img }}" />
+  <meta property="og:image" content="{{ site.url }}/{{ page.share-img }}" />
   {% elsif page.headerimage %}
   <meta property="og:image" content="{{ site.url }}/{{ page.headerimage }}" />
   {% elsif page.cover %}

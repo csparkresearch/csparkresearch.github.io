@@ -4,8 +4,8 @@ title: "Alpha Spectrometer"
 tagline: Compact alpha spectrometer with integrated 1K MCA
 show-navigation: false
 show-toc: true
-share-img: /assets/images/alpha/alpha_wide.jpg
-headerimage: assets/images/alpha/alpha_setup_source.jpg
+share-img: assets/images/alpha/alpha_wide.jpg
+header: assets/images/alpha/alpha_setup_source.jpg
 banner: assets/images/alpha/cover.jpg
 ---
 
