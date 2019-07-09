@@ -6,11 +6,12 @@ show-toc: true
 follow: true
 ---
 
+{% assign allposts = site.categories.kuttypy | concat: site.categories.manufacturing | concat: site.categories.expeyes17  | concat: site.categories.seelablet %}
 
 <div class="ui clearing hidden divider"></div>	
 <div class="ui container">
 	<div class="ui relaxed divided items">
-	{% for post in site.posts %}
+	{% for post in allposts %}
 	<div class="item link">
 	  <a class="ui medium image raised red segment" href="{{post.url}}">
 		<img src="{{ post.cover }}">

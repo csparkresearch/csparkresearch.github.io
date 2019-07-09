@@ -40,15 +40,36 @@
 - date: November 2015
   url: http://res.cloudinary.com/cspark/image/upload/c_lpad,h_280,w_500/v1481558056/seelab_proto/e_20-nov-2015.jpg
   description: Made an adapter board to fix the speaker terminal to the main board so that the heights of the Berg strips align with them on the same plane. 
+- date: November 2015
+  url: /assets/images/seelablet.jpg
+  description: Decided to make one batch of boards, and integrate with Orange Pi / Raspberry Pi. A prototype box was made with laser cut acrylic and vinyl stickers. 
 - date: December 2015
   url: http://res.cloudinary.com/cspark/image/upload/c_lpad,h_280,w_500/v1481558029/seelab_proto/f_10-dec-2015.jpg
-  description: Decided to make one batch of boards, and integrate with Orange Pi / Raspberry Pi. An injection mould was made to was made to fit an OPi/RPi along with the acquisition board 
+  description: An injection mould was made to was made to fit an OPi/RPi along with the acquisition board 
+- date: February 2016
+  url: /assets/images/pendulum.jpg
+  description: Over 50 Experiments were developed with SEELablet and <a href="https://hackaday.io/project/12552-seelablet-instrument-cluster-for-laboratories" target="_blank">documented on hackaday.io</a>.  
 - date: March 2016
   url: http://res.cloudinary.com/cspark/image/upload/c_lpad,h_280,w_500/v1481558046/seelab_proto/seelab-orangepi.jpg
   description: Several issues with making the ABS plastic cabinet were sorted out, and final assembly process was streamlined. four desktop versions were bought by Farook College, Calicut, followed by several other institutions.
+- date: April 2016
+  url: /assets/images/amp_mod.png
+  description: SEELablet Package included in Debian thanks to Georges Khaznadar.   <a href="/seelablet/seelablet.html" target="_blank">Home page for SEELablet</a>
 - date: July 2016
   url: http://res.cloudinary.com/cspark/image/upload/c_lpad,h_280,w_500/v1478699117/old_website/full_set.png
   description: Demonstrated at Startup Mission, Kerala. 
+- date: July 2016
+  url: /assets/images/2.jpg
+  description: Training Workshop on SEELablet for College Teachers organised by ICFOSS, Kerala. 
+- date: July 2016
+  url: /assets/images/seelablet/seel_exp.png
+  description: Range of Experiments possible with SEELablet. Featured on <a href="https://hackaday.com/2016/07/27/hackaday-prize-entry-a-suite-of-lab-instruments/" target="_blank">blogs</a>
 - date: August 2016
   url: https://res.cloudinary.com/cspark/image/upload/c_scale,w_800/h_499,w_700/v1487682911/expeyes-17/mould.jpg
   description: Redesigned the unit with a different form factor, with 2 connector blocks. Added a 5ppm/C clock generator and 50ppm/C analog reference (5ppm optional) for better accuracy. After a couple of rounds of prototyping , one batch was produced, with a new plastic mould. This will be termed SEELablet-V2. Calibration is carried out against a 24-bit ADC, which at this point seems like overkill, so a step down to a 16-bit ADC is expected in the near future. 
+- date: July 2017
+  url: /assets/images/8.jpg
+  description: Upon request, technology developed for SEELablet, including schematics, firmware, layout, and software was transferred under open source terms to IUAC under the label of ExpEYES-17 in order to upgrade the ExpEYES project . A Special batch was made for ICFOSS which organised training workshops for schools. details are at <a href="expeyes.in" target="_blank">expeyes.in</a>
+- date: May 2019
+  url: /assets/images/curise1.jpg
+  description: Training workshops for teachers organised by University of Calicut, under a DST funded project. 

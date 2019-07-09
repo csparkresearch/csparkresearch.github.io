@@ -36,6 +36,7 @@ navbar-links:
     - CNSPEC software: "cnspec"
     - ExpEYES: "expeyes17"
     - KuttyPy: "kuttypy"
+    - SEELablet: "seelablet/seelablet.html"
     - Geiger Counter: "gmcounter"
   Resources:
     - Blog: expeyes17/blog
