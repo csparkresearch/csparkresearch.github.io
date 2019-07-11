@@ -1,7 +1,7 @@
 ---
 layout: blog
 title: Velocity of Sound
-description: 
+description: Measuring the velocity of sound using Phase difference at difference points of propagation
 cover: /assets/blog/photographs/sound-vel-1.jpg
 author: jithin
 summary: |
