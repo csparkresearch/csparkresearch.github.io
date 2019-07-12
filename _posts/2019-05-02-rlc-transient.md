@@ -32,10 +32,10 @@ is difficult to perform with a conventional oscilloscope. However, with the ExpE
 level on any of the digital outputs, and start capturing voltage signals immediately afterwards. The latency is less than a microsecond, 
 and this enables students to study the transient response of various circuits.
 
-In this particular experiment, the <div class="ui basic blue button">0-5V</div> button changes OD1 from 0 Volts to 5Volts, and records the output of the
+In this particular experiment, the <button class="ui basic blue button">0-5V</button> button changes OD1 from 0 Volts to 5Volts, and records the output of the
 circuit. Since it is an RLC circuit, it may oscillate, depending on the values. 
 
-In a similar fashion, the voltage can be switched from <div class="ui basic blue button">5V - 0V</div>, and you can observe that the output actually drops below 0 Volts momentarily because
+In a similar fashion, the voltage can be switched from <button class="ui basic blue button">5V - 0V</button>, and you can observe that the output actually drops below 0 Volts momentarily because
 the magnetic field in the coil collapses. 
 
 
