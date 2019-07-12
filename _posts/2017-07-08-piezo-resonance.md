@@ -66,8 +66,3 @@ A fourier transform of this signal reveals the frequencies of the initial compon
 ## Exercises:
 + Use different values for SQ1 , and WG , and measure the time period. Is it equal to the time period of SQ1-WG?
 + Stick a small piece of tape, or a drop of glue on the piezo disk, and repeat the experiment. Is there a change in the resonant frequency?
-
-## See Also
- + [wikipedia: Beats(Acoustics)](https://en.wikipedia.org/wiki/Beat_(acoustics))
-
-{% include youtube.html title="Khan Academy tutorial" id="Ca91iOVGd9A" %}
