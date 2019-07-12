@@ -12,7 +12,7 @@ summary: |
 show-toc: true
 tags: [microphone,piezo,frequency response]
 pins: [WG,A1,MIC]
-category: [expeyes17, sound, piezo , frequency]
+category: [expeyes17, sound]
 ---
 
 
