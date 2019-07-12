@@ -10,6 +10,7 @@ Layouts have been defined for various types of pages. Some front matter needs to
   + show-toc option automatically generates a table of contents in the right sidebar
   + category will define the url. the following example will make `csparkresearch.in/expeyes17/sound/some-title.html`
   + Please specify at least one category.
+  + math: true . Use this only if you are using LateX style math equations enclosed in $ symbols, or $$ symbols. Includes MathJax
 
 ```
 ---
@@ -27,13 +28,14 @@ show-toc: true
 tags: [microphone,piezo,frequency response]
 pins: [WG,A1,MIC]
 category: [expeyes17, sound]
+math: true
 ---
 
 ## Section title
 + point one
 + bullet two
   + nested bullet starts with double space
-
+An equation : $T = 2 * \pi * \sqrt\frac{m}{k}$
 ```
 
 + semantic : A layout for a product page with a title, tagline, and optional header image

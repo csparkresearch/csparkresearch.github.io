@@ -13,6 +13,7 @@ show-toc: true
 tags: [sr04, sound echo, ultrasound]
 pins: [5V, SQ2, IN2, GND]
 category: [expeyes17, mechanics]
+math: true
 ---
 
 
@@ -30,7 +31,10 @@ moving objects need to be studied without touching them.
 ![](/assets/blog/photographs/sr04.jpg){:class="ui image centered medium lightbox" alt="Photograph"}
 
 ## The Mass and Spring problem
-When a mass suspended on a spring is made to oscillate, the period of oscillation is given by  T = 2 * pi * sqrt( m/k), 
+When a mass suspended on a spring is made to oscillate, the period of oscillation is given by  
+
+$$T = 2 * \pi * \sqrt\frac{m}{k}$$
+ 
 where m is the mass and k is the spring constant. 
 
 We can measure the period of oscillation by measuring the distance to the moving mass as a function of time. 
@@ -54,7 +58,6 @@ One can calculate the value of acceleration due to gravity from this data using 
 ![](/assets/blog/photographs/pendulum.jpg){:class="ui image fluid" alt="Photograph"}
 
 {% include youtube.html title="simple pendulum experiment video" id="fOTfMsKiXBo" %}
-
 
 ## See Also
  + [Datasheet for SR04](https://cdn.sparkfun.com/datasheets/Sensors/Proximity/HCSR04.pdf)
