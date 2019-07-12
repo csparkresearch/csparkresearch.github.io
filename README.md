@@ -47,7 +47,7 @@ banner: assets/images/kuttypy/cover.jpg
 share-img: assets/images/gamma/gamma_spectrum.png
 show-toc: true
 ---
-```
+
 
 Your content goes here...
 
