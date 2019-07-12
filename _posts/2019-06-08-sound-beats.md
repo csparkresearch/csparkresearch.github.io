@@ -2,7 +2,7 @@
 layout: blog
 title: Interference of Sound
 description: Observation and analysis of Beats phenomena through Experiments
-cover: /assets/blog/schematics/sound-beats.svg
+cover: /assets/blog/screenshots/sound-beats.png
 author: jithin
 summary: |
   When two sound waves with frequencies near each other overlap, constructive and destructive interference causes a third
@@ -39,6 +39,8 @@ be calculated by measuring the time between each node, and taking the reciprocal
 e.g : If two nodes are formed at 10mS, and 20mS positions, the time period of the beat is 10mS. This corresponds to
 a frequency of 100Hz !
 
+The resonance frequecy of the Piezo disc supplied with [ExpEYES](/expeyes17) is around 3500 Hz. It could vary from unit to unit,
+so as you move away from that frequency, the loudness will also decrease.
 
 ## Fourier transform
 

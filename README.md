@@ -2,6 +2,15 @@
 Based on Jekyll
 
 ## Include files
+
+A host of include files have been written to facilitate html generation from data files stored in _data directory.
+these are present in _includes, and can be used in the source files written in markdown format (.md)
+
++ maketabs.html : Creates accordions populated from a yml file
+```
+{% include maketabs.html data=site.data.home.topics title="More Information"%}
+```
+
 + animated-banner : displays a header text. animations disabled due to cpu load
 + fancy-menu: Loads contents from array defined in yml file with title,description, image, and optional submenu. Used at the top of the website to show off products and quick links.
 + flow: Creates an animated flowchart similar to fancy-menu. has options to add arrows between blocks.

@@ -64,6 +64,8 @@
   <meta property="description" content="{{ page.meta-description }}">
   {% elsif page.summary %}
   <meta property="description" content="{{ page.summary }}">
+  {% elsif page.description %}
+  <meta property="description" content="{{ page.description }}">
   {% elsif page.tagline %}
   <meta property="description" content="{{ page.tagline }}">
   {% else %}
@@ -74,6 +76,8 @@
   <meta property="og:description" content="{{ page.meta-description }}">
   {% elsif page.summary %}
   <meta property="og:description" content="{{ page.summary }}">
+  {% elsif page.description %}
+  <meta property="og:description" content="{{ page.description }}">
   {% elsif page.tagline %}
   <meta property="og:description" content="{{ page.tagline }}">
   {% else %}
