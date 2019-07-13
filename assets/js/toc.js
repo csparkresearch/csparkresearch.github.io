@@ -87,6 +87,8 @@
       level = this_level; // update for the next one
     });
     html += "</"+settings.listType+">";
+    html += '<div class="ui hidden divider"></div>';
+
     if (!settings.noBackToTopLinks) {
       $(document).on('click', '.back-to-top', function() {
         $(window).scrollTop(0);

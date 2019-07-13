@@ -8,6 +8,7 @@ summary: A pictorial walkthrough of the KuttyPy Layout, CAD Render, Graphical Ap
 show-toc: true
 tags: [KuttyPy, KiCAD, CERN, Robotics, Python, Arduino]
 category: [kuttypy]
+sidebarposts: kuttypy
 ---
 
 

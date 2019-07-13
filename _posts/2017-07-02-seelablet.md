@@ -11,9 +11,10 @@ summary: |
 
 
 show-toc: true
-tags: [microphone,velocity of sound,phase shift,]
+tags: [microphone,velocity of sound,SEELablet, instrumentation cluster, citizen science]
 pins: [WG,A1,MIC]
 category: [seelablet]
+sidebarposts: [seelablet,kuttypy]
 ---
 
 <span style="color:red;">Out of Stock</span> , Please refer to  <a href="/expeyes17/" target="_blank" class="ui inverted tiny green button">ExpEYES-17</a>

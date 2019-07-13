@@ -58,7 +58,15 @@ avatar: "assets/images/avatar-icon.png"
 # then specify the following parameter
 title-img: "/assets/images/logo_transparent.png"
 
-# --- Background colour/image options --- #
+# sidebar post summary defaults
+defaults:
+  -
+    scope:
+      path: "_posts"
+    values:
+      sidebarposts: ["kuttypy","manufacturing","expeyes17","seelablet"]
+
+
 
 markdown: kramdown
 highlighter: rouge

@@ -1,9 +1,10 @@
 ---
-layout: semantic
+layout: blog
 title: "BLOG"
-tagline: "Write-ups on various applications"
+description: "Write-ups on various applications"
 show-toc: true
 follow: true
+smooth-scroll: true
 ---
 
 {% assign allposts = site.categories.kuttypy | concat: site.categories.manufacturing | concat: site.categories.expeyes17  | concat: site.categories.seelablet %}
@@ -17,7 +18,7 @@ follow: true
 		<img src="{{ post.cover }}">
 	  </a>
 	  <div class="content">
-		<a href="{{post.url}}" class="ui dividing header teal"><i class="settings icon"></i>{{post.title}}</a>
+		<h1 class="ui header small" id="{{post.title}}"><a href="{{post.url}}" class="ui dividing header teal"><i class="settings icon"></i>{{post.title}}</a></h1>
 		<div class="meta">
 			    {% for cat in post.category %}<a>{{cat}}/</a>{% endfor %}
 		</div>
