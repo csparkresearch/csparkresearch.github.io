@@ -37,14 +37,7 @@ plot A2(R) vs (A1-A2) .
 
 ## Analysis
 
-You may save this data, and fit it with an appropiate mathematical function to extract the oscillation frequency, and compare it with the theoretical
-frequency obtained from R and L . 
-
-It can be observed that when a 5 to 0 volt step is applied, the polarity of the voltage across the inductor is reversed and 
-the voltage goes to negative immediately. 
-After that the voltage reduces exponentially, driving a current through the resistor. 
-
-The resulting wave form is fitted with V = Vo x exp(R/L * t) to extract the R/L value. This also allows calculation of the value of the inductor.
+When the shape becomes circular, Z<sub>C</sub> will equal R . Confirm this from the values you used.
 
 ## See Also
 
