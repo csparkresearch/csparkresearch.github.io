@@ -42,7 +42,6 @@ For  half wavelength the phase difference is 180 degree. A connection diagram is
 
 {% include youtube.html title="Tutorial by Khan Academy" id="UgE2GIQwUCw" %}
 
-
 ### Screenshot
 
 The microphone-piezo distance is adjusted such that the two waveforms are in phase(overlapping) . The exact phase difference is also calculated
