@@ -9,8 +9,8 @@ show-toc: true
 tags: [Capacitor,Resistor,RC,steady state,Electrical]
 pins: [WG,A1,A2]
 category: [expeyes17, electrical]
+math: true
 ---
-
 
 ## Quick Start
 
