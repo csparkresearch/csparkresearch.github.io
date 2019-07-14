@@ -62,6 +62,8 @@ Slow motion video of a Pick and Place PCB assembly machine loading components in
 
 {% include youtube.html id="ej8Qm9UXRRA" %}
 
+{% include youtube.html id="Pr9nnnDRnLg" title="Pick and place of large pin count ICs. Regular speed"%}
+
 Two arms are faster than one!
 
 ## Visual Inspection before reflow
