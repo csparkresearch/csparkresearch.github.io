@@ -46,7 +46,7 @@ You can also see a tray of TQFP package microcontrollers
 
 <div class="ui clearing divider"></div>
 ## Stencil Pasting
-<iframe width="640" height="360" src="https://www.youtube.com/embed/iYGybBz1g-g?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+{% include youtube.html id="iYGybBz1g-g" %}
 
 Solder paste is applied on the PCB via a stencil.
 
@@ -60,7 +60,7 @@ Once each of the nozzles are holding a component , the whole arm moves onto the 
 
 Slow motion video of a Pick and Place PCB assembly machine loading components into a circular array of vacuum nozzles, and placing them on the ExpEYES17 circuit board which we aided in development and also manufacture.
 
-<iframe width="640" height="360" src="https://www.youtube.com/embed/ej8Qm9UXRRA?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+{% include youtube.html id="ej8Qm9UXRRA" %}
 
 Two arms are faster than one!
 
@@ -86,7 +86,8 @@ set in a certain order known as the temperature profile.
 While the fixed type needs to adjust its temperature accordingly over the
 duration of the enture process, the conveyor type simply needs to maintain different temperatures at different zones as the PCB
 slowly moves through it and gets reflowed.
-<iframe width="640" height="360" src="https://www.youtube.com/embed/RtBukv1rAlU?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+{% include youtube.html id="RtBukv1rAlU" %}
 <div class="ui clearing divider"></div>
 
 ## Admire your work
@@ -97,4 +98,4 @@ slowly moves through it and gets reflowed.
 
 If your PCBs are heading out to rough environments, it may help to spray coat them with acrylic to protect it from the elements.
 
-<iframe width="640" height="360" src="https://www.youtube.com/embed/5WL1mmvJlGE?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+{% include youtube.html id="5WL1mmvJlGE" %}
