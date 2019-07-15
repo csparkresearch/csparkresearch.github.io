@@ -26,12 +26,13 @@ These formidable machines automatically populate PCBs, and leave little room for
 + PCB Manufacturing, and component sourcing
 + Stencil Pasting : Solder paste is applied on all the pads using a stencil and a pasting machine
 + Pick and Place assembly: Robots pick up components from their trays/rolls, and place them at their exact positions as per the coordinate file
- + Loading Components : Components come in reels/sticks/trays , and must be loaded into the machine
- + Load the coordinate file: The EDA tool you used, such as KiCAD, will generate a coordinate file that contains the exact position of each component. This information must be fed to the machine
- + Check for alignment issues, and component angles/accidental rotations
- + Insert a PCB panel, and proceed with assembly
+  + Loading Components : Components come in reels/sticks/trays , and must be loaded into the machine
+  + Load the coordinate file: The EDA tool you used, such as <a href="http://kicad-pcb.org/" target="_blank">KiCAD</a>, will generate a coordinate file that contains the exact position of each component. This information must be fed to the machine
+  + Check for alignment issues, and component angles/accidental rotations
+  + Insert a PCB panel, and proceed with assembly
 + Reflow soldering : The boards are placed in a reflow oven which melts the solder paste joining the parts and the PCB, thereby completing the process.
- 
+
+
 ## Get it all together
 
 ![](/assets/blog/pnp/components.jpg){:class="ui image floated medium lightbox" }
