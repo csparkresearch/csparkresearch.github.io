@@ -48,7 +48,8 @@ You can also see a tray of TQFP package microcontrollers
 ## Stencil Pasting
 {% include youtube.html id="iYGybBz1g-g" %}
 
-Solder paste is applied on the PCB via a stencil.
+Solder paste is applied on the PCB via a stencil. Each point that needs to be soldered is applied with a thin layer of solder
+paste which is mix of powdered solder(Lead and Tin alloy), and flux(chemical which aids in cleaning oxide layers).
 
 <div class="ui clearing divider"></div>
 ## Assembly
@@ -57,6 +58,8 @@ The machine is an incredible piece of engineering. It picks up a dozen tiny part
 see it in action. Each part is picked up by one of twelve vacuum nozzles arranged in a circular pattern. The nozzle array rotates to let the next nozzle load a component.
 
 Once each of the nozzles are holding a component , the whole arm moves onto the PCB, and places the components where they need to be. Rinse and repeat!
+
+Also not that there is already a layer of solder paste between each component's pins and the PCB's pads.
 
 Slow motion video of a Pick and Place PCB assembly machine loading components into a circular array of vacuum nozzles, and placing them on the ExpEYES17 circuit board which we aided in development and also manufacture.
 
@@ -81,6 +84,14 @@ the reflow process, it's ready to be shipped/packed, and alterations are akin to
 ## Reflow Process
 
 ![](/assets/blog/pnp/oven.jpg){:class="ui image floated medium lightbox" }
+
+The reflow process involves heating the entire board to a certain controlled temperature
+at which all the solder paste melts, and joins each component's pins to the corresponding pads. The components
+are not damaged because they are rated to survive these high temperatures ( 270 degrees typically)
+
+If the solder paste was applied accurately via the stencil, and the pick and place machine did not make any offset
+errors, the entire board is ready to use after the reflow process. Occassionally the machine may make mistakes with
+a component or two, and this is rectified after visual inspection.
 
 The reflow oven can either be of a fixed type, or a conveyor type. The reflow process involves a series of different temperatures
 set in a certain order known as the temperature profile. 
