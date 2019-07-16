@@ -98,6 +98,14 @@ $('.ui.sticky.leftbar')
     context: '#leftbar'
   });
 
+/*---LAZY LOAD IMAGES--*/
+$('.image.lazy')
+  .visibility({
+    type       : 'image',
+    transition : 'fade in',
+    duration   : 1000
+  })
+;
 
 
 /*----YOUTUBE---*/
@@ -129,7 +137,7 @@ for (var i = 0; i < youtube.length; i++) {
 
 }
 
-/*-----*/
+
 
 });    
 
