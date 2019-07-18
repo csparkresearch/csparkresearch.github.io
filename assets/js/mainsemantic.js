@@ -69,14 +69,6 @@ function init_menu(){
         .sidebar('attach events', '.toc.item')
       ;
 
-      // Animate sidebar icon
-		$(".sidebar.reveal").mouseenter(function(){
-			 $(this).stop().animate({width: '120px'}, 300, 
-             function(){$(this).find('.text').show();});
-		}).mouseleave(function (event){
-			$(this).find('.text').hide();
-			$(this).stop().animate({width: '70px'}, 300);
-		});
 
 }
 
@@ -137,7 +129,7 @@ for (var i = 0; i < youtube.length; i++) {
 
 }
 
-
+/*----- Overlay----*/
 
 });    
 

@@ -304,3 +304,14 @@
     top: 0;
     left: 0;
 }
+
+/*----follow menu new---*/
+/* change style */
+.ui.secondary.inverted.menu a.overlay.blog{
+  color: #ff1a1a !important;
+  background-color: rgba(150,150,200,0.7) !important;
+  position: fixed;
+  z-index:1000;
+  padding: 0.3em !important;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.5);
+}
