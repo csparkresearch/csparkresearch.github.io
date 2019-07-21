@@ -129,7 +129,20 @@ for (var i = 0; i < youtube.length; i++) {
 
 }
 
-/*----- Overlay----*/
+/*----- PLAY BUTTON FOR CODE----*/
+
+var newDiv = document.createElement('div');
+newDiv.innerHTML='<div class="ui green right ribbon label autorun"><i class="play icon"></i>RUN</div>';
+$('.highlight pre').prepend(newDiv);
+
+$( ".autorun" ).bind( "click", function() {
+  var mycode= $(this).parent('div').parent('pre').children('code').text();
+
+var link = document.createElement("a");
+link.href = 'data:text/txt,' + encodeURIComponent(mycode);
+link.download = "myfile.py";
+link.click();
+});
 
 });    
 
