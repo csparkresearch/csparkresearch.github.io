@@ -132,7 +132,7 @@ for (var i = 0; i < youtube.length; i++) {
 /*----- PLAY BUTTON FOR CODE----*/
 
 var newDiv = document.createElement('div');
-newDiv.innerHTML='<div class="ui green right ribbon label autorun"><i class="play icon"></i>RUN</div>';
+newDiv.innerHTML='<div class="ui green right ribbon label autorun"><i class="download icon"></i>Download</div>';
 $('.highlight pre').prepend(newDiv);
 
 $( ".autorun" ).bind( "click", function() {
