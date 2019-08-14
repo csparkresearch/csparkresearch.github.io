@@ -69,14 +69,6 @@ function init_menu(){
         .sidebar('attach events', '.toc.item')
       ;
 
-      // Animate sidebar icon
-		$(".sidebar.reveal").mouseenter(function(){
-			 $(this).stop().animate({width: '120px'}, 300, 
-             function(){$(this).find('.text').show();});
-		}).mouseleave(function (event){
-			$(this).find('.text').hide();
-			$(this).stop().animate({width: '70px'}, 300);
-		});
 
 }
 
@@ -98,6 +90,59 @@ $('.ui.sticky.leftbar')
     context: '#leftbar'
   });
 
+/*---LAZY LOAD IMAGES--*/
+$('.image.lazy')
+  .visibility({
+    type       : 'image',
+    transition : 'fade in',
+    duration   : 400
+  })
+;
+
+
+/*----YOUTUBE---*/
+
+var youtube = document.querySelectorAll( ".youtube" );
+for (var i = 0; i < youtube.length; i++) {
+ 
+    // thumbnail image source.
+    var source = "https://img.youtube.com/vi/"+ youtube[i].dataset.embed +"/sddefault.jpg"; 
+ 
+    // Load the image asynchronously
+    var image = new Image();
+        image.src = source;
+        image.addEventListener( "load", function() {
+            youtube[ i ].appendChild( image );
+        }( i ) );
+
+    youtube[i].addEventListener( "click", function() {
+ 
+	var iframe = document.createElement( "iframe" );
+ 
+            iframe.setAttribute( "frameborder", "0" );
+            iframe.setAttribute( "allowfullscreen", "" );
+            iframe.setAttribute( "src", "https://www.youtube.com/embed/"+ this.dataset.embed +"?rel=0&showinfo=0&autoplay=1" );
+ 
+            this.innerHTML = "";
+            this.appendChild( iframe );
+    } );
+
+}
+
+/*----- PLAY BUTTON FOR CODE----*/
+
+var newDiv = document.createElement('div');
+newDiv.innerHTML='<div class="ui green right ribbon label autorun"><i class="download icon"></i>Download</div>';
+$('.highlight pre').prepend(newDiv);
+
+$( ".autorun" ).bind( "click", function() {
+  var mycode= $(this).parent('div').parent('pre').children('code').text();
+
+var link = document.createElement("a");
+link.href = 'data:text/txt,' + encodeURIComponent(mycode);
+link.download = "myfile.py";
+link.click();
+});
 
 });    
 

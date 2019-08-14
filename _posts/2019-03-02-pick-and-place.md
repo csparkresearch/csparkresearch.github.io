@@ -26,12 +26,13 @@ These formidable machines automatically populate PCBs, and leave little room for
 + PCB Manufacturing, and component sourcing
 + Stencil Pasting : Solder paste is applied on all the pads using a stencil and a pasting machine
 + Pick and Place assembly: Robots pick up components from their trays/rolls, and place them at their exact positions as per the coordinate file
- + Loading Components : Components come in reels/sticks/trays , and must be loaded into the machine
- + Load the coordinate file: The EDA tool you used, such as KiCAD, will generate a coordinate file that contains the exact position of each component. This information must be fed to the machine
- + Check for alignment issues, and component angles/accidental rotations
- + Insert a PCB panel, and proceed with assembly
+  + Loading Components : Components come in reels/sticks/trays , and must be loaded into the machine
+  + Load the coordinate file: The EDA tool you used, such as <a href="http://kicad-pcb.org/" target="_blank">KiCAD</a>, will generate a coordinate file that contains the exact position of each component. This information must be fed to the machine
+  + Check for alignment issues, and component angles/accidental rotations
+  + Insert a PCB panel, and proceed with assembly
 + Reflow soldering : The boards are placed in a reflow oven which melts the solder paste joining the parts and the PCB, thereby completing the process.
- 
+
+
 ## Get it all together
 
 ![](/assets/blog/pnp/components.jpg){:class="ui image floated medium lightbox" }
@@ -46,9 +47,10 @@ You can also see a tray of TQFP package microcontrollers
 
 <div class="ui clearing divider"></div>
 ## Stencil Pasting
-<iframe width="640" height="360" src="https://www.youtube.com/embed/iYGybBz1g-g?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+{% include youtube.html id="iYGybBz1g-g" %}
 
-Solder paste is applied on the PCB via a stencil.
+Solder paste is applied on the PCB via a stencil. Each point that needs to be soldered is applied with a thin layer of solder
+paste which is mix of powdered solder(Lead and Tin alloy), and flux(chemical which aids in cleaning oxide layers).
 
 <div class="ui clearing divider"></div>
 ## Assembly
@@ -58,9 +60,13 @@ see it in action. Each part is picked up by one of twelve vacuum nozzles arrange
 
 Once each of the nozzles are holding a component , the whole arm moves onto the PCB, and places the components where they need to be. Rinse and repeat!
 
+Also not that there is already a layer of solder paste between each component's pins and the PCB's pads.
+
 Slow motion video of a Pick and Place PCB assembly machine loading components into a circular array of vacuum nozzles, and placing them on the ExpEYES17 circuit board which we aided in development and also manufacture.
 
-<iframe width="640" height="360" src="https://www.youtube.com/embed/ej8Qm9UXRRA?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+{% include youtube.html id="ej8Qm9UXRRA" %}
+
+{% include youtube.html id="Pr9nnnDRnLg" title="Pick and place of large pin count ICs. Regular speed"%}
 
 Two arms are faster than one!
 
@@ -80,13 +86,22 @@ the reflow process, it's ready to be shipped/packed, and alterations are akin to
 
 ![](/assets/blog/pnp/oven.jpg){:class="ui image floated medium lightbox" }
 
+The reflow process involves heating the entire board to a certain controlled temperature
+at which all the solder paste melts, and joins each component's pins to the corresponding pads. The components
+are not damaged because they are rated to survive these high temperatures ( 270 degrees typically)
+
+If the solder paste was applied accurately via the stencil, and the pick and place machine did not make any offset
+errors, the entire board is ready to use after the reflow process. Occassionally the machine may make mistakes with
+a component or two, and this is rectified after visual inspection.
+
 The reflow oven can either be of a fixed type, or a conveyor type. The reflow process involves a series of different temperatures
 set in a certain order known as the temperature profile. 
 
 While the fixed type needs to adjust its temperature accordingly over the
 duration of the enture process, the conveyor type simply needs to maintain different temperatures at different zones as the PCB
 slowly moves through it and gets reflowed.
-<iframe width="640" height="360" src="https://www.youtube.com/embed/RtBukv1rAlU?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+{% include youtube.html id="RtBukv1rAlU" %}
 <div class="ui clearing divider"></div>
 
 ## Admire your work
@@ -97,4 +112,4 @@ slowly moves through it and gets reflowed.
 
 If your PCBs are heading out to rough environments, it may help to spray coat them with acrylic to protect it from the elements.
 
-<iframe width="640" height="360" src="https://www.youtube.com/embed/5WL1mmvJlGE?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+{% include youtube.html id="5WL1mmvJlGE" %}

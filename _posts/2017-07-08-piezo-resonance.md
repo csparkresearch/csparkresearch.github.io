@@ -5,7 +5,7 @@ description: Measure the frequency response of piezo buzzers using Bode plots
 cover: /assets/blog/screenshots/sound-beats.png
 author: jithin
 summary: |
-  The resonance frequecy of the Piezo disc supplied with <a href='/expeyes17' target='_blank'>ExpEYES</a> is around 3500 Hz. It could vary from unit to unit,
+  The resonance frequency of the Piezo disc supplied with <a href='/expeyes17' target='_blank'>ExpEYES</a> is around 3500 Hz. It could vary from unit to unit,
   so as you move away from that frequency, the loudness will also decrease. This can be studied by measuring the amplitude of the
   sound made by the piezo at different frequencies.
   

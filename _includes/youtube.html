@@ -1,6 +1,11 @@
 <h3 class="ui clearing header">{{include.title}}</h3>
 
+{% comment %}
 <div class="videowrapper">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/{{include.id}}?modestbranding=1&autohide=1&showinfo=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+{% endcomment %}
 
+<div class="youtube" data-embed="{{include.id}}">  
+    <div class="play-button"></div>      
 </div>

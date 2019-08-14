@@ -17,28 +17,6 @@ common-js:
 
 <body>
 
-{%if page.follow %}
-<!-- Scroll overly Menu -->
-<div class="ui large top fixed hidden menu">
-  <div class="ui container">
-	{% for link in site.navbar-links %}
-        {% if link[1].first %}<div class="ui dropdown item">
-			{{ link[0] }}
-			<i class="dropdown icon"></i>
-			<div class="menu">
-              {% for childlink in link[1] %}{% for linkparts in childlink %}
-              {% include navbarlinksemantic.html link=linkparts %}
-              {% endfor %}{% endfor %}
-			</div>
-		  </div>        
-        {% else %}
-        {% include navbarlinksemantic.html link=link %}
-        {% endif %}
-    {% endfor %}
-  </div>
-</div>
-{% endif %}
-
 <!-- Sidebar Menu -->
 {% include sidebarmenu.html %}
 
@@ -130,6 +108,7 @@ common-js:
 				</div>
 			</div>
 			<div class="ui column ten wide blog" style="padding:30px;" id="toc-leftbar">
+
 				{{ content }}
 				<div class="ui clearing divider"></div>
 
@@ -137,7 +116,7 @@ common-js:
 			<div class="ui column three wide mobile hidden" id="toc-sidebar">
 				<div class="ui sticky toc container" id="toc">
 					<div class="ui hidden divider"></div>
-					<a class="ui mini inverted fluid brown left labeled icon button" href="/eyes17/"><i class="home icon"></i>ExpEYES Home</a>
+					<a class="ui mini inverted fluid brown left labeled icon button" href="/expeyes17/"><i class="home icon"></i>ExpEYES Home</a>
 					{{ page.toctext }}
 				</div>
 			</div>

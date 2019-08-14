@@ -15,7 +15,7 @@ smooth-scroll: true
 	{% for post in allposts %}
 	<div class="item link">
 	  <a class="ui medium image raised red segment" href="{{post.url}}">
-		<img src="{{ post.cover }}">
+		<img src="/assets/images/300x170.png" class="ui image lazy" data-src="{{ post.cover }}">
 	  </a>
 	  <div class="content">
 		<h1 class="ui header small" id="{{post.title}}"><a href="{{post.url}}" class="ui dividing header teal"><i class="settings icon"></i>{{post.title}}</a></h1>

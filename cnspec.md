@@ -135,3 +135,19 @@ if FIT:
 plt.show()
 ```
 
+
+<h2 class="ui dividing header blue" id="Future Goals">Future goals</h2>
+
+We are in the process of implementing a flow based approach for numerical analysis. A video is shown below.
+
+List mode data can be passed through <button class="ui button disabled positive">blocks</button> which are basically operators for binning/analysis/fitting etc, and can be
+further attached to visualization blocks such as 2D and 3D histograms.
+
+Although the same can be achieved with 10 lines of Python code, this approach might come in handy for demonstrating
+the flow of logic for processing data. There is a long way to go, and we have also envisioned energy gates for processing
+multi parameter list mode data.
+
+{% include youtube.html id="Pnyv6vZWGuY" title="Flow based Programming for analysis" %}
+
+
+

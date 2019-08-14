@@ -28,7 +28,7 @@ moving objects need to be studied without touching them.
 
 ![](/assets/blog/schematics/sr04-dist.png){:class="ui image medium lightbox floated" }
 
-![](/assets/blog/photographs/sr04.jpg){:class="ui image centered medium lightbox" alt="Photograph"}
+![](/assets/images/640x480.png){:class="ui image centered medium lightbox lazy" alt="Photograph" data-src="/assets/blog/photographs/sr04.jpg"}
 
 ## The Mass and Spring problem
 When a mass suspended on a spring is made to oscillate, the period of oscillation is given by  
@@ -42,7 +42,7 @@ The distance versus time graph is fitted with a sine function to calculate the  
 The photograph below shows a metal plate suspended on a spring and the SR04 facing it from the bottom. 
 The distance to the oscillating plate is measured for 5 seconds and the data is fitted to a sine function.
 
-![](/assets/blog/photographs/massAndSpring.jpg){:class="ui image fluid" alt="Photograph"}
+![](/assets/images/640x480.png){:class="ui image fluid lazy" alt="Photograph" data-src="/assets/blog/photographs/massAndSpring.jpg"}
 
 {% include youtube.html title="mass and spring experiment video" id="FhCYhDiIRuQ" %}
 
@@ -55,7 +55,7 @@ The figure shows a pendulum with a rectangular bob, but one can use a spherical 
 a length of 22cm. 
 One can calculate the value of acceleration due to gravity from this data using the well known theoretical formula. 
 
-![](/assets/blog/photographs/pendulum.jpg){:class="ui image fluid" alt="Photograph"}
+![](/assets/images/640x480.png){:class="ui image fluid lazy" alt="Photograph" data-src="/assets/blog/photographs/pendulum.jpg"}
 
 {% include youtube.html title="simple pendulum experiment video" id="fOTfMsKiXBo" %}
 
