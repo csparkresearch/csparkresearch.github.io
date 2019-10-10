@@ -44,14 +44,12 @@ nuclear:
    
  - type: photo
    url: /assets/images/alpha/alpha_setup_source.jpg
-   lazy: true
 
  - type: imtxt
    color: blue
    title: "Portable Gamma Spectrometer"
    subtitle: Summary
    image: assets/images/gamma/gamma_spectrum.png
-   lazy: true
    imagestyle: large
    links:
     - text: Product Page
@@ -73,7 +71,6 @@ nuclear:
    color: green
    title: "1K/4K Multi-Channnel Analyzer"
    image: assets/images/mca_pic.jpg
-   lazy: true
    links:
     - text: Product Page
       url: mca1k
@@ -91,7 +88,6 @@ nuclear:
    color: green
    title: Geiger-Muller Counter
    image: /assets/images/gmc.gif
-   lazy: true
    features:
     - Compact unit
     - Software designed for Linux/Windows
