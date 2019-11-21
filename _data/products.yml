@@ -36,8 +36,8 @@ ExpEYES17:
   link: "expeyes17"
   description: "Your Lab @ Home ..."
   user-manual: "http://expeyes.in/Documents/eyes17-a4.pdf"
-  windows: "https://drive.google.com/uc?export=download&id=1p9Bfc9JpXCFWzz3cJ5WbJDrZatekglsj"
-  ubuntu: "http://expeyes.in/Documents/eyes17-3.9.0.deb"
+  windows: "https://drive.google.com/open?id=1Yly4Tt7oJ0_h4ftZwdERCMzAABpg9Wn2"
+  ubuntu: "/assets/installers/eyes17-4.2.0.deb"
   image: expeyes_thumb.jpg
 
 KuttyPy:

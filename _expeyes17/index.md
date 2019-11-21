@@ -9,9 +9,9 @@ toctext: |
  <a class="ui small inverted fluid purple right labeled icon button" href="blog"><i class="right arrow icon"></i>Blog</a>
 ---
 
+{% include install.html product="ExpEYES17"  %}
 
 {% include imagecards.html data=site.data.eyes17.subtopics %}
-{% include install.html product="ExpEYES17"  %}
 
 {% include maketabs.html data=site.data.eyes17.topics title="More Information"%}
 
