@@ -62,7 +62,7 @@ before enabling the log.
 
 A settling delay of 100mS is set to allow the piezo buzzer to settle into a new frequency before measuring the stable amplitude.
 
-500 datapoints we acquired, and the piezo buzzer was found to have two resonant frequencies.
+500 datapoints were acquired, and the piezo buzzer was found to have two resonant frequencies.
 ![](/assets/blog/screenshots/advanced-logger-results.png){:class="ui image fluid centered lightbox" alt="Advanced data logger Piezo response"}
 
 ## Video
@@ -85,4 +85,15 @@ Characterise electrical filters such as low-pass, band-pass and notch filters
    + Select amplitude1/amplitude2 as the value to be plotted
 + Start logging data
 
+
+## Resonance using square wave generator
+
+A square wave generator is composed of sine waves, and the series expansion looks something like
+A*sin(f*x) + A*sin(3*f*x)/3 + A*sin(5*f*x)/5 + ...
+
+It is evident that a 1000Hz square wave will also contain 3000Hz, 5000Hz and so on with decreasing amplitudes...
+
+To verify this, we first connected a buzzer to WG( pure sine wave), and obtained its resonant frequency. It was found to have
+two resonances, and mini peaks at F/3, F/5 and so on...
+[Refer to new post](advanced-logger-piezo-sq1)
 
