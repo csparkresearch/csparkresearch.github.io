@@ -26,6 +26,8 @@ TODO: Add more details to blog.
 + Source is grounded.
 + Connect A1 to the DRAIN. This is the Drain voltage. This enables measuring current as well ( I_DS = (PV1 - A1)/1K )
 
+![](/assets/blog/photographs/2n7000_mosfet.jpg){:class="ui image large lightbox" alt="Mosfet photo for drain characteristics"}
+
 ## Results
 ![](/assets/blog/screenshots/2n7000_drain.gif){:class="ui image large lightbox" alt="Mosfet drain characteristics"}
 
