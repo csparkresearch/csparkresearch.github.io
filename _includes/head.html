@@ -190,4 +190,8 @@
 
     <title>{{ page.title }}</title>
 
+{% if page.qrc %}
+  <script src="qrc:///qtwebchannel/qwebchannel.js" type="text/javascript"></script>
+{% endif %}
+
 </head>
