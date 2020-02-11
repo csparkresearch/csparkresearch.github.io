@@ -4,6 +4,7 @@ title: Diode Clamping
 description: Clamp AC waveforms using a 4148 diode
 cover: /assets/blog/screenshots/clamping.png
 author: jithin
+qrc: true
 summary: Diodes can be used to clamp AC waveforms... a technique which essentially shifts the entire waveform up or down. You will need the waveform generators and oscilloscope of ExpEYES, as well as a voltage output(PV1). and a diode.
 ---
 

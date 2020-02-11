@@ -133,7 +133,12 @@ for (var i = 0; i < youtube.length; i++) {
 
 var newDiv = document.createElement('div');
 newDiv.innerHTML='<div class="ui green right ribbon label autorun"><i class="download icon"></i>Try It!</div>';
-$('.highlight pre').prepend(newDiv);
+$('.language-python .highlight pre').prepend(newDiv);
+
+var newDivC = document.createElement('div');
+newDivC.innerHTML='<div class="ui green right ribbon label autoconf"><i class="download icon"></i>Set Config!</div>';
+$('.language-bash .highlight pre').prepend(newDivC);
+
 
 $(document).ready(function(){
             new QWebChannel(qt.webChannelTransport, function(channel){            
@@ -141,6 +146,13 @@ $(document).ready(function(){
                   var mycode= $(this).parent('div').parent('pre').children('code').text();
                   channel.objects.handler.update(mycode);
                 });
+
+                $('.autoconf').bind('click', function(){
+                  var mycode= $(this).parent('div').parent('pre').children('code').text();
+                  channel.objects.handler.config(mycode);
+                });
+
+
             });
         }); 
 
