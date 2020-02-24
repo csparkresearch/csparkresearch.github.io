@@ -4,7 +4,7 @@ AlphaSpec-1K:
   description: "A compact Alpha Spectrometer with integrated 1K MCA"
   user-manual: "/assets/pdfs/alphaspec manual.pdf"
   windows: "https://drive.google.com/uc?export=download&id=1uokmxXdJCwO407mIib4HG4VZj-PoTL8W"
-  ubuntu: "/assets/installers/cnspec-5.0.3.deb"
+  ubuntu: "/assets/installers/cnspec-5.0.4.deb"
   papers:
     Expts with 212-Bi: "/assets/pdfs/alpha1.pdf"
     Instrument model: "/assets/pdfs/alpha2.pdf"
@@ -17,7 +17,7 @@ MCA-1K:
   image: mca_gallery_thumb.jpg
   user-manual: "/assets/pdfs/alphaspec manual.pdf"
   windows: "https://drive.google.com/uc?export=download&id=1uokmxXdJCwO407mIib4HG4VZj-PoTL8W"
-  ubuntu: "/assets/installers/cnspec-5.0.3.deb"
+  ubuntu: "/assets/installers/cnspec-5.0.4.deb"
 
 GammaSpec-1K:
   name: Gamma Spectrometer
@@ -26,7 +26,7 @@ GammaSpec-1K:
   image: gamma_pic.png
   user-manual: "/assets/pdfs/gammaspec manual.pdf"
   windows: "https://drive.google.com/uc?export=download&id=1uokmxXdJCwO407mIib4HG4VZj-PoTL8W"
-  ubuntu: "/assets/installers/cnspec-5.0.3.deb"
+  ubuntu: "/assets/installers/cnspec-5.0.4.deb"
   papers:
     DAE-SYMPNP: "http://sympnp.org/proceedings/63/G19.pdf"
     RINP2: "https://indico.cern.ch/event/763807/contributions/3274494/contribution.pdf"
