@@ -1,24 +1,22 @@
-  <div class="ui three column doubling stackable masonry grid">
+<div class="ui clearing hidden divider"></div>	
+<div class="ui container">
+	<div class="ui relaxed divided items">
 	{% for pub in include.prototypes %}
-    <div class="column">
-      <div class="ui fluid card">
-        <div class="photocard image">
-          <img src="{{ pub.url }}" alt="{{ pub.date }}">
-        </div>
-        <div class="content">
-          <div class="header" href="{{ pub.link }}" target="_blank">{{ pub.date }}</div>
-          <!--<div class="meta">
-            <span class="date">pub date</span>
-          </div>-->
-          <div class="description">
-            {{ pub.description }}
-          </div>
-        </div>
-      </div>
-    </div>
+	<div class="item link">
+	  <div class="ui medium image raised red segment photocard" href="{{pub.url}}">
+		<img src="/assets/images/300x170.png" class="ui image lazy" data-src="{{ pub.url }}">
+	  </div>
+	  <div class="content">
+		<h1 class="ui header small" id="{{ pub.date | date: '%B %d, %Y' }}"><a class="ui dividing header brown"><i class="tasks icon"></i>{{ pub.date | date: '%B %d, %Y' }}</a></h1>
+		<div class="description">
+		  {{ pub.description }}
+		</div>
+		<div class="extra">
+		  <div>{{ pub.date | date: '%B %d, %Y' }}</div>
+		</div>
+	  </div>
+	</div>
+	<div class="ui clearing hidden divider"></div>	
 	{% endfor %}
-
-  </div>
-
-        
-
+	</div>
+</div>
