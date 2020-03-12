@@ -9,7 +9,7 @@
   description: Replaced quad op-amps with dual, separate op-amps for each channel. Minor bug fixes. PGA reference needs a low output impedance drive.
 - date: November-2014
   url: "http://res.cloudinary.com/cspark/image/upload/c_lpad,h_280,w_500/v1481557997/seelab_proto/4_17-nov-2014.jpg"
-  description: Lot of corrections and improvements. Everything seems to be working, demonstrated during Scipy.in 2014 conference at IIT Bombay.
+  description: Lot of corrections and improvements. Everything seems to be working.<br> <a href="https://scipy.in/2014/static/uploads/jithinbp/attachment/abs.pdf" target="_blank">demonstrated at Scipy.in 2014 International conference</a> at IIT Bombay.
 - date: April 2015
   url: http://res.cloudinary.com/cspark/image/upload/c_lpad,h_280,w_500/v1481558005/seelab_proto/5_02-apr-2015.jpg
   description: Hardware and software working as expected but packaging issues remained. Decided to go for 2mm round sockets and Berg strips for Input/Output connectors. Added an inductance meter also. Prototype made with acrylic cabinet. Added Ad9833 waveform generators. 
@@ -69,10 +69,10 @@
   description: Redesigned the unit with a different form factor, with 2 connector blocks. Added a 5ppm/C clock generator and 50ppm/C analog reference (5ppm optional) for better accuracy. After a couple of rounds of prototyping , one batch was produced, with a new plastic mould. This will be termed SEELablet-V2. Calibration is carried out against a 24-bit ADC, which at this point seems like overkill, so a step down to a 16-bit ADC is expected in the near future. 
 - date: July 2017
   url: /assets/images/8.jpg
-  description: Upon request, technology developed for SEELablet, including schematics, firmware, layout, and software was transferred under open source terms to IUAC under the label of ExpEYES-17 in order to upgrade the ExpEYES project . A Special batch was made for ICFOSS which organised training workshops for schools. details are at <a href="expeyes.in" target="_blank">expeyes.in</a>
+  description: Upon request, technology developed for SEELablet, including schematics, firmware, layout, and software was transferred under open source terms to IUAC under the label of ExpEYES-17 in order to upgrade the ExpEYES project . A Special batch was made for ICFOSS which organised training workshops for schools.<br> Details are at <a href="expeyes.in" target="_blank">expeyes.in</a>
 - date: May 2019
   url: /assets/images/curise1.jpg
-  description: Training workshops for teachers organised by University of Calicut, under a DST funded project. 
+  description: Training workshops for teachers organised by University of Calicut, under a DST funded project. <br> News articles can be viewed <a href = "/news" target="_blank">here</a>
 - date: Feb 2020
   url: /assets/images/ISF.jpg
   description: Exhibited at the India Science Fest, IISER Pune. Workshops organised for high school students 
