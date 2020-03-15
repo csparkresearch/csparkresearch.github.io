@@ -11,7 +11,10 @@ toctext: |
 
 {% include install.html product="ExpEYES17"  %}
 
+
 {% include imagecards.html data=site.data.eyes17.subtopics %}
+
+{% include resources.html title="User Manuals" device="expeyes17" list=site.data.manuals  color="green" %}
 
 {% include maketabs.html data=site.data.eyes17.topics title="More Information"%}
 
@@ -29,3 +32,4 @@ toctext: |
 
 {% include animated_gif.html url="images/screencasts/sensor-logger.gif"  title = "Directly record data from sensors"%}
 {% endcomment %}
+

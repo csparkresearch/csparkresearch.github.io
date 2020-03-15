@@ -1,0 +1,47 @@
+<div class = "ui hidden divider"></div>
+{% if include.title %}
+<h3 class="ui horizontal dividing teal header " name="{{ include.title }}" id="{{ include.title }}">
+  <i class="copy outline icon"></i>
+	{{ include.title }}
+</h3>
+{% endif %}
+
+<table class="ui celled striped table {{{include.color}}">
+  <thead>
+	<tr>
+		<th scope="col" class="left aligned">Title(pdf)</th>
+		<th scope="col" class="right aligned collapsing">Language</th>
+		<th scope="col" >PDF</th>
+		<th scope="col" >ePub</th>
+		{% if include.device %}{% else %}<th scope="col" class="left aligned collapsing">Product</th>{% endif %}
+	</tr>
+  </thead>
+  <tbody>
+	{% for pub in include.list %}
+	{% if include.device %}
+		{% if include.device == pub.device %}
+		<tr>
+		  <td class="left aligned selectable">
+			<a href="{{ pub.pdf }}"><p><i class="file outline icon"></i> {{ pub.title }}</p></a>
+		  </td>
+		  <td class="right aligned collapsing"><p>{{ pub.language }}</p></td>
+		  <td class="right aligned collapsing"><a href="{{ pub.pdf }}"><p><i class="download icon"></i> Download </p></a></td>
+		  <td class="right aligned collapsing"><a href="{{ pub.epub }}"><p><i class="file outline icon"></i> ePub </p></a></td>
+		</tr>
+		{% endif %}
+	{% else %}
+		<tr>
+		  <td class="left aligned selectable">
+			<a href="{{ pub.pdf }}"><p><i class="file outline icon"></i> {{ pub.title }}</p></a>
+		  </td>
+		  <td class="right aligned collapsing"><p>{{ pub.language }}</p></td>
+		  <td class="right aligned collapsing"><a href="{{ pub.pdf }}"><p><i class="file outline icon"></i> PDF </p></a></td>
+		  <td class="right aligned collapsing"><a href="{{ pub.epub }}"><p><i class="file outline icon"></i> ePub </p></a></td>
+		  <td class="right aligned collapsing"><p>{{ pub.device }}</p></td>
+		</tr>
+
+	{% endif %}
+
+	{% endfor %}
+  </tbody>
+</table>
