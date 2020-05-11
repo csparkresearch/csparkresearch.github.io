@@ -35,6 +35,7 @@ navbar-links:
   Products:
     - Alpha Spectrometer: "alphaspec"
     - Gamma Spectrometer: "gammaspec"
+    - Gamma-Gamma Coincidence: "gammacoincidence"
     - Multi Channel Analyzer: "mca1k"
     - CNSPEC software: "cnspec"
     - ExpEYES: "expeyes17"

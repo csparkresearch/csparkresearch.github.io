@@ -1,0 +1,37 @@
+flowimage: assets/images/gamma/mca-b-linear.png
+
+features:
+ type: imtxt
+ color: green
+ title: Main Features of the GammaSpec coincidence unit
+ image: assets/images/gamma/mca-b-linear.png
+ features:
+  - 2 MeV full scale range for each spectrometer
+  - Dual MCA with 0-3.3V shaper inputs
+  - 500nS coincidence window. Configurable via software
+  - <80keV FWHM @ 1332KeV centroid from 60Co
+  - Additional 1024 bin MCA integrated in each spectrometer. 
+  - Fully USB powered units
+  - Fully featured Python software supplied open-source.
+ subscript: The gammaspec is a highly compact portable spectrometer which is fully USB Powered.
+ 
+
+subtopics:
+ - type: feature
+   color: red
+   title: "Spectrum from 22-Na"
+   subtitle: Positron annihilation spectrum from 22-Sodium
+   leftimage: assets/images/gamma/mca-b-results.png
+   imagestyle: medium
+   text: Positrons emitted from the decay of 22-Na annihilate and give rise to 511keV which move in opposite directions. When the spectrometers are placed linearly, these can be detected as coincident events, and used to filter out the 1275keV photons emitted by the daughter Ne.
+   
+
+
+topics:
+ - title: Software
+   description: Open-source software, CNSpec, is supplied with the instrument. <a href="https://github.com/csparkresearch/cnspec" target="_blank">link</a>
+   link: cnspec
+   tabstyle: active
+   image: /assets/images/cnspec/cnspec_1200.jpg
+   imagestyle: fluid rounded raised
+

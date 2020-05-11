@@ -31,6 +31,20 @@ GammaSpec-1K:
     DAE-SYMPNP: "http://sympnp.org/proceedings/63/G19.pdf"
     RINP2: "https://indico.cern.ch/event/763807/contributions/3274494/contribution.pdf"
 
+GammaCoincidence:
+  name: Gamma-Gamma Coincidence
+  description: "Gamma-Gamma Coincidence setup"
+  link: "gammacoincidence"
+  image: gamma_pic.png
+  user-manual: "/assets/pdfs/gammaspec manual.pdf"
+  windows: "https://drive.google.com/uc?export=download&id=1uokmxXdJCwO407mIib4HG4VZj-PoTL8W"
+  ubuntu: "/assets/installers/cnspec-5.0.5.deb"
+  papers:
+    DAE-SYMPNP: "http://sympnp.org/proceedings/63/G19.pdf"
+    RINP2: "https://indico.cern.ch/event/763807/contributions/3274494/contribution.pdf"
+
+
+
 ExpEYES17:
   name: ExpEYES-17
   link: "expeyes17"
