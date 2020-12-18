@@ -16,8 +16,8 @@
       padding: 20px 10px;
       background-position: center;
       background-size: contain;
-      background-repeat-x: no-repeat;
-      background-repeat-y: no-repeat;
+      background-repeat: no-repeat;
+      background-repeat: no-repeat;
       height:100%;
       width:100%;
     }
