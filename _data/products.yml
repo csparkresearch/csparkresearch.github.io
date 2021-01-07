@@ -3,7 +3,7 @@ AlphaSpec-1K:
   link: "alphaspec"
   description: "A compact Alpha Spectrometer with integrated 1K MCA"
   user-manual: "/assets/pdfs/alphaspec manual.pdf"
-  windows: "https://drive.google.com/uc?export=download&id=1uokmxXdJCwO407mIib4HG4VZj-PoTL8W"
+  windows: "https://drive.google.com/file/d/1I3P4WKphknajXaO2GgtFZJ0DyyfqLaiR/view"
   ubuntu: "/assets/installers/cnspec-5.0.7.deb"
   papers:
     Expts with 212-Bi: "/assets/pdfs/alpha1.pdf"
@@ -16,7 +16,7 @@ MCA-1K:
   description: "Multi-channel Analyzer"
   image: mca_gallery_thumb.jpg
   user-manual: "/assets/pdfs/alphaspec manual.pdf"
-  windows: "https://drive.google.com/uc?export=download&id=1uokmxXdJCwO407mIib4HG4VZj-PoTL8W"
+  windows: "https://drive.google.com/file/d/1I3P4WKphknajXaO2GgtFZJ0DyyfqLaiR/view"
   ubuntu: "/assets/installers/cnspec-5.0.7.deb"
 
 GammaSpec-1K:
@@ -25,7 +25,7 @@ GammaSpec-1K:
   link: "gammaspec"
   image: gamma_pic.png
   user-manual: "/assets/pdfs/gammaspec manual.pdf"
-  windows: "https://drive.google.com/uc?export=download&id=1uokmxXdJCwO407mIib4HG4VZj-PoTL8W"
+  windows: "https://drive.google.com/file/d/1I3P4WKphknajXaO2GgtFZJ0DyyfqLaiR/view"
   ubuntu: "/assets/installers/cnspec-5.0.7.deb"
   papers:
     DAE-SYMPNP: "http://sympnp.org/proceedings/63/G19.pdf"
@@ -61,7 +61,7 @@ KuttyPy:
   image: kpy_thumb.gif
   user-manual: "https://kuttypy.readthedocs.io/en/latest/"
   android: "https://play.google.com/store/apps/details?id=com.cspark.kuttypy"
-  ubuntu: "/assets/installers/KuttyPy-1.0.6.deb"
+  ubuntu: "/assets/installers/KuttyPy-1.0.8.deb"
   windows: "https://drive.google.com/uc?export=download&id=1EnsdFKyxddg-sQ64d0OXfwHEziOZRXL8"
 
 GMCounter:
