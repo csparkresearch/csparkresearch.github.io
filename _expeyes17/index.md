@@ -10,7 +10,7 @@ toctext: |
 ---
 
 {% include install.html product="ExpEYES17"  %}
-
+[Previous Installer 5.0.0](https://drive.google.com/open?id=1X5bQdplyuAFfaT9TCWafDyUusjiHwzjT)
 
 {% include imagecards.html data=site.data.eyes17.subtopics %}
 
