@@ -1,0 +1,44 @@
+flowimage: assets/images/remote/remotelabs-ui.png
+
+features:
+ type: imtxt
+ color: green
+ title: Main Features of the remote access platform
+ image: assets/images/remote/remotelabs-ui.gif
+ features:
+  - Remotely view real-time data from multiple connected devices
+  - Supports ExpEYES and KuttyPy devices
+  - Get the latest experiments and documentation without software updates
+  - Control multiple devices in tandem
+  - Authenticated access, and well separated 'classrooms'
+  - Supports audio conferencing for a classroom experience
+ subscript: The remote access platform is a powerful tool for conducting and monitoring lab sessions remotely. 
+
+subtopics:
+ - type: feature
+   color: red
+   title: "Accessing the remote labs website"
+   subtitle: Login page for instructors
+   leftimage: assets/images/remote/remotelabs-ui.png
+   imagestyle: medium
+   links:
+    - text: Login
+      url: https://expeyes.scischool.in/
+   text: The website can be accessed at expeyes.scischool.in for creating user accounts, and for teachers to conduct classes.
+
+ - type: feature
+   color: red
+   title: "Students User Interface"
+   subtitle: The Latest Experiment list is fetched during the login process
+   leftimage: assets/images/remote/remotelogin.png
+   imagestyle: medium
+   text: The remote access platform tries to minimise software updates, and instead, experiment interfaces are downloaded and executed on the fly. The local database is informed whenever updates to a particular experiment are available.<br> Launch the app, and login from the menu at the top right corner. <br> Then launch the relevant experiment from the Experiment List tab.
+      
+ - type: photo
+   url: assets/images/remote/remotelabs-ui.png
+   color: green
+   imagestyle: medium
+   title: User Interface for the Instructor
+   description: Data from multiple logged in devices is shown in the form of a grid. The UI offers monitoring and control options for each device independently, or even in tandem.
+
+
