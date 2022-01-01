@@ -25,7 +25,7 @@ GammaSpec-1K:
   link: "gammaspec"
   image: gamma_pic.png
   user-manual: "/assets/pdfs/gammaspec manual.pdf"
-  windows: "https://drive.google.com/file/d/1I3P4WKphknajXaO2GgtFZJ0DyyfqLaiR/view"
+  windows: "https://drive.google.com/uc?export=download&id=16hRQM7tZ8W7t4KYA9uht2PFLlR_6SZi5"
   ubuntu: "/assets/installers/cnspec-5.0.7.deb"
   papers:
     DAE-SYMPNP: "http://sympnp.org/proceedings/63/G19.pdf"
@@ -44,15 +44,25 @@ GammaCoincidence:
     RINP2: "https://indico.cern.ch/event/763807/contributions/3274494/contribution.pdf"
 
 
+SEELab3:
+  name: SEELab-3.0
+  link: "seelab3"
+  description: "Your Lab @ Home ..."
+  user-manual: "http://expeyes.in/Documents/eyes17-a4.pdf"
+  windows: ""
+  ubuntu: "/assets/installers/eyes17-4.2.0.deb"
+  image: expeyes_thumb.jpg
 
 ExpEYES17:
   name: ExpEYES-17
   link: "expeyes17"
   description: "Your Lab @ Home ..."
   user-manual: "http://expeyes.in/Documents/eyes17-a4.pdf"
-  windows: "https://drive.google.com/open?id=1idoWIyFnbh_wSJkEndi7GfAQryxK5qYN"
+  windows: "https://drive.google.com/open?id=1IYXZRH_apYidmqbTZzVDGYsJy2dK4imJ"
   ubuntu: "/assets/installers/eyes17-4.2.0.deb"
   image: expeyes_thumb.jpg
+
+
 
 KuttyPy:
   name: KuttyPy
@@ -61,8 +71,8 @@ KuttyPy:
   image: kpy_thumb.gif
   user-manual: "https://kuttypy.readthedocs.io/en/latest/"
   android: "https://play.google.com/store/apps/details?id=com.cspark.kuttypy"
-  ubuntu: "/assets/installers/KuttyPy-1.0.9.deb"
-  windows: "https://drive.google.com/uc?export=download&id=1t2l3vnjaX5d9jSbqskG5IiGGyiyR8NrK"
+  ubuntu: "/assets/installers/KuttyPy-1.0.12.deb"
+  windows: "https://drive.google.com/uc?export=download&id=18PD-Llx12PTfMRWlHA447TCMxTA6smWZ"
 
 GMCounter:
   name: GMCounter

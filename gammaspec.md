@@ -11,6 +11,7 @@ show-toc: true
 
 
 {% include install.html product="GammaSpec-1K"  %}
+[Previous Installer 6.2.0](https://drive.google.com/uc?export=download&id=1I3P4WKphknajXaO2GgtFZJ0DyyfqLaiR)
 
 {% include imagecard.html data=site.data.gamma.features %}
 

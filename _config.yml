@@ -38,10 +38,11 @@ navbar-links:
     - Gamma-Gamma Coincidence: "gammacoincidence"
     - Multi Channel Analyzer: "mca1k"
     - CNSPEC software: "cnspec"
+    - SEELab 3.0: "seelab3"
     - ExpEYES: "expeyes17"
     - KuttyPy: "kuttypy"
-    - SEELablet: "seelablet/seelablet.html"
     - Geiger Counter: "gmcounter"
+    - SEELablet: "seelablet/seelablet.html"
     - All Products: ""
   Resources:
     - Blog: expeyes17/blog

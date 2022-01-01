@@ -19,6 +19,7 @@ banner: /assets/images/kuttypy/cover.jpg
 <img src="/assets/images/kuttypy/main.gif" class="ui centered image">
 
 {% include install.html product="KuttyPy"  %}
+[Previous Installer 6.2.0](https://drive.google.com/uc?export=download&id=1t2l3vnjaX5d9jSbqskG5IiGGyiyR8NrK)
 
 <div class="ui blue segment raised" >
 <p>The kuttyPy (/kʊtipʌɪ/) Microcontroller training utility allows real-time manipulation of the registers in microcontrollers via a connected computer containing its python library.  setReg and getReg function calls act as a real-time debugging and monitoring utility, and combined with Python's visualization and analytical utilities, this approach has immense pedagogical potential for beginners. </p>

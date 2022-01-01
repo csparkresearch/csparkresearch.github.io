@@ -5,18 +5,21 @@
 </h2>
 <div class="ui attached {{ include.data.color }} fluid placeholder segment">
   <div class="ui two column stackable center aligned grid">
-    <div class="ui vertical divider">+</div>
     <div class="middle aligned row">
 		{% if include.data.type=="imtxt" %}
-		<div class="ui info left aligned column ">
+		<div class="ui info left aligned {{include.data.featurewidth}} column ">
 		  {% for item in include.data.features %}
 		  <p>{{item}}</p>
 		  <div class="ui divider"></div>
 		  {%endfor%}
 		</div>
 
-		<div class="column photocard">
+		<div class="{{include.data.imagewidth}} column photocard">
+			  {% if include.data.imagestyle %}
+			  <img src="{{include.data.image}}" class="ui {{include.data.imagestyle}} rounded image">
+			  {% else %}
 			  <img src="{{include.data.image}}" class="ui huge rounded image">
+			  {% endif %}
 		</div>
 		{% elsif include.data.type=="imim" %}
 		<div class="column photocard">

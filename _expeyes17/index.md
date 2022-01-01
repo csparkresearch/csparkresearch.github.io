@@ -4,12 +4,15 @@ title: "ExpEYES-17"
 tagline: "Your Lab @ Home ..."
 share-img: /assets/images/eyes17/eyes_cover.jpg
 header: /assets/images/eyes17/expeyesheader.jpg
+banner: /assets/images/kuttypy/cover.jpg
+
 show-toc: true
 toctext: |
  <a class="ui small inverted fluid purple right labeled icon button" href="blog"><i class="right arrow icon"></i>Blog</a>
 ---
 
 {% include install.html product="ExpEYES17"  %}
+[Previous Installer 6.2.0](https://drive.google.com/open?id=1idoWIyFnbh_wSJkEndi7GfAQryxK5qYN)
 [Previous Installer 5.0.0](https://drive.google.com/open?id=1X5bQdplyuAFfaT9TCWafDyUusjiHwzjT)
 
 {% include imagecards.html data=site.data.eyes17.subtopics %}
