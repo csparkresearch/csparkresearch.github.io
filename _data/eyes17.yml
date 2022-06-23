@@ -193,6 +193,11 @@ vendors:
    address: Unit 4 Bells Yew Green Business Court, Bells Yew Green, East Sussex, TN3 9BJ, United Kingdom
    logo: /assets/images/logos/pisupplylogo.jpg
 
+ - name: Novatronics
+   address: No. 11/1036, JDT SHOPPING COMPLEX, VELLIMADUKUNNU, MARIKUNNU POST, KOZHIKODE – 673012, KERALA
+   contact: +91-9447924725
+   email : novatronics1 at gmail.com
+
  - name: Fab.to.Lab (Online)
    link: https://www.fabtolab.com/expeyes
    address: Koramangala, Bangalore – 560095
@@ -212,12 +217,7 @@ vendors:
    contact:  09492422459
    email : sales@svtechnocrafts.in
    logo: /assets/images/logos/svtc.jpg
- 
- - name: Be Royal Enterprises
-   address: 702, Banashankari plaza,Vidhya Nagar, Hubli, Karnataka
-   contact: 9513956009
-   email : beroyalenterprises at gmail.com
-
+    
  - name: Shankar Systems
    link: http://shankarsystems.github.io/
    address: Block C, Najafgarh, NEW DELHI

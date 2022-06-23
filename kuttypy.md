@@ -28,6 +28,37 @@ banner: /assets/images/kuttypy/cover.jpg
 
 {% include imagecards.html data=site.data.kuttypy %}
 
+
+## Installation from pypi (License: MIT)
+---
+
+### Windows
+```shell
+py -3 -m pip install kuttypy
+kuttypy
+```
+### Linux
+```shell
+pip3 install kuttypy
+kuttypy
+```
+
+
+Connect the hardware, and import the library. Import will throw an error if the hardware is not detected
+
+
+```python
+from kuttyPy import *
+getReg('PINC')
+readADC(0)
+```
+
+To view the full list of ATMEGA32 registers
+```
+print(REGISTERS.ATMEGA32_REGISTERS)
+```
+
+
 ### Installation from source (License: MIT)
 ---
 
@@ -43,7 +74,6 @@ git clone https://github.com/csparkresearch/kuttypy-gui
 cd kuttypy-gui
 python3 KuttyPyGUI.py
 ```
-
 
 
 ---

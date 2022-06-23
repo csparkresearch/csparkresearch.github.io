@@ -1,6 +1,12 @@
 # Website for CSpark Research
 Made with Jekyll
 
+## Local development
++  sudo gem install bundler:1.16.6
++  bundle install
++  bundle exec jekyll s
+
+
 ## Layouts
 Layouts have been defined for various types of pages. Some front matter needs to be specified for them to render correctly
 + blog : Layout for blog posts stored in _posts . file names should be of the format year-mm-dd-some-title.md
