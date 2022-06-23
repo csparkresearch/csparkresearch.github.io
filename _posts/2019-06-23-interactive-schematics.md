@@ -75,4 +75,4 @@ automatically insert dynamic content.
 
 
 ## See Also
- + [Android App for testers](http://play.google.com/com.cspark.research.eyes17)
+ + [Android App for testers](https://play.google.com/store/apps/details?id=com.cspark.research.eyes17)
