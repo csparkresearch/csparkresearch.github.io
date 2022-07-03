@@ -1,4 +1,4 @@
-  <div class="ui three column doubling masonry grid">
+  <div class="ui six column doubling grid">
 
 	{% for pub in include.publist %}
     <div class="column">
@@ -7,10 +7,8 @@
           <img src="{{ pub.image }}" alt="{{ pub.image }}">
         </div>
         <div class="content">
-          <a class="header" href="{{ pub.link }}" target="_blank">Download</a>
-          <div class="description">
-            {{ pub.title }}
-          </div>
+          <button class="description launchsvg" href="{{ pub.link }}" target="_blank">{{ pub.title }}</button>
+          <a class="description" href="{{ pub.link }}" target="_blank">download</a>
         </div>
       </div>
     </div>

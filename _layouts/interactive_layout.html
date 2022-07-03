@@ -1,0 +1,113 @@
+---
+show-avatar: true
+common-css:
+  - "/semantic/dist/semantic.min.css"
+  - "/assets/css/product.css"
+  - "/assets/css/highlight.css"
+common-js:
+  - "/assets/js/jquery.min.js"
+  - "/semantic/dist/semantic.min.js"
+  - "/assets/js/interactivesemantic.js"
+---
+
+<!DOCTYPE html>
+{% include interactive_head.html %}
+
+<body>
+
+
+<!-- Page Contents -->
+<div class="pusher">
+	
+  <div class="ui inverted vertical center aligned segment" style="background:url(/assets/images/kuttypy/cover.jpg) #f2bd91 fixed top center; " >
+
+    <div class="ui text container">
+      <h1 class="ui inverted header">
+        {{ page.title }}
+      </h1>
+      <h2>{{ page.description }}</h2>
+      <a class="ui small inverted green left labeled icon button" href="/interactive_schematics"><i class="left arrow icon"></i>List Home</a>			
+
+    </div>
+  </div>
+
+	{% if page.header %}<img src ="{{ page.header }}" class="ui fluid image"/>{% endif %}
+
+	{% if page.cover %}
+	<div class="ui container">
+	  <div class="ui clearing hidden divider"></div>	
+	  <div class="ui relaxed divided items">
+		<div class="item">
+		  <div class="ui large image raised segment">
+			<img src="{{ page.cover }}">
+		  </div>
+		  <div class="content">
+			<a class="ui dividing header red"><i class="paperclip icon"></i>Brief Summary</a>
+			<div class="meta">
+			    {% for cat in page.category %}<a>{{cat}}/</a>{% endfor %}
+			</div>
+			<div class="description large">
+			  {{page.summary}}
+			</div>
+			<div class="extra">
+			  <div>{{ page.date | date: '%B %d, %Y' }}</div>
+				{% assign author = site.data.authors[page.author] %}
+				<a class="ui basic image large label right floated">
+				  <img src="{{author.photo}}">
+				  {{author.name}}
+				</a>
+			</div>
+		  </div>
+		</div>
+	  </div>
+	</div>
+	{% endif %}
+	<div class="ui clearing divider"></div>	
+
+	{% if page.show-toc %}
+	<div class="ui internally celled stackable grid">
+		<div class="row">
+			<div class="ui column fourteen wide blog" style="padding:30px;" id="toc-leftbar">
+
+				{{ content }}
+				<div class="ui clearing divider"></div>
+
+			</div>
+		</div>
+
+	</div>
+	<div class="ui clearing divider"></div>	
+
+
+	{% else %}
+	<div class="ui container" >
+	{{ content }}
+	</div>
+	{% endif %}
+
+	<div class="ui grid">
+		<div class="row">
+			<div class = "ui column  wide">
+				<div class="ui container">
+					{% if page.previous.url %}
+						<a class="ui left floated button" href="{{page.previous.url}}">&laquo; {{page.previous.title}}</a>
+					{% endif %}
+					{% if page.next.url %}
+						<a class="ui right floated button" href="{{page.next.url}}">{{page.next.title}} &raquo;</a>
+					{% endif %}
+				</div>
+
+				<div class="ui clearing divider"></div>	
+				<a class="ui small inverted red left labeled icon button" href="/interactive_schematics"><i class="left arrow icon"></i>All Projects</a>			
+			</div>
+		</div>
+	</div>
+
+  </div>
+
+{% include scripts.html %}
+
+
+</body>
+</html> 
+
