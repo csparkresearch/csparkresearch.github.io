@@ -76,6 +76,9 @@ python3 KuttyPyGUI.py
 ```
 
 
+{% include youtube.html id="9xXyL25D2jo" title="KuttyPyPlus : Pick And Place Assembly" %}
+
+
 ---
 Developed by Jithin B.P @CSpark Research, 2018.  
 Special thanks to Georges Khazanadar for Debianizing efforts.

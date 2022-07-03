@@ -7,7 +7,7 @@ follow: true
 smooth-scroll: true
 ---
 
-{% assign allposts = site.categories.kuttypy | concat: site.categories.manufacturing | concat: site.categories.expeyes17  | concat: site.categories.seelablet %}
+{% assign allposts = site.categories.kuttypy | concat: site.categories.manufacturing | concat: site.categories.expeyes17  | concat: site.categories.seelablet  | concat: site.categories.seel3 %}
 
 <div class="ui clearing hidden divider"></div>	
 <div class="ui container">

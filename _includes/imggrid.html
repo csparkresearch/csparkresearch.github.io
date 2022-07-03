@@ -1,0 +1,22 @@
+  <div class="ui three column doubling masonry grid">
+
+	{% for pub in include.publist %}
+    <div class="column">
+      <div class="ui fluid card">
+        <div class="photocard image">
+          <img src="{{ pub.image }}" alt="{{ pub.image }}">
+        </div>
+        <div class="content">
+          <a class="header" href="{{ pub.link }}" target="_blank">Download</a>
+          <div class="description">
+            {{ pub.title }}
+          </div>
+        </div>
+      </div>
+    </div>
+	{% endfor %}
+
+  </div>
+
+        
+

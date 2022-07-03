@@ -16,3 +16,24 @@ features:
   - 12-bit analog resolution. Fully calibrated
  subscript: SEELab 3.0 is the upgrade to ExpEYES17. It features a 40 pin connector, with an integrated breadboard slot for ease of use. External sensors can be connected via a single AUX cable. 
 
+
+
+
+interactiveschematics:
+ type: imtxt
+ color: green
+ title: Android App - Interactive and Dynamic Circuit Schematics
+ image: assets/images/seelab3/diodeclamping.gif
+ imagestyle: medium
+ featurewidth: twelve wide
+ imagewidth: four wide
+ features:
+  - Create circuit diagrams in Inkscape/PS and save as plain SVG
+  - Open with the SEELab3 Android app, and watch dynamic content being generated
+  - Text such as PV1, WG, A1 are replaced with controls, and meters. Intuitive User Interface.
+  - Automatic parameter sweeps, and graphs are also enabled
+  - I2C sensors can also be added . e.g `BMP280:1` will render as a pressure guage
+  - Derived parameters can also be input as equations !
+  - On the right is a schematic diagram for a diode clamping circuit.
+ subscript: This feature is under active development, and 30+ electronics schematics have already been added to the app.
+

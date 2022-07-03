@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   version="1.1"
+   id="fullwave"
+   width="530.15063"
+   height="350"
+   viewBox="-6 -6 530.15063 350"
+   sodipodi:docname="Output Impedance.svg"
+   inkscape:version="1.1.2 (1:1.1+202202050950+0a00cf5339)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <title
+     id="title2921">Some Title</title>
+  <defs
+     id="defs129">
+    <marker
+       style="overflow:visible"
+       id="DotS-4"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="DotS"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(0.2,0,0,0.2,1.48,0.2)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="m -2.5,-1 c 0,2.76 -2.24,5 -5,5 -2.76,0 -5,-2.24 -5,-5 0,-2.76 2.24,-5 5,-5 2.76,0 5,2.24 5,5 z"
+         id="path26004-3" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="Arrow1Send-0"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Send"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(-0.2,0,0,-0.2,-1.2,0)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path25952-3" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="DotS-4-2"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="DotS"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(0.2,0,0,0.2,1.48,0.2)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="m -2.5,-1 c 0,2.76 -2.24,5 -5,5 -2.76,0 -5,-2.24 -5,-5 0,-2.76 2.24,-5 5,-5 2.76,0 5,2.24 5,5 z"
+         id="path26004-3-5" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="Arrow1Send-0-4"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Send"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(-0.2,0,0,-0.2,-1.2,0)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path25952-3-0" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="DotS-4-2-9"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="DotS"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(0.2,0,0,0.2,1.48,0.2)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="m -2.5,-1 c 0,2.76 -2.24,5 -5,5 -2.76,0 -5,-2.24 -5,-5 0,-2.76 2.24,-5 5,-5 2.76,0 5,2.24 5,5 z"
+         id="path26004-3-5-3" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="Arrow1Send-0-4-6"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Send"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(-0.2,0,0,-0.2,-1.2,0)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path25952-3-0-8" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="DotS-4-5"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="DotS"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(0.2,0,0,0.2,1.48,0.2)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="m -2.5,-1 c 0,2.76 -2.24,5 -5,5 -2.76,0 -5,-2.24 -5,-5 0,-2.76 2.24,-5 5,-5 2.76,0 5,2.24 5,5 z"
+         id="path26004-3-7" />
+    </marker>
+  </defs>
+  <sodipodi:namedview
+     id="namedview127"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     showgrid="false"
+     inkscape:zoom="2.432454"
+     inkscape:cx="315.52498"
+     inkscape:cy="359.51348"
+     inkscape:window-width="1848"
+     inkscape:window-height="1016"
+     inkscape:window-x="72"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="fullwave"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
+  <desc
+     id="desc2">
+XCircuit Version 3.7
+File &quot;fullwave.ps&quot; Page 1
+</desc>
+  <path
+     d="M 68.239548,54.526 C 100.23955,6.526003 252.86495,16.630448 273.07337,53.99465"
+     fill="none"
+     stroke-width="2"
+     stroke-linejoin="bevel"
+     stroke-linecap="round"
+     stroke="#000000"
+     id="path56"
+     style="stroke:#d40000;stroke-width:4;stroke-miterlimit:4;stroke-dasharray:none;marker-start:url(#DotS-4)"
+     sodipodi:nodetypes="cc" />
+  <path
+     d="m 405.77214,55.03925 c -32,-47.999998 -109.82451,-33.487235 -132.69877,-1.0446"
+     fill="none"
+     stroke-width="2"
+     stroke-linejoin="bevel"
+     stroke-linecap="round"
+     stroke="#000000"
+     id="path56-4"
+     style="stroke:#d40000;stroke-width:4;stroke-miterlimit:4;stroke-dasharray:none;marker-start:url(#DotS-4-5)"
+     sodipodi:nodetypes="cc" />
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-weight:normal;font-size:13.3333px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#f2f2f2;fill-opacity:1;stroke:none"
+     x="11.42021"
+     y="353.15436"
+     id="A1-9"><title
+       id="title1095-6">huh</title><tspan
+       sodipodi:role="line"
+       id="tspan11305-5-7-5-4-2"
+       x="11.42021"
+       y="353.15436"
+       style="font-size:13.3333px;fill:#f2f2f2" /></text>
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-weight:normal;font-size:16px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#333333;fill-opacity:1;stroke:none"
+     x="415.65927"
+     y="65.809883"
+     id="dsf"><tspan
+       id="tspan5933-4-5"
+       x="415.65927"
+       y="65.809883"
+       style="font-size:16px;fill:#333333"
+       sodipodi:role="line">A1</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-weight:normal;font-size:16px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#333333;fill-opacity:1;stroke:none"
+     x="43.639717"
+     y="69.881821"
+     id="sdasd"><desc
+       id="desc15464">min=-5
+max=5
+stepsize=0.1
+
+#Configure Automatic Sweep
+
+sweep=PV1
+title=V(A1) vs I ( A1/1000)
+start=-5
+stop=5
+stepsize=0.01
+delay=1
+settling=2
+
+xaxis=A1
+xmin=-5
+xmax=5
+
+yaxis=A1/1000
+ymin=-.005
+ymax=.005</desc><tspan
+       sodipodi:role="line"
+       id="tspan11456"
+       x="43.639717"
+       y="69.881821"
+       style="font-size:16px;fill:#333333">PV1</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-weight:normal;font-size:10.3665px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#333333;fill-opacity:1;stroke:none;stroke-width:0.647905"
+     x="333.83966"
+     y="267.1561"
+     id="as"><tspan
+       sodipodi:role="line"
+       id="tspan11456-2"
+       x="333.83966"
+       y="267.1561"
+       style="font-size:10.3665px;fill:#333333;stroke-width:0.647905">Expected Current=PV1/1K</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-weight:normal;font-size:8.4825px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#333333;fill-opacity:1;stroke:none;stroke-width:0.530157"
+     x="334.33197"
+     y="278.26584"
+     id="asd"><tspan
+       sodipodi:role="line"
+       id="tspan11456-2-8"
+       x="334.33197"
+       y="278.26584"
+       style="font-size:8.4825px;fill:#333333;stroke-width:0.530157">EQ:PV1/1000</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-weight:normal;font-size:10.3665px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#333333;fill-opacity:1;stroke:none;stroke-width:0.647905"
+     x="153.83966"
+     y="307.1561"
+     id="as-2"><tspan
+       sodipodi:role="line"
+       id="tspan11456-2-1"
+       x="153.83966"
+       y="307.1561"
+       style="font-size:10.3665px;fill:#333333;stroke-width:0.647905">Expected Current=PV1/1K</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-weight:normal;font-size:8.4825px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#333333;fill-opacity:1;stroke:none;stroke-width:0.530157"
+     x="154.33197"
+     y="318.26584"
+     id="asd-7"><tspan
+       sodipodi:role="line"
+       id="tspan11456-2-8-8"
+       x="154.33197"
+       y="318.26584"
+       style="font-size:8.4825px;fill:#333333;stroke-width:0.530157">EQ:PV2/1000</tspan></text>
+  <metadata
+     id="metadata2840">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:title>Some Title</dc:title>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Jithin</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:description># Output Impedance
+
+This is a demo to show that the set output voltage on PV1 will drop if the load is too high (Small resistance)
+
+You may compare the expected output (Set PV1/resistance) vs the actual output (A1/resistance) for
+various resistance values
+
+</dc:description>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <path
+     style="fill:none;stroke:#008000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     d="m 273.07337,53.99465 v 0 14.47661 l 12.65134,7.30426 -21.74962,12.55715 20.61896,11.90437 -19.6054,11.14158 12.07223,6.70679 -0.0216,31.18183"
+     id="path5701"
+     sodipodi:nodetypes="ccccccccc" />
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-weight:normal;font-size:21.0592px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.52648"
+     x="286.15051"
+     y="97.310463"
+     id="text8998"><tspan
+       sodipodi:role="line"
+       id="tspan8996"
+       x="286.15051"
+       y="97.310463"
+       style="stroke-width:0.52648">100 </tspan><tspan
+       sodipodi:role="line"
+       x="286.15051"
+       y="123.63446"
+       style="stroke-width:0.52648"
+       id="tspan2013">Ohm</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-weight:normal;font-size:18.6667px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+     x="272.42673"
+     y="168.63121"
+     id="text12513"><tspan
+       sodipodi:role="line"
+       id="tspan12511"
+       x="272.42673"
+       y="168.63121"
+       style="font-size:18.6667px">GND</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-weight:normal;font-size:10.3665px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#333333;fill-opacity:1;stroke:none;stroke-width:0.647905"
+     x="334.89886"
+     y="200.62741"
+     id="as-6"><tspan
+       sodipodi:role="line"
+       id="tspan11456-2-2"
+       x="334.89886"
+       y="200.62741"
+       style="font-size:10.3665px;fill:#333333;stroke-width:0.647905">Measured Current=A1/1K</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-weight:normal;font-size:8.4825px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#333333;fill-opacity:1;stroke:none;stroke-width:0.530157"
+     x="335.39117"
+     y="211.73715"
+     id="asd-1"><tspan
+       sodipodi:role="line"
+       id="tspan11456-2-8-7"
+       x="335.39117"
+       y="211.73715"
+       style="font-size:8.4825px;fill:#333333;stroke-width:0.530157">EQ:A1/1000</tspan></text>
+</svg>

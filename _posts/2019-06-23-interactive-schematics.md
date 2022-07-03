@@ -11,7 +11,7 @@ summary: |
 show-toc: true
 tags: [seelab3, interactive schematics , android]
 pins: [5V, SQ2, IN2, GND, WG, PV1, PV2, IN1, SEN, IN2]
-category: [expeyes17, android]
+category: [seel3, android]
 ---
 
 
@@ -24,8 +24,8 @@ automatically insert dynamic content.
 ## The procedure
 + Simply create a schematic diagram using the various vector tools
 + Insert text elements at the various control and measurement locations in the schematic
-+ Set the ID of each of these elements to what they represent. e.g , for A1 voltmeter, ID should be set to A1
-+ These are the various IDs supported
++ Set the text of each of these elements to what they represent. e.g , for A1 voltmeter. If you wish to use some other text, the ID of this element (Ctrl-Shift-O) should be set to A1
++ These are the various Text IDs supported.
   + A1,A2,A3,SEN - All are voltmeters
   + WG - Waveform Generator. You can also add parameters in the description field as shown in the animation below.
   + SQ1, SQ2  - Square wave generators
@@ -33,7 +33,8 @@ automatically insert dynamic content.
   + BMP280:0 - Temperature read from a connected BMP280 sensor
   + BMP280:1 - PRESSURE read from a connected BMP280 sensor
   + BMP280:2 - HUMIDITY read from a connected BME280 sensor
-+ Check out the animation below on how to insert a WG waveform generator element
+  + Many more sensors in the above format. eg. `MPU6050:5`
++ Check out the animation below on how to insert a WG waveform generator element. The ID is being set to WG, but simply writing WG will also do the job.
 
 ![](/assets/blog/interactive-schematics/create-wg.gif){:class="ui image huge lightbox" }
 

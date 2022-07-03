@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   version="1.1"
+   id="acdc-separating"
+   width="470.42413"
+   height="372.01913"
+   viewBox="-6 -6 470.42413 372.01913"
+   sodipodi:docname="acdc-separating.svg"
+   inkscape:version="1.1.2 (1:1.1+202202050950+0a00cf5339)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs77" />
+  <sodipodi:namedview
+     id="namedview75"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     showgrid="false"
+     inkscape:zoom="0.5599219"
+     inkscape:cx="153.59285"
+     inkscape:cy="259.85767"
+     inkscape:window-width="1652"
+     inkscape:window-height="1016"
+     inkscape:window-x="367"
+     inkscape:window-y="75"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="acdc-separating"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
+  <desc
+     id="desc2">
+XCircuit Version 3.7
+File &quot;acdc-separating.ps&quot; Page 1
+</desc>
+  <path
+     d="m 287.41667,205.01165 h -58"
+     fill="none"
+     stroke-width="2"
+     stroke-linejoin="bevel"
+     stroke-linecap="round"
+     stroke="#000000"
+     id="path4"
+     style="stroke:#008000" />
+  <path
+     d="m 159.41667,205.01165 h 58"
+     fill="none"
+     stroke-width="2"
+     stroke-linejoin="bevel"
+     stroke-linecap="round"
+     stroke="#000000"
+     id="path6"
+     style="stroke:#008000" />
+  <path
+     d="m 217.41667,237.01165 v -64"
+     fill="none"
+     stroke-width="2"
+     stroke-linejoin="bevel"
+     stroke-linecap="round"
+     stroke="#000000"
+     id="path8"
+     style="stroke:#008000" />
+  <path
+     d="m 235.41667,175.01165 a 74,74 0 0 0 0,60"
+     fill="none"
+     stroke-width="2"
+     stroke-linejoin="bevel"
+     stroke-linecap="round"
+     stroke="#000000"
+     id="path10"
+     style="stroke:#008000" />
+  <text
+     stroke="none"
+     font-family="Helvetica"
+     font-size="40px"
+     id="text38"
+     style="fill:#000000"
+     x="191.41667"
+     y="157.01164"><tspan
+       x="191.41667"
+       y="157.01164"
+       id="tspan36">1uF</tspan></text>
+  <path
+     d="m 111.41667,61.01165 c 48,48 144,-80 240,0"
+     fill="none"
+     stroke-width="2"
+     stroke-linejoin="bevel"
+     stroke-linecap="round"
+     stroke="#000000"
+     id="path42"
+     style="stroke:#aa0000;stroke-width:4;stroke-miterlimit:4;stroke-dasharray:none" />
+  <path
+     d="M 50.410753,44.137665 C 170.89952,34.402705 143.41667,205.01165 159.41667,205.01165"
+     fill="none"
+     stroke-width="2"
+     stroke-linejoin="bevel"
+     stroke-linecap="round"
+     stroke="#000000"
+     id="path44"
+     style="stroke:#aa0000;stroke-width:4;stroke-miterlimit:4;stroke-dasharray:none"
+     sodipodi:nodetypes="cc" />
+  <path
+     d="m 287.41667,205.01165 c 16,0 24.38412,17.16905 56.38412,-14.83095"
+     fill="none"
+     stroke-width="2"
+     stroke-linejoin="bevel"
+     stroke-linecap="round"
+     stroke="#000000"
+     id="path46"
+     style="stroke:#aa0000;stroke-width:4;stroke-miterlimit:4;stroke-dasharray:none"
+     sodipodi:nodetypes="cc" />
+  <path
+     d="m 271.41667,301.01165 h -28"
+     fill="none"
+     stroke-width="2"
+     stroke-linejoin="bevel"
+     stroke-linecap="round"
+     stroke="#000000"
+     id="path50" />
+  <path
+     d="m 143.41667,301.01165 h 28"
+     fill="none"
+     stroke-width="2"
+     stroke-linejoin="bevel"
+     stroke-linecap="round"
+     stroke="#000000"
+     id="path52" />
+  <path
+     d="m 171.41667,301.01165 6,14 12,-28 12,28 12,-28 12,28 12,-28 6,14"
+     fill="none"
+     stroke-width="2"
+     stroke-linejoin="bevel"
+     stroke-linecap="round"
+     stroke="#000000"
+     id="path54"
+     style="stroke:#008000" />
+  <path
+     d="m 47.416668,269.01165 v 64 h 96.000002 v -64 z"
+     fill="none"
+     stroke-width="2"
+     stroke-linejoin="bevel"
+     stroke-linecap="round"
+     stroke="#000000"
+     id="path56" />
+  <text
+     stroke="none"
+     font-family="Helvetica"
+     font-size="40px"
+     id="text60"
+     style="fill:#000000"
+     x="51.416668"
+     y="315.01166"><tspan
+       x="51.416668"
+       y="315.01166"
+       id="tspan58">GND</tspan></text>
+  <path
+     d="m 271.41667,301.01165 c 16,0 24.38412,-30.83095 72.38412,-110.83095"
+     fill="none"
+     stroke-width="2"
+     stroke-linejoin="bevel"
+     stroke-linecap="round"
+     stroke="#000000"
+     id="path64"
+     style="stroke:#aa0000;stroke-width:4;stroke-miterlimit:4;stroke-dasharray:none"
+     sodipodi:nodetypes="cc" />
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-weight:normal;font-size:17.4547px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.436368"
+     x="343.8537"
+     y="193.1768"
+     id="text2697-8"><tspan
+       sodipodi:role="line"
+       id="tspan2695-5"
+       style="stroke-width:0.436368"
+       x="343.8537"
+       y="193.1768">A2</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-weight:normal;font-size:17.4547px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.436368"
+     x="343.8537"
+     y="73.176804"
+     id="text2697-8-9"><tspan
+       sodipodi:role="line"
+       id="tspan2695-5-7"
+       style="stroke-width:0.436368"
+       x="343.8537"
+       y="73.176804">A1</tspan></text>
+  <text
+     stroke="none"
+     font-family="Helvetica"
+     font-size="40px"
+     id="text68"
+     style="fill:#000000"
+     x="175.41667"
+     y="349.01166"><tspan
+       x="175.41667"
+       y="349.01166"
+       id="tspan66">100K</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-weight:normal;font-size:13.3333px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+     x="11.510792"
+     y="13.415916"
+     id="text3448"><tspan
+       sodipodi:role="line"
+       x="11.510792"
+       y="13.415916"
+       id="tspan3450"
+       style="font-size:13.3333px">SQ1 is  a 0-5V </tspan><tspan
+       sodipodi:role="line"
+       x="11.510792"
+       y="30.082541"
+       id="tspan3452"
+       style="font-size:13.3333px">square wave</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-weight:normal;font-size:17.4547px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.436368"
+     x="28.754478"
+     y="57.985912"
+     id="text2697-8-5"><desc
+       id="desc8000">value=2000
+
+sweep=SQ1
+start=1000
+stop=2000
+title=Offset AC(A1) vs AC(A2) 
+mode=scope
+xaxis=time
+channels=2
+
+y1=A1
+y2=A2
+
+trigger_channel=y1
+
+#trigger level: 0 to 1023
+trigger_level=700
+
+delay=200
+settling=200
+
+ymin=-6
+ymax=6</desc><tspan
+       sodipodi:role="line"
+       id="tspan2695-5-3"
+       style="stroke-width:0.436368"
+       x="28.754478"
+       y="57.985912">SQ1</tspan></text>
+</svg>

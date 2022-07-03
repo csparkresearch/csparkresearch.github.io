@@ -12,7 +12,7 @@ summary: |
 show-toc: true
 tags: [sr04, sound echo, ultrasound]
 pins: [5V, SQ2, IN2, GND]
-category: [expeyes17, mechanics]
+category: [seel3, mechanics]
 math: true
 ---
 
