@@ -59,7 +59,7 @@ ExpEYES17:
   description: "Your Lab @ Home ..."
   user-manual: "http://expeyes.in/Documents/eyes17-a4.pdf"
   windows: "https://drive.google.com/file/d/1KJI4NL4Bt_N5PCWNobnsCTaU3i-AM3-9/view"
-  ubuntu: "/assets/installers/eyes17-4.2.0.deb"
+  ubuntu: "/assets/installers/eyes17_4.8.7.deb"
   android: "https://play.google.com/store/apps/details?id=com.cspark.research.eyes17"
   image: expeyes_thumb.jpg
 
