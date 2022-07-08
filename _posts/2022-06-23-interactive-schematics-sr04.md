@@ -58,7 +58,7 @@ The following graphs were obtained
 You can see a small ripple picked up by the microphone when the module transmits, and another smaller one when the echo is received. You can observe that these coincide
 with the red graph(Echo) .
 
-We shall now try to directly monitor the voltage supplied to the transmitter, and compare with the red graph.
+### We shall now try to directly monitor the voltage supplied to the transmitter, and compare with the red graph.
 
 For monitoring the signals, we connect instead of a microphone
 
@@ -69,14 +69,22 @@ The following graphs were obtained
 
 You can see that the piezo receives 8 oscillations, and after that the red graph goes up to 5V indicating that the sound pulse has been sent!!
 
-It returns to 0 on either timeout, or if the receiver  which tuned to the same frequency as the transmitter gets the echoed signal.
+It returns to 0 on either timeout, or if the receiver  which is tuned to the same frequency as the transmitter gets the echoed signal.
 Since speed of sound is known (Around 340m/s) , Distance = Speed/time taken. Since time is measured for the round trip of the sound pulse , distance to the reflecting object is only
 half of this calculated distance. So,
 
 `Distance = 340/time/2 `
 
 
+### We can also directly monitor the amplified receiver signal.
 
+After some trial error, this signal was available at resistor R9. So we  connected A3 to that as shown below
+![](/assets/blog/interactive-schematics/sr04-recv-photo.jpeg){:class="ui image large lightbox"}
+
+The receiver pulses(Green) coincide with the Echo signal(Red) going low . We can also see a second set of receiver pulses because a second reflecting object was placed behind
+the first. So basically the same transmitted sound bounced from two different surfaces, with one taking more time than the other.
+
+![](/assets/blog/interactive-schematics/sr04-recv-signal.jpeg){:class="ui image large lightbox"}
 
 ## This can be used to design several experiments in mechanics.
 
