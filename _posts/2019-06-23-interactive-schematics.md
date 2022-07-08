@@ -1,7 +1,7 @@
 ---
 layout: blog
 title: Creating Schematics in Inkscape
-description: How to make them interactive schematics for the Android App.
+description: How to make interactive schematics for the Android App.
 cover: /assets/blog/interactive-schematics/interactive-schematic.png
 author: jithin
 summary: |
@@ -30,6 +30,7 @@ automatically insert dynamic content.
   + WG - Waveform Generator. You can also add parameters in the description field as shown in the animation below.
   + SQ1, SQ2  - Square wave generators
   + PV1, PV2 - Voltage sources
+  + SR04 - Echo based Distance measurement module
   + BMP280:0 - Temperature read from a connected BMP280 sensor
   + BMP280:1 - PRESSURE read from a connected BMP280 sensor
   + BMP280:2 - HUMIDITY read from a connected BME280 sensor
@@ -38,18 +39,95 @@ automatically insert dynamic content.
 
 ![](/assets/blog/interactive-schematics/create-wg.gif){:class="ui image huge lightbox" }
 
+## Adding configuration options to these parameters
+
+You may want to further configure these parameters , such as setting the minimum and maximum ranges of the gauges
+for the outputs, and their default values. A graph to monitor the inputs as a function of time may also come in handy.
+The following examples show how to do this:
+
++ Add a text element called WG to the drawing
++ Right Click on it and open object properties . You can also select the text and press Ctrl-Shft-o
++ In the description field of WG, add the following contents to set the minimum, maximum, and initial value of the sine wave output
+
+```
+min=10
+max=2000
+value=1000
+```
+
+Simple enough? Here's how to add a graph that records as a function of time.
+
++ Add a text element called SR04 for measuring distance
++ Enter the following in its description field
+
+```
+w=150
+h=150
+
+logging=true
+duration=20
+ymax=200
+```
+w, h are width and height. They are 100 by default, so we have made the block bigger
+logging=true will result in a graph where xaxis will be 0-20 Seconds.
+y axis will plot readings from the SR04 sensor.
+Tapping on the sensor block will reset the graph and make it start from the beginning.
+
+For further details, check out the post on the SR04 sensor [here](/seel3/android/interactive-schematics-sr04.html)
+
+
+
+
+
 ## Adding derived parameters
 + Certain values may be needed to be calculated from a combination of measured values.
 + Such as current across a load resistance equals the voltage across it divided by the resistance.
-+ These elements can be added by inserting an element with ID of the form EQUATION:x where x is a number
-+ In the animation below, an equation to calculate load current is inserted into the file 
++ These elements can be added by inserting text of the form EQ:x where x is the equation
++ In the animation below, an equation to calculate load current is inserted into the file. *Instead of the ID, setting the text directly will now work*
 
 ![](/assets/blog/interactive-schematics/create_interactive_schematic_equation.gif){:class="ui image huge lightbox" }
 
+
+
+## Adding automatic sweep options
+
+Certain experiments might require an output parameter to vary from one point to another in equal steps, and an input be recorded along with it.
+
+In order to do that, select the output, e.g. PV1 , and add the following to its description field. The following example is from the Ohm's law experiment
+
+```
+min=-5
+max=5
+stepsize=0.1
+
+#Configure Automatic Sweep
+
+sweep=PV1
+title=V(A1) vs I ( A1/1000)
+start=-5
+stop=5
+stepsize=0.01
+delay=1
+settling=2
+
+xaxis=A1
+xmin=-5
+xmax=5
+
+yaxis=A1/1000
+ymin=-.005
+ymax=.005
+```
+
+PV1 is instructed to vary from -5 to 5 in 0.01 steps. A1 (Voltage across the resistor) is plotted against the current (A1/resistance).
+
+
+
 ## Adding oscilloscope options
+
 + Certain experiments might require the use of an oscilloscope
 + You can tap on any analog input( A1, A2, A3, MIC ..) to open up a single channel popup oscilloscope
-+ For multi-channel scopes with flexible parameter configuration options, add an element with ID GRAPH:x
++ For multi-channel scopes with flexible parameter configuration options, add an element with text GRAPH:x . x can be any number.
 + Follow the animation below on how to add a 3 channel scope for the full-wave generator experiment
 
 ![](/assets/blog/interactive-schematics/create_interactive_schematic_graph.gif){:class="ui image huge lightbox " }
@@ -65,6 +143,8 @@ automatically insert dynamic content.
 + The (INSTRUCTIONS) tab contents can also be set by adding text matter in .md format to the description field in the SVG file's metadata. This procedure is shown in the next section
 
 ![](/assets/blog/interactive-schematics/fullwave-screenshot.jpg){:class="ui image medium lightbox " }
+
+
 
 ## Adding instructions to the experiment
 
