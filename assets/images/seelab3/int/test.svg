@@ -5,7 +5,7 @@
    width="470.42413"
    height="372.01913"
    viewBox="-6 -6 470.42413 372.01913"
-   sodipodi:docname="acdc-separating.svg"
+   sodipodi:docname="a test.svg"
    inkscape:version="1.1.2 (1:1.1+202202050950+0a00cf5339)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
@@ -22,9 +22,9 @@
      inkscape:pageopacity="0.0"
      inkscape:pagecheckerboard="0"
      showgrid="false"
-     inkscape:zoom="0.5599219"
-     inkscape:cx="-5.3578901"
-     inkscape:cy="259.85767"
+     inkscape:zoom="1.2063928"
+     inkscape:cx="104.02913"
+     inkscape:cy="248.26076"
      inkscape:window-width="1848"
      inkscape:window-height="1016"
      inkscape:window-x="72"
@@ -104,6 +104,16 @@ File &quot;acdc-separating.ps&quot; Page 1
      stroke-linecap="round"
      stroke="#000000"
      id="path44"
+     style="stroke:#aa0000;stroke-width:4;stroke-miterlimit:4;stroke-dasharray:none"
+     sodipodi:nodetypes="cc" />
+  <path
+     d="M 50.410753,44.137665 C 170.89952,34.402705 28.269095,157.51578 44.269095,157.51578"
+     fill="none"
+     stroke-width="2"
+     stroke-linejoin="bevel"
+     stroke-linecap="round"
+     stroke="#000000"
+     id="path44-1"
      style="stroke:#aa0000;stroke-width:4;stroke-miterlimit:4;stroke-dasharray:none"
      sodipodi:nodetypes="cc" />
   <path
@@ -255,4 +265,15 @@ ymax=6</desc><tspan
        style="stroke-width:0.436368"
        x="28.754478"
        y="57.985912">SQ1</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-weight:normal;font-size:9.82182px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.245545"
+     x="36.359177"
+     y="167.95123"
+     id="text2347"><tspan
+       sodipodi:role="line"
+       id="tspan2345"
+       x="36.359177"
+       y="167.95123"
+       style="stroke-width:0.245545">FREQ</tspan></text>
 </svg>

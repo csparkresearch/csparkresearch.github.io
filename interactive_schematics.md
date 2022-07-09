@@ -6,5 +6,7 @@ show-toc: false
 smooth-scroll: true
 ---
 
+Click on the Title to open the schematic inside the app.
+If you wish to save this file, click on the download link instead.
 
 {% include imggrid.html publist=site.data.interactiveschematics  %}

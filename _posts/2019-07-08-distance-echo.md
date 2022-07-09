@@ -61,3 +61,4 @@ One can calculate the value of acceleration due to gravity from this data using 
 
 ## See Also
  + [Datasheet for SR04](https://cdn.sparkfun.com/datasheets/Sensors/Proximity/HCSR04.pdf)
+ + [VL53L0X LIDAR - A better alternative to the SR04](/seel3/android/add-vl53l0x-add-sensor-android-app.html)

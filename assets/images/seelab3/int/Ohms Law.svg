@@ -272,19 +272,18 @@ interactive schematics
 ```
 min=-5
 max=5
-stepsize=0.1
 
 #Configure Automatic Sweep
 
 sweep=PV1
-title=PV1 vs A1/1000
+title=A1 vs A1/1000
 start=-5
 stop=5
 stepsize=0.01
 delay=1
 settling=2
 
-xaxis=PV1
+xaxis=A1
 xmin=-5
 xmax=5
 
