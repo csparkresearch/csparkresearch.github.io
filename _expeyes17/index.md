@@ -15,6 +15,9 @@ toctext: |
 [Previous Installer 6.2.0](https://drive.google.com/open?id=1idoWIyFnbh_wSJkEndi7GfAQryxK5qYN)
 [Previous Installer 5.0.0](https://drive.google.com/open?id=1X5bQdplyuAFfaT9TCWafDyUusjiHwzjT)
 
+[Source Code Link: 4.9.0](/assets/installers/eyes17-4.9.0.zip)
+
+
 {% include imagecards.html data=site.data.eyes17.subtopics %}
 
 {% include resources.html title="User Manuals" device="expeyes17" list=site.data.manuals  color="green" %}

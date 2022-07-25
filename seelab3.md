@@ -12,6 +12,10 @@ show-toc: false
 {% include install.html product="ExpEYES17"  %}
 [Previous Installer 6.2.0](https://drive.google.com/open?id=1idoWIyFnbh_wSJkEndi7GfAQryxK5qYN)
 
+
+[Source Code Link: 4.9.0](/assets/installers/eyes17-4.9.0.zip)
+
+
 {% include imagecard.html data=site.data.seelab3.features %}
 
 
