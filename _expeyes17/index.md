@@ -17,6 +17,7 @@ toctext: |
 
 [Source Code Link: 4.9.0](/assets/installers/eyes17-4.9.0.zip)
 
+[Installing Via Pip](/installers/install-via-pip.html)
 
 {% include imagecards.html data=site.data.eyes17.subtopics %}
 

@@ -15,6 +15,7 @@ show-toc: false
 
 [Source Code Link: 4.9.0](/assets/installers/eyes17-4.9.0.zip)
 
+[Installing Via Pip](/installers/install-via-pip.html)
 
 {% include imagecard.html data=site.data.seelab3.features %}
 
