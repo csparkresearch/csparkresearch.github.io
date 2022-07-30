@@ -41,6 +41,7 @@ navbar-links:
     - SEELab 3.0: "seelab3"
     - ExpEYES: "expeyes17"
     - KuttyPy: "kuttypy"
+    - KuttyPy Plus: "kuttypyplus"
     - Geiger Counter: "gmcounter"
     - SEELablet: "seelablet/seelablet.html"
     - All Products: ""

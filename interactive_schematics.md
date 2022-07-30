@@ -1,7 +1,7 @@
 ---
 layout: interactive_layout
-title: "Interactive Schematics"
-description: "Download and Try out these schematics for various experiments"
+title: "Online Resources"
+description: "Tap The Cards to Download and Try Out New Experiments"
 show-toc: false
 smooth-scroll: true
 ---

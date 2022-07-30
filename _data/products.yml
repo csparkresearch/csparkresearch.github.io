@@ -75,6 +75,17 @@ KuttyPy:
   ubuntu: "/assets/installers/KuttyPy-1.0.12.deb"
   windows: "https://drive.google.com/uc?export=download&id=18PD-Llx12PTfMRWlHA447TCMxTA6smWZ"
 
+KuttyPyPlus:
+  name: KuttyPyPlus
+  link: "kuttypyplus"
+  description: "Interactive Playground [Microcontroller Training Utility]"
+  image: kpy_thumb.gif
+  user-manual: "https://kuttypy.readthedocs.io/en/latest/"
+  android: "https://play.google.com/store/apps/details?id=com.cspark.kuttypy"
+  ubuntu: "/assets/installers/KuttyPy-1.0.12.deb"
+  windows: "https://drive.google.com/uc?export=download&id=18PD-Llx12PTfMRWlHA447TCMxTA6smWZ"
+
+
 GMCounter:
   name: GMCounter
   link: "gmcounter"
