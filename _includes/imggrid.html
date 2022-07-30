@@ -2,13 +2,12 @@
 
 	{% for pub in include.publist %}
     <div class="column">
-      <div class="ui fluid card">
-        <div class="photocard image">
+      <div class="ui fluid card launchsvg" href="{{ pub.link }}" style="cursor: pointer;height:200px" >
+        <div class="image">
           <img src="{{ pub.image }}" alt="{{ pub.image }}">
         </div>
         <div class="content">
-          <button class="description launchsvg" href="{{ pub.link }}" target="_blank">{{ pub.title }}</button>
-          <a class="description" href="{{ pub.link }}" target="_blank">download</a>
+			{{ pub.title }}
         </div>
       </div>
     </div>

@@ -1,0 +1,27 @@
+<xml xmlns="https://developers.google.com/blockly/xml">
+      <block type="text_print" id="XaxAGz^/lws6NcFR_N`A" x="50" y="104">
+        <value name="TEXT">
+          <shadow type="text" id="OPN,P7Iuh%t/onC[s[4A">
+            <field name="TEXT">abc</field>
+          </shadow>
+          <block type="text_join" id="q*9r|H4f0,xSmw~(c6nH">
+            <mutation items="3"></mutation>
+            <value name="ADD0">
+              <block type="text" id="OGPnjS~Z/+stDrbVeGE)">
+                <field name="TEXT">VL53L0X measured distance : </field>
+              </block>
+            </value>
+            <value name="ADD1">
+              <block type="read_VL53L0X" id="2:Xp|IPsc+ek7x-^zlCG">
+                <field name="CHANNEL">0</field>
+              </block>
+            </value>
+            <value name="ADD2">
+              <block type="text" id="D)vX]|45]DsU7}+|S8~4">
+                <field name="TEXT"> mm</field>
+              </block>
+            </value>
+          </block>
+        </value>
+      </block>
+    </xml>

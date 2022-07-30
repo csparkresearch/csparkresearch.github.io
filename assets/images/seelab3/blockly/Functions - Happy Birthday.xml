@@ -1,0 +1,170 @@
+<xml xmlns="https://developers.google.com/blockly/xml">
+      <variables>
+        <variable id="S#20t|Yk]?.*OV/Jq@}d">frequency</variable>
+        <variable id="A@%;%KRJH%*;!Y=U+Vd}">long</variable>
+      </variables>
+      <block type="procedures_defnoreturn" id="Om`-24jh%i0e;oxbEauX" x="15" y="40">
+        <mutation>
+          <arg name="frequency" varid="S#20t|Yk]?.*OV/Jq@}d"></arg>
+          <arg name="long" varid="A@%;%KRJH%*;!Y=U+Vd}"></arg>
+        </mutation>
+        <field name="NAME">play note</field>
+        <comment pinned="false" h="64" w="182">This function plays a music note 🎵</comment>
+        <statement name="STACK">
+          <block type="set_frequency" id="F|KkEf;Za1vy)?y/ND4~">
+            <field name="CHANNEL">WG</field>
+            <value name="FREQUENCY">
+              <block type="variables_get" id=".6qWc6{#RIT(yKV=0^`r">
+                <field name="VAR" id="S#20t|Yk]?.*OV/Jq@}d">frequency</field>
+              </block>
+            </value>
+            <next>
+              <block type="controls_if" id="g;|6NE-8zLB@6mSh8D3K">
+                <value name="IF0">
+                  <block type="variables_get" id="=h;}I.~3o^J+9sFts}H`">
+                    <field name="VAR" id="A@%;%KRJH%*;!Y=U+Vd}">long</field>
+                  </block>
+                </value>
+                <statement name="DO0">
+                  <block type="wait_seconds" id="Hf%m4RzDOg)bL/qMebUL">
+                    <field name="SECONDS">0.2</field>
+                  </block>
+                </statement>
+                <next>
+                  <block type="wait_seconds" id=".f,lO@,V~#WJR92F+bme">
+                    <field name="SECONDS">0.1</field>
+                    <next>
+                      <block type="set_frequency" id="rJzQy![Vq,z!xBc4xyck">
+                        <field name="CHANNEL">WG</field>
+                        <value name="FREQUENCY">
+                          <block type="math_number" id="VNnhHNHqTkg^z5AW]U.B">
+                            <field name="NUM">0</field>
+                          </block>
+                        </value>
+                        <next>
+                          <block type="wait_seconds" id="~GnlWus7aC4:1T7e,Ks`">
+                            <field name="SECONDS">0.2</field>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </statement>
+      </block>
+      <block type="procedures_callnoreturn" id="YlMw94uCUkTqe^|~(GIv" x="14" y="277">
+        <mutation name="play note">
+          <arg name="frequency"></arg>
+          <arg name="long"></arg>
+        </mutation>
+        <value name="ARG0">
+          <block type="math_number" id="nFiJMf]/B0OsP$4Syeo(">
+            <field name="NUM">2936</field>
+          </block>
+        </value>
+        <value name="ARG1">
+          <block type="logic_boolean" id="$[X-G`P2bt`QhP2!c`d2">
+            <field name="BOOL">TRUE</field>
+          </block>
+        </value>
+        <next>
+          <block type="procedures_callnoreturn" id="qm_R`u8!whTegn?Y[tlb">
+            <mutation name="play note">
+              <arg name="frequency"></arg>
+              <arg name="long"></arg>
+            </mutation>
+            <value name="ARG0">
+              <block type="math_number" id="h_w0oL(M.**Jqe6A@?R2">
+                <field name="NUM">2936</field>
+              </block>
+            </value>
+            <next>
+              <block type="procedures_callnoreturn" id="Ovvk65^LdPQo#[Z_6ac{">
+                <mutation name="play note">
+                  <arg name="frequency"></arg>
+                  <arg name="long"></arg>
+                </mutation>
+                <value name="ARG0">
+                  <block type="math_number" id="bGXRx*ZLN/2b#[A96$%8">
+                    <field name="NUM">3296</field>
+                  </block>
+                </value>
+                <value name="ARG1">
+                  <block type="logic_boolean" id="nh:kaU!lfHNpG!V/ZGYA">
+                    <field name="BOOL">TRUE</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="procedures_callnoreturn" id="2q83{Ju$J+S[6hD*5!BJ">
+                    <mutation name="play note">
+                      <arg name="frequency"></arg>
+2022-07-15 02:12:36.729 22240-22424/? E/expeyes:                   <arg name="long"></arg>
+                    </mutation>
+                    <value name="ARG0">
+                      <block type="math_number" id="Ww#gWwM|(VMnVHc7T~@:">
+                        <field name="NUM">2936</field>
+                      </block>
+                    </value>
+                    <value name="ARG1">
+                      <block type="logic_boolean" id=":O~IFN4!`BG=6C|LBxNz">
+                        <field name="BOOL">TRUE</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="procedures_callnoreturn" id="{RuukrIdIVRu.Bhf{tYw">
+                        <mutation name="play note">
+                          <arg name="frequency"></arg>
+                          <arg name="long"></arg>
+                        </mutation>
+                        <value name="ARG0">
+                          <block type="math_number" id="=fl}%EFClF]5zh;gGgE2">
+                            <field name="NUM">3920</field>
+                          </block>
+                        </value>
+                        <value name="ARG1">
+                          <block type="logic_boolean" id="2f4;vZE~dyi,s9ngQf4g">
+                            <field name="BOOL">TRUE</field>
+                          </block>
+                        </value>
+                        <next>
+                          <block type="procedures_callnoreturn" id="Km6{3AyKo0pQlu;!7|k9">
+                            <mutation name="play note">
+                              <arg name="frequency"></arg>
+                              <arg name="long"></arg>
+                            </mutation>
+                            <value name="ARG0">
+                              <block type="math_number" id="}AoO+nk5%.`-p)~e:D1K">
+                                <field name="NUM">3699</field>
+                              </block>
+                            </value>
+                            <value name="ARG1">
+                              <block type="logic_boolean" id="Epm;#c:+Tdm/sKo-N[w9">
+                                <field name="BOOL">TRUE</field>
+                              </block>
+                            </value>
+                            <next>
+                              <block type="set_frequency" id="T]S-;W_R_kBqG%wdrN}o">
+                                <field name="CHANNEL">WG</field>
+                                <value name="FREQUENCY">
+                                  <block type="math_number" id="!fxPrhK(EWz$[![Cr0@_">
+                                    <field name="NUM">0</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </xml>
+

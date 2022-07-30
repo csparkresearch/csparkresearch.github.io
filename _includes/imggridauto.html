@@ -1,0 +1,23 @@
+  <div class="ui six column doubling grid">
+
+	{% for image in site.static_files %}
+		{% if image.path contains include.dir %}
+			<div class="column">
+			  <div class="ui fluid card launchsvg" href="{{ site.baseurl }}{{ image.path }}" style="cursor: pointer;height:200px" >
+				<div class="image">
+				  <img src="{{ site.baseurl }}{{ image.path }}" alt="interactive Schematic">
+				</div>
+				<div class="content">
+					{{ image.name }}
+				</div>
+			  </div>
+			</div>
+		{% endif %}
+	{% endfor %}
+
+
+  </div>
+
+
+        
+
