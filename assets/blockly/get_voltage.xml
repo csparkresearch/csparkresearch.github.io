@@ -1,0 +1,12 @@
+<xml xmlns="https://developers.google.com/blockly/xml">
+      <block type="text_print" id="s*03xw}@{RtPQ1f_uMpD" x="37" y="66">
+        <value name="TEXT">
+          <shadow type="text" id="{M%4c=C]=Yfn6sXgqc%v">
+            <field name="TEXT">abc</field>
+          </shadow>
+          <block type="get_voltage" id="H@-$:=4VLJO72g~.J3z!">
+            <field name="CHANNEL">A1</field>
+          </block>
+        </value>
+      </block>
+    </xml>

@@ -18,7 +18,7 @@ linkedin: http://www.linkedin.com  ## your linkedin account url
 dribbble: http://www.dribble.com  ## you dribbble account url
 foursquare: http://www.foursquare.com  ## your foursquare account url
 
-include: ['expeyes17','projects']
+include: ['expeyes17','projects', 'blocks']
 
 permalink: none
 collections:
@@ -27,6 +27,9 @@ collections:
   output: true
  projects:
   permalink: /lightblog/:path.html
+  output: true
+ blocks:
+  permalink: /blocks/:path.html
   output: true
 
 

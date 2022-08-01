@@ -1,1 +1,47 @@
 
+
+  <div class="topbar" style="width:96%;">
+	<button onclick="startStep({{ include.id }})" class="button-25" style="background:linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);" role="button">Run the Code!</button>
+
+  </div>
+
+<hr>
+
+
+<div id="blocklyDiv{{ include.id }}" class="blocklyDiv">
+</div>
+
+<hr>
+
+
+  <script type="text/javascript">
+
+    workspacePlaygrounds[{{ include.id }}] = Blockly.inject('blocklyDiv{{ include.id }}', {
+          media: '/assets/blockly/media/',
+          toolbox: mytoolbox,
+	  toolboxPosition : 'start',
+	  horizontal: true,
+	  css : true, 
+          zoom: {controls: true}
+        });
+
+
+
+
+	$(document).ready(function(){
+	   $.ajax({
+		type: "GET" ,
+		url: "{{ include.xml }}" ,
+		dataType: "xml" ,
+		success: function(xml) {
+			//var xmlDoc = $.parseXML( xml );   <------------------this line
+			loadXML({{ include.id }} , (new XMLSerializer()).serializeToString(xml));
+		}       
+	});
+	});
+	
+
+  </script>
+
+
+

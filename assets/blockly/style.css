@@ -1,0 +1,148 @@
+    html, body {
+      border: 0;
+      min-height:500px;
+      height: 98%;
+      margin: 0;
+      padding: 0;
+      width: 99%;
+      scroll:true;
+    }
+    .blocklyDiv {
+      border: 0;
+      height: 600px;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+    }
+    #codeArea {
+      border: 0;
+      height: 15%;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+    }
+    #pyCodeArea {
+      border: 0;
+      height: 30%;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+    }
+
+	.topbar{
+		padding:5px;
+	}
+
+/* CSS */
+.button-25 {
+  background-color: #36A9AE;
+  background-image: linear-gradient(#37ADB2, #329CA0);
+  border: 1px solid #2A8387;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.12) 0 1px 1px;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-family: -apple-system,".SFNSDisplay-Regular","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  margin: 0;
+  outline: 0;
+  padding: 10px 10px 8px;
+  text-align: center;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-25:hover {
+  box-shadow: rgba(255, 255, 255, 0.3) 0 0 2px inset, rgba(0, 0, 0, 0.4) 0 1px 2px;
+  text-decoration: none;
+  transition-duration: .15s, .15s;
+}
+
+.button-25:active {
+  box-shadow: rgba(0, 0, 0, 0.15) 0 2px 4px inset, rgba(0, 0, 0, 0.4) 0 1px 1px;
+}
+
+.button-25:disabled {
+  cursor: not-allowed;
+  opacity: .6;
+}
+
+.button-25:disabled:active {
+  pointer-events: none;
+}
+
+.button-25:disabled:hover {
+  box-shadow: none;
+}
+
+.button-icon {
+    background: url(blocks/save.png) no-repeat;
+    width: 10px;
+    display: inline-block;
+}
+
+
+/* -------------- MODAL POPUP ------------------*/
+
+#resultoverlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 1000;
+  cursor: pointer;
+}
+
+#resulttext{
+  position: absolute;
+  top: 5%;
+  left: 2%;
+  right:50%;
+  word-wrap: anywhere;
+  white-space: pre-wrap;
+  font-size: 20px;
+  color: white;
+  /*transform: translate(-90%,-50%);
+  -ms-transform: translate(-90%,-50%);*/
+}
+
+
+#resultclose{
+    position: absolute;
+    background: red;
+    font-size: 50px;
+    color: white;
+    top: 10px;
+    padding:10px;
+    right: 20px;
+    }
+
+
+#resultplots{
+  display:none;
+	background: #ffffffcc;
+	border-radius:10px;
+  position: absolute;
+  top: 50%;
+  bottom:1%;
+  left: 3%;
+  right:3%;
+  color: white;
+  /*transform: translate(-90%,-50%);
+  -ms-transform: translate(-90%,-50%);*/
+}
+.visible{
+display:block !important;
+}
+
+
+
+svg {
+  position: absolute;
+}
