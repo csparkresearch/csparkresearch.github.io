@@ -1,0 +1,20 @@
+<xml xmlns="https://developers.google.com/blockly/xml">
+      <block type="controls_repeat_ext" id="%f/NMFtZ(tQg(:i`%,w:" x="-12" y="-119">
+        <value name="TIMES">
+          <shadow type="math_number" id="v]Jc+G5WG|e.CWD1@dRg">
+            <field name="NUM">50</field>
+          </shadow>
+        </value>
+        <statement name="DO">
+          <block type="plot_xyarray" id=":TN3K2f#20JSHp~_]u^1">
+            <value name="VALUE">
+              <block type="capture1" id="r.fF{`k,E}*8p@)G_$h3">
+                <field name="CHANNEL">A1</field>
+                <field name="SAMPLES">500</field>
+                <field name="TIMEGAP">1</field>
+              </block>
+            </value>
+          </block>
+        </statement>
+      </block>
+    </xml>

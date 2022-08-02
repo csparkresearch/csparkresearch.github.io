@@ -1,32 +1,38 @@
 ---
-smooth-scroll: true
+show-avatar: true
+common-css:
+  - "/semantic/dist/semantic.min.css"
+  - "/assets/css/product.css"
+common-js:
+  - "/assets/js/jquery.min.js"
+  - "/assets/js/interactivesemantic.js"
 ---
+
 <!DOCTYPE html>
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="stylesheet" href="/semantic/dist/semantic.min.css" />
-  <link rel="stylesheet" href="/assets/css/product.css" />
-
-  <script src="blockly:///blockly_compressed.js"></script>
-  <script src="blockly:///blocks_compressed.js"></script>
-  <script src="blockly:///javascript_compressed.js"></script>
-  <script src="blockly:///python_compressed.js"></script>
+  <script src="/assets/blockly/blockly_compressed.js"></script>
+  <script src="/assets/blockly/blocks_compressed.js"></script>
+  <script src="/assets/blockly/javascript_compressed.js"></script>
+  <script src="/assets/blockly/python_compressed.js"></script>
 
   <link rel="stylesheet" type="text/css" href="/assets/blockly/style.css">
-  <script src="blockly:///msg/js/en.js"></script>
-  <script src="blockly:///blocks/workspace_interpreted.js"></script>
-  <script src="blockly:///blocks/acorn_interpreter.js"></script>
+  <script src="/assets/blockly/msg/js/en.js"></script>
+  <script src="/assets/blockly/blocks/workspace_interpreted.js"></script>
+  <script src="/assets/blockly/blocks/acorn_interpreter.js"></script>
 
-  <link rel="stylesheet" type="text/css" href="blockly:///uplot/uPlot.min.css" />
-  <script src="blockly:///uplot/jquery.min.js"></script>
-  <script type="text/javascript" src="blockly:///uplot/uPlot.iife.js"></script>
-  <script type="text/javascript" src="blockly:///plots.js"></script>
-  <script type="text/javascript" src="blockly:///attach_download_handlers.js"></script>
-  <link rel="stylesheet" href="blockly:///product.css" />
-
+  <link rel="stylesheet" type="text/css" href="/assets/blockly/uplot/uPlot.min.css" />
+	<script src="/assets/blockly/uplot/jquery.min.js"></script>
+  <script type="text/javascript" src="/assets/blockly/uplot/uPlot.iife.js"></script>
+  <script type="text/javascript" src="/assets/blockly/plots.js"></script>
+  {% if layout.common-css %}
+    {% for css in layout.common-css %}
+      <link rel="stylesheet" href="{{ css | prepend: site.baseurl | replace: '//', '/' }}" />
+    {% endfor %}
+  {% endif %}
 
 
 <title>{{ page.title }}</title>

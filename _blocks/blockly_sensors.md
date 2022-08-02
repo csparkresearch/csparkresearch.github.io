@@ -1,8 +1,9 @@
 ---
 layout: blockly_layout
 title: "Graphical Programming"
-description: "Write your own logic sequences using the Block based programming interface"
-smooth-scroll: true
+thumb: "/assets/blockly/media/BMP280.png"
+description: "Interface I2C sensors and controllers"
+position: 2
 ---
 
 <hr>
@@ -38,3 +39,8 @@ servo motors, the program adds 1 and multiplies by 90 to adjust the rotation val
 Explore polar plots with this demo.
 
 {% include blockly_sample.html xml="/assets/images/seelab3/blockly/Radar with VL53L0X and a Servo Motor.xml" id=2 %}
+
+
+# Examples
+
+{% include blocklygrid.html dir="images/seelab3/blockly/addons"   %}
