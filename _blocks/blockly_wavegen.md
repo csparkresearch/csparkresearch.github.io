@@ -2,7 +2,7 @@
 layout: blockly_layout
 title: "Waveform Generators"
 thumb: "/assets/blockly/media/WAVEGEN.png"
-description: "Use the Sine/Square wave generators to create music and more"
+description: "Use the Sine/Square wave generators<br> to create music and more"
 position: 2
 ---
 

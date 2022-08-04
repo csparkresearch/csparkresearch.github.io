@@ -1,56 +1,27 @@
- <xml xmlns="https://developers.google.com/blockly/xml">
+<xml xmlns="https://developers.google.com/blockly/xml">
 <description>
-<![CDATA[
-
 <img src='data:image/png;base64,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'/>
-
-]]>
 </description>
 
-      <block type="set_frequency" id="(:Zbx7F)rT}c6O^^Rftu" x="11" y="151">
-        <field name="CHANNEL">SQ1</field>
-        <value name="FREQUENCY">
-          <block type="math_number" id="j12f0s+VZ{2@T|#(PRaV">
-            <field name="NUM">10</field>
-          </block>
+      <block type="controls_repeat_ext" id="BiA/6n50^t?58)Togd?8" x="-71" y="-23">
+        <value name="TIMES">
+          <shadow type="math_number" id="YJxR);jim6d#(o(n`Got">
+            <field name="NUM">10000</field>
+          </shadow>
         </value>
-        <next>
-          <block type="plot_datapoint" id="t/~)p.t]0jny`9T{b@UQ">
+        <statement name="DO">
+          <block type="plot_datapoint" id="!~(+Y.B8:hPkNCo*V9LV">
+            <value name="YAXIS">
+              <shadow type="text" id="c?,XVVQ:wNctuOM%$fRk">
+                <field name="TEXT">Y-Axis</field>
+              </shadow>
+            </value>
             <value name="VALUE">
-              <block type="math_number" id="_JSAo?evoC[@]U~ODC3.">
-                <field name="NUM">0</field>
+              <block type="read_MAX30100" id="lq5j9]blp_8054X.:c$1">
+                <field name="CHANNEL">0</field>
               </block>
             </value>
-            <next>
-              <block type="plot_datapoint" id="O_~-phv(Gw9[YvVOC1sS">
-                <value name="VALUE">
-                  <block type="math_number" id="mss*rePSEF2W4;[LY9%`">
-                    <field name="NUM">1</field>
-                  </block>
-                </value>
-                <next>
-                  <block type="controls_repeat_ext" id="Kc*1)HgO|_g@$Pyu4rv%">
-                    <value name="TIMES">
-                      <shadow type="math_number" id="~,lODl2E?YB?x{_L:H+3">
-                        <field name="NUM">10</field>
-                      </shadow>
-                    </value>
-                    <statement name="DO">
-                      <block type="plot_datapoint" id="f/$kcN*:}a%Sr%+N9iDg">
-                        <value name="VALUE">
-                          <block type="multi_r2r" id="u7d9JQ:Ag}H1P4EW#H@#">
-                            <field name="CHANNEL">IN2</field>
-                            <field name="EDGES">2</field>
-                            <field name="TIMEOUT">1</field>
-                          </block>
-                        </value>
-                      </block>
-                    </statement>
-                  </block>
-                </next>
-              </block>
-            </next>
           </block>
-        </next>
+        </statement>
       </block>
     </xml>

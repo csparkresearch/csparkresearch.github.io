@@ -2,7 +2,7 @@
 layout: blockly_layout
 title: "Introduction: Block Based Coding"
 thumb: "/assets/blockly/media/eyeslogo.png"
-description: "Create programs with drag and drop graphical blocks<br>Analog Read/Write Functions "
+description: "Create programs with drag and<br> drop graphical blocks<br>Analog Read/Write Functions "
 position: 1
 ---
 

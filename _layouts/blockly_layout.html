@@ -8,7 +8,11 @@ smooth-scroll: true
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="stylesheet" href="/semantic/dist/semantic.min.css" />
-  <link rel="stylesheet" href="/assets/css/product.css" />
+
+  <script src="blockly:///jquery.min.js"></script>
+  <script src="/semantic/dist/semantic.min.js"></script>
+  <script src="blockly:///Markdown.Converter.min.js"></script>
+
 
   <script src="blockly:///blockly_compressed.js"></script>
   <script src="blockly:///blocks_compressed.js"></script>
@@ -21,7 +25,6 @@ smooth-scroll: true
   <script src="blockly:///blocks/acorn_interpreter.js"></script>
 
   <link rel="stylesheet" type="text/css" href="blockly:///uplot/uPlot.min.css" />
-  <script src="blockly:///uplot/jquery.min.js"></script>
   <script type="text/javascript" src="blockly:///uplot/uPlot.iife.js"></script>
   <script type="text/javascript" src="blockly:///plots.js"></script>
   <script type="text/javascript" src="blockly:///attach_download_handlers.js"></script>
@@ -406,6 +409,8 @@ smooth-scroll: true
   <script type="text/javascript">
 	var workspacePlaygrounds = {}
 	var workspacePlayground=null;
+	var workspaceHelp = {};
+	var converter = new Markdown.Converter();
 
 	var myInterpreter;
 
@@ -509,6 +514,18 @@ smooth-scroll: true
 
 
 
+	function loadhelp(id,xml) {
+		try {
+			workspaceHelp[id] = $(xml).find('description').text();
+			return true;
+		} catch (e) {
+			console.log("Invalid xml",e);
+			return false;
+		}
+	}
+
+
+
 
 
 	function loadXML(id,xml) {
@@ -527,6 +544,12 @@ smooth-scroll: true
 	}
 
 
+	function showHelp(id){
+		$('.fullscreen.modal.help > .content').html(converter.makeHtml(workspaceHelp[id]));
+		$('.fullscreen.modal.help')
+		  .modal('show')
+		;
+	}
 
 
 </script>
@@ -547,6 +570,17 @@ smooth-scroll: true
   <p id="resultclose" onclick="off()">X</p>
   <p id="resulttext">Results: </p>
   <div id="resultplots"></div>
+</div>
+
+
+<div class="ui fullscreen modal help">
+  <i class="close icon"></i>
+  <div class="header">
+    Instructions
+  </div>
+  <div class="ui scrolling content">
+    Instructions
+  </div>
 </div>
 
 

@@ -1,10 +1,8 @@
 ---
 show-avatar: true
 common-css:
-  - "/semantic/dist/semantic.min.css"
   - "/assets/css/product.css"
 common-js:
-  - "/assets/js/jquery.min.js"
   - "/assets/js/interactivesemantic.js"
 ---
 
@@ -19,13 +17,17 @@ common-js:
   <script src="/assets/blockly/javascript_compressed.js"></script>
   <script src="/assets/blockly/python_compressed.js"></script>
 
+  <script src="/assets/js/jquery.min.js"></script>
+  <script src="/semantic/dist/semantic.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="/semantic/dist/semantic.min.css">
+
   <link rel="stylesheet" type="text/css" href="/assets/blockly/style.css">
   <script src="/assets/blockly/msg/js/en.js"></script>
   <script src="/assets/blockly/blocks/workspace_interpreted.js"></script>
   <script src="/assets/blockly/blocks/acorn_interpreter.js"></script>
+  <script src="/assets/js/Markdown.Converter.min.js"></script>
 
   <link rel="stylesheet" type="text/css" href="/assets/blockly/uplot/uPlot.min.css" />
-	<script src="/assets/blockly/uplot/jquery.min.js"></script>
   <script type="text/javascript" src="/assets/blockly/uplot/uPlot.iife.js"></script>
   <script type="text/javascript" src="/assets/blockly/plots.js"></script>
   {% if layout.common-css %}
@@ -412,6 +414,8 @@ common-js:
   <script type="text/javascript">
 	var workspacePlaygrounds = {}
 	var workspacePlayground=null;
+	var workspaceHelp = {};
+	var converter = new Markdown.Converter();
 
 	var myInterpreter;
 
@@ -514,6 +518,15 @@ common-js:
 
 
 
+	function loadhelp(id,xml) {
+		try {
+			workspaceHelp[id] = $(xml).find('description').text();
+			return true;
+		} catch (e) {
+			alert("Invalid xml",e);
+			return false;
+		}
+	}
 
 
 
@@ -530,6 +543,14 @@ common-js:
 			alert("Invalid xml");
 			return false;
 		}
+	}
+	
+
+	function showHelp(id){
+		$('.fullscreen.modal.help > .content').html(converter.makeHtml(workspaceHelp[id]));
+		$('.fullscreen.modal.help')
+		  .modal('show')
+		;
 	}
 
 
@@ -553,6 +574,18 @@ common-js:
   <p id="resultclose" onclick="off()">X</p>
   <p id="resulttext">Results: </p>
   <div id="resultplots"></div>
+</div>
+
+
+
+<div class="ui fullscreen modal help">
+  <i class="close icon"></i>
+  <div class="header">
+    Instructions
+  </div>
+  <div class="scrolling content">
+    Instructions
+  </div>
 </div>
 
 

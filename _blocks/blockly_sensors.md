@@ -38,7 +38,12 @@ servo motors, the program adds 1 and multiplies by 90 to adjust the rotation val
 
 Explore polar plots with this demo.
 
-{% include blockly_sample.html xml="/assets/images/seelab3/blockly/Radar with VL53L0X and a Servo Motor.xml" id=2 %}
+{% include blockly_sample.html xml="/assets/images/seelab3/blockly/addons/Radar with VL53L0X and a Servo Motor.xml" id=2 %}
+
+
+## Measure heart beats
+
+{% include blockly_sample.html xml="/assets/images/seelab3/blockly/addons/Measure Heart Rate (MAX30100).xml" id=3 %}
 
 
 # Examples

@@ -1,8 +1,8 @@
 
 
-  <div class="topbar" style="width:96%;">
-	<button onclick="startStep({{ include.id }})" class="button-25" style="background:linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);" role="button">Run the Code!</button>
-
+  <div class="ui container">
+	<a onclick="startStep({{ include.id }})" class="ui small primary button "><i class="play icon"></i>Run Code!</a>
+	<a onclick="showHelp({{ include.id }})" class="ui small green button right floated" ><i class="question circle icon"></i>HELP!</a>
   </div>
 
 <hr>
@@ -10,6 +10,8 @@
 
 <div id="blocklyDiv{{ include.id }}" class="blocklyDiv">
 </div>
+
+
 
 <hr>
 
@@ -34,7 +36,8 @@
 		url: "{{ include.xml }}" ,
 		dataType: "xml" ,
 		success: function(xml) {
-			//var xmlDoc = $.parseXML( xml );   <------------------this line
+			console.log(xml);
+			loadhelp({{ include.id }} , xml);
 			loadXML({{ include.id }} , (new XMLSerializer()).serializeToString(xml));
 		}       
 	});
