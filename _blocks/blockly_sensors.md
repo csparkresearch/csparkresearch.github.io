@@ -1,6 +1,6 @@
 ---
 layout: blockly_layout
-title: "Graphical Programming"
+title: "Expansion Modules"
 thumb: "/assets/blockly/media/BMP280.png"
 description: "Interface I2C sensors and controllers"
 position: 2

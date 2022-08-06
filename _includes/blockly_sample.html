@@ -1,9 +1,11 @@
 
 
-  <div class="ui container">
-	<a onclick="startStep({{ include.id }})" class="ui small primary button "><i class="play icon"></i>Run Code!</a>
-	<a onclick="showHelp({{ include.id }})" class="ui small green button right floated" ><i class="question circle icon"></i>HELP!</a>
-  </div>
+<div class="ui fluid container">
+	<a onclick="startStep({{ include.id }})" class="ui mini primary button "><i class="play icon"></i>Run!</a>
+	<a class="ui mini red outline button missingdevice "><i class="warning icon"></i>No Hardware!</a>
+	<a onclick="showHelp({{ include.id }})" class="ui mini green button right floated" ><i class="question circle icon"></i>HELP</a>
+</div>
+
 
 <hr>
 

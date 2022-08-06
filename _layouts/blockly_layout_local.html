@@ -411,11 +411,80 @@ common-js:
   <sep></sep>
 </xml>
 
+
+  <div class="ui inverted vertical center aligned segment" style="background:url(/assets/images/kuttypy/cover.jpg) #f2bd91 fixed top center; " >
+
+    <div class="ui text container">
+      <h1 class="ui inverted header">
+        {{ page.title }}
+      </h1>
+      <h2>{{ page.description }}</h2>
+      <a class="ui small inverted green left labeled icon button" href="/interactive_schematics"><i class="left arrow icon"></i>List Home</a>			
+
+    </div>
+  </div>
+
+
+
+
+
+<hr>
+
+
+<div class="ui basic modal results" style="top:0%;bottom:2%;">
+  <i class="close icon" onclick="off()"></i>  
+  <div class="header">
+    Output
+  </div>
+  <div class="ui divider"></div>
+  <div class="ui content" style="padding:0.2rem ! important;">
+	  <div class="ui two column stackable top aligned grid">
+		<div class="ui vertical divider"></div>
+		<div class="top aligned row">
+		  <div class="column resplotarea"  style="background:#fffc;">
+			<div id="#resplot" class="ui description resplot">
+			</div>
+		  </div>
+
+		  <div class="column">
+			<div class="ui icon header" style="color:white;">
+			  Results
+			</div>
+			<div class="ui scrolling content description printarea" style="color:white;">
+			</div>
+		  </div>
+
+
+		</div>
+	</div>
+
+  </div>
+
+</div>
+
+
+<div class="ui fullscreen modal help">
+  <i class="close icon"></i>
+  <div class="header">
+    Instructions
+  </div>
+  <div class="ui scrolling content">
+    Instructions
+  </div>
+</div>
+
   <script type="text/javascript">
 	var workspacePlaygrounds = {}
 	var workspacePlayground=null;
 	var workspaceHelp = {};
 	var converter = new Markdown.Converter();
+
+	var results = $('.description.printarea');
+	var resultModal = 	  $('.modal.results');
+    var resplotarea = $('.resplotarea');
+    var resultplots = $('.description.resplot');
+
+
 
 	var myInterpreter;
 
@@ -425,14 +494,15 @@ common-js:
 
 
 	function on() {
-	  document.getElementById("resultoverlay").style.display = "block";
-	  document.getElementById("resulttext").innerHTML = "Results:<br>";
+	  results.html("");
+	  resultModal.modal('show');
 	}
 
 	function off() {
-	  document.getElementById("resultoverlay").style.display = "none";
+	  resultModal.modal('hide');
   	  resetStepUi();
 	  resetInterpreter();
+	  MyJavascriptInterface.closeFiles();
 	}        
 
 
@@ -457,6 +527,19 @@ common-js:
       highlightPause = true;
     }
 
+    var devState = false;
+    if(typeof MyJavascriptInterface != 'undefined')
+		devState = MyJavascriptInterface.get_device_status();
+	
+	if(!devState){$('missingdevice').transition('fade in','1000mS').transition('glow');}
+	function deviceConnected(){
+		$('.missingdevice').transition('fade out','300mS');
+	}
+	function deviceDisconnected(){
+		$('.missingdevice').transition('fade in','1000mS').transition('glow');
+	}
+
+
 
     function startStep(wspaceid) {
 	  workspacePlayground = workspacePlaygrounds[wspaceid];
@@ -467,6 +550,7 @@ common-js:
       resetStepUi();
       on();
       clearPlot();
+      resplotarea.show();
       if(latestCode.indexOf('plot_xy(')>=0)
 		addPlot('xy'); // indicate XY
       else if(latestCode.indexOf('plot_radar(')>=0)
@@ -477,6 +561,8 @@ common-js:
 		addPlot(''); 
       else if(latestCode.indexOf('plot_xyyarray(')>=0)
 		addPlot('xyy'); 
+	  else
+	  	 resplotarea.hide();
       runCode(wspaceid);
     }
 
@@ -518,12 +604,13 @@ common-js:
 
 
 
+
 	function loadhelp(id,xml) {
 		try {
-			workspaceHelp[id] = $(xml).find('description').text();
+			workspaceHelp[id] = converter.makeHtml($(xml).find('description').text());
 			return true;
 		} catch (e) {
-			alert("Invalid xml",e);
+			console.log("Invalid xml",e);
 			return false;
 		}
 	}
@@ -544,55 +631,23 @@ common-js:
 			return false;
 		}
 	}
-	
+
 
 	function showHelp(id){
-		$('.fullscreen.modal.help > .content').html(converter.makeHtml(workspaceHelp[id]));
+		$('.fullscreen.modal.help > .content').html(workspaceHelp[id]);
 		$('.fullscreen.modal.help')
 		  .modal('show')
 		;
 	}
 
-
-
-
 </script>
 
-  <div class="ui inverted vertical center aligned segment" style="background:url(/assets/images/kuttypy/cover.jpg) #f2bd91 fixed top center; " >
-
-    <div class="ui text container">
-      <h1 class="ui inverted header">
-        {{ page.title }}
-      </h1>
-      <h2>{{ page.description }}</h2>
-      <a class="ui small inverted green left labeled icon button" href="/interactive_schematics"><i class="left arrow icon"></i>List Home</a>			
-
-    </div>
-  </div>
-
-<div id="resultoverlay" >
-  <p id="resultclose" onclick="off()">X</p>
-  <p id="resulttext">Results: </p>
-  <div id="resultplots"></div>
-</div>
-
-
-
-<div class="ui fullscreen modal help">
-  <i class="close icon"></i>
-  <div class="header">
-    Instructions
-  </div>
-  <div class="scrolling content">
-    Instructions
-  </div>
-</div>
-
-
-	<div class = "ui container">
-	{{ content }}
-	</div>
 	
+<div class = "ui container">
+	{{ content }}
+</div>
+
+
 
 {% include scripts.html %}
 

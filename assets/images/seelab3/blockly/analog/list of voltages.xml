@@ -1,4 +1,29 @@
 <xml xmlns="https://developers.google.com/blockly/xml">
+<description
+
+<![CDATA[
+
+## Objective
+
+Learn to create a list of elements
+
+## Procedure
+
++ Drag the `create empty list` block, and the `set list to` block from the Lists menu
++ Connect them together
++ Create a repeat loop and insert into the last position of the list , the value read from the voltmeter
++ Print the list contents after getting the 10 values. 
+
+## Further
+
++ Create two lists. Store A2 values into the second. Print it
++ before the wait block, insert a `set_voltage` block and apply i/10 to it. Check that the resultant list is indeed from 0 to 1 V
+
+]]>
+
+</description>
+
+
       <variables>
         <variable id="ZHzR_1b9[t1=F!y{a.VT">list</variable>
       </variables>
