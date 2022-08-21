@@ -2,7 +2,7 @@
 layout: blog
 title: Translating User Interfaces
 description: Tutorial - Adding translations to the PyQT5 based python app
-cover: /assets/blog/tr_results.png
+cover: /assets/blog/screenshots/arabic translation thumb.png
 author: jithin
 summary:  instructions on translating the eyes17 GUI
 show-toc: true
@@ -71,8 +71,10 @@ languages = [
 
 ```
 
-Arabic has now been added
+Arabic has now been added courtesy Zuhair Ali K and Dr Shahin
 
 
-![](/assets/blog/tr_results.png){:class="ui image large lightbox" alt="Select target language"}
+![](/assets/blog/screenshots/arabic translation.jpg){:class="ui image fluid" alt="Select target language"}
+
+
 
