@@ -1,6 +1,6 @@
 {% if include.title %}
 <div class="ui hidden divider"></div>
-<h2 class="ui teal horizontal clearing dividing header" name="{{ include.title }}" id="{{ include.title }}">
+<h2 class="ui teal horizontal clearing header" name="{{ include.title }}" id="{{ include.title }}">
   <i class="settings icon"></i>
 	{{ include.title }}
 </h2>
@@ -10,7 +10,7 @@
 {% if section.type=="imtxt" or section.type=="imim" %}
 <div class="ui attached {{ section.color }} segment">
 	{% if section.title %}
-	<h2 class="ui horizontal divider"  name="{{ section.title }}" id="{{ section.title }}">
+	<h2 class="ui horizontal"  name="{{ section.title }}" id="{{ section.title }}">
 	  <i class="bar chart icon"></i>
 		{{ section.title }}
 	</h2>

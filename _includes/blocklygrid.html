@@ -3,9 +3,9 @@
 	{% for image in site.static_files %}
 		{% if image.path contains include.dir %}
 		
-			{% if image.extname == ".jpg" or image.extname == ".png" %}
+			{% if image.extname == ".jpg" or image.extname == ".png" or image.extname == ".jpeg" %}
 				<div class="column">
-				  <div class="ui fluid card launchxml" href="{{ site.baseurl }}{{ image.path }}" style="cursor: pointer;height:200px" >
+				  <div class="ui fluid card launchxml" href="{{ site.baseurl }}{{ image.path }}" style="cursor: pointer;height:150px" >
 					<div class="image">
 					  <img src="{{ site.baseurl }}{{ image.path }}" alt="interactive Schematic">
 					</div>

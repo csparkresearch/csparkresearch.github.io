@@ -61,5 +61,5 @@ Tap the cards to launch these with the SEELab3 App
 
 Click on the Card to download and launch the schematic with the SEELab3 app.
 
-{% include imggridauto.html dir="images/seelab3/int"  %}
+{% include imggridauto.html dir="images/seelab3/int" type="launchsvg" %}
 

@@ -1,31 +1,54 @@
 ---
 layout: semantic
 title: "SEELab - 3.0"
-tagline: "Successor to ExpEYES-17. Coming Soon..."
+tagline: "Successor to ExpEYES-17. Multi Purpose Test and Measurement tool"
 show-navigation: false
 banner: /assets/images/kuttypy/cover.jpg
-header: assets/images/seelab3/banner.jpg
 share-img: assets/images/seelab3/seelab3.jpg
-show-toc: false
+show-toc: true
+toctext: |
+ <a class="ui small inverted fluid purple right labeled icon button" href="blog"><i class="right arrow icon"></i>Blog</a>
 ---
 
+![](/assets/images/seelab3/header.png){:class="ui image fluid"}
+
+<br>
+
 {% include install.html product="ExpEYES17"  %}
-[Previous Installer 6.2.0](https://drive.google.com/open?id=1idoWIyFnbh_wSJkEndi7GfAQryxK5qYN)
-
-
-[Source Code Link: 4.9.0](/assets/installers/eyes17-4.9.0.zip)
-
-[Installing Via Pip](/installers/install-via-pip.html)
 
 {% include imagecard.html data=site.data.seelab3.features %}
+
+<br>
+
+
+## Android App
+---
+
+Download the fully loaded SEELab 3 app from the Play Store to use your device as a portable test and measurement tool. It includes a host of features
+ranging from the Oscilloscope and Data loggers , to a Graphical programming interface, and interactive schematics. 
+
+![](/assets/images/seelab3/androidapp.jpg){:class="ui image fluid"}
+
+<br>
+
+## Graphical Programming utility
+---
+
+The drag and drop programming utility is available both on Desktop as well as android. While on Android it generates the corresponding Javascript code which can be separately
+edited and executed, the desktop app is Python focused, and generates Python code which can be copied and executed in the IDE.
+
+![](/assets/images/seelab3/blockdesktop.png){:class="ui image fluid"}
+
+
+Some featured examples that let you create your own programs without writing lines of code. For advanced users, the generated code in either javascript
+or Python can be modified in a separate editor.
+
+{% include blocklygrid.html dir="images/seelab3/blocklythumbs"  %}
 
 
 {% include imagecard.html data=site.data.seelab3.interactiveschematics %}
 
 {% include imggrid.html publist=site.data.interactiveschematics  %}
-
-
-{% include youtube.html id="uUj5LMVkWGs" title="Tutorial : Creating interactive schematics" %}
 
 
 # Blog Posts for SEELab3
@@ -64,6 +87,24 @@ show-toc: false
 	{% endfor %}
 	</div>
 </div>
+
+
+## Compatible with ExpEYES17 software
+---
+
+The SEELab3 is fully compatible with the ExpEYES17 desktop software which recognises it based on the version number stored in the hardware.
+Some of the ExpEYES17 experiments are listed below, and can be carried out with the SEELab3 as well
+
+{% include imagecards.html data=site.data.seelab3.eyes17topics %}
+
+
+
+[Previous Installer 6.2.0](https://drive.google.com/open?id=1idoWIyFnbh_wSJkEndi7GfAQryxK5qYN)
+
+
+[Source Code Link: 4.9.0](/assets/installers/eyes17-4.9.0.zip)
+
+[Installing Via Pip](/installers/install-via-pip.html)
 
 
 * e-mail csparkresearch@gmail.com for enquiries. [Contact Us.](contact)
