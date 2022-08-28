@@ -16,6 +16,8 @@ toctext: |
 
 {% include install.html product="ExpEYES17"  %}
 
+
+
 {% include imagecard.html data=site.data.seelab3.features %}
 
 <br>
@@ -37,8 +39,10 @@ ranging from the Oscilloscope and Data loggers , to a Graphical programming inte
 The drag and drop programming utility is available both on Desktop as well as android. While on Android it generates the corresponding Javascript code which can be separately
 edited and executed, the desktop app is Python focused, and generates Python code which can be copied and executed in the IDE.
 
-![](/assets/images/seelab3/blockdesktop.png){:class="ui image fluid"}
 
+Watch the Video !
+
+{% include youtube.html id="SBjrNLBqGoE" cover="/assets/images/seelab3/blockdesktop.png" %}
 
 Some featured examples that let you create your own programs without writing lines of code. For advanced users, the generated code in either javascript
 or Python can be modified in a separate editor.

@@ -107,6 +107,7 @@ for (var i = 0; i < youtube.length; i++) {
  
     // thumbnail image source.
     var source = "https://img.youtube.com/vi/"+ youtube[i].dataset.embed +"/sddefault.jpg"; 
+    if(youtube[i].dataset.cover.length>2)source = youtube[i].dataset.cover;
  
     // Load the image asynchronously
     var image = new Image();
