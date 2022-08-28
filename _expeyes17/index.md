@@ -12,10 +12,12 @@ toctext: |
 ---
 
 {% include install.html product="ExpEYES17"  %}
-[Previous Installer 6.2.0](https://drive.google.com/open?id=1idoWIyFnbh_wSJkEndi7GfAQryxK5qYN)
-[Previous Installer 5.0.0](https://drive.google.com/open?id=1X5bQdplyuAFfaT9TCWafDyUusjiHwzjT)
 
-[Source Code Link: 4.9.0](/assets/installers/eyes17-4.9.0.zip)
+<a class="ui teal button" href = "/assets/installers/eyes17_5.0+pyqt5-1_all.deb">Latest Installer for Testers(Deb)  <i class="ui download icon"></i></a>
+<a class="ui basic primary button" href = "https://drive.google.com/open?id=1idoWIyFnbh_wSJkEndi7GfAQryxK5qYN" target="_blank">Previous Installer(Exe) 6.2.0  <i class="ui download icon"></i></a>
+<a class="ui basic pink button" href = "/assets/installers/eyes17-4.9.0.zip" target="_blank">Source code Zip  <i class="ui download icon"></i></a>
+
+
 
 [Installing Via Pip](/installers/install-via-pip.html)
 

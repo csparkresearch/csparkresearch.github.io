@@ -16,7 +16,9 @@ toctext: |
 
 {% include install.html product="ExpEYES17"  %}
 
-
+<a class="ui teal button" href = "/assets/installers/eyes17_5.0+pyqt5-1_all.deb">Latest Installer for Testers(Deb)  <i class="ui download icon"></i></a>
+<a class="ui basic primary button" href = "https://drive.google.com/open?id=1idoWIyFnbh_wSJkEndi7GfAQryxK5qYN" target="_blank">Previous Installer(Exe) 6.2.0  <i class="ui download icon"></i></a>
+<a class="ui basic pink button" href = "/assets/installers/eyes17-4.9.0.zip" target="_blank">Source code Zip  <i class="ui download icon"></i></a>
 
 {% include imagecard.html data=site.data.seelab3.features %}
 
