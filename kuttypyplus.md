@@ -18,10 +18,29 @@ banner: /assets/images/kuttypy/cover.jpg
 [Read The Docs](https://kuttypy.readthedocs.io/en/latest/)
 
 
+
 <div class="ui blue segment raised" >
 <p>The kuttyPy (/kʊtipʌɪ/) Microcontroller training utility allows real-time manipulation of the registers in microcontrollers via a connected computer containing its python library.  setReg and getReg function calls act as a real-time debugging and monitoring utility, and combined with Python's visualization and analytical utilities, this approach has immense pedagogical potential for beginners. </p>
 <p markdown="1">The kuttyPy Plus hardware is an ATMEGA32 microcontroller development board developed by the [ExpEYES](http://expeyes.in) project, and is currently supported by this software. It contains the kuttyPy firmware, but can also be used to run other programs via its bootloader.</p>
 </div>
+
+{% include imagecards.html data=site.data.kuttypyplus %}
+
+
+
+## Android Application
+---
+
+Supports a variety of tasks such as IO manipulation, ADC reading, I2C sensor data logging, 
+C compile and upload IDE, blockly based graphical programming etc
+
+![](/assets/images/kuttypy/kuttypyandroidcollage.jpg){:class="ui image fluid"}
+
+
+{% include youtube.html id="9xXyL25D2jo" title="KuttyPyPlus : Pick And Place Assembly" %}
+
+
+{% include imagecards.html data=site.data.kuttypypluspartb %}
 
 
 # Blog Posts for KuttyPy
@@ -61,32 +80,10 @@ banner: /assets/images/kuttypy/cover.jpg
 	</div>
 </div>
 
-## Installation from pypi (License: MIT)
----
-
-### Windows
-```shell
-py -3 -m pip install kuttypy
-kuttypy
-```
-### Linux
-```shell
-pip3 install kuttypy
-kuttypy
-```
-
-
-
-{% include imagecards.html data=site.data.kuttypyplus %}
-
-
-{% include youtube.html id="9xXyL25D2jo" title="KuttyPyPlus : Pick And Place Assembly" %}
 
 
 ## Using with Python
 ---
-
-
 
 Connect the hardware, and import the library. Import will throw an error if the hardware is not detected
 
@@ -100,6 +97,22 @@ readADC(0)
 To view the full list of ATMEGA32 registers
 ```
 print(REGISTERS.ATMEGA32_REGISTERS)
+```
+
+
+
+## Installation from pypi (License: MIT)
+---
+
+### Windows
+```shell
+py -3 -m pip install kuttypy
+kuttypy
+```
+### Linux
+```shell
+pip3 install kuttypy
+kuttypy
 ```
 
 

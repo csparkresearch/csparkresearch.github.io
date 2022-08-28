@@ -10,7 +10,7 @@ toctext: |
  <a class="ui small inverted fluid purple right labeled icon button" href="blog"><i class="right arrow icon"></i>Blog</a>
 ---
 
-![](/assets/images/seelab3/header.png){:class="ui image fluid"}
+![](/assets/images/seelab3/header.jpg){:class="ui image fluid"}
 
 <br>
 
@@ -42,7 +42,7 @@ edited and executed, the desktop app is Python focused, and generates Python cod
 
 Watch the Video !
 
-{% include youtube.html id="SBjrNLBqGoE" cover="/assets/images/seelab3/blockdesktop.png" %}
+{% include youtube.html id="SBjrNLBqGoE" cover="/assets/images/seelab3/blockdesktop.jpg" %}
 
 Some featured examples that let you create your own programs without writing lines of code. For advanced users, the generated code in either javascript
 or Python can be modified in a separate editor.
