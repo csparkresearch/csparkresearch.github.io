@@ -21,15 +21,19 @@ smooth-scroll: true
 
   <link rel="stylesheet" type="text/css" href="/assets/blockly/style.css">
   <script src="blockly:///msg/js/en.js"></script>
-  <script src="blockly:///blocks/workspace_interpreted.js"></script>
+  <script src="blockly:///blocks/api.js"></script>
+  <script src="blockly:///blocks/Lists.js"></script>
+  <script src="blockly:///blocks/IO.js"></script>
+  <script src="blockly:///blocks/Plots.js"></script>
+  <script src="blockly:///blocks/Games.js"></script>
+  <script src="blockly:///blocks/WiFi.js"></script>
+  <script src="blockly:///blocks/SEELab.js"></script>
   <script src="blockly:///blocks/acorn_interpreter.js"></script>
 
   <link rel="stylesheet" type="text/css" href="blockly:///uplot/uPlot.min.css" />
   <script type="text/javascript" src="blockly:///uplot/uPlot.iife.js"></script>
-  <script type="text/javascript" src="blockly:///plots.js"></script>
   <script type="text/javascript" src="blockly:///attach_download_handlers.js"></script>
   <link rel="stylesheet" href="blockly:///product.css" />
-
 
 
 <title>{{ page.title }}</title>
@@ -38,139 +42,35 @@ smooth-scroll: true
 
 <body>
 
+
 <xml xmlns="https://developers.google.com/blockly/xml" id="mytoolbox" style="display: none">
-  <category name="ExpEYES" colour="#995ba5">
-
-    <block type="get_voltage">
-      <field name="CHANNEL">A1</field>
-    </block>
-    <block type="set_voltage">
-      <field name="CHANNEL">PV1</field>
-    </block>
-    <block type="set_frequency">
-      <field name="CHANNEL">WG</field>
-    </block>
-    <block type="get_frequency">
-      <field name="CHANNEL">IN2</field>
-    </block>
-    <block type="multi_r2r">
-      <field name="CHANNEL">IN2</field>
-      <field name="EDGES">2</field>
-      <field name="TIMEOUT">2</field>
-    </block>
-    <block type="set_state">
-      <field name="CHANNEL">OD1</field>
-    </block>
-    <block type="capture1">
-      <field name="CHANNEL">A1</field>
-      <field name="SAMPLES">100</field>
-      <field name="TIMEGAP">1</field>
-    </block>
-
-    <block type="capture2">
-      <field name="CHANNEL">A1</field>
-      <field name="SAMPLES">100</field>
-      <field name="TIMEGAP">2</field>
-    </block>
-
-  <block type="scope_trigger">
-    </block>
-  <block type="capture_analysis">
-    </block>
-  <block type="capture_analysis_dual">
-    </block>
-
+  <category name="Minimize" colour="#f55" onClick="alert('asd');">
   </category>
+  <sep></sep>
 
 
-
-  <category name="Sensors" colour="#995b65">
-    <block type="read_SR04">
-      <field name="CHANNEL">0</field>
-    </block>
-    <block type="read_BMP280">
-      <field name="CHANNEL">1</field>
-    </block>
-    <block type="read_MPU6050">
-      <field name="CHANNEL">0</field>
-    </block>
-    <block type="read_VL53L0X">
-      <field name="CHANNEL">0</field>
-    </block>
-    <block type="read_HMC5883L">
-      <field name="CHANNEL">0</field>
-    </block>
-    <block type="read_ML8511">
-      <field name="CHANNEL">0</field>
-    </block>
-    <block type="read_VOLTS">
-      <field name="CHANNEL">0</field>
-    </block>
-    <block type="set_PCA9685">
-      <field name="CHANNEL">1</field>
-    </block>
-    <block type="set_servo">
-      <field name="CHANNEL">1</field>
-    </block>
+  <category name="Variables" colour="#a55b80" custom="VARIABLE">
   </category>
-  <category name="Phone" colour="#99fba5">
-    <block type="get_phone_accel">
-      <field name="CHANNEL">0</field>
-    </block>
-    <block type="get_phone_rotation">
-      <field name="CHANNEL">0</field>
-    </block>
-    <block type="get_phone_light">
-      <field name="CHANNEL">0</field>
-    </block>
-  </category>
-  <category name="PLOTS" colour="#995b95">
-    <block type="plot_datapoint">
-	  <value name="YAXIS">
-        <shadow type="text">
-          <field name="TEXT">Y-Axis</field>
-        </shadow>
-      </value>
-    </block>  
-    <block type="plot_xy">
-    </block>  
-
-    <block type="plot_xyarray">
-    </block>  
-
-    <block type="plot_xyyarray">
-    </block>  
-
-    <block type="plot_radar">
-	  <value name="MAXRADIUS">
-        <shadow type="math_number">
-          <field name="NUM">30</field>
-        </shadow>
-      </value>
-    </block>  
-  </category>
-
-  <category name="Logic" colour="#5b80a5">
-    <block type="controls_if"></block>
-    <block type="logic_compare">
-      <field name="OP">EQ</field>
-    </block>
-    <block type="logic_operation">
-      <field name="OP">AND</field>
-    </block>
-    <block type="logic_negate"></block>
-    <block type="logic_boolean">
-      <field name="BOOL">TRUE</field>
-    </block>
-    <block type="logic_null"></block>
-    <block type="logic_ternary"></block>
-  </category>
-
-  
-  <category name="Math" colour="#5b67a5">
+  <category name="Values" colour="#a55b80">
     <block type="math_number">
       <field name="NUM">0</field>
     </block>
+    <block type="text">
+      <field name="TEXT"></field>
+    </block>
+    <block type="logic_boolean">
+      <field name="BOOL">TRUE</field>
+    </block>
+
+    <block type="math_constant">
+      <field name="CONSTANT">PI</field>
+    </block>
+
+  </category>
+
+  <category name="Operators" colour="#5b80a5">
+
+
     <block type="math_arithmetic">
       <field name="OP">ADD</field>
       <value name="A">
@@ -184,96 +84,75 @@ smooth-scroll: true
         </shadow>
       </value>
     </block>
-    <block type="math_single">
-      <field name="OP">ROOT</field>
-      <value name="NUM">
-        <shadow type="math_number">
-          <field name="NUM">9</field>
-        </shadow>
-      </value>
+
+
+    <block type="logic_compare">
+      <field name="OP">EQ</field>
     </block>
-    <block type="math_trig">
-      <field name="OP">SIN</field>
-      <value name="NUM">
-        <shadow type="math_number">
-          <field name="NUM">45</field>
-        </shadow>
-      </value>
+
+
+
+    <block type="logic_operation">
+      <field name="OP">AND</field>
     </block>
-    <block type="math_constant">
-      <field name="CONSTANT">PI</field>
+
+    <block type="logic_negate"></block>
+    <sep></sep>
+    <block type="logic_boolean">
+      <field name="BOOL">TRUE</field>
     </block>
-    <block type="math_number_property">
-      <mutation divisor_input="false"></mutation>
-      <field name="PROPERTY">EVEN</field>
-      <value name="NUMBER_TO_CHECK">
-        <shadow type="math_number">
-          <field name="NUM">0</field>
-        </shadow>
-      </value>
-    </block>
-    <block type="math_round">
-      <field name="OP">ROUND</field>
-      <value name="NUM">
-        <shadow type="math_number">
-          <field name="NUM">3.1</field>
-        </shadow>
-      </value>
-    </block>
-    <block type="math_on_list">
-      <mutation op="SUM"></mutation>
-      <field name="OP">SUM</field>
-    </block>
-    <block type="math_modulo">
-      <value name="DIVIDEND">
-        <shadow type="math_number">
-          <field name="NUM">64</field>
-        </shadow>
-      </value>
-      <value name="DIVISOR">
-        <shadow type="math_number">
-          <field name="NUM">10</field>
-        </shadow>
-      </value>
-    </block>
-    <block type="math_constrain">
-      <value name="VALUE">
-        <shadow type="math_number">
-          <field name="NUM">50</field>
-        </shadow>
-      </value>
-      <value name="LOW">
-        <shadow type="math_number">
-          <field name="NUM">1</field>
-        </shadow>
-      </value>
-      <value name="HIGH">
-        <shadow type="math_number">
-          <field name="NUM">100</field>
-        </shadow>
-      </value>
-    </block>
-    <block type="math_random_int">
-      <value name="FROM">
-        <shadow type="math_number">
-          <field name="NUM">1</field>
-        </shadow>
-      </value>
-      <value name="TO">
-        <shadow type="math_number">
-          <field name="NUM">100</field>
-        </shadow>
-      </value>
-    </block>
-    <block type="math_random_float"></block>
+
+
   </category>
-  <category name="Text" colour="#5ba58c">
-    <block type="text">
-      <field name="TEXT"></field>
+
+
+  <category name="Logic" colour="#5b80a5">
+
+    <block type="controls_if"></block>
+
+    <block type="logic_ternary"></block>
+
+  </category>
+
+
+  <category name="In / Out" colour="#5ba58c">
+
+    <block type="cs_print">
+      <value name="TEXT">
+        <shadow type="text">
+          <field name="TEXT">hello</field>
+        </shadow>
+      </value>
     </block>
+
+    <block type="cs_sticker">
+      <value name="LABEL">
+        <shadow type="text">
+          <field name="TEXT">Parameter</field>
+        </shadow>
+      </value>
+      <value name="TEXT">
+        <shadow type="text">
+          <field name="TEXT">Reading</field>
+        </shadow>
+      </value>
+    </block>
+
+    <block type="text_prompt_ext">
+      <mutation type="TEXT"></mutation>
+      <field name="TYPE">TEXT</field>
+      <value name="TEXT">
+        <shadow type="text">
+          <field name="TEXT">Enter Input</field>
+        </shadow>
+      </value>
+    </block>
+
     <block type="text_join">
       <mutation items="2"></mutation>
     </block>
+
+
     <block type="text_append">
       <field name="VAR" id="NA?/#Ojn#=$$1[^`/^Dd">item</field>
       <value name="TEXT">
@@ -282,41 +161,17 @@ smooth-scroll: true
         </shadow>
       </value>
     </block>
-    <block type="text_print">
-      <value name="TEXT">
-        <shadow type="text">
-          <field name="TEXT">abc</field>
-        </shadow>
-      </value>
+
+    <block type="write_to_file">
     </block>
-    <block type="text_prompt_ext">
-      <mutation type="TEXT"></mutation>
-      <field name="TYPE">TEXT</field>
-      <value name="TEXT">
-        <shadow type="text">
-          <field name="TEXT">abc</field>
-        </shadow>
-      </value>
+
+    <block type="save_lists">
     </block>
-    <block type="text_getSubstring">
-      <mutation at1="true" at2="true"></mutation>
-      <field name="WHERE1">FROM_START</field>
-      <field name="WHERE2">FROM_START</field>
-      <value name="STRING">
-        <block type="variables_get">
-          <field name="VAR" id="Y/O[Wi.+6THk|+k0W/+b">text</field>
-        </block>
-      </value>
-    </block>
-    <block type="text_trim">
-      <field name="MODE">BOTH</field>
-      <value name="TEXT">
-        <shadow type="text">
-          <field name="TEXT">abc</field>
-        </shadow>
-      </value>
-    </block>
+
+
+
   </category>
+
   <category name="Loops" colour="#5ba55b">
     <block type="wait_seconds">
       <field name="SECONDS">1</field>
@@ -356,10 +211,102 @@ smooth-scroll: true
       <field name="FLOW">BREAK</field>
     </block>
   </category>
-  <category name="Lists" colour="#745ba5">
-    <block type="lists_create_with">
-      <mutation items="0"></mutation>
+  <sep></sep>
+
+
+  <category name="Math" colour="#5b67a5">
+    <block type="math_number">
+      <field name="NUM">0</field>
     </block>
+    <block type="math_single">
+      <field name="OP">ROOT</field>
+      <value name="NUM">
+        <shadow type="math_number">
+          <field name="NUM">9</field>
+        </shadow>
+      </value>
+    </block>
+    <block type="math_trig">
+      <field name="OP">SIN</field>
+      <value name="NUM">
+        <shadow type="math_number">
+          <field name="NUM">45</field>
+        </shadow>
+      </value>
+    </block>
+
+
+    <block type="math_number_property">
+      <mutation divisor_input="false"></mutation>
+      <field name="PROPERTY">EVEN</field>
+      <value name="NUMBER_TO_CHECK">
+        <shadow type="math_number">
+          <field name="NUM">0</field>
+        </shadow>
+      </value>
+    </block>
+    <block type="math_round">
+      <field name="OP">ROUND</field>
+      <value name="NUM">
+        <shadow type="math_number">
+          <field name="NUM">3.1</field>
+        </shadow>
+      </value>
+    </block>
+    <block type="math_on_list">
+      <mutation op="SUM"></mutation>
+      <field name="OP">SUM</field>
+    </block>
+    <block type="math_modulo">
+      <value name="DIVIDEND">
+        <shadow type="math_number">
+          <field name="NUM">64</field>
+        </shadow>
+      </value>
+      <value name="DIVISOR">
+        <shadow type="math_number">
+          <field name="NUM">10</field>
+        </shadow>
+      </value>
+    </block>
+    <block type="math_random_int">
+      <value name="FROM">
+        <shadow type="math_number">
+          <field name="NUM">1</field>
+        </shadow>
+      </value>
+      <value name="TO">
+        <shadow type="math_number">
+          <field name="NUM">100</field>
+        </shadow>
+      </value>
+    </block>
+
+
+
+  </category>
+  <category name="Lists" colour="#745ba5">
+    <block type="lists_new">
+    </block>
+    <block type="lists_split">
+      <mutation mode="SPLIT"></mutation>
+      <field name="MODE">SPLIT</field>
+      <value name="DELIM">
+        <shadow type="text">
+          <field name="TEXT">,</field>
+        </shadow>
+      </value>
+    </block>
+
+
+    <block type="lists_push">
+    </block>
+
+    <block type="lists_subtract">
+    </block>
+    <block type="lists_subtract_return">
+    </block>
+
     <block type="lists_getIndex">
       <mutation statement="false" at="true"></mutation>
       <field name="MODE">GET</field>
@@ -380,32 +327,220 @@ smooth-scroll: true
         </block>
       </value>
     </block>
-    <block type="lists_split">
-      <mutation mode="SPLIT"></mutation>
-      <field name="MODE">SPLIT</field>
-      <value name="DELIM">
-        <shadow type="text">
-          <field name="TEXT">,</field>
-        </shadow>
-      </value>
-    </block>
     <block type="lists_length"></block>
     <block type="lists_isEmpty"></block>
     <block type="lists_create_with">
-      <mutation items="3"></mutation>
+      <mutation items="0"></mutation>
     </block>
     <block type="lists_sort">
       <field name="TYPE">NUMERIC</field>
       <field name="DIRECTION">1</field>
     </block>
   </category>
-  <sep></sep>
-  <category name="Variables" colour="#a55b80" custom="VARIABLE">
+  <category name="PLOTS" colour="#995b95">
+
+    <block type="plot_scale">
+    </block>
+
+
+    <block type="plot_datapoint">
+      <value name="YAXIS">
+        <shadow type="text">
+          <field name="TEXT">Y-Axis</field>
+        </shadow>
+      </value>
+    </block>
+    <block type="plot_xy">
+    </block>
+
+    <block type="plot_xyarray">
+    </block>
+
+    <block type="plot_xyyarray">
+    </block>
+
+    <block type="plot_xyyyarray">
+    </block>
+
+    <block type="plot_radar">
+      <value name="MAXRADIUS">
+        <shadow type="math_number">
+          <field name="NUM">30</field>
+        </shadow>
+      </value>
+    </block>
+
   </category>
   <category name="Functions" colour="#995ba5" custom="PROCEDURE"></category>
-  <sep></sep>
-</xml>
 
+
+
+  <sep></sep>
+
+
+  <category name="ExpEYES" colour="#995ba5">
+
+    <block type="get_voltage">
+      <field name="CHANNEL">A1</field>
+    </block>
+    <block type="set_voltage">
+      <field name="CHANNEL">PV1</field>
+    </block>
+    <block type="set_frequency">
+      <field name="CHANNEL">WG</field>
+    </block>
+    <block type="get_frequency">
+      <field name="CHANNEL">IN2</field>
+    </block>
+    <block type="multi_r2r">
+      <field name="CHANNEL">IN2</field>
+      <field name="EDGES">2</field>
+      <field name="TIMEOUT">2</field>
+    </block>
+    <block type="set_state">
+      <field name="CHANNEL">OD1</field>
+    </block>
+
+  <category name="Captures" colour="#99fba5">
+      <block type="select_range">
+      </block>
+
+
+      <block type="scope_trigger">
+      </block>
+      <block type="capture1">
+        <field name="CHANNEL">A1</field>
+        <field name="SAMPLES">100</field>
+        <field name="TIMEGAP">1</field>
+      </block>
+
+      <block type="capture2">
+        <field name="CHANNEL">A1</field>
+        <field name="SAMPLES">100</field>
+        <field name="TIMEGAP">2</field>
+      </block>
+
+
+    </category>
+    <category name="Analysis" colour="#99fba5">
+      <block type="sine_fit_arrays">
+      </block>
+
+      <block type="sine_fit_two_arrays">
+      </block>
+
+      <block type="fourier_transform">
+      </block>
+    </category>
+
+    <category name="Sensors" colour="#995b65">
+      <block type="read_SR04">
+        <field name="CHANNEL">0</field>
+      </block>
+      <block type="read_BMP280">
+        <field name="CHANNEL">1</field>
+      </block>
+      <block type="read_MPU6050">
+        <field name="CHANNEL">0</field>
+      </block>
+      <block type="read_VL53L0X">
+        <field name="CHANNEL">0</field>
+      </block>
+      <block type="read_HMC5883L">
+        <field name="CHANNEL">0</field>
+      </block>
+      <block type="read_MAX30100">
+        <field name="CHANNEL">0</field>
+      </block>
+      <block type="read_ML8511">
+        <field name="CHANNEL">0</field>
+      </block>
+      <block type="read_VOLTS">
+        <field name="CHANNEL">0</field>
+      </block>
+      <block type="set_PCA9685">
+        <field name="CHANNEL">1</field>
+      </block>
+      <block type="set_servo">
+        <field name="CHANNEL">SQ1</field>
+      </block>
+
+
+    </category>
+
+    <category name="Sliders" colour="#99fba5">
+      <block type="set_frequency_slider">
+        <field name="CHANNEL">WG</field>
+      </block>
+      <block type="set_voltage_slider">
+        <field name="CHANNEL">PV1</field>
+      </block>
+
+
+    </category>
+
+
+  </category>
+
+  <category name="Phone" colour="#99fba5">
+    <block type="get_phone_accel">
+      <field name="CHANNEL">0</field>
+    </block>
+    <block type="get_phone_rotation">
+      <field name="CHANNEL">0</field>
+    </block>
+    <block type="get_phone_light">
+      <field name="CHANNEL">0</field>
+    </block>
+  </category>
+
+
+  <category name="Games" colour="#995b95">
+
+
+    <block type="sendMessage">
+      <field name="ID">0</field>
+    </block>  
+
+    <block type="hasMessage">
+      <field name="ID">0</field>
+    </block>  
+
+    <block type="receiveMessage">
+      <field name="ID">0</field>
+    </block>  
+
+
+    <block type="add_game">
+    </block>  
+    <block type="stop_game">
+    </block>  
+
+    <block type="set_bird_y">
+	<value name="Y">
+        <shadow type="math_number">
+          <field name="NUM">200</field>
+        </shadow>
+	</value>
+
+    </block>
+
+
+    <block type="add_piano">
+    </block>  
+
+    <block type="play_piano">
+	<value name="NOTE">
+        <shadow type="text">
+          <field name="TEXT">C</field>
+        </shadow>
+	</value>
+
+    </block>
+  </category>
+
+
+</xml>
 
   <div class="ui inverted vertical center aligned segment" style="background:url(/assets/images/kuttypy/cover.jpg) #f2bd91 fixed top center; " >
 
@@ -419,11 +554,8 @@ smooth-scroll: true
     </div>
   </div>
 
-
-
-
-
 <hr>
+
 
 
 <div class="ui basic modal results" style="top:0%;bottom:2%;">
@@ -432,7 +564,7 @@ smooth-scroll: true
     Output
   </div>
   <div class="ui divider"></div>
-  <div class="ui content" style="padding:0.2rem ! important;">
+  <div class="ui content mygrid" style="padding:0.2rem ! important;">
 	  <div class="ui two column stackable top aligned grid">
 		<div class="ui vertical divider"></div>
 		<div class="top aligned row">
@@ -442,10 +574,12 @@ smooth-scroll: true
 		  </div>
 
 		  <div class="column">
-			<div class="ui icon header" style="color:white;">
-			  Results
+			<div class="ui celled list registers" style="color:#fee;">
 			</div>
-			<div class="ui scrolling content description printarea" style="color:white;">
+			<div class="ui description cmdarea" style="color:lightgreen;">
+			</div>
+
+			<div class="ui scrolling content description printarea" style="color:white;scrollable:true;">
 			</div>
 		  </div>
 
@@ -469,35 +603,65 @@ smooth-scroll: true
 </div>
 
   <script type="text/javascript">
-	var workspacePlaygrounds = {}
-	var workspacePlayground=null;
-	var workspaceHelp = {};
-	var converter = new Markdown.Converter();
 
+	  $('.ui.dropdown').dropdown();
+	var converter = new Markdown.Converter();
 	var results = $('.description.printarea');
 	var resultModal = 	  $('.modal.results');
-    var resplotarea = $('.resplotarea');
-    var resultplots = $('.description.resplot');
+	var resplotarea = $('.resplotarea');
+	var resultplots = $('.description.resplot');
+	var mygrid = $('.content.mygrid');
+
+	var registers = 	  $('.list.registers');
+	var regvals = [];
+	var command = $('.description.cmdarea');
+
+
+
+	var workspacePlaygrounds = {};
+	var toolboxButtons = {};
+	var workspacePlayground=null;
+	var workspaceHelp = {};
 
 
 
 	var myInterpreter;
 
-    var runner;
-    var highlightPause = false;
-    var latestCode = '';
+	var runner;
+	var highlightPause = false;
+	var latestCode = '';
+
+
+    var autoScalingX = true;
+    var autoScalingY = true;
+
+
+
+	function showReg(reg, val){
+	    regclass = 'reg_'+reg.replaceAll(' ','_').replaceAll('-','_');
+		if(regvals.indexOf(regclass)!=-1){ // Register is already shown in the results segment. update it.
+			registers.find('.'+regclass).text(reg+"="+val);
+		}else{
+			registers.append(`<div class="item ${regclass}">${reg}=${val}</div>`)
+			regvals.push(regclass);
+		}
+	}
+
 
 
 	function on() {
-	  results.html("");
-	  resultModal.modal('show');
+		registers.empty();
+		regvals = [];
+		results.html("");
+		resultModal.modal('show');
 	}
 
 	function off() {
 	  resultModal.modal('hide');
   	  resetStepUi();
 	  resetInterpreter();
-	  MyJavascriptInterface.closeFiles();
+	  JSBridge.closeFiles();
+	  stopGame();
 	}        
 
 
@@ -522,18 +686,17 @@ smooth-scroll: true
       highlightPause = true;
     }
 
+
     var devState = false;
-    if(typeof MyJavascriptInterface != 'undefined')
-		devState = MyJavascriptInterface.get_device_status();
-	
-	if(devState){$('.missingdevice').transition('hide');}
+    if(typeof HWBridge != 'undefined')
+		devState = HWBridge.get_device_status();
+	if(!devState){$('.missingdevice').transition('fade in','1000mS').transition('glow');}
 	function deviceConnected(){
 		$('.missingdevice').transition('fade out','300mS');
 	}
 	function deviceDisconnected(){
-		$('.missingdevice').transition('fade in').transition('glow');
+		$('.missingdevice').transition('fade in','1000mS').transition('glow');
 	}
-
 
 
     function startStep(wspaceid) {
@@ -544,23 +707,46 @@ smooth-scroll: true
       latestCode = Blockly.JavaScript.workspaceToCode(workspacePlayground);
       resetStepUi();
       on();
+
       clearPlot();
-      resplotarea.show();
+      	 resplotarea.show();
+
+
       if(latestCode.indexOf('plot_xy(')>=0)
-		addPlot('xy'); // indicate XY
+		addPlot('xy', autoScalingX, autoScalingY); // indicate XY
       else if(latestCode.indexOf('plot_radar(')>=0)
-		addPolarPlot($('#resultplots'));
+		addPolarPlot();
       else if(latestCode.indexOf('plot(')>=0)
-		addPlot('');
+		addPlot('', autoScalingX, autoScalingY);
       else if(latestCode.indexOf('plot_xyarray(')>=0)
-		addPlot(''); 
+		addPlot('', autoScalingX, autoScalingY);
       else if(latestCode.indexOf('plot_xyyarray(')>=0)
-		addPlot('xyy'); 
+		addPlot('xyy', autoScalingX, autoScalingY);
+      else if(latestCode.indexOf('plot_xyyyarray(')>=0)
+		addPlot('xyyy', autoScalingX, autoScalingY);
 	  else
 	  	 resplotarea.hide();
+
+      if(latestCode.indexOf("set_scale(\'x")>=0){
+         autoScalingX = true;
+        }
+      if(latestCode.indexOf("set_scale(\'y")>=0){
+        autoScalingY = true;
+	  	 }
+
       runCode(wspaceid);
     }
 
+
+    function initAllApis(interpreter, scope){
+      initApi(interpreter, scope);
+      initLists(interpreter, scope);
+      initIO(interpreter, scope);
+      initPlots(interpreter, scope);
+      initWiFi(interpreter, scope);
+      initGames(interpreter, scope);
+      initSEELab(interpreter, scope);
+    }
 
     function runCode() {
       if (!myInterpreter) {
@@ -573,7 +759,7 @@ smooth-scroll: true
         setTimeout(function() {
           // Begin execution
           highlightPause = false;
-          myInterpreter = new Interpreter(latestCode, initApi);
+          myInterpreter = new Interpreter(latestCode, initAllApis);
           if(latestCode.search("alert") != -1) // -1 means not found
 			on();
           
