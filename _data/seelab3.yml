@@ -2,7 +2,7 @@ features:
  type: imtxt
  color: green
  title: An all-in-one Test and Measurement tool
- image: assets/images/seelab3/seelab3.gif
+ image: /assets/images/seelab3/seelab3.gif
  imagestyle: medium
  featurewidth: twelve wide
  imagewidth: four wide
@@ -24,7 +24,7 @@ interactiveschematics:
  type: imtxt
  color: green
  title: Android App - Interactive and Dynamic Circuit Schematics
- image: assets/images/seelab3/diodeclamping.gif
+ image: /assets/images/seelab3/diodeclamping.gif
  imagestyle: medium
  featurewidth: twelve wide
  imagewidth: four wide

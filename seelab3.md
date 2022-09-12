@@ -46,15 +46,9 @@ Watch the Video !
 
 {% include youtube.html id="SBjrNLBqGoE" cover="/assets/images/seelab3/blockdesktop.jpg" %}
 
-Some featured examples that let you create your own programs without writing lines of code. For advanced users, the generated code in either javascript
-or Python can be modified in a separate editor.
-
-{% include blocklygrid.html dir="images/seelab3/blocklythumbs"  %}
-
 
 {% include imagecard.html data=site.data.seelab3.interactiveschematics %}
 
-{% include imggrid.html publist=site.data.interactiveschematics  %}
 
 
 # Blog Posts for SEELab3
@@ -93,6 +87,18 @@ or Python can be modified in a separate editor.
 	{% endfor %}
 	</div>
 </div>
+
+## Visual Programming Examples
+
+Some featured examples that let you create your own programs without writing lines of code. For advanced users, the generated code in either javascript
+or Python can be modified in a separate editor.
+
+{% include blocklygrid.html dir="/images/seelab3/blocklythumbs"  %}
+
+
+## Interactive Schematic Examples
+
+{% include imggrid.html publist=site.data.interactiveschematics  %}
 
 
 ## Compatible with ExpEYES17 software
