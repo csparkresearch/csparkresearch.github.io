@@ -16,10 +16,14 @@ toctext: |
 
 {% include install.html product="ExpEYES17"  %}
 
-<a class="ui teal button" href = "https://drive.google.com/file/d/1VnhXa3PDxYm5_XhXcG1UnizgXSw8csk2/view?usp=sharing" style="width:300px"><i class="ui download icon"></i> Latest Installer for Testers(Deb)</a>
+<br>
+For Windows you Might also require [Windows Visual C++ Redistributable](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170)
+
+<a class="ui teal button" href = "/assets/installers/eyes17_5.0+pyqt5-3_all.deb" style="width:300px"><i class="ui download icon"></i> Latest Installer for Testers(Deb)</a>
 <a class="ui basic pink button" href = "/assets/installers/eyes17-4.9.0.zip" target="_blank"><i class="ui download icon"></i> Source code Zip </a>
 <br>
-<a class="ui basic primary button" style="width:300px" href = "https://drive.google.com/file/d/1zqFQzjDyJEFbQ0OfOQ2DNQUUXBl8iELh/view?usp=sharing" target="_blank"><i class="ui download icon"></i> Windows 11 Bundled Installer (5.1.0)</a> You Might also require [Windows Visual C++ Redistributable](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170)
+
+<a class="ui basic primary button" style="width:300px" href = "/installers/install-via-pip.html" target="_blank"><i class="ui download icon"></i> Pip Installer Instructions</a> 
 <br><a class="ui basic primary button" style="width:300px" href = "https://drive.google.com/open?id=1IYXZRH_apYidmqbTZzVDGYsJy2dK4imJ" target="_blank"><i class="ui download icon"></i> Previous Windows Installer</a>
 
 {% include imagecard.html data=site.data.seelab3.features %}
