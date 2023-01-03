@@ -31,6 +31,9 @@ collections:
  blocks:
   permalink: /blocks/:path.html
   output: true
+ courses:
+  permalink: /courses/:path.html
+  output: true
 
 
 # List of links in the navigation bar
