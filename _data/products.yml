@@ -50,7 +50,7 @@ SEELab3:
   description: "Your Lab @ Home ..."
   user-manual: "/assets/pdfs/expeyes17.pdf"
   windows: "/installers/install-via-pip.html"
-  ubuntu: "/assets/installers/eyes17_5.0+pyqt5-3_all.deb"
+  ubuntu: "/assets/installers/eyes17_5.0+pyqt5-4_all.deb"
   image: expeyes_thumb.jpg
 
 ExpEYES17:
@@ -59,7 +59,7 @@ ExpEYES17:
   description: "Your Lab @ Home ..."
   user-manual: "/assets/pdfs/expeyes17.pdf"
   windows: "https://drive.google.com/file/d/1zqFQzjDyJEFbQ0OfOQ2DNQUUXBl8iELh/view?usp=sharing"
-  ubuntu: "/assets/installers/eyes17_5.0+pyqt5-3_all.deb"
+  ubuntu: "/assets/installers/eyes17_5.0+pyqt5-4_all.deb"
   android: "https://play.google.com/store/apps/details?id=com.cspark.research.eyes17"
   image: expeyes_thumb.jpg
 
@@ -72,7 +72,7 @@ KuttyPy:
   image: kpy_thumb.gif
   user-manual: "https://kuttypy.readthedocs.io/en/latest/"
   android: "https://play.google.com/store/apps/details?id=com.cspark.kuttypy"
-  ubuntu: "/assets/installers/KuttyPy-1.0.12.deb"
+  ubuntu: "/assets/installers/KuttyPy-1.0.14.deb"
   windows: "https://drive.google.com/uc?export=download&id=18PD-Llx12PTfMRWlHA447TCMxTA6smWZ"
 
 KuttyPyPlus:
@@ -82,7 +82,7 @@ KuttyPyPlus:
   image: kpy_thumb.gif
   user-manual: "https://kuttypy.readthedocs.io/en/latest/"
   android: "https://play.google.com/store/apps/details?id=com.cspark.kuttypy"
-  ubuntu: "/assets/installers/KuttyPy-1.0.12.deb"
+  ubuntu: "/assets/installers/KuttyPy-1.0.14.deb"
   windows: "https://drive.google.com/uc?export=download&id=18PD-Llx12PTfMRWlHA447TCMxTA6smWZ"
 
 
