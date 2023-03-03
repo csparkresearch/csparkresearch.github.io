@@ -9,13 +9,14 @@ features:
  features:
   - A Powerful tool for learning science by exploring and experimenting.
   - Supported on PC/Linux/Android. Programmable in Python/Javascript/Blockly
-  - 4 channel Oscilloscope, 1Msps, +/-16V input range. Programmable voltage ranges
+  - 4 channel Oscilloscope[2x +/-16V programmable input, +/-3V input, 1 Microphone input] 
   - Sine/Triangular Wave Generator, 5Hz to 5kHz. Programmable voltage sources, +/5V and +/-3.3V
   - Supports Add-On I2C/SPI sensors for pressure, humidity, temperature, angular velocity, luminosity, magnetic fields, and more.
   - Frequency Counter and time measurements. RC Meter.
   - 12-bit analog resolution. Fully calibrated
   - 100+ documented experiments and easy to add more.
- subscript: SEELab 3.0 is the upgrade to ExpEYES17. It features a 40 pin connector, with an integrated breadboard slot for ease of use. External sensors can be connected via a single AUX cable. 
+  - Not to be confused with `SEELablet` which had a built in computer. This is a USB based test and measurement accessory for laptops and phones.
+ subscript: SEELab 3.0 is the upgrade to ExpEYES17. It works on the shared ExpEYES17 software and app. It features a 40 pin connector, with an integrated breadboard slot for ease of use. External sensors can be connected via a single AUX cable. 
 
 
 

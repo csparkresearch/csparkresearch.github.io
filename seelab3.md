@@ -15,8 +15,9 @@ toctext: |
 <br>
 
 {% include install.html product="ExpEYES17"  %}
-
+* The software for SEELab3 is shared with its predecessor ExpEYES17. features are automatically detected and shown based on the connected device type.
 <br>
+
 For Windows you Might also require [Windows Visual C++ Redistributable](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170)
 
 <a class="ui teal button" href = "/assets/installers/eyes17_5.0+pyqt5-3_all.deb" style="width:300px"><i class="ui download icon"></i> Latest Installer for Testers(Deb)</a>

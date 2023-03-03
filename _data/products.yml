@@ -49,7 +49,7 @@ SEELab3:
   link: "seelab3"
   description: "Your Lab @ Home ..."
   user-manual: "/assets/pdfs/expeyes17.pdf"
-  windows: "/installers/install-via-pip.html"
+  windows: "https://drive.google.com/file/d/1zqFQzjDyJEFbQ0OfOQ2DNQUUXBl8iELh/view?usp=sharing"
   ubuntu: "/assets/installers/eyes17_5.0+pyqt5-4_all.deb"
   image: expeyes_thumb.jpg
 
