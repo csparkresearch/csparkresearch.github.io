@@ -20,7 +20,6 @@ toctext: |
 
 For Windows you Might also require [Windows Visual C++ Redistributable](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170)
 
-<a class="ui teal button" href = "/assets/installers/eyes17_5.0+pyqt5-3_all.deb" style="width:300px"><i class="ui download icon"></i> Latest Installer for Testers(Deb)</a>
 <a class="ui basic pink button" href = "/assets/installers/eyes17-4.9.0.zip" target="_blank"><i class="ui download icon"></i> Source code Zip </a>
 <br>
 
