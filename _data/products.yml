@@ -50,7 +50,7 @@ SEELab3:
   description: "Your Lab @ Home ..."
   user-manual: "/assets/pdfs/expeyes17.pdf"
   windows: "https://drive.google.com/file/d/1zqFQzjDyJEFbQ0OfOQ2DNQUUXBl8iELh/view?usp=sharing"
-  ubuntu: "/assets/installers/eyes17_5.0+pyqt5-4_all.deb"
+  ubuntu: "/assets/installers/eyes17_5.0+pyqt5-5_all.deb"
   image: expeyes_thumb.jpg
 
 ExpEYES17:
@@ -59,7 +59,7 @@ ExpEYES17:
   description: "Your Lab @ Home ..."
   user-manual: "/assets/pdfs/expeyes17.pdf"
   windows: "https://drive.google.com/file/d/1zqFQzjDyJEFbQ0OfOQ2DNQUUXBl8iELh/view?usp=sharing"
-  ubuntu: "/assets/installers/eyes17_5.0+pyqt5-4_all.deb"
+  ubuntu: "/assets/installers/eyes17_5.0+pyqt5-5_all.deb"
   android: "https://play.google.com/store/apps/details?id=com.cspark.research.eyes17"
   image: expeyes_thumb.jpg
 
