@@ -132,6 +132,16 @@ cd kuttypy-gui
 python3 KuttyPyGUI.py
 ```
 
+### Add to the arduino IDE
+
++ Open preferences, and add the following line to `Addition Boards Manager URL`
+
+`https://scischool.in/kuttypy_arduino.json`
+
++ Go to Boards Manager, and Select Kuttypyplus from the KuttyPy menu.
++ Compile, upload . :)
+
+
 
 
 

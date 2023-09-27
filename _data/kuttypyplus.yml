@@ -10,6 +10,7 @@
    - 16 On Board LEDs, and 1 RGB LED.
    - 6 bit R2R DAC and 8 bit switch included
    - AUX port for I2C sensors
+   - Arduino IDE Compatible
    - Upload your own compiled C code and use as a serial monitor!
 
 - type: imtxt
