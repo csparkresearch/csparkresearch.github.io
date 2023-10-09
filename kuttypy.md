@@ -18,6 +18,8 @@ banner: /assets/images/kuttypy/cover.jpg
 {% endcomment %}
 <img src="/assets/images/kuttypy/main.gif" class="ui centered image">
 
+[Nano Version for SHD](/kuttypynano)
+
 {% include install.html product="KuttyPy"  %}
 [Previous Installer 6.2.0](https://drive.google.com/uc?export=download&id=1t2l3vnjaX5d9jSbqskG5IiGGyiyR8NrK)
 
