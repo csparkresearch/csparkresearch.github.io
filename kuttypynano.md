@@ -39,7 +39,7 @@ avrdude -B10 -c usbasp -patmega328p -U flash:w:kuttyboot_atmega328p.hex
 + Connect the board to an android phone via an OTG cable, and check that I/O pins , ADC etc can be read
 
 
-##Compiling regular code
+## Compiling regular code
 
 avr-gcc  -Wall -O2 -mmcu=atmega328p -Wl,-Map,blink328.map -o blink328 blink328.c
 avr-objcopy -j .text -j .data -O ihex blink328 blink328.hex
@@ -53,7 +53,7 @@ avrdude -b 57600 -P /dev/ttyUSB0 -pm328p -c arduino -U flash:w:blink328
 Select board Arduino-> Diecimilia
 Select processor -> 328p
 
-![](/assets/images/kuttypy/ide_select_board.jpg){:class="ui image fluid"}
+![](/assets/images/kuttypy/ide_select_board.png){:class="ui image fluid"}
 
 + Sample Upload output
 
