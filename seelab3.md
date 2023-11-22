@@ -21,6 +21,9 @@ toctext: |
 For Windows you Might also require [Windows Visual C++ Redistributable](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170)
 
 <a class="ui basic pink button" href = "/assets/installers/eyes17-4.9.0.zip" target="_blank"><i class="ui download icon"></i> Source code Zip </a>
+
+<br>
+<a class="ui basic green button" target="_blank" href = "https://eyes17lib.readthedocs.io/en/latest/" target="_blank"><i class="ui book icon"></i> Python Library Docs </a>
 <br>
 
 <a class="ui basic primary button" style="width:300px" href = "/installers/install-via-pip.html" target="_blank"><i class="ui download icon"></i> Pip Installer Instructions</a> 

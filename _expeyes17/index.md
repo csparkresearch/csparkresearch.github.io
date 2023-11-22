@@ -16,6 +16,9 @@ toctext: |
 
 <a class="ui basic pink button" href = "/assets/installers/eyes17-4.9.0.zip" target="_blank"><i class="ui download icon"></i> Source code Zip </a>
 <br>
+<a class="ui basic green button" target="_blank" href = "https://eyes17lib.readthedocs.io/en/latest/" target="_blank"><i class="ui book icon"></i> Python Library Docs </a>
+<br>
+
 <a class="ui basic primary button" style="width:300px" href = "https://drive.google.com/file/d/1zqFQzjDyJEFbQ0OfOQ2DNQUUXBl8iELh/view?usp=sharing" target="_blank"><i class="ui download icon"></i> Windows 11 Bundled Installer (5.1.0)</a> You Might also require [Windows Visual C++ Redistributable](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170)
 <br><a class="ui basic primary button" style="width:300px" href = "https://drive.google.com/open?id=1IYXZRH_apYidmqbTZzVDGYsJy2dK4imJ" target="_blank"><i class="ui download icon"></i> Previous Windows Installer</a>
 
