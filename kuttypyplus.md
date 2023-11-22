@@ -9,7 +9,7 @@ banner: /assets/images/kuttypy/cover.jpg
 ---
 
 
-{% include install.html product="KuttyPy"  %}
+{% include install.html product="KuttyPyPlus"  %}
 
 [Previous Installer 6.2.0](https://drive.google.com/uc?export=download&id=1t2l3vnjaX5d9jSbqskG5IiGGyiyR8NrK)
 

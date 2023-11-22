@@ -59,6 +59,7 @@ navbar-links:
     - Seelab-jr development history: "expeyes-dev"
     - Remote Labs : "remotelabs"
     - SEELablet(EOL): "seelablet/seelablet.html"
+    - Downloads: "downloads"
     - GitHub : "https://github.com/csparkresearch"
   Contact Us: "contact"
   About Us: "about"
