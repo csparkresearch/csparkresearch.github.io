@@ -87,7 +87,7 @@ markdown: kramdown
 highlighter: rouge
 
 kramdown:
- syntax_highlighter: rouge
+ highlighter: rouge
  input: GFM
 
 plugins:

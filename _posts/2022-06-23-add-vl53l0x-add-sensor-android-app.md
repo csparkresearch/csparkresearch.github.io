@@ -37,72 +37,6 @@ The SR04 uses sound pulses, and therefore requires a flat surface on the measure
 in traditional experiments such as pendulums with spherical bobs. The VL53L0X only needs an optically reflecting surface .
 
 
-# Adding a new sensor to the library
-
-## Sensor Constants
-
-Add the details of the sensor to the sensorConstants.java file. For the VL53L0X
-
-```java
-	}else if(dev.equals("VL53L0X")){
-		address = (byte) 0x29;
-		count = 1;
-		min = new double[] {0};
-		max = new double[] {1000};
-		channels = new String[] {"Dist (mm)"};
-	}else if(dev.equals("TSL2561")){
-		address = (byte) 0x39;
-		count = 2;
-```
-The address is the I2C address. Count is the number of parameters.
-the min and max arrays are for each parameter. since this has only one, these have one element each. 0 to 1000 mm
-the channels array is for describing each parameter. Only one.
-
-## Create the sensor class
-create a VL53L0X.java class in explib which implements sensorMethods.java
-sensorMethods has the following 3 functions
-```
-String getDescription();
-List getData();
-double getDataPoint(int channel);
-```
-
-override all of them
-
-getData is most important, and returns a list of values fetched from the sensor as per the sensorConstants order.
-
-## inform the main library explib/ejlib.java about this new sensor
-
-```java
-public static HashMap<String,String> supportedSensors = new HashMap<String, String>(){{
-	.
-	.
-	.
-	put("VL53L0X",VL53L0X.class.getCanonicalName());
-	
-	.
-	.
-	.
-	.
-}};
-
-public static HashMap<String,String> sensorNames = new HashMap<String, String>(){{
-	.
-	.
-	.
-	put("VL53L0X", "Lidar based distance measurement");
-	.
-	.
-	
-}};
-
-```
-
-And we're ready to go.
-Create a schematic in inkscape with the text 'VL53L0X:0' somewhere on it, and open this svg file with the app. 
-Results at the top of this blog
-
-
 
 ## This Sensor can be used to design several experiments to do with classical mechanics.
 
@@ -130,6 +64,74 @@ S(t)= a * t^2 + b * t + c
 'g' is given by 2*a
 
 
+# Adding a new sensor to the library
+
+## Sensor Constants
+
+Add the details of the sensor to the sensorConstants.java file. For the VL53L0X
+
+```java
+	}else if(dev.equals("VL53L0X")){
+		address = (byte) 0x29;
+		count = 1;
+		min = new double[] {0};
+		max = new double[] {1000};
+		channels = new String[] {"Dist (mm)"};
+	}else if(dev.equals("TSL2561")){
+		address = (byte) 0x39;
+		count = 2;
+```
+The address is the I2C address. Count is the number of parameters.
+the min and max arrays are for each parameter. since this has only one, these have one element each. 0 to 1000 mm
+the channels array is for describing each parameter. Only one.
+
+## Create the sensor class
+
+create a VL53L0X.java class in explib which implements sensorMethods.java
+sensorMethods has the following 3 functions
+
+```java
+	String getDescription();
+	List getData();
+	double getDataPoint(int channel);
+```
+
+override all of them
+
+getData is most important, and returns a list of values fetched from the sensor as per the sensorConstants order.
+
+## inform the main library explib/ejlib.java about this new sensor
+
+code
+
+{% raw %}
+```java
+
+	public static HashMap<String,String> supportedSensors = new HashMap<String, String>(){{
+		put("VL53L0X",VL53L0X.class.getCanonicalName());
+		
+		.
+		.
+		.
+		.
+	}};
+
+	public static HashMap<String,String> sensorNames = new HashMap<String, String>(){{
+		put("VL53L0X", "Lidar based distance measurement");
+		.
+		.
+		
+	}};
+
+```
+{% endraw %}
+
+And we're ready to go.
+Create a schematic in inkscape with the text 'VL53L0X:0' somewhere on it, and open this svg file with the app. 
+Results at the top of this blog
+
+
+
 
 ## See Also
- + [Android App for testers](https://play.google.com/store/apps/details?id=com.cspark.research.eyes17)
+ + [Android App ](https://play.google.com/store/apps/details?id=com.cspark.research.eyes17)

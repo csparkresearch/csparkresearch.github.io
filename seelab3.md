@@ -14,7 +14,7 @@ toctext: |
 
 <br>
 
-{% include install.html product="ExpEYES17"  %}
+{% include install.html product="SEELab3"  %}
 * The software for SEELab3 is shared with its predecessor ExpEYES17. features are automatically detected and shown based on the connected device type.
 <br>
 
@@ -37,7 +37,7 @@ For Windows you Might also require [Windows Visual C++ Redistributable](https://
 ## Android App
 ---
 
-Download the fully loaded SEELab 3 app from the Play Store to use your device as a portable test and measurement tool. It includes a host of features
+Download the fully loaded [SEELab 3 app](https://play.google.com/store/apps/details?id=com.cspark.research.eyes17) from the Play Store to use your device as a portable test and measurement tool. It includes a host of features
 ranging from the Oscilloscope and Data loggers , to a Graphical programming interface, and interactive schematics. 
 
 ![](/assets/images/seelab3/androidapp.jpg){:class="ui image fluid"}
@@ -47,8 +47,7 @@ ranging from the Oscilloscope and Data loggers , to a Graphical programming inte
 ## Graphical Programming utility
 ---
 
-The drag and drop programming utility is available both on Desktop as well as android. While on Android it generates the corresponding Javascript code which can be separately
-edited and executed, the desktop app is Python focused, and generates Python code which can be copied and executed in the IDE.
+The drag and drop visual programming utility is available both on Desktop as well as android. While on Android it generates the corresponding Javascript code which can be separately edited and executed, the desktop app is Python focused, and generates Python code which can be copied and executed in the IDE.
 
 
 Watch the Video !
