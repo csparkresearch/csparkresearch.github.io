@@ -73,7 +73,7 @@ KuttyPy:
   image: kpy_thumb.gif
   user-manual: "https://kuttypy.readthedocs.io/en/latest/"
   android: "https://play.google.com/store/apps/details?id=com.cspark.kuttypy"
-  ubuntu: "/assets/installers/KuttyPy-1.0.17.deb"
+  ubuntu: "/assets/installers/KuttyPy-1.0.19.deb"
   windows: "https://drive.google.com/uc?export=download&id=18PD-Llx12PTfMRWlHA447TCMxTA6smWZ"
 
 KuttyPyPlus:
@@ -83,7 +83,7 @@ KuttyPyPlus:
   image: kpy_thumb.gif
   user-manual: "https://kuttypy.readthedocs.io/en/latest/"
   android: "https://play.google.com/store/apps/details?id=com.cspark.kuttypy"
-  ubuntu: "/assets/installers/KuttyPy-1.0.17.deb"
+  ubuntu: "/assets/installers/KuttyPy-1.0.19.deb"
   windows: "https://drive.google.com/uc?export=download&id=18PD-Llx12PTfMRWlHA447TCMxTA6smWZ"
 
 
