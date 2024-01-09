@@ -1,0 +1,9 @@
+title,link,count,description
+Getting Started,https://expeyes.scischool.in/experiments/GetStart/index.html,10,"A collection of simple introductory topics such as measurement of voltage, resistance, capacitance etc"
+School Level,https://expeyes.scischool.in/experiments/school-level/index.html,17,"Fundamental concepts taught in High School. lemon cell, AC/DC , echo sensor, AC generator using coil etc.."
+Electrical,https://expeyes.scischool.in/experiments/electrical/index.html,16,"RL , RC , RLC steady state and transient responses. Bode plots, and filter characterisation"
+Electronics,https://expeyes.scischool.in/experiments/electronics/index.html,14,"Learn about simple circuits such as Rectifiers, Filters, Diode and transistor Characteristics ..."
+Mechanics,https://expeyes.scischool.in/experiments/mechanics/index.html,5,"Simple pendulum, monitoring a mass spring system using a LIDAR, time of flight ..."
+Acoustics,https://expeyes.scischool.in/experiments/sound/index.html,3,"Sound experiments : Measuring sound waves, speed of sound, fourier transforms, interference of sound(beats)"
+Thermal Physics,https://expeyes.scischool.in/experiments/thermal/index.html,2,Temperature measurement experiments such as Newton's Law of Cooling
+Add-On Modules,https://expeyes.scischool.in/experiments/sensors/index.html,1,"Explore a range of add-on modules and sensors which use the I2C communication interface. Such as BMP280 for pressure, HMC5883 for magnetic fields and so on"

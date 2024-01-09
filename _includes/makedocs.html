@@ -1,0 +1,32 @@
+<div class = "ui hidden divider"></div>
+{% if include.title %}
+<h2 class="ui horizontal dividing teal header " name="{{ include.title }}" id="{{ include.title }}">
+  <i class="copy outline icon"></i>
+	{{ include.title }}
+</h2>
+{% endif %}
+
+
+<div class="ui link cards four column doubling">
+{% for link in include.linklist %}
+  <div class="card" >
+    <a class="image" href="{{ link.link }}" target="_blank">
+      <img src="{{ site.baseurl }}/assets/images/eyes17/{{ link.title }}.jpg">
+    </a>
+    <div class="content">
+      <a class="header" href="{{ link.link }}" target="_blank">{{ link.title }}</a>
+      <div class="description">
+        {{ link.description }}
+      </div>
+    </div>
+    <div class="extra content">
+      <span class="">
+        docs
+      </span>
+      <span class="right floated">
+        {{ link.count }}+ Experiments
+      </span>
+    </div>
+  </div>
+{% endfor %}
+</div>

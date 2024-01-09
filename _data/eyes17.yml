@@ -1,4 +1,4 @@
-subtopics:
+maintopics:
  - type: feature
    color: green
    title: "Main Features"
@@ -24,15 +24,6 @@ subtopics:
     * Requires USB port and Python 
    rightlabel: |
     <a class="ui green right ribbon label">Your Lab @ Home!</a>
-
- - type: photo
-   title: "Software: Oscilloscope"
-   color: green
-   description: Open-source software for expeyes can be downloaded for free from expeyes.in . It supports over 70 different experiments, and the oscilloscope interface is shown in the animation above .
-   link: https://expeyes.in/software.html
-   url: /assets/images/eyes17/software.gif
-   imagestyle: fluid rounded raised
-
  - type: feature
    color: green
    title: "External Connections : Outputs"
@@ -78,6 +69,9 @@ subtopics:
 
    subscript: Your Lab @ Home!
 
+
+
+subtopics:
  - type: feature
    color: green
    title: Transistor Common-Emitter Characteristics
@@ -115,35 +109,6 @@ subtopics:
     ```
    rightimage: /assets/images/eyes17/python.jpg
    imagestyle: medium
-
- - type: feature
-   color: red
-   title: "Installation on Other Operating systems such as OSX (Mac)"
-   text: |
-    Since python is a cross-platform language, running the code is possible on several Operating systems as long as the dependencies are present.
-    For MAC, you will need to install homebrew
-    ```bash
-    /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-    ```
-    Using brew, install python3, and pip
-    ```bash
-    brew install python3
-    brew install pip
-    ```
-    Use Pip to install python dependencies
-    ```python
-     pip3 install pyqt5
-     pip3 install PyQtWebEngine
-     pip3 install scipy
-     pip3 install pyqtgraph
-     pip3 install pyserial    
-    ```
-    now, run main.py from the eyes17 source code zip. The output should resemble:
-    ```
-     Qt version: 5.13.0; Python version: 3.7.3 (v3.7.3:ef4ec6ed12, Mar 25 2019, 16:52:21) 
-     [Clang 6.0 (clang-600.0.57)]
-     Darwin-17.3.0-x86_64-i386-64bit
-    ```
 
 
 topics:
@@ -186,12 +151,11 @@ scope_example: |
  show()
 
 vendors:
- - name: Pi Supply (UK)
-   address: Worldwide distribution
-   email : sales@pi-supply.com
-   link: https://uk.pi-supply.com/products/expeyes-17-your-lab-home
-   address: Unit 4 Bells Yew Green Business Court, Bells Yew Green, East Sussex, TN3 9BJ, United Kingdom
-   logo: /assets/images/logos/pisupplylogo.jpg
+
+ - name: Novatronics
+   address: No. 11/1036, JDT SHOPPING COMPLEX, VELLIMADUKUNNU, MARIKUNNU POST, KOZHIKODE – 673012, KERALA
+   contact: +91-9447924725
+   email : novatronics1 at gmail.com
 
  - name: S.V. Techno Crafts
    link: http://www.svtechnocrafts.in/
@@ -199,22 +163,17 @@ vendors:
    contact:  09492422459
    email : sales@svtechnocrafts.in
    logo: /assets/images/logos/svtc.jpg
-
- - name: Novatronics
-   address: No. 11/1036, JDT SHOPPING COMPLEX, VELLIMADUKUNNU, MARIKUNNU POST, KOZHIKODE – 673012, KERALA
-   contact: +91-9447924725
-   email : novatronics1 at gmail.com
-
- - name: Fab.to.Lab (Online)
-   link: https://www.fabtolab.com/expeyes
-   address: Koramangala, Bangalore – 560095
-   contact: +91 8050032228/9
-   email: sales@fabtolab.com
-   logo: /assets/images/logos/f2l.png
     
  - name: Shankar Systems
    link: http://shankarsystems.github.io/
    address: Block C, Najafgarh, NEW DELHI
    contact: 09810841403
    email : shankarsystemsdelhi1997 at gmail.com
+
+ - name: Pi Supply (UK)
+   address: Worldwide distribution
+   email : sales@pi-supply.com
+   link: https://uk.pi-supply.com/products/expeyes-17-your-lab-home
+   address: Unit 4 Bells Yew Green Business Court, Bells Yew Green, East Sussex, TN3 9BJ, United Kingdom
+   logo: /assets/images/logos/pisupplylogo.jpg
  

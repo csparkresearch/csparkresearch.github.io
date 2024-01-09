@@ -2,6 +2,7 @@
 layout: semantic
 title: "SEELab - 3.0"
 tagline: "Successor to ExpEYES-17. Multi Purpose Test and Measurement tool"
+header: /assets/images/seelabheader.jpg
 show-navigation: false
 banner: /assets/images/kuttypy/cover.jpg
 share-img: assets/images/seelab3/seelab3.jpg
@@ -10,26 +11,31 @@ toctext: |
  <a class="ui small inverted fluid purple right labeled icon button" href="blog"><i class="right arrow icon"></i>Blog</a>
 ---
 
-![](/assets/images/seelab3/header.jpg){:class="ui image fluid"}
-
 <br>
-
 {% include install.html product="SEELab3"  %}
-* The software for SEELab3 is shared with its predecessor ExpEYES17. features are automatically detected and shown based on the connected device type.
 <br>
-
 For Windows you Might also require [Windows Visual C++ Redistributable](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170)
 
-<a class="ui basic pink button" href = "/assets/installers/eyes17-4.9.0.zip" target="_blank"><i class="ui download icon"></i> Source code Zip </a>
-
 <br>
-<a class="ui basic green button" target="_blank" href = "https://eyes17lib.readthedocs.io/en/latest/" target="_blank"><i class="ui book icon"></i> Python Library Docs </a>
-<br>
+<div class="ui fluid container">
+<a class="ui fluid blue animated fade button" href="/contact.html" target="_blank">
+	<div class="visible content" >
+	<i class="ui cart icon"></i>
+	Buy Now
+	</div>
+	<div class="hidden content">Reach out via e-mail</div>
+</a>
+</div>
 
-<a class="ui basic primary button" style="width:300px" href = "/installers/install-via-pip.html" target="_blank"><i class="ui download icon"></i> Pip Installer Instructions</a> 
-<br><a class="ui basic primary button" style="width:300px" href = "https://drive.google.com/open?id=1IYXZRH_apYidmqbTZzVDGYsJy2dK4imJ" target="_blank"><i class="ui download icon"></i> Previous Windows Installer</a>
 
 {% include imagecard.html data=site.data.seelab3.features %}
+
+{% include makedocs.html linklist=site.data.eyesdocs title="Section Wise Documentation"   color="green" %}
+
+
+<br>
+
+![](/assets/images/seelab3/header.jpg){:class="ui image fluid"}
 
 <br>
 
@@ -96,6 +102,7 @@ Watch the Video !
 	</div>
 </div>
 
+{% comment %}
 ## Visual Programming Examples
 
 Some featured examples that let you create your own programs without writing lines of code. For advanced users, the generated code in either javascript
@@ -108,6 +115,7 @@ or Python can be modified in a separate editor.
 
 {% include imggrid.html publist=site.data.interactiveschematics  %}
 
+{% endcomment %}
 
 ## Compatible with ExpEYES17 software
 ---
@@ -119,12 +127,7 @@ Some of the ExpEYES17 experiments are listed below, and can be carried out with 
 
 
 
-[Previous Installer 6.2.0](https://drive.google.com/open?id=1idoWIyFnbh_wSJkEndi7GfAQryxK5qYN)
-
-
-[Source Code Link: 4.9.0](/assets/installers/eyes17-4.9.0.zip)
-
-[Installing Via Pip](/installers/install-via-pip.html)
+<a class="ui basic primary button" style="width:300px" href = "/installers/install-via-pip.html" target="_blank"><i class="ui download icon"></i> Pip Installer Instructions</a> 
 
 
 * e-mail csparkresearch@gmail.com for enquiries. [Contact Us.](contact)

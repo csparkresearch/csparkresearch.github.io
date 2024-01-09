@@ -2,7 +2,6 @@ features:
  type: imtxt
  color: green
  title: An all-in-one Test and Measurement tool
- image: /assets/images/seelab3/seelab3.gif
  imagestyle: medium
  featurewidth: twelve wide
  imagewidth: four wide

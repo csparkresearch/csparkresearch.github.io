@@ -26,11 +26,16 @@ toctext: |
 
 [Installing Via Pip](/installers/install-via-pip.html)
 
+{% include imagecards.html data=site.data.eyes17.maintopics %}
+
+{% include maketable.html publist=site.data.publications_related filter="ExpEYES" title="Publications"   color="green" %}
+
 {% include imagecards.html data=site.data.eyes17.subtopics %}
 
 {% include resources.html title="User Manuals" device="expeyes17" list=site.data.manuals  color="green" %}
 
 {% include maketabs.html data=site.data.eyes17.topics title="More Information"%}
+
 
 {% include logos.html swipe=site.data.galleries.logos title="Clients" %}
 

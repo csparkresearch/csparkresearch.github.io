@@ -9,14 +9,22 @@
 		{% endif %}
 		  <div class="content">
 			<a class="header">Downloads for {{product.name}}</a>
+			{% if product.installdescription %}
 			<div class="description">
-				Tested on Ubuntu 18.04 and Windows 7/10
+				{{product.installdescription}}				
 			</div>
+			{% endif %}
 
 			<div class="extra">
 				{% if product.user-manual %}
 				<a class="ui right floated animated fade primary button" href="{{product.user-manual}}">
 					<div class="visible content" >User Manual <i class="right chevron icon"></i></div><div class="hidden content">Download</div>
+				</a>
+				{% endif %}
+
+				{% if product.apidocs %}
+				<a class="ui right floated animated fade primary button" target="_blank" href="{{product.apidocs}}">
+					<div class="visible content" >Library Docs<i class="right book icon"></i></div><div class="hidden content">Read The Docs</div>
 				</a>
 				{% endif %}
 
@@ -27,7 +35,13 @@
 
 				{% if product.android %}
 				  <div class="or"></div>
-				  <a class="ui color blue animated horizontal button" href="{{product.android}}"><div class="visible content" >Android</div><div class="hidden content">Play Store</div></a>
+				  <a class="ui color blue animated fade button" href="{{product.android}}"><div class="visible content" >Android</div><div class="hidden content">Play Store</div></a>
+				{% endif %}
+
+
+				{% if product.source %}
+				  <div class="or"></div>
+				  <a class="ui color orange animated vertical button" href="{{product.source}}"><div class="visible content" >Source</div><div class="hidden content">Get Zip</div></a>
 				{% endif %}
 
 				</div>

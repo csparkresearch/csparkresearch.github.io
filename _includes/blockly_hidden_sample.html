@@ -1,0 +1,66 @@
+
+
+<div id="toolbar" class="ui fluid container">
+	<a onclick="startStep({{ include.id }})" class="ui mini primary button "><i class="play icon"></i>Run!</a>
+	<a class="ui mini red outline button missingdevice "><i class="warning icon"></i>No Hardware!</a>
+	<a onclick="showHelp({{ include.id }})" class="ui mini green button right floated" ><i class="question circle icon"></i>HELP</a>
+</div>
+
+
+<hr>
+
+
+<div id="blocklyDiv{{ include.id }}" class="blocklyDiv">
+</div>
+
+
+
+<hr>
+
+
+  <script type="text/javascript">
+
+    workspacePlaygrounds[{{ include.id }}] = Blockly.inject('blocklyDiv{{ include.id }}', {
+          media: '/assets/blockly/media/',
+          toolbox: mytoolbox,
+          toolboxPosition : 'start',
+          horizontal: true,
+          trashcan: true,
+
+          zoom: {
+                 startScale: 0.8,
+                 wheel: true,
+                 controls: false
+                 },
+          move:{
+                scrollbars: {
+                  horizontal: true,
+                  vertical: true
+                  },
+                drag: true,
+                wheel: true
+                },
+          drag: true,
+          css : true
+        });
+
+
+
+	$(document).ready(function(){
+	   $.ajax({
+		type: "GET" ,
+		url: "{{ include.xml }}" ,
+		dataType: "xml" ,
+		success: function(xml) {
+			console.log(xml);
+			loadhelp({{ include.id }} , xml);
+			loadXML({{ include.id }} , (new XMLSerializer()).serializeToString(xml));
+		}       
+	});
+	});
+	
+
+  </script>
+
+
+
