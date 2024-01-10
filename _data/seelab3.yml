@@ -2,19 +2,23 @@ features:
  type: imtxt
  color: green
  title: An all-in-one Test and Measurement tool
- imagestyle: medium
- featurewidth: twelve wide
- imagewidth: four wide
+ link: "#Output%20Pins"
+ linktext: "Device Description"
+ imagestyle: fluid
+ image: /assets/images/seelab3/seelab_fw.jpg
+ featurewidth: eight wide
+ imagewidth: eight wide
  features:
   - A Powerful tool for learning science by exploring and experimenting.
-  - Supported on PC/Linux/Android. Programmable in Python/Javascript/Blockly
-  - 4 channel Oscilloscope[2x +/-16V programmable input, +/-3V input, 1 Microphone input] 
+  - 4 channel Oscilloscope[2x +/-16V programmable input, +/-3V input, Microphone. 2MSPS] 
   - Sine/Triangular Wave Generator, 5Hz to 5kHz. Programmable voltage sources, +/5V and +/-3.3V
-  - Supports Add-On I2C/SPI sensors for pressure, humidity, temperature, angular velocity, luminosity, magnetic fields, and more.
+  - Supports Add-On I2C/SPI sensors for pressure, humidity, temperature, angular velocity, luminosity, magnetism...
   - Frequency Counter and time measurements. RC Meter.
+  - Square Wave Generator 0.02Hz to 1MHz. 32Mhz Reference Out.
   - 12-bit analog resolution. Fully calibrated
   - 100+ documented experiments and easy to add more.
-  - Not to be confused with `SEELablet` which had a built in computer. This is a USB based test and measurement accessory for laptops and phones.
+  - Supported on PC/Linux/Android. Programmable in Python/Javascript/Blockly
+  - Not to be confused with `SEELablet` which had a built in computer.<br>This is a USB based test and measurement accessory for laptops and phones.
  subscript: SEELab 3.0 is the upgrade to ExpEYES17. It works on the shared ExpEYES17 software and app. It features a 40 pin connector, with an integrated breadboard slot for ease of use. External sensors can be connected via a single AUX cable. 
 
 
@@ -24,10 +28,10 @@ interactiveschematics:
  type: imtxt
  color: green
  title: Android App - Interactive and Dynamic Circuit Schematics
- image: /assets/images/seelab3/diodeclamping.gif
- imagestyle: medium
- featurewidth: twelve wide
- imagewidth: four wide
+ image: /assets/images/seelab3/seelab_filter.jpg
+ imagestyle: fluid
+ featurewidth: ten wide
+ imagewidth: six wide
  features:
   - Create circuit diagrams in Inkscape/PS and save as plain SVG
   - Open with the SEELab3 Android app, and watch dynamic content being generated
@@ -35,14 +39,14 @@ interactiveschematics:
   - Automatic parameter sweeps, and graphs are also enabled
   - I2C sensors can also be added . e.g `BMP280:1` will render as a pressure guage
   - Derived parameters can also be input as equations !
-  - On the right is a schematic diagram for a diode clamping circuit.
+  - On the right is a schematic diagram for a Bode Plot experiment for a band pass filter.
  subscript: This feature is under active development, and 30+ electronics schematics have already been added to the app.
 
 
-eyes17topics:
+seel3topics:
  - type: feature
    color: green
-   title: "External Connections : Outputs"
+   title: "Output Pins"
    leftimage: /assets/images/eyes17/exprender.jpg
    imagestyle: large
    subtitle: The functions of the output connector block (left side) are briefly explained below. All the black coloured terminals are at ground potential, and all other voltages are measured with respect to it.

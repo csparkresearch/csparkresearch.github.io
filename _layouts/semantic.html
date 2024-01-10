@@ -46,7 +46,7 @@ common-js:
 <!-- Page Contents -->
 <div class="pusher">
 	
-  <div class="ui inverted vertical masthead center aligned segment" {% if page.banner %}style="background:url({{page.banner}}) #f2bd91 fixed top center " {% endif %}>
+  <div class="ui inverted vertical {% if page.title %}masthead{% endif %} center aligned segment" {% if page.banner %}style="background:url({{page.banner}}) #f2bd91 fixed top center " {% endif %}>
 
 
 
@@ -54,6 +54,7 @@ common-js:
 		{% include headersemantic.html %}
     </div>
 
+    {% if page.title %}
     <div class="ui fluid container">
       <h1 class="ui inverted header">
         {{ page.title }}
@@ -61,6 +62,7 @@ common-js:
       <h2>{{ page.tagline }}</h2>
       <!--<div class="ui huge primary button">Get Started <i class="right arrow icon"></i></div> -->
     </div>
+    {% endif %}
   </div>
 
 	{% if page.header %}<img src ="{{ page.header }}" class="ui fluid image"/>{% endif %}

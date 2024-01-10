@@ -1,14 +1,12 @@
 ---
 layout: semantic
-title: "SEELab - 3.0"
 tagline: "Successor to ExpEYES-17. Multi Purpose Test and Measurement tool"
-header: /assets/images/seelabheader.jpg
+header: /assets/images/seelab3/seelab-cover.jpg
 show-navigation: false
-banner: /assets/images/kuttypy/cover.jpg
 share-img: assets/images/seelab3/seelab3.jpg
 show-toc: true
 toctext: |
- <a class="ui small inverted fluid purple right labeled icon button" href="blog"><i class="right arrow icon"></i>Blog</a>
+ <a class="ui small inverted fluid purple right labeled icon button" href="/expeyes17/blog"><i class="right arrow icon"></i>Blog</a>
 ---
 
 <br>
@@ -23,14 +21,14 @@ For Windows you Might also require [Windows Visual C++ Redistributable](https://
 	<i class="ui cart icon"></i>
 	Buy Now
 	</div>
-	<div class="hidden content">Reach out via e-mail</div>
+	<div class="hidden content">Contact Us</div>
 </a>
 </div>
 
 
 {% include imagecard.html data=site.data.seelab3.features %}
 
-{% include makedocs.html linklist=site.data.eyesdocs title="Section Wise Documentation"   color="green" %}
+{% include makedocs.html linklist=site.data.eyesdocs title="Section Wise Documentation"  playlist="PLZY1OXNn8xkkXhq3xa32-X_m7yRx8Kl5j" color="green" %}
 
 
 <br>
@@ -59,7 +57,6 @@ The drag and drop visual programming utility is available both on Desktop as wel
 Watch the Video !
 
 {% include youtube.html id="SBjrNLBqGoE" cover="/assets/images/seelab3/blockdesktop.jpg" %}
-
 
 {% include imagecard.html data=site.data.seelab3.interactiveschematics %}
 
@@ -123,7 +120,7 @@ or Python can be modified in a separate editor.
 The SEELab3 is fully compatible with the ExpEYES17 desktop software which recognises it based on the version number stored in the hardware.
 Some of the ExpEYES17 experiments are listed below, and can be carried out with the SEELab3 as well
 
-{% include imagecards.html data=site.data.seelab3.eyes17topics %}
+{% include imagecards.html data=site.data.seelab3.seel3topics %}
 
 
 

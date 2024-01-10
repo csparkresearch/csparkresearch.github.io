@@ -3,13 +3,19 @@
 <h2 class="ui horizontal dividing teal header " name="{{ include.title }}" id="{{ include.title }}">
   <i class="copy outline icon"></i>
 	{{ include.title }}
+
+{% if include.playlist %}
+<a  style="float:right;" href="https://www.youtube.com/playlist?list={{ include.playlist }}" target="_blank" class="ui basic blue button" >Youtube</a>
+{% endif %}
+
 </h2>
 {% endif %}
 
+<br>
 
 <div class="ui link cards four column doubling">
 {% for link in include.linklist %}
-  <div class="card" >
+  <div class="card"  style="padding:1em;">
     <a class="image" href="{{ link.link }}" target="_blank">
       <img src="{{ site.baseurl }}/assets/images/eyes17/{{ link.title }}.jpg">
     </a>
