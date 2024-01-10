@@ -13,9 +13,9 @@
 
 <br>
 
-<div class="ui link cards four column doubling">
+<div class="ui link cards four column doubling" >
 {% for link in include.linklist %}
-  <div class="card"  style="padding:1em;">
+  <div class="card"  style="padding:0.5em;">
     <a class="image" href="{{ link.link }}" target="_blank">
       <img src="{{ site.baseurl }}/assets/images/eyes17/{{ link.title }}.jpg">
     </a>
@@ -26,9 +26,6 @@
       </div>
     </div>
     <div class="extra content">
-      <span class="">
-        docs
-      </span>
       <span class="right floated">
         {{ link.count }}+ Experiments
       </span>

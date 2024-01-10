@@ -1,5 +1,5 @@
 {% assign product = site.data.products[include.product] %}
-<div class="ui container raised segment">
+<div class="ui raised yellow segment">
   <div class="ui relaxed divided items">
 	<div class="item">
 		{% if product.thumb %}
@@ -17,18 +17,18 @@
 
 			<div class="extra">
 				{% if product.user-manual %}
-				<a class="ui right floated animated fade primary button" href="{{product.user-manual}}">
+				<a class="ui right floated animated fade primary button small" href="{{product.user-manual}}">
 					<div class="visible content" >User Manual <i class="right chevron icon"></i></div><div class="hidden content">Download</div>
 				</a>
 				{% endif %}
 
 				{% if product.apidocs %}
-				<a class="ui right floated animated fade primary button" target="_blank" href="{{product.apidocs}}">
+				<a class="ui right floated animated fade primary button small" target="_blank" href="{{product.apidocs}}">
 					<div class="visible content" >Library Docs<i class="right book icon"></i></div><div class="hidden content">Read The Docs</div>
 				</a>
 				{% endif %}
 
-				<div class="ui buttons">
+				<div class="ui buttons small">
 				  <a class="ui positive animated fade button" href="{{product.ubuntu}}"><div class="visible content" >Ubuntu</div><div class="hidden content">Deb</div></a>
 				  <div class="or"></div>
 				  <a class="ui negative animated vertical button" href="{{product.windows}}"><div class="visible content" >Windows</div><div class="hidden content">Exe</div></a>
