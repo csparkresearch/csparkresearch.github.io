@@ -13,7 +13,6 @@
  *
  * =================================================================== */
 
-
 /* ===================================================================
  *  01. reset  
  *  normalize.css v5.0.0 | MIT License | 
@@ -70,6 +69,10 @@ pre {
 a {
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
+}
+
+p{
+    text-align: justify;
 }
 
 a:active,
@@ -868,6 +871,10 @@ textarea {
 
 .text-center {
   text-align: center;
+}
+
+.text-justify {
+  text-align: justify;
 }
 
 .text-left {

@@ -99,7 +99,7 @@ body[data-aos-delay='300'] [data-aos] {
 
 [data-aos][data-aos][data-aos-delay='300'].aos-animate,
 body[data-aos-delay='300'] [data-aos].aos-animate {
-  transition-delay: .3s;
+  transition-delay: .1s;
 }
 
 [data-aos][data-aos][data-aos-duration='350'],

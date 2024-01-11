@@ -70,6 +70,7 @@ body {
   background: #141515;
   font-family: "muli-regular", sans-serif;
   font-size: 1.6rem;
+  text-align: justify;
   line-height: 1.875;
   color: #767676;
   margin: 0;
@@ -2498,7 +2499,7 @@ html[data-useragent*='MSIE 10.0'] .home-scrolldown,
   color: #b2fabc;
   padding-top: 12rem;
   padding-bottom: 12rem;
-  text-align: center;
+  text-align: justify;
 }
 
 #download h1 {
