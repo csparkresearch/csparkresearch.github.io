@@ -109,7 +109,7 @@ seel3topics:
    color: green
    title: Python Library
    text: |
-    The SEELab hardware can be accessed via the expeyes Python library, which provides functions for operations like reading/setting voltages, measuring capacitance, time intervals etc. The example  code is to study an inverting amplifier. A 200 Hz sine wave is set on WG. The channels A1 and A2 are captured and plotted, using matplotlib. Data analysis will reveal the exact gain. 
+    The SEELab hardware can be accessed via the <a href="https://eyes17lib.readthedocs.io/en/latest/" target="_blank">ExpEYES Python library</a>, which provides functions for operations like reading/setting voltages, measuring capacitance, time intervals etc. <br><br>This sample  code is to study an inverting amplifier. A 200 Hz sine wave is set on WG. The channels A1 and A2 are captured and plotted, using matplotlib. Data analysis will reveal the exact gain. 
     ```python
     from expeyes import eyes17
     p = eyes17.open() 
