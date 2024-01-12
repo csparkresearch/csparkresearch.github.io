@@ -1456,9 +1456,10 @@ h1.intro-header::before {
 }
 
 .home-content-left {
-  padding: 15rem 0 12rem 40px;
+  padding: 15rem 20px 12rem 20px;
   position: relative;
   width: 50%;
+  background: linear-gradient( rgba(10, 37, 45, 0.9), rgba(0, 0, 0, 0.2) );
 }
 
 .home-content-left h3 {
@@ -1838,9 +1839,16 @@ html[data-useragent*='MSIE 10.0'] .home-scrolldown,
  * ------------------------------------------------------------------- */
 
 #about {
-  min-height: 786px;
+  min-height: 386px;
   background: #ffffff;
   padding-top: 18rem;
+  overflow: hidden;
+}
+
+#mobileapp {
+  min-height: 586px;
+  background: #ffffff;
+  padding-top: 5rem;
   overflow: hidden;
 }
 
@@ -1888,8 +1896,8 @@ html[data-useragent*='MSIE 10.0'] .home-scrolldown,
 
 
 .about-how {
-  padding-top: 7.2rem;
-  padding-bottom: 6rem;
+  padding-top: 4.2rem;
+  padding-bottom: 3rem;
 }
 
 .about-how h1.intro-header {
@@ -2096,8 +2104,8 @@ html[data-useragent*='MSIE 10.0'] .home-scrolldown,
 
 #pricing {
   background: #ebebeb;
-  padding-top: 15rem;
-  padding-bottom: 12rem;
+  padding-top: 5rem;
+  padding-bottom: 6rem;
 }
 
 #pricing h1 {
@@ -2734,6 +2742,12 @@ footer ul a:visited {
 .footer-subscribe #mc-form .placeholder {
   color: rgba(255, 255, 255, 0.2) !important;
 }
+
+
+
+
+
+
 
 .footer-bottom {
   margin-top: 6.6rem;
