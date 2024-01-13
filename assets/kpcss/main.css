@@ -1843,6 +1843,7 @@ html[data-useragent*='MSIE 10.0'] .home-scrolldown,
   background: #ffffff;
   padding-top: 18rem;
   overflow: hidden;
+  text-align: left;
 }
 
 #mobileapp {
@@ -1850,6 +1851,7 @@ html[data-useragent*='MSIE 10.0'] .home-scrolldown,
   background: #ffffff;
   padding-top: 5rem;
   overflow: hidden;
+  text-align:center;
 }
 
 .about-intro {
@@ -1893,11 +1895,18 @@ html[data-useragent*='MSIE 10.0'] .home-scrolldown,
   padding-top: 5rem;
   padding-bottom: 3rem;
 }
+#pricing2 .about-how h1.intro-header::before {
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
 
 
 .about-how {
   padding-top: 4.2rem;
   padding-bottom: 3rem;
+  text-align: center;
 }
 
 .about-how h1.intro-header {
@@ -1905,6 +1914,13 @@ html[data-useragent*='MSIE 10.0'] .home-scrolldown,
 }
 
 #about .about-how h1.intro-header::before {
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+#mobileapp .about-how h1.intro-header::before {
   left: 50%;
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
@@ -1955,6 +1971,8 @@ html[data-useragent*='MSIE 10.0'] .home-scrolldown,
   margin-bottom: 2.4rem;
 }
 
+
+
 .about-how-content .step::before {
   display: block;
   font-family: "muli-bold";
@@ -1972,6 +1990,19 @@ html[data-useragent*='MSIE 10.0'] .home-scrolldown,
   position: absolute;
   top: -12px;
   left: -27px;
+}
+
+.bgrid.logoimage.step::before {
+  background-image: var(--logo-url);
+  background-size: cover;
+  background-color: #fff;
+  border-radius: 20%;
+  background-repeat: no-repeat;
+  margin-top: var(--topspace);
+}
+
+.bgrid.logoimage.step.circle::before {
+  border-radius: 50%;
 }
 
 .about-bottom-image img {
@@ -2028,7 +2059,7 @@ html[data-useragent*='MSIE 10.0'] .home-scrolldown,
     margin-right: 0;
     padding-right: 18px;
     min-height: auto;
-    padding: 0 40px .9rem 60px;
+    padding: 0 40px 5rem 60px;
   }
 }
 
@@ -2503,16 +2534,17 @@ html[data-useragent*='MSIE 10.0'] .home-scrolldown,
  * ------------------------------------------------------------------- */
 
 #download {
-  background: #21102b;
+  background: #5394a8;
   color: #b2fabc;
   padding-top: 12rem;
   padding-bottom: 12rem;
-  text-align: justify;
+  text-align: center;
 }
 
 #download h1 {
   color: #ffffff;
 }
+
 
 #download h1::before {
   background-color: #2a9038;
@@ -2523,8 +2555,8 @@ html[data-useragent*='MSIE 10.0'] .home-scrolldown,
 }
 
 #download .lead {
-  color: #b2fabc;
-  margin-top: 4.8rem;
+  color: #200;
+  margin-top: 2.8rem;
 }
 
 #download .row {
