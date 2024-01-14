@@ -74,18 +74,18 @@ common-js:
       {% endif %}
 
       {% if page.share-img %}
-        {% assign pth = {{page.share-img}} %}
+        {% assign pth = page.share-img %}
       {% elsif page.cover %}
-        {% assign pth = {{page.cover}} %}
+        {% assign pth = page.cover %}
       {% elsif page.header %}
-        {% assign pth = {{page.header}} %}
+        {% assign pth = page.header %}
       {% elsif site.avatar %}
-        {% assign pth = {{site.avatar}} %}
+        {% assign pth = site.avatar %}
       {% endif %}
 
       {% assign firstletter = pth | slice: 0 %}
-      {% if firstletter == "/" %}{% assign imagepath = {{site.url | append: pth}} %}
-      {% else %}{% assign imagepath = {{site.url | append: "/" | append: pth}} %}{% endif %}
+      {% if firstletter == "/" %}{% assign imagepath = site.url | append: pth %}
+      {% else %}{% assign imagepath = site.url | append: "/" | append: pth %}{% endif %}
 
         <!-- Facebook OpenGraph tags -->
       {% if site.fb_app_id %}
@@ -190,7 +190,7 @@ common-js:
       {% elsif page.tagline %}
       <meta name="twitter:description" content="{{ page.tagline }}">
       {% else %}
-      <meta name="twitter:description" content="Instrumentation and Engineering">
+      <meta name="twitter:description" content="{{ page.description }}">
       {% endif %}
 
       <meta name="twitter:image" content="{{ imagepath }}" />
@@ -198,24 +198,24 @@ common-js:
 
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-67472997-3"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-E3KZZ9NLXW"></script>
     <script>
         var host = window.location.hostname;
         if(host == "localhost")
         {
             console.log('Developer Mode');
-            window['ga-disable-UA-67472997-3'] = true;
+            window['ga-disable-G-E3KZZ9NLXW'] = true;
         }
 
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
 
-      gtag('config', 'UA-67472997-3');
-
-
-
+      gtag('config', 'G-E3KZZ9NLXW');
     </script>
+
+
+
 
     {% if page.math %}
      <script type="text/x-mathjax-config">

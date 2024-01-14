@@ -102,7 +102,7 @@ The software has a built in IDE, A visual coding interface, and even AI tools fo
 </section>
 
 
-<section id="pricing2" data-parallax="scroll" data-image-src="assets/kpimages/bg2.png" data-natural-width=1334 data-natural-height=751>
+<section id="pricing2" data-parallax="scroll" data-image-src="assets/kpimages/bg2.jpg" data-natural-width=1334 data-natural-height=751>
 
     <div class="row about-features">
 
@@ -251,14 +251,16 @@ The software has a built in IDE, A visual coding interface, and even AI tools fo
 
             <p data-aos="fade-up">Access add-on sensors and controllers via I2C
             </p>
-            <div class="">
+            <div width="320" style="width:320px">
                 <img src="assets/kpimages/mcp4725dac.gif"
                     data-aos="fade-right">
             </div>
 
-            <div class="">
-                <img src="assets/kpimages/switch.gif"
-                    data-aos="fade-right">
+            <div data-aos="fade-left">
+                <video width="320" height="240" controls autoplay muted playsinline loop id="videoId">
+                  <source src="/assets/kpimages/joystick.webm" type="video/mp4" >
+                  Your browser does not support the video tag.
+                </video>
             </div>
 
         </div>
