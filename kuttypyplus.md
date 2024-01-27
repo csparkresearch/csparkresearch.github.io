@@ -91,7 +91,7 @@ show-avatar: true
         </div>
         <div class="col-eight">
             <p class="lead text-justify" data-aos="fade-up">
-                The kuttyPy (/kʊtipʌɪ/) Microcontroller training software allows live manipulation of the registers in microcontrollers via a connected computer through a Python library or Graphical interface.<br>
+                The kuttyPy (/kʊtipʌɪ/) Microcontroller training software allows live manipulation of the registers in the ATMEGA32 on the KuttyPy board via a connected computer through a Python library or Graphical interface.<br>
 
 The software has a built in IDE, A visual coding interface, and even AI tools for gesture recognition. It has live debugging and monitoring tools, and combined with the connected phone/laptop's visualization and analytical utilities, this approach has immense pedagogical potential for beginners to the microcontroller world.
             </p>
@@ -134,7 +134,7 @@ The software has a built in IDE, A visual coding interface, and even AI tools fo
                 <div class="service-content">
                     <h3>C Code IDE</h3>
 
-                    <p>The KuttyPy IDE on your laptop comes with over 50 example codes in C and Assembly to teach you the fundamentals. AVR-GCC is used to compile code, and the IDE uploads it. Also compatible with the Arduino IDE.
+                    <p>The KuttyPy IDE on your laptop comes with over 50 example codes in C and Assembly to teach you the fundamentals. AVR-GCC is used to compile code, and the IDE uploads it. Compatible with the Arduino IDE.
                     </p>
                     <div class="">
                         <img src="assets/kpimages/kuttypy.webp"
@@ -242,6 +242,86 @@ The software has a built in IDE, A visual coding interface, and even AI tools fo
 
 
 </section> 
+
+
+
+<section id="components" data-parallax="scroll" data-image-src="assets/kpimages/bg2.jpg" data-natural-width=1334 data-natural-height=751>
+
+    <div class="row about-features">
+        <h3 data-aos="fade-up"  style="text-align:center;color:white;">The Hardware</h3>
+
+        <div style="background: #fff4; border: aliceblue; border-radius: 50px;">
+            <img src="assets/kpimages/kpy_components.png" style="display:block;margin:auto;"
+                data-aos="fade-up">
+        </div>
+    </div>
+
+    <div class="row about-features">
+
+        <div class="features-list block-1-4 block-m-1-2 block-mob-full group">
+
+            <div class="bgrid feature" data-aos="fade-up">
+                <div class="service-content">
+                    <h3>USB Connectivity</h3>
+                    <p> Attach to your PC/Phone to control and monitor the hardware
+                    </p>
+                </div>
+            </div> 
+            <div class="bgrid feature" data-aos="fade-up">
+                <div class="service-content">
+                    <h3>LED Arrays</h3>
+                    <p> 8 SMD LEDs each on PORTD and PORTB for various demonstrations
+                    </p>
+                </div>
+            </div> 
+            <div class="bgrid feature" data-aos="fade-up">
+                <div class="service-content">
+                    <h3>Switch Array</h3>
+                    <p> DIP switch array on PORTA for read_input demo. 
+                    </p>
+                </div>
+            </div> 
+            <div class="bgrid feature" data-aos="fade-up">
+                <div class="service-content">
+                    <h3>6-bit R2R DAC</h3>
+                    <p> Resistor ladder built into pins PC2-PC7 for a 6 bit DAC.  
+                    </p>
+                </div>
+            </div> 
+            <div class="bgrid feature" data-aos="fade-up">
+                <div class="service-content">
+                    <h3>RGB LED</h3>
+                    <p>Common Anode RGB LED with inputs connected to PB3, PD5, and PD7 which have PWM modules attached.  
+                    </p>
+                </div>
+            </div> 
+            <div class="bgrid feature" data-aos="fade-up">
+                <div class="service-content">
+                    <h3>I2C Connector</h3>
+                    <p>I2C is available on PC0, PC1 for connecting sensors. Reduce messy wires with a dedicated 4 pole socket.  
+                    </p>
+                </div>
+            </div> 
+            <div class="bgrid feature" data-aos="fade-up">
+                <div class="service-content">
+                    <h3>Resettable Fuse</h3>
+                    <p>Protects against accidental short circuits. Resets automatically  
+                    </p>
+                </div>
+            </div> 
+            <div class="bgrid feature" data-aos="fade-up">
+                <div class="service-content">
+                    <h3>Display Port</h3>
+                    <p>Port for soldering a 16 character display. Also includes resistor pads for adjusting contrast and backlight.  
+                    </p>
+                </div>
+            </div> 
+
+        </div> <!-- end features-list -->
+
+    </div> <!-- end about-features -->
+
+</section>
 
 <section id="pricing">
     <div class="row pricing-content">
