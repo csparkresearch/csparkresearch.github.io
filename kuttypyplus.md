@@ -10,7 +10,7 @@ show-avatar: true
 
 ---
 
-
+{% assign product = site.data.products["KuttyPyPlus"] %}
 
 <section id="home" data-parallax="scroll" data-image-src="assets/kpimages/bg.jpg" data-natural-width=2600 data-natural-height=1463>
 
@@ -82,7 +82,7 @@ show-avatar: true
         <div class="col-four">
             <h1 class="intro-header" data-aos="fade-up">About The Device</h1>
             <div class="buttons" data-aos="fade-up">
-                    <a href="https://kuttypy.readthedocs.io/" target="_blank" class="button stroke pill full-width">
+                    <a href="{{product.apidocs}}" target="_blank" class="button stroke pill full-width">
                         <span class="icon-circle-down" aria-hidden="true"></span>
                         Python Docs
                     </a>
@@ -410,12 +410,12 @@ The software has a built in IDE, A visual coding interface, and even AI tools fo
 
 
             <p class="lead" data-aos="fade-down">
-                On windows, a standalone executable installer is available, but Pip is recommended. <a style="color:red" href="https://drive.google.com/uc?export=download&id=18PD-Llx12PTfMRWlHA447TCMxTA6smWZ">Download EXE</a>
+                On windows, a standalone executable installer is available, but Pip is recommended. <a style="color:red" href="{{product.windows}}">Download EXE</a>
             </p>
 
             <ul class="download-badges">
-                <li><a href="/assets/installers/KuttyPy-1.0.19.deb" title="" class="badge-ubuntustore"  data-aos="fade-right">Ubuntu Deb</a></li>
-                <li><a href="https://play.google.com/store/apps/details?id=com.cspark.kuttypy" target="_blank" title="" class="badge-googleplay" data-aos="fade-left">Play Store</a></li>
+                <li><a href="{{product.ubuntu}}" title="" class="badge-ubuntustore"  data-aos="fade-right">Ubuntu Deb</a></li>
+                <li><a href="{{product.android}}" target="_blank" title="" class="badge-googleplay" data-aos="fade-left">Play Store</a></li>
             </ul>
 
         </div>
@@ -430,7 +430,7 @@ The software has a built in IDE, A visual coding interface, and even AI tools fo
         <div class="col-twelve">
             <h1 class="intro-header" data-aos="fade-up">User Reviews.</h1>
         </div>   		
-    </div>   	
+    </div>
 
     <div class="row owl-wrap">
 
