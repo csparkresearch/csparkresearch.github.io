@@ -11,8 +11,24 @@ toctext: |
 
 <br>
 {% include install.html product="SEELab3"  %}
+
+<div class="ui pink fluid segment">
+<a class="ui basic pink button" href = "/installers/install-via-pip.html" target="_blank"><i class="ui info icon"></i> Installing Via Pip </a> : Click to view detailed instructions
+<p markdown="1">
+Pip install is the fastest way to obtain the latest files on windows. [You will need Python3.10](https://www.python.org/downloads/release/python-3100/)  pre installed
+</p>
+<p markdown="1">
+
+```py -3 -m pip install --upgrade pip```
 <br>
-For Windows you Might also require [Windows Visual C++ Redistributable](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170)
+```py -3 -m pip install eyes17```
+</p>
+<p markdown="1">
+On Windows you Might also require [Windows Visual C++ Redistributable](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170)
+
+</p>
+</div>
+
 
 <br>
 <div class="ui fluid container">
