@@ -36,6 +36,7 @@ function modalify(){
 
 
 }
+
 function init_menu(){
 	
 	      $('.ui.menu .ui.dropdown').dropdown({

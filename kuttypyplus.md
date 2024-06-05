@@ -159,6 +159,7 @@ The software has a built in IDE, A visual coding interface, and even AI tools fo
                         <img src="assets/kpimages/Sensor Addons.jpg"
                             data-aos="fade-left">
                     </div>
+
                     <p>Several examples ranging from plotting sine waves, to a gesture controlled robotic arm</p>
 
                 </div>
