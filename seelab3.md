@@ -17,12 +17,33 @@ toctext: |
 <p markdown="1">
 Pip install is the fastest way to obtain the latest files on windows. [You will need Python3.10](https://www.python.org/downloads/release/python-3100/)  pre installed
 </p>
+
+<h3>To install only the eyes17 library</h3>
+
 <p markdown="1">
 
 ```py -3 -m pip install --upgrade pip```
+
 <br>
-```py -3 -m pip install eyes17```
+
+```py -3 -m pip install eyes17lib```
+
 </p>
+<h3>To also install GUI Applications for ExpEYES17 and SEELab3</h3>
+
+<p markdown="1">
+
+```py -3 -m pip install --upgrade pip```
+
+<br>
+
+
+```py -3 -m pip install seelab_examples```
+
+</p>
+
+The above includes dependencies for eyes17lib, pyqt5, numpy, scipy, qtconsole etc. You can invoke it using the `seelab_examples` command on linux, or `py -3 -m seelab_examples` on windows. `python3 -m seelab_examples` might also work in Windows.
+
 <p markdown="1">
 On Windows you Might also require [Windows Visual C++ Redistributable](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170)
 

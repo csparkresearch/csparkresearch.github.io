@@ -39,6 +39,8 @@ py -3 -m pip install --upgrade pip
 py -3 -m pip install eyes17
 ```
 
+you can also try the new `seelab_examples` pip package which will also install eyes17lib for you. After `pip install seelab_examples`, you can execute it using the `seelab_examples` command on linux, or `py -3 -m seelab_examples` on windows. `python3 -m seelab_examples` might also work in Windows.
+
 If you see a missing path error as shown below
 
 ![](/assets/blog/screenshots/envvar.jpeg){:class="ui image fluid centered lightbox"}
