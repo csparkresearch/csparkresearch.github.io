@@ -53,7 +53,7 @@ SEELab3:
   installdescription: "The software for SEELab3 is shared with its predecessor ExpEYES17. The interface dynamically adapts to the connected device."
   user-manual: "/assets/pdfs/SEELab3.pdf"
   windows: "https://drive.google.com/file/d/1zqFQzjDyJEFbQ0OfOQ2DNQUUXBl8iELh/view?usp=sharing"
-  ubuntu: "/assets/installers/seelab-1.0.0.deb"
+  ubuntu: "/assets/installers/seelab-1.0.1.deb"
   android: "https://play.google.com/store/apps/details?id=com.cspark.research.eyes17"
   source: "/assets/installers/eyes17-4.9.0.zip"
   apidocs: "https://eyes17lib.readthedocs.io/en/latest/"
