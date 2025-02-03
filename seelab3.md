@@ -48,7 +48,9 @@ The above includes dependencies for eyes17lib, pyqt5, numpy, scipy, qtconsole et
 On Windows you Might also require [Windows Visual C++ Redistributable](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170)
 </p><br>
 
+<p markdown="1">
 If you don't wish to manually install Python and type 2 lines into a command prompt, here's a [one click installer EXPEYES17-SEELab3-online.exe](/assets/installers/EXPEYES17-SEELab3-online.exe) which will install Python-3.10 and the pip package for SEELab3 .
+</p>
 
 </div>
 
