@@ -329,6 +329,32 @@
 		});
 
 
+		function isMobile() {
+			return window.innerWidth <= 768; // You can adjust this breakpoint
+		}
+	
+		function setResponsiveImage() {
+			const images = document.getElementsByClassName('responsive-image');
+			Array.from(images).forEach(img => {
+				const srcToUse = isMobile() ? 
+					img.getAttribute('data-src-mobile') : 
+					img.getAttribute('data-src-desktop');
+				
+				if (img.src !== srcToUse) {
+					img.src = srcToUse;
+				}
+			});
+		}
+	
+		// Set initial image
+		setResponsiveImage();
+	
+		// Update on resize
+		let resizeTimer;
+		window.addEventListener('resize', function() {
+			clearTimeout(resizeTimer);
+			resizeTimer = setTimeout(setResponsiveImage, 250);
+		});
 
 
 	};

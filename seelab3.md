@@ -19,8 +19,12 @@ show-avatar: true
 
     <div class="home-content">        
 
-        <div class="row contents" style="padding-top:10rem;">                     
-            <img src="assets/images/seelab3/seelab_cover_transparent.webp">
+        <div class="ui contents" style="padding-top:10rem;">                     
+
+            <img src="assets/images/seelab3/seelab-cover.jpg" 
+                data-src-desktop="assets/images/seelab3/seelab_cover_transparent.webp"
+                data-src-mobile="assets/images/seelab3/seelab-cover.jpg"
+                class="responsive-image">
 
             <div class="buttons" >
                 <a href="#topdownloads" class="ui green outline button smoothscroll">
@@ -403,7 +407,7 @@ The device interfaces with your PC or Android phone through USB, providing oscil
                     <h3>Online Courses</h3>
 
                     <p>Check out MOOC courses on Moodle. Tailored for different audiences</p>
-                    <a class="ui button fade pink" href = "https://alpha.scischool.in/" target="_blank">Scischool.in</a>
+                    <a class="ui fluid button fade pink" href = "https://alpha.scischool.in/" target="_blank">Scischool.in</a>
                     <p>Course material developed by Dr. Ajith Kumar For Scischool.in</p>
                     <div class="photocard">
                         <img src="assets/images/seelab3/moodle.jpeg">
@@ -428,7 +432,26 @@ The device interfaces with your PC or Android phone through USB, providing oscil
 
                 </div>
 
+                <a class="ui fluid button inverted green" href = "{{product.apidocs}}" target="_blank">Reference Manual</a>
+
             </div> <!-- /bgrid -->
+
+
+
+            <div class="bgrid feature" data-aos="fade-up">
+
+                <div class="service-content">
+                    <h3>General Robotics</h3>
+                    <div class="photocard">
+                        <img data-src="assets/images/seelab3/robot.png"
+                        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="lazy"
+                            data-aos="fade-right">
+                    </div>
+                    <p>This 4-DOF affordable robotic arm can be controlled via your phone using the visual coding interface. SEELab3 controls the servos via a PCA9685 servo controller, and responds to hand gestures detected with AI.</p>
+
+                </div>
+            </div> 
+
 
         </div> <!-- end features-list -->
 
