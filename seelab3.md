@@ -311,15 +311,13 @@ The device interfaces with your PC or Android phone through USB, providing oscil
 
     <div class="row about-bottom-image">
 
-       <img data-src="assets/images/seelab3/header.jpg"
-       src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="lazy"
-            alt="App Screenshots" data-aos="fade-up">
+       <img src="assets/images/seelab3/header_strip.jpg" data-aos="fade-up">
 
     </div> 
 
     <div class="row about-how">
 
-        <h1 class="intro-header" data-aos="fade-up">What else can you do with it?</h1>
+        <h1 class="intro-header" data-aos="fade-up">So, what else can you do with it?</h1>
 
 
 
@@ -418,7 +416,7 @@ The device interfaces with your PC or Android phone through USB, providing oscil
 
             <div class="bgrid feature" data-aos="fade-up">
                 <div class="service-content">
-                    <h3>Python Programmable</h3>
+                    <h3>Programmable</h3>
 
                     <p>Open source python library lets you integrate it into complex setups</p>
 
@@ -432,7 +430,10 @@ The device interfaces with your PC or Android phone through USB, providing oscil
 
                 </div>
 
-                <a class="ui fluid button inverted green" href = "{{product.apidocs}}" target="_blank">Reference Manual</a>
+                <a class="ui fluid button inverted red" href = "{{product.apidocs}}" target="_blank"><i class="ui book icon"></i>Reference Manual</a>
+                <a class="ui fluid button inverted green" href = "https://pypi.org/project/eyes17lib/" target="_blank"><i class="ui python icon"></i>Pip package</a>
+                <a class="ui fluid button inverted blue" href = "https://github.com/expeyes/expeyes-programs/tree/master/eyes17/eyes17" target="_blank"><i class="ui github icon"></i>Source Code</a>
+                
 
             </div> <!-- /bgrid -->
 
