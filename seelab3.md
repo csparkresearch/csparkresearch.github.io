@@ -3,7 +3,7 @@ layout: bootstrap_seelab
 title: SEELab 3
 description: "Your Lab @ Home - Multi Purpose Test and Measurement tool"
 show-navigation: false
-share-img: /assets/images/seelab3/seelab3.jpg
+share-img: /assets/images/seelab3/seelab-cover.jpg
 banner: /assets/images/seelab3/seelab-cover.jpg
 favicon: favicon.png
 docs: https://eyes17lib.readthedocs.io/en/latest/
