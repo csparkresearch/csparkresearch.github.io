@@ -9,7 +9,7 @@ summary: |
   As can be seen from the cover image, this means that voltmeters in the schematic show values in real-time, the function generators can be dynamically adjusted , and derived parameters such as currents are also calculated
   and updated continuously.
 show-toc: true
-tags: [seelab3, interactive schematics , android]
+tags: [seelab, interactive schematics , android]
 pins: [5V, SQ2, IN2, GND, WG, PV1, PV2, IN1, SEN, IN2]
 category: [seel3, android]
 ---

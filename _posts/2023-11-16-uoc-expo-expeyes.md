@@ -8,7 +8,7 @@ summary: |
   Science demonstrations at the University of Calicut delved into the innovative use of Expeyes17. This post showcases a myriad of captivating experiments conducted at the school level, highlighting the diverse applications and educational potential of Expeyes17 in enhancing the learning experience. This expo was a journey through hands-on demonstrations that brought science to life in order to inspire the next generation of curious minds.
 
 show-toc: true
-tags: [expeyes17, seelab3, workshop, exhibition, pendulum, VL53L0X]
+tags: [expeyes17, seelab, workshop, exhibition, pendulum, VL53L0X]
 pins: [5V, SQ2, IN2, GND, WG, PV1, PV2, IN1, SEN, IN2]
 category: [expeyes17]
 ---

@@ -9,7 +9,7 @@ summary: |
   Using the VL53L0X as an example, this post will demonstrate how to add a sensor to the android library so that it is automatically detected by the interactive schematics.
 
 show-toc: true
-tags: [seelab3, interactive schematics , android, VL53L0X]
+tags: [seelab, interactive schematics , android, VL53L0X]
 pins: [5V, SQ2, IN2, GND, WG, PV1, PV2, IN1, SEN, IN2]
 category: [seel3, android]
 ---

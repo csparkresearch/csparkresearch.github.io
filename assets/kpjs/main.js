@@ -234,6 +234,105 @@
 	};	
 
   
+	var onready = function() {
+		// Create lightbox elements once and append to body
+		$('body').append(`
+			<div id="custom-lightbox" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background-color:rgba(0,0,0,0.9); z-index:9999;">
+				<div style="position:relative; width:90%; max-width:1200px; margin:40px auto;">
+					<span id="lightbox-close" style="position:absolute; right:-20px; top:-20px; color:white; font-size:24px; cursor:pointer;">&times;</span>
+					<img id="lightbox-image" src="" style="width:100%; height:auto; display:block; max-height:90vh; object-fit:contain;">
+				</div>
+			</div>
+		`);
+	
+		// Handle clicks on photocard elements
+		$('.photocard, img.photocard').click(function(e) {
+			e.preventDefault();
+			
+			// Get the image source
+			let imgSrc;
+			if ($(this).is('img')) {
+				// If the clicked element is an image with photocard class
+				imgSrc = $(this).attr('src');
+			} else {
+				// If the clicked element is a div with photocard class
+				imgSrc = $(this).find('img').attr('src');
+			}
+	
+			// Set the image source and show lightbox
+			$('#lightbox-image').attr('src', imgSrc);
+			$('#custom-lightbox').fadeIn(300);
+		});
+	
+		// Close lightbox when clicking the close button or outside the image
+		$('#lightbox-close, #custom-lightbox').click(function(e) {
+			if (e.target === this) {
+				$('#custom-lightbox').fadeOut(300);
+			}
+		});
+	
+		// Prevent closing when clicking on the image itself
+		$('#lightbox-image').click(function(e) {
+			e.stopPropagation();
+		});
+	
+		// Close lightbox with escape key
+		$(document).keyup(function(e) {
+			if (e.key === "Escape") {
+				$('#custom-lightbox').fadeOut(300);
+			}
+		});
+
+
+
+
+		// Create observer options for lazy loading images
+		const options = {
+			root: null, // use viewport
+			rootMargin: '50px', // start loading when image is 50px from viewport
+			threshold: 0.1 // trigger when at least 10% of the image is visible
+		};
+
+		// Create observer
+		const imageObserver = new IntersectionObserver((entries, observer) => {
+			entries.forEach(entry => {
+				if (entry.isIntersecting) {
+					const img = entry.target;
+					
+					// Handle srcset if it exists
+					if (img.dataset.srcset) {
+						img.srcset = img.dataset.srcset;
+						img.removeAttribute('data-srcset');
+					}
+					
+					// Handle regular src
+					if (img.dataset.src) {
+						img.src = img.dataset.src;
+						img.removeAttribute('data-src');
+					}
+					
+					// Add a loading animation class
+					img.classList.add('fade-in');
+					
+					// Stop observing this image
+					observer.unobserve(img);
+				}
+			});
+		}, options);
+
+		// Find all images to lazy load
+		const lazyImages = document.querySelectorAll('img[data-src], img[data-srcset]');
+
+		// Observe each image
+		lazyImages.forEach(img => {
+			imageObserver.observe(img);
+		});
+
+
+
+
+	};
+	
   /* Initialize
 	* ------------------------------------------------------ */
 	(function ssInit() {
@@ -249,7 +348,9 @@
 		ssAOS();		
 		ssAjaxChimp();
 		ssBackToTop();
+		onready();
 
+		
 	})();
  
 

@@ -8,7 +8,7 @@ summary: |
   The visual programming blocks include several blocks which use the capture routines. You can use them to create a custom oscilloscope interface
 
 show-toc: true
-tags: [seelab3, oscilloscope , Blockly, sine wave]
+tags: [seelab, oscilloscope , Blockly, sine wave]
 pins: [5V, SQ2, IN2, GND, WG, PV1, PV2, IN1, SEN, IN2]
 category: [seel3, android]
 ---

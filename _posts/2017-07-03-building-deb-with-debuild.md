@@ -7,7 +7,7 @@ author: jithin
 summary: hmmm.
 show-toc: true
 tags: 4148 3V3
-category: [seelab3]
+category: [seelab]
 ---
 
 ## dependencies

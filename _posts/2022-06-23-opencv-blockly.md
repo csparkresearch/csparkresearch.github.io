@@ -8,7 +8,7 @@ summary: |
   Create programs to analyze camera data and track objects such as simple pendulums to extract position.
 
 show-toc: true
-tags: [seelab3, opencv , Blockly, pendulum, computer vision]
+tags: [seelab, opencv , Blockly, pendulum, computer vision]
 pins: [5V, SQ2, IN2, GND, WG, PV1, PV2, IN1, SEN, IN2]
 category: [seel3, android]
 ---

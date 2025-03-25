@@ -9,7 +9,7 @@ summary: |
   and some electronics circuitry to measure the time interval between a burst of sound transmitted and the echo received.
 
 show-toc: true
-tags: [seelab3, interactive schematics , android]
+tags: [seelab, interactive schematics , android]
 pins: [5V, SQ2, IN2, GND, WG, PV1, PV2, IN1, SEN, IN2]
 category: [seel3, android]
 ---

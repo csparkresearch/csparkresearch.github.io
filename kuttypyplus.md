@@ -6,6 +6,7 @@ show-navigation: false
 share-img: /assets/kpimages/app-screens-600.jpg
 banner: /assets/images/kuttypy/cover.jpg
 favicon: favicon.png
+docs: https://kuttypy.readthedocs.io/en/latest/
 show-avatar: true
 
 ---

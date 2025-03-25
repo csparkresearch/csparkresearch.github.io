@@ -8,7 +8,7 @@ summary: |
   VL53L0X is an easily available optical ranging module with an effective range of around 1 meter. This is mounted on a servo motor, and a small code snippet measures the distance to the neasrest obstacles at different angles. This data is then plotted in a polar plot with Blockly.
 
 show-toc: true
-tags: [seelab3, interactive schematics , Blockly, VL53L0X, Servo]
+tags: [seelab, interactive schematics , Blockly, VL53L0X, Servo]
 pins: [5V, SQ2, IN2, GND, WG, PV1, PV2, IN1, SEN, IN2]
 category: [seel3, android]
 ---
