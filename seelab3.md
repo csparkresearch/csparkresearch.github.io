@@ -141,65 +141,98 @@ The device interfaces with your PC or Android phone through USB, providing oscil
 
 <section id="pricing2" data-parallax="scroll" data-image-src="assets/kpimages/bg2.jpg" data-natural-width=1334 data-natural-height=751>
 
+    <div class="row">
+
+        <div class="ui three stackable link cards">
+
+            <div class="red card">
+                <div class="image photocard">
+                <img src="assets/images/seelab3/seelab_fw.jpg">
+                </div>
+                <div class="content">
+                    <div class="header">Oscilloscope</div>
+                    <div class="meta">
+                        <a>A1,A2,A3,MIC | Max 2MSPS , +/-16V</a>
+                    </div>
+                    <div class="description">
+                        4-Channel Digital Oscilloscope with advanced triggering, real-time FFT analysis, and XY plotting capabilities. Sample rates up to 2 MSPS. +/-16V on A1, and A2, with amplification up to +/-250mV range. Fourth channel for microphones
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="green card">
+                <div class="image photocard">
+                    <img src="assets/images/seelab3/seelab_filter.jpg">
+                    </div>
+                    <div class="content">
+                    <div class="header">Waveform Generators</div>
+                    <div class="meta">
+                        <a>WG, SQ1, SQ2 , CS3</a>
+                    </div>
+                    <div class="description">
+                    Programmable Waveform Generator capable of producing Sine, Triangle, and Square waves. 
+                    Sine Frequency range from 1Hz to 5KHz with amplitude control up to +/-3V. Square waves up to 8MHz. Clock output up to 64MHz
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="blue card">
+                <div class="image photocard">
+                    <img src="assets/images/seelab3/npn-screenshot.png">
+                    </div>
+                    <div class="content">
+                    <div class="header">DACs and Voltmeters</div>
+                    <div class="meta">
+                        <a>PV1,PV2 | A1,A2,A3,SEN</a>
+                    </div>
+                    <div class="description">
+                    2x programmable bipolar voltage outputs with 12 bit resolution. +/-5V and +/-3V . Multiple voltmeters with programmable ranges from +/-260mV to +/-16V. Mainly used for I-V characterisation
+                    </div>
+                    <div class="extra content">
+                    Diode IV , Solar cell characterisation, NPN/PNP input/output/load lines, driven pendulums, and more..
+                    </div>
+
+                </div>
+            </div>
+
+<!--
+            <div class="pink card">
+                <div class="image photocard">
+                    <img src="assets/images/seelab3/visual.png">
+                    </div>
+                    <div class="content">
+                    <div class="header">Visual Coding</div>
+                    <div class="meta">
+                        <a>Similar to Scratch</a>
+                    </div>
+                    <div class="description">
+                    The drag and drop coding interface makes it easy to develop workflows to control real world events. 
+                    It includes blocks to perform data acquisition, analysis , and visualization in addition to standard coding operators
+                    </div>
+                    <div class="extra content">
+                    50+ code examples for experiments. from plotting sine waves, sine fitting, and LCR steady state response
+                    </div>
+
+                </div>
+            </div>
+-->
+
+        </div>
+
+
+
+
+    </div>
+
+
     <div class="row about-features" style="background: #0a1a28a3;border-radius: 2rem;">
 
         <div class="features-list block-1-3 block-m-1-2 block-mob-full group">
 
-            <div class="bgrid feature" data-aos="fade-up">
-
-                <div class="service-content">
-
-                    <h3>Oscilloscope</h3>
-                    <p>4-Channel Digital Oscilloscope with advanced triggering, real-time FFT analysis, and XY plotting capabilities. Sample rates up to 2 MSPS.
-                    +/-16V on A1, and A2, with amplification up to +/-250mV range. Fourth channel for microphones
-
-                    </p>
-                    <div class="photocard">
-                        <img src="assets/images/seelab3/seelab_fw.jpg"
-                            data-aos="fade-right">
-                    </div>
-                    <p>Combine with powerful Python modules like Numpy, Scipy, Matplotlib for data analysis and visualization</p>
-
-                </div>
-
-                </div> 
-
-            <div class="bgrid feature" data-aos="fade-up">
-                <div class="service-content">
-                    <h3>Waveform Generator</h3>
-
-                    <p>Programmable Waveform Generator capable of producing Sine, Triangle, and Square waves. 
-                    Sine Frequency range from 1Hz to 5KHz with amplitude control up to +/-3V. Square waves up to 8MHz. Clock output up to 64MHz
-                    </p>
-                    <div class="photocard">
-                        <img data-src="assets/images/seelab3/seelab_filter.jpg"
-                            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="lazy"                            
-                                data-aos="fade-up"                        
-                            >
-                    </div>
-
-
-                </div>
-
-            </div> 
-
-
-            <div class="bgrid feature" data-aos="fade-up">
-                <div class="service-content">
-                    <h3>DACs and voltmeters</h3>
-
-                    <p>2x programmable bipolar voltage outputs with 12 bit resolution. +/-5V and +/-3V . Multiple voltmeters with programmable ranges from +/-260mV to +/-16V. Mainly used for I-V characterisation</p>
-                    <div class="photocard">
-                        <img data-src="assets/images/seelab3/npn-screenshot.png"
-                            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="lazy"
-                            data-aos="fade-down">
-                    </div>
-
-                    <p>Diode IV , Solar cell characterisation, NPN/PNP input/output/load lines, driven pendulums, and more..</p>
-
-                </div>
-
-            </div> <!-- /bgrid -->
 
 
             <div class="bgrid feature" data-aos="fade-up">
@@ -253,56 +286,76 @@ The device interfaces with your PC or Android phone through USB, providing oscil
 
             </div> <!-- /bgrid -->
 
-            <div class="bgrid feature" data-aos="fade-up">
-                <div class="service-content">
-                    <h3>Android Compatible</h3>
-
-                    <p>Use your Android device as a portable lab with our <a href="#downloadbuttons">feature-rich app</a>. Includes visual programming interface and 100+ experiment templates.</p>
-                    <div class="photocard">
-                        <img src="assets/images/seelab3/fft_sound.jpg"
-                            data-aos="fade-right">
-                    </div>
-
-                    <p>Integrated with your phone's built-in sensors, GPS, and communication pathways for IoT experiments</p>
-
-                </div>
-
-            </div> <!-- /bgrid -->
-
-            <div class="bgrid feature" data-aos="fade-up">
-                <div class="service-content">
-                    <h3>I2C Sensor Hub</h3>
-
-                    <p>Connect and control <a class="smoothscroll" href="#components">multiple I2C sensors</a> simultaneously. Built-in support for temperature, pressure, motion, and many other sensor types</p>
-                    <div class="photocard">
-                        <img data-src="assets/images/seelab3/sensors.jpg"
-                        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="lazy"
-                            data-aos="fade-up">
-                    </div>
-
-                </div>
-
-            </div> <!-- /bgrid -->
-
-
-            <div class="bgrid feature" data-aos="fade-up">
-                <div class="service-content">
-                    <h3>Essential Accessories</h3>
-
-                    <p>A basic set of passive components and accessories are included in the kit to help you get started right away. These include resistors, capacitors, motor, buzzers, coil, LDR, and an SR04 sensor</p>
-                    <div class="photocard">
-                        <img src="assets/images/seelab3/accessories.jpg"
-                            data-aos="fade-up">
-                    </div>
-
-                </div>
-
-            </div> <!-- /bgrid -->
-
-
         </div> <!-- end features-list -->
 
     </div> <!-- end about-features -->
+
+    <br>
+    <div class="row">
+
+        <div class="ui three stackable link cards">
+
+            <div class="red card">
+                <div class="image photocard">
+                <img src="assets/images/seelab3/fft_sound.jpg">
+                </div>
+                <div class="content">
+                    <div class="header">Android Compatible</div>
+                    <div class="meta">
+                        <a>Fully Portable testbench !</a>
+                    </div>
+                    <div class="description">
+                        Use your Android device as a portable lab w4ith our <a href="#downloadbuttons">feature-rich app</a>. Includes visual programming interface and 100+ experiment templates.
+                    </div>
+                    <div class= "extra content">
+                    Integrated with your phone's built-in sensors, GPS, and communication pathways for IoT experiments
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="green card">
+                <div class="image photocard">
+                    <img src="assets/images/seelab3/sensors.jpg">
+                    </div>
+                    <div class="content">
+                    <div class="header">I2C Sensor Hub</div>
+                    <div class="meta">
+                        <a>12+ sensors</a>
+                    </div>
+                    <div class="description">
+                    Connect and control <a class="smoothscroll" href="#components">multiple I2C sensors</a> simultaneously. Built-in support for temperature, pressure, motion, and many other sensor types
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="blue card">
+                <div class="image photocard">
+                    <img src="assets/images/seelab3/accessories.jpg">
+                    </div>
+                    <div class="content">
+                    <div class="header">Essential Accessories</div>
+                    <div class="meta">
+                        <a>Included with the kit</a>
+                    </div>
+                    <div class="description">
+                    A basic set of passive components and accessories are included in the kit to help you get started right away. These include resistors, capacitors, motor, buzzers, coil, LDR, and an SR04 sensor
+                    </div>
+                    <div class="extra content">
+                    Sufficient for more than 50 experiments!
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+
+
 
 </section>
 
@@ -551,25 +604,26 @@ The device interfaces with your PC or Android phone through USB, providing oscil
 
     </div>
 
-    <div class ="ui row">
+    <h3>Blog posts</h3>
+    {% assign allposts = site.categories.seel3 %}
+    <div class = "ui four stackable cards">
 
-        {% assign allposts = site.categories.seel3 %}
-        <div class = "ui segment">
-            <div class="ui clearing hidden divider"></div>	
-            <div class="ui container">
-                <div class="ui relaxed divided items">
-                {% for post in allposts %}
-                <div class="item link">
-                <a class="ui medium image raised red segment" href="{{post.url}}">
-                    <img src="/assets/images/300x170.png" class="ui image lazy" data-src="{{ post.cover }}">
-                </a>
-                <div class="content">
-                    <h1 class="ui header small" id="{{post.title}}"><a href="{{post.url}}" class="ui dividing header teal"><i class="settings icon"></i>{{post.title}}</a></h1>
+            {% for post in allposts %}
+
+            <div class="blue card">
+                <div class="image">
+                    <img src="{{ post.cover }}">
+                    </div>
+                    <div class="content">
+                    <div class="header">{{post.title}}</div>
                     <div class="meta">
-                            {% for cat in post.category %}<a>{{cat}}/</a>{% endfor %}
+                        <a href="{{post.url}}">{{post.title}}</a>
                     </div>
                     <div class="description">
                     {{post.summary}}
+                    </div>
+                    <div class="extra content">
+                            {% for cat in post.category %}<a>{{cat}}/</a>{% endfor %}
                     </div>
                     <div class="extra">
                     <div>{{ post.date | date: '%B %d, %Y' }}</div>
@@ -582,14 +636,12 @@ The device interfaces with your PC or Android phone through USB, providing oscil
                         -->
                     </div>
                 </div>
-                </div>
-                <div class="ui clearing hidden divider"></div>	
-                {% endfor %}
-                </div>
             </div>
-        </div>
+
+            {% endfor %}
 
     </div>
+
 </section> 
 
 
