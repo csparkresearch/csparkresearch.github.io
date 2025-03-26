@@ -1,15 +1,6 @@
 ---
 css:
-  - "/semantic/dist/components/button.min.css"
-  - "/semantic/dist/components/divider.min.css"
-  - "/semantic/dist/components/icon.min.css"
-  - "/semantic/dist/components/reveal.min.css"
-  - "/semantic/dist/components/shape.min.css"
-  - "/semantic/dist/components/segment.min.css"
-  - "/semantic/dist/components/image.min.css"
-  - "/semantic/dist/components/card.min.css"
-  - "/semantic/dist/components/item.min.css"
-  - "/semantic/dist/components/table.min.css"
+  - "/semantic/dist/semantic.min.css"
   - "/assets/kpcss/base_seelab.css"
   - "/assets/kpcss/vendor.css"
   - "/assets/kpcss/main_seelab.css"
@@ -21,7 +12,6 @@ common-js:
   - "/assets/kpjs/jquery-2.1.3.min.js"
   - "/assets/kpjs/plugins.js"
   - "/assets/kpjs/main.js"
-
 ---
 
 <!DOCTYPE html>
@@ -256,14 +246,14 @@ common-js:
 
       <nav id="header-nav-wrap">
           <ul class="header-main-nav">
-              <li class="current"><a class="smoothscroll"  href="#home" title="home">Home</a></li>
-              <li><a class="smoothscroll"  href="#about" title="about">About</a></li>
-              <li><a class="smoothscroll"  href="#mobileapp" title="mobileapp">App</a></li>
-              <li><a class="smoothscroll"  href="#components" title="components">Sensors</a></li>
-              <li><a class="smoothscroll"  href="#topdownloads" title="download">Download</a></li>
+              <li class="current"><a class="smoothscroll"  href="#about" title="about">About</a></li>
+              <li><a class="smoothscroll"  href="#voltmeters" title="Scope/Voltmeters">Scope/Voltmeters</a></li>
+              <li><a class="smoothscroll"  href="#wavegens" title="waveform generators">Waveforms</a></li>
+              <li><a class="smoothscroll"  href="#voltagesources" title="voltage sources">Voltage</a></li>
+              <li><a class="smoothscroll"  href="#currentsources" title="current sources">Current</a></li>
+              <li><a class="smoothscroll"  href="#meters" title="meters">Meters</a></li>
+              <li><a class="smoothscroll"  href="#components" title="Sensors">Sensors</a></li>
           </ul>
-
-          <a href="{{ page.docs }}" target="_blank" title="API Documentation" class="button button-primary cta">Docs</a>
       </nav>
 
       <a class="header-menu-toggle" href="#"><span>Menu</span></a>
@@ -313,64 +303,12 @@ common-js:
 
             </div> <!-- end footer-contact -->
 
-    <!--
-            <div class="col-two md-1-3 tab-1-2 mob-full footer-site-links">
-
-                <h4>Site Links</h4>
-
-                <ul class="list-links">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">FAQ</a></li>
-                    <li><a href="#">Terms</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
-                </ul>
-
-
-            </div>
-            -->
-             <!-- end footer-site-links -->
 
             <div class="col-four md-1-2 tab-full footer-subscribe">
 
                 <h4>Our Newsletter</h4>
 
                 <p>You can subscribe to updates at the </p><a href="https://www.freelists.org/list/phoenix-project" target="_blank">Phoenix Mailing List</a>
-                <!--
-
-                <div class="subscribe-form">
-
-                    <form id="mc-form" class="group" novalidate="true">
-
-                        <input type="email" value="" name="EMAIL" class="email" id="mc-email" placeholder="Email Address" required="">
-
-                        <input type="submit" name="subscribe" value="Send">
-
-                        <label for="mc-email" class="subscribe-message"></label>
-
-                    </form>
-
-                </div>
-
-
-                <form action="https://www.freelists.org/cgi-bin/subscribe/start.cgi" class="group" id="mc-form2" method="post">
-                <input type="hidden" name="list" value="phoenix-project" />
-                <label for="action" class="col-sm-3 col-form-label" style="font-weight: normal">What would you like to do?</label>
-                <select id="action" name="action" class="form-control">
-                    <option value="subscribe">Subscribe</option>
-                    <option value="unsubscribe">Unsubscribe</option>
-                    <option value="set digest">Turn Digest mode on</option>
-                    <option value="unset digest">Turn Digest mode off</option>
-                    <option value="set vacation">Turn Vacation mode on</option>
-                    <option value="unset vacation">Turn Vacation mode off</option>
-                </select>
-                <input id="email" type="text" name="email" class="form-control" placeholder="Enter email" />
-                <div class="form-group row">
-                    <input type="submit" value="Next »" class="btn btn-primary mb-2 g-recaptcha" data-sitekey="6LeBcpYdAAAAACOSqXnicGdO1CUgX3ZiJAim0MVN" data-callback="onSubmitS" data-action="submit" /> <small id="emailHelp" class="form-text text-muted">We&#39;ll send you an email to verify your address.</small>
-                </div>
-                </form>
-                -->
 
 
             </div> <!-- end footer-subscribe -->

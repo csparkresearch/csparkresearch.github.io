@@ -21,9 +21,9 @@ show-avatar: true
 
         <div class="ui contents" style="padding-top:10rem;">                     
 
-            <img src="assets/images/seelab3/seelab-cover.jpg" 
+            <img src="assets/images/seelab3/seelab_cover_transparent.webp" 
                 data-src-desktop="assets/images/seelab3/seelab_cover_transparent.webp"
-                data-src-mobile="assets/images/seelab3/seelab-cover.jpg"
+                data-src-mobile="assets/images/seelab3/seelabnobg_mobile.webp"
                 class="responsive-image">
 
             <div class="buttons" >
@@ -85,6 +85,11 @@ show-avatar: true
                     <i class="ui file icon"></i>
                     PDF Brochure
                 </a>
+                <a style="margin-top:1em !important;" href="/seelab3-technical" target="_blank" class="fluid ui labeled inverted violet icon button mybutton">
+                    <i class="ui settings icon"></i>
+                    Technical specs
+                </a>
+
 
         </div>
         <div class="col-eight">
@@ -182,7 +187,7 @@ The device interfaces with your PC or Android phone through USB, providing oscil
 
             <div class="blue card">
                 <div class="image photocard">
-                    <img src="assets/images/seelab3/npn-screenshot.png">
+                    <img src="assets/images/seelab3/npn-screenshot.jpg">
                     </div>
                     <div class="content">
                     <div class="header">DACs and Voltmeters</div>
@@ -224,7 +229,7 @@ The device interfaces with your PC or Android phone through USB, providing oscil
         </div>
 
 
-
+    <br>
 
     </div>
 
@@ -611,12 +616,11 @@ The device interfaces with your PC or Android phone through USB, providing oscil
             {% for post in allposts %}
 
             <div class="blue card">
-                <div class="image">
-                    <img src="{{ post.cover }}">
-                    </div>
+                    <!--<div class="image">
+                        <img src="{{ post.cover }}">
+                    </div>-->
                     <div class="content">
-                    <div class="header">{{post.title}}</div>
-                    <div class="meta">
+                    <div class="header">
                         <a href="{{post.url}}">{{post.title}}</a>
                     </div>
                     <div class="description">

@@ -132,9 +132,15 @@
 		 	e.stopPropagation();	  
 
 			$('html, body').stop().animate({
-				'scrollTop': $target.offset().top
+				'scrollTop': $target.offset().top - 75
 			}, cfg.scrollDuration, 'swing', function () {
-				window.location.hash = target;
+				// Replace window.location.hash which causes jump
+				if (history.pushState) {
+					history.pushState(null, null, target);
+				} else {
+					// Fallback for older browsers
+					window.location.hash = target;
+				}
 			});
 
 	  	});
