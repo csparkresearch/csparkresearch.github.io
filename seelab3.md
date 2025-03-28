@@ -76,19 +76,28 @@ show-avatar: true
         <div class="col-four">
             <h1 class="intro-header" data-aos="fade-up">Your Lab @ Home...</h1>
 
-                <a href="{{product.onlinedocs}}" target="_blank" class="fluid ui labeled primary inverted icon button mybutton">
-                    <i class="chrome icon"></i>
-                    Docs @ Scischool.in
-                </a>
+                <div class="ui fluid container">
+                    <a href="{{product.onlinedocs}}" target="_blank" class="ui compact labeled primary inverted icon button mybutton">
+                        <i class="chrome icon"></i>
+                        Docs @ Scischool.in
+                    </a>
 
-                <a href="{{product.brochure}}" target="_blank" class="fluid ui labeled inverted primary icon button mybutton diagonal-rainbow ">
-                    <i class="ui file icon"></i>
-                    PDF Brochure
-                </a>
-                <a style="margin-top:1em !important;" href="/seelab3-technical" target="_blank" class="fluid ui labeled inverted violet icon button mybutton">
-                    <i class="ui settings icon"></i>
-                    Technical specs
-                </a>
+                    <a href="{{product.brochure}}" target="_blank" class="ui compact labeled inverted pink icon button mybutton diagonal-rainbow ">
+                        <i class="ui file icon"></i>
+                        PDF Brochure
+                    </a>
+                </div>
+                <div class="ui fluid container">
+                    <a style="margin-top:1em !important;" href="/seelab3-technical" target="_blank" class="ui compact  labeled inverted violet icon button mybutton">
+                        <i class="ui settings icon"></i>
+                        Technical specs
+                    </a>
+                    <!-- Purchase button that opens modal -->
+                    <a style="margin-top:1em !important;" class="ui compact labeled inverted violet icon button mybutton" onclick="$('#purchaseModal').modal('show');">
+                        <i class="ui cart icon"></i>
+                        Purchase
+                    </a>
+                </div>
 
 
         </div>
@@ -310,7 +319,7 @@ The device interfaces with your PC or Android phone through USB, providing oscil
                         <a>Fully Portable testbench !</a>
                     </div>
                     <div class="description">
-                        Use your Android device as a portable lab w4ith our <a href="#downloadbuttons">feature-rich app</a>. Includes visual programming interface and 100+ experiment templates.
+                        Use your Android device as a portable lab with our <a href="#downloadbuttons">feature-rich app</a>. Includes visual programming interface and 100+ experiment templates.
                     </div>
                     <div class= "extra content">
                     Integrated with your phone's built-in sensors, GPS, and communication pathways for IoT experiments
@@ -596,18 +605,6 @@ The device interfaces with your PC or Android phone through USB, providing oscil
 
 <section id="download">
 
-    <div class="row">
-
-        <div class="ui pink fluid segment">
-            <a class="ui basic pink button" href = "/installers/install-via-pip.html" target="_blank"><i class="ui info icon"></i> Installing Via Pip </a> : Click to view detailed instructions
-            <p markdown="1">
-            Pip install is the fastest way to obtain the latest files on windows. [You will need Python3.10](https://www.python.org/downloads/release/python-3100/)  pre installed
-            </p>
-
-
-        </div>
-
-    </div>
 
     <h3>Blog posts</h3>
     {% assign allposts = site.categories.seel3 %}
@@ -652,3 +649,131 @@ The device interfaces with your PC or Android phone through USB, providing oscil
 
 
 
+<!-- Modal definition -->
+<div class="ui fullscreen modal" id="purchaseModal">
+    <i class="close icon"></i>
+    <div class="header">
+        Contact Us for Purchase
+    </div>
+    <div class="content">
+        <div class="description">
+            <div class="ui two column stackable grid">
+                <!-- Contact Form Column -->
+                <div class="six wide column">
+                    <form id="my-form" class="ui form" method="post" action="https://formspree.io/f/meoalegr">
+                        <div class="required field">
+                            <label>Name</label>
+                            <input type="text" name="name" placeholder="Your Name">
+                        </div>
+                        <div class="required field">
+                            <label>Email</label>
+                            <input type="email" name="email" placeholder="Your Email">
+                        </div>
+                        <div class="required field">
+                            <label>Subject</label>
+                            <input type="text" name="subject" placeholder="Subject" value="SEELab3 Query">
+                        </div>
+                        <div class="required field">
+                            <label>Message</label>
+                            <textarea name="message" placeholder="Your Query">Need a quotation for SEELab3...</textarea>
+                        </div>
+                        <div class="ui error message"></div>
+                        <button id="my-form-button" class="ui primary button" type="submit"><i id="submit-loader" class=""></i>Send Message</button>
+                        <p id="my-form-status"></p>
+                    </form>
+                </div>
+                
+                <!-- Contact Info Column -->
+                <div class="eight wide column">
+                    
+                    <h4>Vendors</h4>
+
+
+                    <div class="ui two doubling cards">
+                    {% for v in site.data.seelab3.vendors %}
+                    <div class="card">
+                        <div class="content">
+                        {%if v.logo %} <img class="right floated mini ui image" src="{{ v.logo }}">
+                        {% endif %}
+                        <div class="header">
+                            {{ v.name }}
+                        </div>
+                        {%if v.email %}
+                        <a class="meta" >
+                            <i class="red mail icon"></i>{{ v.email }}
+                        </a>
+                        {% endif %}
+                        <div class="description">
+                            {{ v.address }}
+                        </div>
+                        </div>
+                        <div class="extra content">
+                        <div class="ui two buttons">
+                            <a class="ui basic small green button" href="{{v.link}}" target="_blank"><i class="cart icon"></i>Buy</a>
+                            {%if v.contact %}<a class="ui basic small blue button" href="tel:{{v.contact}}"><i class="phone icon"></i>Contact</a>{%endif%}
+                        </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                    </div>
+                    <br>
+                    <h4>Manufacturer</h4>
+                    <div class="ui relaxed list">
+                        <div class="item">
+                            <i class="envelope icon"></i>
+                            <div class="content">
+                                <a href="mailto:csparkresearch@gmail.com">csparkresearch@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <i class="phone icon"></i>
+                            <div class="content">
+                                <a href="tel:+918851100290">(+91) 8851 100 290</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+  var form = document.getElementById("my-form");
+  
+  async function handleSubmit(event) {
+    event.preventDefault();
+    var status = document.getElementById("my-form-status");
+    var loadicon = document.getElementById("submit-loader");
+    var data = new FormData(event.target);
+    loadicon.setAttribute('class','loading spinner icon');
+    fetch(event.target.action, {
+      method: form.method,
+      body: data,
+      headers: {
+          'Accept': 'application/json'
+      }
+    }).then(response => {
+      var loadicon = document.getElementById("submit-loader");
+      loadicon.removeAttribute('class','loading spinner icon');
+
+      if (response.ok) {
+        status.innerHTML = "Cool. We'll get back shortly!";
+        form.reset()
+      } else {
+        response.json().then(data => {
+          if (Object.hasOwn(data, 'errors')) {
+            status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
+          } else {
+            status.innerHTML = "Oops! There was a problem submitting your form"
+          }
+        })
+      }
+    }).catch(error => {
+      status.innerHTML = "There was a problem submitting your form"
+    });
+  }
+  form.addEventListener("submit", handleSubmit)
+</script>

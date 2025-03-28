@@ -1,15 +1,10 @@
-/* ===================================================================
- * Dazzle - Main JS
- *
- * ------------------------------------------------------------------- */ 
 
 (function($) {
 
 	"use strict";
 
 	var cfg = {		
-		scrollDuration : 800, // smoothscroll duration
-		mailChimpURL   : 'https://facebook.us8.list-manage.com/subscribe/post?u=cdb7b577e41181934ed6a6a44&amp;id=e6957d85dc' // mailchimp url
+		scrollDuration : 500, // smoothscroll duration
 	},	
 
 	$WIN = $(window);	
@@ -76,27 +71,13 @@
 
 
 
-  /* Owl Carousel
-	* ------------------------------------------------------ */
-	var ssOwlCarousel = function() {
-
-		$(".owl-carousel").owlCarousel({	
-	      loop: true,
-  			nav: false,
-			autoHeight: true,
-  			items: 1
-		});
-
-	};  	
-
 
   /* Highlight the current section in the navigation bar
 	* ------------------------------------------------------ */
 	var ssWaypoints = function() {
 
 		var sections = $("section"),
-		navigation_links = $(".header-main-nav li a");	
-
+		navigation_links = $(".header-main-nav li a");
 		sections.waypoint( {
 
 	       handler: function(direction) {
@@ -184,38 +165,6 @@
 
 	};
 
-
-  /* AjaxChimp
-	* ------------------------------------------------------ */
-	var ssAjaxChimp = function() {
-
-		$('#mc-form').ajaxChimp({
-			language: 'es',
-		   url: cfg.mailChimpURL
-		});
-
-		// Mailchimp translation
-		//
-		//  Defaults:
-		//	 'submit': 'Submitting...',
-		//  0: 'We have sent you a confirmation email',
-		//  1: 'Please enter a value',
-		//  2: 'An email address must contain a single @',
-		//  3: 'The domain portion of the email address is invalid (the portion after the @: )',
-		//  4: 'The username portion of the email address is invalid (the portion before the @: )',
-		//  5: 'This email address looks fake or invalid. Please enter a real email address'
-
-		$.ajaxChimp.translations.es = {
-		  'submit': 'Submitting...',
-		  0: '<i class="fa fa-check"></i> We have sent you a confirmation email',
-		  1: '<i class="fa fa-warning"></i> You must enter a valid e-mail address.',
-		  2: '<i class="fa fa-warning"></i> E-mail address is not valid.',
-		  3: '<i class="fa fa-warning"></i> E-mail address is not valid.',
-		  4: '<i class="fa fa-warning"></i> E-mail address is not valid.',
-		  5: '<i class="fa fa-warning"></i> E-mail address is not valid.'
-		} 
-
-	};
 
 
  
@@ -362,6 +311,41 @@
 			resizeTimer = setTimeout(setResponsiveImage, 250);
 		});
 
+		$('.ui.form').form({
+			fields: {
+				name: {
+					identifier: 'name',
+					rules: [{
+						type: 'empty',
+						prompt: 'Please enter your name'
+					}]
+				},
+				email: {
+					identifier: 'email',
+					rules: [{
+						type: 'email',
+						prompt: 'Please enter a valid email address'
+					}]
+				},
+				subject: {
+					identifier: 'subject',
+					rules: [{
+						type: 'empty',
+						prompt: 'Please enter a subject'
+					}]
+				},
+				message: {
+					identifier: 'message',
+					rules: [{
+						type: 'minLength[10]',
+						prompt: 'Please enter at least 10 characters in your message'
+					}]
+				}
+			},
+			inline: true,
+			on: 'blur'
+		});
+
 
 	};
 	
@@ -372,13 +356,11 @@
 		ssPreloader();
 		ssMobileMenu();
 		ssFitVids();
-		ssOwlCarousel();
 		ssWaypoints();
 		ssSmoothScroll();
 		ssPlaceholder();
 		ssAlertBoxes();
 		ssAOS();		
-		ssAjaxChimp();
 		ssBackToTop();
 		onready();
 

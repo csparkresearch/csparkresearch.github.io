@@ -126,3 +126,29 @@ seel3topics:
     ```
    rightimage: /assets/images/eyes17/python.jpg
    imagestyle: medium
+
+vendors:
+
+ - name: Novatronics
+   address: No. 11/1036, JDT SHOPPING COMPLEX, VELLIMADUKUNNU, MARIKUNNU POST, KOZHIKODE – 673012, KERALA
+   contact: +91-9447924725
+   email : novatronics1 at gmail.com
+
+ - name: Trinity Microsystems
+   link: https://trinitymicrosystem.com
+   address: Triveni Complex, Laxmi Nagar, New Delhi 110092
+   contact:  98101 90925
+   email : info@trinitymicrosystem.com
+   logo: /assets/images/logos/trinity.jpg
+
+ - name: Tronic Choice
+   address: Thrissur, Kerala
+   contact: 7012127939  
+   email : shajuky@gmail.com
+    
+ - name: S.V. Techno Crafts
+   link: http://www.svtechnocrafts.in/
+   address: 86, J.D. Nagar, Patamata, VIJAYAWADA - 520010
+   contact:  09492422459
+   email : sales@svtechnocrafts.in
+   logo: /assets/images/logos/svtc.jpg

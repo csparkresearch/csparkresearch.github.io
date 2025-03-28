@@ -157,6 +157,18 @@ vendors:
    contact: +91-9447924725
    email : novatronics1 at gmail.com
 
+ - name: Trinity Microsystems
+   link: https://trinitymicrosystem.com
+   address: Triveni Complex, Laxmi Nagar, New Delhi 110092
+   contact:  98101 90925
+   email : info@trinitymicrosystem.com
+   logo: /assets/images/logos/trinity.jpg
+
+ - name: Tronic Choice
+   address: Thrissur, Kerala
+   contact: 7012127939  
+   email : shajuky@gmail.com
+    
  - name: S.V. Techno Crafts
    link: http://www.svtechnocrafts.in/
    address: 86, J.D. Nagar, Patamata, VIJAYAWADA - 520010
@@ -164,12 +176,6 @@ vendors:
    email : sales@svtechnocrafts.in
    logo: /assets/images/logos/svtc.jpg
     
- - name: Shankar Systems
-   link: http://shankarsystems.github.io/
-   address: Block C, Najafgarh, NEW DELHI
-   contact: 09810841403
-   email : shankarsystemsdelhi1997 at gmail.com
-
  - name: Pi Supply (UK)
    address: Worldwide distribution
    email : sales@pi-supply.com
