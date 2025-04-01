@@ -29,43 +29,41 @@ show-avatar: true
             <div class="buttons" >
                 <a href="#topdownloads" class="ui green outline button smoothscroll">
                 <i class="left download icon"></i>
-                Download App
+                Download
                 </a>
 
-                <a href="https://youtube.com/playlist?list=PLZY1OXNn8xkkXhq3xa32-X_m7yRx8Kl5j&feature=shared" 
-                class="ui primary button outline" target="_blank">
-                    <i class="left video icon"></i>
-                    Video Playlist
-                </a>
+                <div class="ui huge relaxed horizontal list" style="padding-left:1rem;">
+                    <div class="item">
+                        <div class="content">
+                            <a style="color:magenta" href="https://instagram.com/csparkresearch" target="_blank"><i class="fa fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="content">
+                        <a style="color:red" href="https://www.youtube.com/playlist?list=PLZY1OXNn8xkkXhq3xa32-X_m7yRx8Kl5j" target="_blank"><i class="fa fa-youtube-play"></i></a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="content">
+                        <a style="color:white" href="https://twitter.com/csparkresearch?lang=en" target="_blank"><i class="fa fa-twitter"></i></a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="content">
+                        <a style="color:blue" href="https://twitter.com/csparkresearch?lang=en" target="_blank"><i class="fa fa-facebook-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+
             </div>                                         
+
         </div>
 
 
     </div>  
 
-    <ul class="home-social-list">
-    <li>
-        <a href="https://instagram.com/csparkresearch" target="_blank"><i class="fa fa-instagram"></i></a>
-    </li>
-    <li>
-        <a href="https://www.youtube.com/playlist?list=PLZY1OXNn8xkkXhq3xa32-X_m7yRx8Kl5j" target="_blank"><i class="fa fa-youtube-play"></i></a>
-    </li>
-    <li>
-        <a href="https://twitter.com/csparkresearch?lang=en" target="_blank"><i class="fa fa-twitter"></i></a>
-    </li>
-    <li>
-        <a href="https://twitter.com/csparkresearch?lang=en" target="_blank"><i class="fa fa-facebook-square"></i></a>
-    </li>
 
-    </ul>
-
-
-    <div class="home-scrolldown">
-        <a href="#about" class="scroll-icon smoothscroll">
-            <span>Scroll Down</span>
-            <i class="icon-arrow-right" aria-hidden="true"></i>
-        </a>
-    </div>
 
 
 </section> 
@@ -472,7 +470,7 @@ The device interfaces with your PC or Android phone through USB, providing oscil
         <div class="features-list block-1-4 block-m-1-2 block-mob-full group">            
             <div class="bgrid feature" data-aos="fade-up">
                 <div class="service-content">
-                    <h3>Android Phone Lab</h3>
+                    <h3><a href="{{product.android}}" target="_blank">Android Phone Lab</a></h3>
 
                     <p>Record data from your phone's sensors! Accelerometer, gyro, magnetometer, luminosity... Plot/Analyse raw data. measure sub-millisecond time gaps between noises with the interactive acoustic stopwatch</p>
                     <div class="photocard">
@@ -553,10 +551,10 @@ The device interfaces with your PC or Android phone through USB, providing oscil
 <section id="components" data-parallax="scroll" data-image-src="assets/kpimages/bg2.jpg" data-natural-width=1334 data-natural-height=751>
 
 <div class="row">
+    <h1 data-aos="fade-up" style="text-align:center;color:white;"><a href="https://eyes17lib.readthedocs.io/en/latest/programming/sensors/" target="_blank">Sensors (I2C / SPI)</a></h1>
     <div class="features-list block-1-3 block-m-1-3 block-mob-full group">
 
         <div class="bgrid feature" data-aos="fade-right">
-            <h1 data-aos="fade-up" style="text-align:center;color:white;">Sensors (I2C/SPI)</h1>
             <div width="320" class="photocard" style="width:320px">
                 <img data-src="assets/images/seelab3/i2c_main.png"
                 src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="lazy"
