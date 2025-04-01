@@ -54,7 +54,7 @@ SEELab3:
   user-manual: "/assets/pdfs/SEELab3.pdf"
   windows: "https://drive.google.com/file/d/1zqFQzjDyJEFbQ0OfOQ2DNQUUXBl8iELh/view?usp=sharing"
   windowsnew: "https://drive.google.com/file/d/1jzq_hJSiSkt7lkeSeu4Urxg_Ek4A3dRo/view?usp=sharing"
-  ubuntu: "/assets/installers/seelab-1.0.1.deb"
+  ubuntu: "/assets/installers/seelab-1.0.2.deb"
   android: "https://play.google.com/store/apps/details?id=com.cspark.research.eyes17"
   source: "/assets/installers/eyes17-4.9.0.zip"
   onlinedocs: "https://scischool.in/expeyes/index.html"

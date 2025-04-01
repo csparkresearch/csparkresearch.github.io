@@ -346,6 +346,15 @@
 			on: 'blur'
 		});
 
+		/*--- Random Card Effect ---*/
+		/*--- Random Card Effect ---*/
+		var colors = ["red", "blue", "green", "yellow", "orange", "purple", "teal", "pink"];
+		$(".randomcard").each(function () {
+			var randomColor = colors[Math.floor(Math.random() * colors.length)];
+			$(this).addClass(randomColor);
+			$(this).find(".header").attr("class", "ui " + randomColor + " " + $(this).find(".header").attr("class"));
+		});
+
 
 	};
 	

@@ -93,7 +93,7 @@ show-avatar: true
                         Technical specs
                     </a>
                     <!-- Purchase button that opens modal -->
-                    <a style="margin-top:1em !important;" class="ui compact labeled inverted violet icon button mybutton" onclick="$('#purchaseModal').modal('show');">
+                    <a style="margin-top:1em !important;" class="ui compact labeled yellow icon button mybutton" onclick="$('#purchaseModal').modal('show');">
                         <i class="ui cart icon"></i>
                         Purchase
                     </a>
@@ -159,7 +159,7 @@ The device interfaces with your PC or Android phone through USB, providing oscil
 
         <div class="ui three stackable link cards">
 
-            <div class="red card">
+            <div class="card randomcard">
                 <div class="image photocard">
                 <img src="assets/images/seelab3/seelab_fw.jpg">
                 </div>
@@ -176,7 +176,7 @@ The device interfaces with your PC or Android phone through USB, providing oscil
             </div>
 
 
-            <div class="green card">
+            <div class="card randomcard">
                 <div class="image photocard">
                     <img src="assets/images/seelab3/seelab_filter.jpg">
                     </div>
@@ -194,7 +194,7 @@ The device interfaces with your PC or Android phone through USB, providing oscil
             </div>
 
 
-            <div class="blue card">
+            <div class="card randomcard">
                 <div class="image photocard">
                     <img src="assets/images/seelab3/npn-screenshot.jpg">
                     </div>
@@ -309,7 +309,7 @@ The device interfaces with your PC or Android phone through USB, providing oscil
 
         <div class="ui three stackable link cards">
 
-            <div class="red card">
+            <div class="card randomcard">
                 <div class="image photocard">
                 <img src="assets/images/seelab3/fft_sound.jpg">
                 </div>
@@ -328,7 +328,7 @@ The device interfaces with your PC or Android phone through USB, providing oscil
             </div>
 
 
-            <div class="green card">
+            <div class="card randomcard">
                 <div class="image photocard">
                     <img src="assets/images/seelab3/sensors.jpg">
                     </div>
@@ -345,7 +345,7 @@ The device interfaces with your PC or Android phone through USB, providing oscil
             </div>
 
 
-            <div class="blue card">
+            <div class="card randomcard">
                 <div class="image photocard">
                     <img src="assets/images/seelab3/accessories.jpg">
                     </div>
@@ -367,6 +367,23 @@ The device interfaces with your PC or Android phone through USB, providing oscil
         </div>
 
 
+    </div>
+    <div class="ui divider"></div>
+    <div class="row">
+        <div class="ui eight doubling cards" >
+        {% for link in site.data.eyesdocs %}
+        <a class="card randomcard" href="{{ link.link }}" target="_blank">
+            <div class="content">
+                <div class="header">
+                    {{ link.title }}
+                </div>
+                <div class="meta">
+                    <span class="category">{{ link.description }}</span>
+                </div>
+            </div>
+        </a>
+        {% endfor %}
+        </div>
     </div>
 
 
