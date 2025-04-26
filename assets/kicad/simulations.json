@@ -1,0 +1,15 @@
+{
+"files": {
+        "Active Low Pass Filter": {
+        	"schematic":"lowpass_schematic.png",
+        	"result":"lowpass_result.png",
+        	"zip":"lowpass_simulation.zip"
+        },
+        "1st order Active Band Pass Filter": {
+        	"description":"1st order band pass filter with an opamp",
+        	"schematic":"1st order bandpass schematic.png",
+        	"result":"1st order bandpass result.png",
+        	"zip":"1st order Band pass.zip"
+        }
+      }
+}
