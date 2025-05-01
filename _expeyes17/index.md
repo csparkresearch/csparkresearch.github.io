@@ -12,7 +12,7 @@ toctext: |
 ---
 
 {% include install.html product="ExpEYES17"  %}
-
+<a class="ui basic green button" href = "{{ site.data.products.ExpEYES17.ubuntu-eyes }}" target="_blank"><i class="ui info icon"></i>Old eyes17 deb install file </a>
 
 <br>
 <div class="ui pink fluid segment">
