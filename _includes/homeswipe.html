@@ -1,7 +1,7 @@
   <!-- Swiper -->
   <div class="outer-container">
 	  <div class="swiper-container gallery-top">
-		<div class="parallax-bg" style="background-image:url({{site.data.home.bg}})" data-swiper-parallax="-23%"></div>
+		<div class="parallax-bg" style="" data-swiper-parallax="-23%"></div>
 		<div class="swiper-wrapper">
 			{% for im in site.data.home.slides %}
 		  <div class="swiper-slide" style="background-image:url({{im}})"></div>
@@ -17,7 +17,7 @@
 	  <div class="swiper-container gallery-thumbs">
 		<div class="swiper-wrapper">
 			{% for im in site.data.home.slidethumbs %}
-		  <div class="swiper-slide" style="width:120px;background-image:url({{im}})"></div>
+		  <div class="swiper-slide" style="width:120px;background-image:url( {{ im }} )"></div>
 		   {% endfor %}
 		</div>
 	  </div>

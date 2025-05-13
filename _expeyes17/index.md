@@ -49,7 +49,7 @@ On Windows you Might also require [Windows Visual C++ Redistributable](https://l
 {% include maketabs.html data=site.data.eyes17.topics title="More Information"%}
 
 
-{% include logos.html swipe=site.data.galleries.logos title="Clients" %}
+{% include logo_gallery.html %}
 
 {% include vendors.html data=site.data.eyes17.vendors title="Vendors" %}
 

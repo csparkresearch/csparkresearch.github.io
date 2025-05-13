@@ -119,6 +119,7 @@ common-js:
 					<div class="ui inverted divider"></div>
 
 					<div class="ui container">
+						<a class="ui fluid pink inverted button" href="/seelab3"><i class="chart bar icon"></i>SEELab 3.0</a>
 						<a class="ui fluid green inverted button" href="/alphaspec"><i class="chart bar icon"></i>Alpha Spectrometer</a>
 						<a class="ui fluid red inverted button" href="/gammaspec"><i class="chart bar outline icon"></i>Gamma Spec</a>
 						<a class="ui fluid blue inverted button" href="/mca1k"><i class="chart bar icon"></i>MCA 1K / 4K</a>
@@ -147,10 +148,12 @@ common-js:
 				</div>
 			</div>
 		</div>
-	</div>
+    <div class="ui row">
+      {% include logo_gallery.html %}
+      </div>
+    
+  </div>
 
-
-  {% include logos.html swipe=site.data.galleries.logos title="Wide Presence" %}
 
   <div class="ui vertical container stripe segment">
 		{{ content }}

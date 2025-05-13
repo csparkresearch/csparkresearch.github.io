@@ -4,7 +4,9 @@
   <!-- Demo styles -->
   <style>
 
-    .my-swiper-container {
+
+
+.my-swiper-container {
       background: #fff;
       font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
       font-size: 14px;
@@ -17,12 +19,15 @@
       margin-left: auto;
       margin-right: auto;
     }
+
+
+
     .my-swiper-slide {
       height: 100px;
       width:80px;
       padding: 0px;
-	  background-repeat-x: no-repeat;
-	  background-repeat-y: no-repeat;
+      background-repeat: no-repeat;
+      background-repeat: no-repeat;
       /* Center slide text vertically */
       display: -webkit-box;
       display: -ms-flexbox;
@@ -43,6 +48,7 @@
 	  -webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
 	  filter: grayscale(100%);
     }
+
 
   </style>
 
@@ -69,15 +75,14 @@
     var swiper = new Swiper('.my-swiper-container', {
       grabCursor: true,
       centeredSlides: true,
-      slidesPerView: 5,
-      slidesPerColumn: 3,
-      spaceBetween: 30,
+      slidesPerView: 7,
+      slidesPerColumn: 4,
+      spaceBetween: 10,
 	  keyboard: {
         enabled: true,
       },
       pagination: {
         el: '.swiper-pagination',
-        clickable: true,
       },
     });
   </script>

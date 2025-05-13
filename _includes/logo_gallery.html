@@ -1,0 +1,75 @@
+{% assign image_files = site.static_files | where_exp: "file", "file.path contains '/assets/images/logos/' " %}
+
+<div class="logo-gallery">
+  {% if image_files.size > 0 %}
+    {% assign total_images = image_files.size %}
+    {% assign images_per_row = total_images | divided_by: 3.0 | ceil %}
+    
+    {% for i in (0..2) %}
+      <div class="gallery-row">
+        {% assign start_index = i | times: images_per_row %}
+        {% assign end_index = start_index | plus: images_per_row | minus: 1 %}
+        
+        {% for j in (start_index..end_index) %}
+          {% if j < total_images %}
+            <div class="logo-item">
+              <img src="{{ image_files[j].path | relative_url }}" alt="{{ image_files[j].basename }}">
+            </div>
+          {% endif %}
+        {% endfor %}
+      </div>
+    {% endfor %}
+  {% else %}
+    <p>No images found in the directory: <strong>{{ logo_dir }}</strong></p>
+  {% endif %}
+</div>
+
+<style>
+  .logo-gallery {
+    width: 100%;
+    background-color: white;
+    overflow-x: auto; /* Enable horizontal scrolling if needed */
+    padding: 20px 0;
+  }
+
+  .gallery-row {
+    display: flex;
+    flex-wrap: nowrap; /* Prevent wrapping */
+    gap: 15px; /* Adjust spacing between logos */
+    margin-bottom: 15px; /* Adjust spacing between rows */
+  }
+
+  .gallery-row:last-child {
+    margin-bottom: 0;
+  }
+
+  .logo-item {
+    flex: 0 0 auto; /* Don't grow/shrink, maintain width */
+    width: 100px; /* Adjust logo item width as needed */
+    height: auto;
+    overflow: hidden;
+    -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+      align-items: center;
+      align-content: center;
+
+  }
+
+  .logo-item img {
+    display: block;
+    width: 100%;
+    height: auto;
+    -webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
+	  filter: grayscale(100%);
+}
+</style>

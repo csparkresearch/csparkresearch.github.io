@@ -14,7 +14,6 @@ show-avatar: true
 {% assign product = site.data.products["SEELab3"] %}
 
 
-
 <section id="home" data-parallax="scroll" data-image-src="assets/images/seelab3/bgdark2.jpg" data-natural-width=2600 data-natural-height=1463>
 
     <div class="home-content">        
@@ -617,6 +616,9 @@ The device interfaces with your PC or Android phone through USB, providing oscil
 </div>
 </section>
 
+<section id="clients">
+{% include logo_gallery.html%}
+</section>
 
 <section id="download">
 

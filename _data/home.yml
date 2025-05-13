@@ -185,6 +185,7 @@ topics:
 bg: /assets/images/slides/bg.jpg
 
 slides:
+   - /assets/images/seelab3/seelab_cover_transparent.webp
    - /assets/images/slides/alpha.jpg
    - /assets/images/slides/gamma.jpg
    - /assets/images/slides/alphahw.jpg
@@ -193,6 +194,7 @@ slides:
    - /assets/images/slides/kpy.jpg
 
 slidethumbs:
+   - /assets/images/seelab3/seelab.11.jpg
    - /assets/images/slides/alpha_thumb.jpg
    - /assets/images/slides/gamma_thumb.jpg
    - /assets/images/slides/alpha2.png
