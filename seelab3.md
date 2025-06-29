@@ -620,6 +620,12 @@ The device interfaces with your PC or Android phone through USB, providing oscil
 {% include logo_gallery.html%}
 </section>
 
+<section id="publications">
+
+{% include maketable.html publist=site.data.publications title="Related Publications" color="green" filter="ExpEYES" %}
+</section>
+
+
 <section id="download">
 
 
