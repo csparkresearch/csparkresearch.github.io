@@ -4,6 +4,11 @@
         	"1":"flywheel1.jpg",
         	"2":"flywheel2.jpg",
         	"zip":"flywheel.zip"
+        },
+        "Turbidimeter: TSL25911 based bacterial growth measurement": {
+        	"1":"turbidimeter1.jpg",
+        	"2":"turbidimeter2.jpg",
+        	"zip":"turbidimeter.zip"
         }
       }
 }
