@@ -1,7 +1,7 @@
 ---
 layout: bootstrap_seelab_technical
-title: SEELab 3
-description: "Your Lab @ Home - Multi Purpose Test and Measurement tool"
+title: SEELab 3 technical Documentation
+description: "Technical docs for SEELab3"
 show-navigation: false
 share-img: /assets/images/seelab3/seelab-cover.jpg
 banner: /assets/images/seelab3/seelab-cover.jpg
@@ -12,7 +12,6 @@ show-avatar: true
 
 
 {% assign product = site.data.products["SEELab3"] %}
-
 
 <section id="about" style="padding-top:5rem;">
     
@@ -59,6 +58,11 @@ show-avatar: true
         </div>
     </div>
     </div>
+
+    <div class="row">
+        <a href="/seelab3">Return to the main Product Page for SEELab3</a>
+    </div>
+
 
     <div class="row">
 
