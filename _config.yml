@@ -78,7 +78,7 @@ defaults:
     scope:
       path: "_posts"
     values:
-      sidebarposts: ["kuttypy","manufacturing","expeyes17","seelablet"]
+      sidebarposts: ["kuttypy","manufacturing","expeyes17","seelab3","gmcounter","kuttypyplus"]
 
 
 
@@ -89,5 +89,5 @@ kramdown:
  highlighter: rouge
  input: GFM
 
-plugins:
-  - jekyll-sitemap
+#plugins:
+#  - jekyll-sitemap

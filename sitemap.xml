@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Homepage -->
+  <url>
+    <loc>https://csparkresearch.in/</loc>
+    <priority>1.00</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <!-- Products Section -->
+  <url>
+    <loc>https://csparkresearch.in/alphaspec</loc>
+    <priority>0.80</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://csparkresearch.in/gammaspec</loc>
+    <priority>0.80</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://csparkresearch.in/gammacoincidence</loc>
+    <priority>0.75</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://csparkresearch.in/mca1k</loc>
+    <priority>0.75</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://csparkresearch.in/expeyes17</loc>
+    <priority>0.9</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://csparkresearch.in/seelab3</loc>
+    <priority>0.98</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://csparkresearch.in/kuttypyplus</loc>
+    <priority>0.80</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://csparkresearch.in/gmcounter</loc>
+    <priority>0.75</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <!-- Subpage: ExpEYES-17 blog -->
+  <url>
+    <loc>https://csparkresearch.in/expeyes17/blog</loc>
+    <priority>0.70</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <!-- Resources Section -->
+  <url>
+    <loc>https://csparkresearch.in/news</loc>
+    <priority>0.65</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://csparkresearch.in/blog</loc>
+    <priority>0.60</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://csparkresearch.in/publications</loc>
+    <priority>0.70</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://csparkresearch.in/cnspec</loc>
+    <priority>0.70</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://csparkresearch.in/imagegallery</loc>
+    <priority>0.50</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <!-- Other Key Pages -->
+  <url>
+    <loc>https://csparkresearch.in/about</loc>
+    <priority>0.50</priority>
+    <changefreq>yearly</changefreq>
+  </url>
+  <url>
+    <loc>https://csparkresearch.in/contact</loc>
+    <priority>0.50</priority>
+    <changefreq>yearly</changefreq>
+  </url>
+  <url>
+    <loc>https://csparkresearch.in/remote-labs</loc>
+    <priority>0.45</priority>
+    <changefreq>yearly</changefreq>
+  </url>
+  <url>
+    <loc>https://csparkresearch.in/seelab-jr-development-history</loc>
+    <priority>0.45</priority>
+    <changefreq>yearly</changefreq>
+  </url>
+  <url>
+    <loc>https://csparkresearch.in/seelablet</loc>
+    <priority>0.45</priority>
+    <changefreq>yearly</changefreq>
+  </url>
+  <url>
+    <loc>https://csparkresearch.in/downloads</loc>
+    <priority>0.70</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://csparkresearch.in/github</loc>
+    <priority>0.45</priority>
+    <changefreq>yearly</changefreq>
+  </url>
+
+</urlset>
