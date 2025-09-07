@@ -692,6 +692,10 @@ The device interfaces with your PC or Android phone through USB, providing oscil
                             <label>Email</label>
                             <input type="email" name="email" placeholder="Your Email">
                         </div>
+                        <div class="field">
+                            <label>Contact Number</label>
+                            <input type="tel" name="phone" placeholder="A Phone Number">
+                        </div>
                         <div class="required field">
                             <label>Subject</label>
                             <input type="text" name="subject" placeholder="Subject" value="SEELab3 Query">

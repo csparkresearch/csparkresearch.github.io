@@ -132,7 +132,7 @@ vendors:
  - name: Novatronics
    address: No. 11/1036, JDT SHOPPING COMPLEX, VELLIMADUKUNNU, MARIKUNNU POST, KOZHIKODE – 673012, KERALA
    contact: +91-9447924725
-   email : novatronics1 at gmail.com
+   email : novatronics1@gmail.com
 
  - name: Trinity Microsystems
    link: https://trinitymicrosystem.com
@@ -140,6 +140,11 @@ vendors:
    contact:  98101 90925
    email : info@trinitymicrosystem.com
    logo: /assets/images/logos/trinity.jpg
+
+ - name: Master Scientific Instruments
+   address: Bangalore - 560060
+   contact: +91-9901216328
+   email : msi4india@gmail.com
 
  - name: Tronic Choice
    address: Thrissur, Kerala
