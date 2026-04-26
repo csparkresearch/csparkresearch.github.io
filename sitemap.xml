@@ -11,6 +11,11 @@
 
   <!-- Products Section -->
   <url>
+    <loc>https://csparkresearch.in/seelab3</loc>
+    <priority>0.98</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
     <loc>https://csparkresearch.in/alphaspec</loc>
     <priority>0.80</priority>
     <changefreq>monthly</changefreq>
@@ -33,11 +38,6 @@
   <url>
     <loc>https://csparkresearch.in/expeyes17</loc>
     <priority>0.9</priority>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://csparkresearch.in/seelab3</loc>
-    <priority>0.98</priority>
     <changefreq>weekly</changefreq>
   </url>
   <url>
