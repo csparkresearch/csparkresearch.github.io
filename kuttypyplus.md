@@ -16,7 +16,7 @@ show-avatar: true
 <section id="home" data-parallax="scroll" data-image-src="assets/kpimages/bg.jpg" data-natural-width=2600 data-natural-height=1463>
 
     <div class="overlay"></div>
-    <div class="home-content">        
+    <div class="home-content">
 
         <div class="row contents">                     
             <div class="home-content-left text-center" >
@@ -135,7 +135,7 @@ The software has a built in IDE, A visual coding interface, and even AI tools fo
                 <div class="service-content">
                     <h3>C Code IDE</h3>
 
-                    <p>The KuttyPy IDE on your laptop comes with over 50 example codes in C and Assembly to teach you the fundamentals. AVR-GCC is used to compile code, and the IDE uploads it. Compatible with the Arduino IDE.
+                    <p>The KuttyPy IDE on your laptop comes with over 50 example codes in C and Assembly to teach you the fundamentals. AVR-GCC is used to compile code, and the IDE uploads it. Compatible with the <a href="https://kuttypy.readthedocs.io/en/latest/programming/c/#integrating-with-the-arduino-ide" target="_blank">Arduino IDE</a>.
                     </p>
                     <div class="">
                         <img src="assets/kpimages/kuttypy.webp"
@@ -215,7 +215,7 @@ The software has a built in IDE, A visual coding interface, and even AI tools fo
 
                 <div class="bgrid logoimage step" data-item="" style="--logo-url:url(/assets/kpimages/tnm.gif)">
                     <h3>C Code IDE</h3>
-                    <p>Built-in C code editor with over 100 C and Assembly examples focused on fundamental learning. It is also compatible with the Arduino IDE, and can be used after downloading the board package into the IDE. The android app features a cloud based compiler.
+                    <p>Built-in C code editor with over 100 C and Assembly examples focused on fundamental learning. It is also compatible with the <a href="https://kuttypy.readthedocs.io/en/latest/programming/c/#integrating-with-the-arduino-ide" target="_blank">Arduino IDE</a>, and can be used after downloading the board package into the IDE. The android app features a cloud based compiler.
                     </p>
                 </div>
 

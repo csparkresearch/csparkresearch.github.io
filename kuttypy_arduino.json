@@ -1,0 +1,37 @@
+{
+  "packages": [
+    {
+      "name": "kuttypy",
+      "maintainer": "CSpark Research",
+      "websiteURL": "https://www.csparkresearch.in/kuttypyplus",
+      "email": "csparkresearch@gmail.com",
+      "help": {
+        "online": "https://kuttypy.readthedocs.io/en/latest/"
+      },
+      "platforms": [
+        {
+          "name": "Kuttypy Plus",
+          "architecture": "avr",
+          "version": "1.0.0",
+          "category": "Contributed",
+          "help": {
+            "online": "https://kuttypy.readthedocs.io/en/latest/"
+          },
+          "url": "https://csparkresearch.in/assets/installers/kuttypy-1.0.0.tar.bz2",
+          "archiveFileName": "kuttypy-1.0.0.tar.bz2",
+          "checksum": "SHA-256:b82a9e63845bba23f853dd33ef52bc5d9f9e7961a76bc79dbcb71fd282f6d860",
+          "size": "258783",
+          "boards": [{ "name": "Kuttypy Plus" }],
+          "toolsDependencies": [
+            {
+              "packager": "arduino",
+              "name": "avr-gcc",
+              "version": "4.8.1-arduino5"
+            }
+          ]
+        }
+      ],
+      "tools": []
+    }
+  ]
+}
