@@ -3,7 +3,7 @@ AlphaSpec-1K:
   link: "alphaspec"
   description: "A compact Alpha Spectrometer with integrated 1K MCA"
   user-manual: "/assets/pdfs/alphaspec manual.pdf"
-  windows: "https://drive.google.com/file/d/1I3P4WKphknajXaO2GgtFZJ0DyyfqLaiR/view"
+  windows: "https://drive.google.com/file/d/1zGnG2TdQuMf0_GwbEZ3eQmVYB91LxLcU/view?usp=drive_link"
   ubuntu: "/assets/installers/cnspec-5.2.0.deb"
   installdescription: "Tested on Ubuntu 18.04 and Windows 7/10"
   papers:
@@ -17,7 +17,16 @@ MCA-1K:
   description: "Multi-channel Analyzer"
   image: mca_gallery_thumb.jpg
   user-manual: "/assets/pdfs/alphaspec manual.pdf"
-  windows: "https://drive.google.com/file/d/1I3P4WKphknajXaO2GgtFZJ0DyyfqLaiR/view"
+  windows: "https://drive.google.com/file/d/1zGnG2TdQuMf0_GwbEZ3eQmVYB91LxLcU/view?usp=drive_link"
+  ubuntu: "/assets/installers/cnspec-5.2.0.deb"
+
+MCA-LISTMODE:
+  name: List Mode Multi Channel Analyzer
+  link: "mca_listmode"
+  description: "Single Parameter List Mode Multi-channel Analyzer up to 32K channels"
+  image: mca_gallery_thumb.jpg
+  user-manual: "/assets/pdfs/alphaspec manual.pdf"
+  windows: "https://drive.google.com/file/d/1zGnG2TdQuMf0_GwbEZ3eQmVYB91LxLcU/view?usp=drive_link"
   ubuntu: "/assets/installers/cnspec-5.2.0.deb"
 
 GammaSpec-1K:
@@ -27,7 +36,7 @@ GammaSpec-1K:
   image: gamma_pic.png
   user-manual: "/assets/pdfs/gammaspec manual.pdf"
   installdescription: "Tested on Ubuntu 18.04 and Windows 7/10"
-  windows: "https://drive.google.com/uc?export=download&id=16hRQM7tZ8W7t4KYA9uht2PFLlR_6SZi5"
+  windows: "https://drive.google.com/file/d/1zGnG2TdQuMf0_GwbEZ3eQmVYB91LxLcU/view?usp=drive_link"
   ubuntu: "/assets/installers/cnspec-5.2.0.deb"
   papers:
     DAE-SYMPNP: "http://sympnp.org/proceedings/63/G19.pdf"
@@ -39,8 +48,8 @@ GammaCoincidence:
   link: "gammacoincidence"
   image: gamma_pic.png
   user-manual: "/assets/pdfs/gammaspec manual.pdf"
-  windows: "https://drive.google.com/uc?export=download&id=1uokmxXdJCwO407mIib4HG4VZj-PoTL8W"
-  ubuntu: "/assets/installers/cnspec-5.0.7.deb"
+  windows: "https://drive.google.com/file/d/1zGnG2TdQuMf0_GwbEZ3eQmVYB91LxLcU/view?usp=drive_link"
+  ubuntu: "/assets/installers/cnspec-5.2.0.deb"
   papers:
     DAE-SYMPNP: "http://sympnp.org/proceedings/63/G19.pdf"
     RINP2: "https://indico.cern.ch/event/763807/contributions/3274494/contribution.pdf"
@@ -54,7 +63,7 @@ SEELab3:
   user-manual: "/assets/pdfs/SEELab3.pdf"
   windows: "https://drive.google.com/file/d/1zqFQzjDyJEFbQ0OfOQ2DNQUUXBl8iELh/view?usp=sharing"
   windowsnew: "https://drive.google.com/file/d/1jzq_hJSiSkt7lkeSeu4Urxg_Ek4A3dRo/view?usp=sharing"
-  ubuntu: "/assets/installers/seelab-2.1.0.deb"
+  ubuntu: "/assets/installers/seelab-2.1.3.deb"
   android: "https://play.google.com/store/apps/details?id=com.cspark.research.eyes17"
   source: "/assets/installers/eyes17-4.9.0.zip"
   onlinedocs: "https://scischool.in/expeyes/index.html"
@@ -70,7 +79,7 @@ SEELab3-benchtop:
   installdescription: "The software for SEELab3 is shared with its predecessor ExpEYES17. The interface dynamically adapts to the connected device."
   user-manual: "/assets/pdfs/SEELab3.pdf"
   windows: "https://drive.google.com/file/d/1zqFQzjDyJEFbQ0OfOQ2DNQUUXBl8iELh/view?usp=sharing"
-  ubuntu: "/assets/installers/seelab-2.1.0.deb"
+  ubuntu: "/assets/installers/seelab-2.1.3.deb"
   android: "https://play.google.com/store/apps/details?id=com.cspark.research.eyes17"
   source: "/assets/installers/eyes17-4.9.0.zip"
   apidocs: "https://eyes17lib.readthedocs.io/en/latest/"
@@ -85,7 +94,7 @@ ExpEYES17:
   user-manual: "/assets/pdfs/expeyes17.pdf"
   windows: "https://drive.google.com/file/d/1zqFQzjDyJEFbQ0OfOQ2DNQUUXBl8iELh/view?usp=sharing"
   ubuntu-eyes: "/assets/installers/eyes17_5.0+pyqt5-9_all.deb"
-  ubuntu: "/assets/installers/seelab-2.1.0.deb"
+  ubuntu: "/assets/installers/seelab-2.1.3.deb"
   android: "https://play.google.com/store/apps/details?id=com.cspark.research.eyes17"
   source: "/assets/installers/eyes17-4.9.0.zip"
   apidocs: "https://eyes17lib.readthedocs.io/en/latest/"

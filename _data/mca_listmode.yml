@@ -1,0 +1,33 @@
+flowimage: assets/images/gamma/flow.png
+ 
+
+subtopics:
+ - type: imtxt
+   color: green
+   title: "Features : 4K,8K,16K,32K List Mode MCA"
+   image: assets/images/mca_blog_cover.png
+   features:
+    - 0-4V Shaped Input. 4uS rise time.
+    - 12-bit adjustable threshold
+    - 16-bit ADC
+    - Fully USB powered unit
+    - 12uS processing time per pulse
+    - Fully featured Python software supplied open-source.
+   subscript: Dual parameter list mode MCA also available for coincidence measurements
+
+topics:
+ - title: Blog Post
+   description: Write up on testing of a 16K MCA with an HPGe Detector.
+   link: https://blog.jithinbp.in/engineering-a-16k-multi-channel-analyzer-for-high-purity-germanium-detectors/
+   tabstyle: active
+   image: /assets/images/mca_blog_cover.png
+   imagestyle: fluid rounded raised
+ - title: Software
+   description: Open-source software, CNSpec, is supplied with the instrument.
+   link: cnspec
+   tabstyle: active
+   image: /assets/images/cnspec/cnspec_1200.jpg
+   imagestyle: fluid rounded raised
+
+
+

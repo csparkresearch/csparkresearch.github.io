@@ -39,13 +39,13 @@ collections:
 # List of links in the navigation bar
 navbar-links:
   Products:
+    - SEELab 3.0: "seelab3"
+    - Multi Channel Analyzer: "mca1k"
+    - 4K/8K/16K List Mode MCA: "mca_listmode"
     - Alpha Spectrometer: "alphaspec"
     - Gamma Spectrometer: "gammaspec"
     - Gamma-Gamma Coincidence: "gammacoincidence"
-    - Multi Channel Analyzer: "mca1k"
-    - SEELab 3.0: "seelab3"
     - ExpEYES: "expeyes17"
-    - KuttyPy: "kuttypy"
     - KuttyPy Plus: "kuttypyplus"
     - Geiger Counter: "gmcounter"
     - All Products: ""
