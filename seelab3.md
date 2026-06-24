@@ -16,7 +16,7 @@ show-avatar: true
 
 <section id="home" data-parallax="scroll" data-image-src="assets/images/seelab3/bgdark2.jpg" data-natural-width=2600 data-natural-height=1463>
 
-    <div class="home-content">        
+    <div class="home-content">
 
         <div class="ui contents" style="padding-top:10rem;">                     
 
@@ -620,9 +620,10 @@ The device interfaces with your PC or Android phone through USB, providing oscil
 {% include logo_gallery.html%}
 </section>
 
-<section id="publications">
+<section id="papers">
 
-{% include maketable.html publist=site.data.publications title="Related Publications" color="green" filter="ExpEYES" %}
+{% include maketable.html publist=site.data.publications title="Related Publications" color="green" filter="SEELab3" %}
+{% include maketable.html publist=site.data.publications color="green" filter="ExpEYES" %}
 </section>
 
 
