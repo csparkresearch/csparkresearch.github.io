@@ -37,7 +37,7 @@ GammaSpec-1K:
   user-manual: "/assets/pdfs/gammaspec manual.pdf"
   installdescription: "Tested on Ubuntu 18.04 and Windows 7/10"
   windows: "https://drive.google.com/file/d/1zGnG2TdQuMf0_GwbEZ3eQmVYB91LxLcU/view?usp=drive_link"
-  ubuntu: "/assets/installers/cnspec-5.2.0.deb"
+  ubuntu: "/assets/installers/cnspec-5.2.1.deb"
   papers:
     DAE-SYMPNP: "http://sympnp.org/proceedings/63/G19.pdf"
     RINP2: "https://indico.cern.ch/event/763807/contributions/3274494/contribution.pdf"
